@@ -31,6 +31,9 @@ public class changeDisplayEmployeeID : MonoBehaviour
     {
         numberOfPeople = infosource.getNumberOfPeople();
         ID = (ID + direction) % numberOfPeople;
+        if (ID < 0) {
+            ID = numberOfPeople-1;
+        }
         
         UpdateTexts();
     }
