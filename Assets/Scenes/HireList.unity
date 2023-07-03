@@ -545,8 +545,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: id
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 442fcffaec63d844a95c1056c02a0214, type: 2}
-  m_sharedMaterial: {fileID: -7082258480960990512, guid: 442fcffaec63d844a95c1056c02a0214, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -680,8 +680,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 21 years old
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 675e6a4d5b520424ca6ec577c2827061, type: 2}
-  m_sharedMaterial: {fileID: 526386787283259258, guid: 675e6a4d5b520424ca6ec577c2827061, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -799,6 +799,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e545b86f2fc53b545bf4252120387c49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  prefabd:
+  - {fileID: 6150447891970809862, guid: fcde74c5de3a0c348b0861f4959343fd, type: 3}
+  - {fileID: 3601581404770357820, guid: aa60b62fd1bc9234ba522e1d5ff852c9, type: 3}
+  - {fileID: 4908424526400767357, guid: 104cb6d36084a5249b72303c6c915b1e, type: 3}
 --- !u!1 &1503069350
 GameObject:
   m_ObjectHideFlags: 0
@@ -973,8 +977,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: John Doe
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 442fcffaec63d844a95c1056c02a0214, type: 2}
-  m_sharedMaterial: {fileID: -7082258480960990512, guid: 442fcffaec63d844a95c1056c02a0214, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1128,8 +1132,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Single
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 675e6a4d5b520424ca6ec577c2827061, type: 2}
-  m_sharedMaterial: {fileID: 526386787283259258, guid: 675e6a4d5b520424ca6ec577c2827061, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1397,8 +1401,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: I love to work. My life
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 0f5c955d46fdc5e4aa4648a97ab2805b, type: 2}
-  m_sharedMaterial: {fileID: -2223422054277449561, guid: 0f5c955d46fdc5e4aa4648a97ab2805b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: ba437b1d5af92454b909f7ffe208dc7a, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
