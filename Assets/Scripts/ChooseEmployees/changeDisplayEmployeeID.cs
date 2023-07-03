@@ -10,7 +10,10 @@ public class changeDisplayEmployeeID : MonoBehaviour
     public TextMeshProUGUI RelationshipstatusText;
     public TextMeshProUGUI BioText;
     public EmployeeInfo infosource;
+    public Checkbox checkbox;
+    public SmoothMove textParent;
     private int numberOfPeople;
+
 
     private int ID = 0;
 
@@ -34,8 +37,9 @@ public class changeDisplayEmployeeID : MonoBehaviour
         if (ID < 0) {
             ID = numberOfPeople-1;
         }
-        
         UpdateTexts();
+        textParent.setCurrentY(400);
+
     }
 
     private void UpdateTexts()
@@ -45,5 +49,10 @@ public class changeDisplayEmployeeID : MonoBehaviour
         AgeText.text = infosource.getValueString(ID,"Age") + " years old";
         RelationshipstatusText.text = infosource.getValueString(ID,"relationshipStatus");
         BioText.text = infosource.getValueString(ID,"Bio");
+        checkbox.UpdateSprite();
+    }
+
+    public int getCurrentID(){
+        return ID;
     }
 }

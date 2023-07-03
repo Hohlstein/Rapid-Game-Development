@@ -5,6 +5,7 @@ public class EmployeeInfo : MonoBehaviour
 {
 
     private GameObject[] employeeGameObjects;
+    public HiredEmployees HiredEmployees;
     private Mitarbeiter[] employees_list;
     private Dictionary<int, Mitarbeiter> people = new Dictionary<int, Mitarbeiter>();
 
@@ -18,6 +19,7 @@ public class EmployeeInfo : MonoBehaviour
             people[current_id] = employees_list[i];
             Debug.Log("Added "+employees_list[i].ToString());
         }
+        HiredEmployees.resetList(employees_list.Length);
     } 
 
     public string getValueString(int ID,string key){
