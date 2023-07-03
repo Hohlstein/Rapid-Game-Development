@@ -73,7 +73,6 @@ crashlytics-build.properties
 
 
 *.ttf.meta
-*.unity.meta
 *.asset.meta
 *.shader.meta
 /[Aa]ssets/[Uu][Ii] Toolkit*
