@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 public class Mitarbeiter : MonoBehaviour
 {
-
+      [SerializeField]
+    private int ID;
       [SerializeField]
     private string firstName;
       [SerializeField]
@@ -47,6 +48,43 @@ public class Mitarbeiter : MonoBehaviour
         
     }
 
+    public int getID(){
+        return this.ID;
+    }
+
+    public string getFirstName(){
+        return this.firstName;
+    }
+    public string getLastName(){
+        return this.lastName;
+    }
+    public int getAge(){
+        return this.age;
+    }
+    public string getRelationshipStatus(){
+        return this.relationshipStatus;
+    }
+    public string getBio(){
+        return this.bio;
+    }
+    public int getCodingSkill(){
+        return this.codingSkill;
+    }
+    public int getGameDesignSkill(){
+        return this.gameDesignSkill;
+    }
+    public int getGraphicDesignSkill(){
+        return this.GraphicDesignSkill;
+    }
+    public int getSoundDesignSkill(){
+        return this.soundDesignSkill;
+    }
+    public int getStressLevel(){
+        return this.stresslevel;
+    }
+    public int getWorkingHours(){
+        return this.workinghours;
+    }
 
     public int getStressed(int stress){
         this.stresslevel += stress;

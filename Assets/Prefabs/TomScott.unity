@@ -167,12 +167,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c1d533f52fe5f645be178061be42282, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 0
-  firstName: John
-  lastName: Doe
-  age: 21
-  relationshipStatus: Single
-  bio: My name is John Doe and I'm here to make dough.
+  ID: 1
+  firstName: Tom
+  lastName: Scott
+  age: 55
+  relationshipStatus: Married
+  bio: I'm kind of old and generally unskilled. Hire me!
   codingSkill: 0
   gameDesignSkill: 0
   GraphicDesignSkill: 0
