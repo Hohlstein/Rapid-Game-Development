@@ -10,6 +10,7 @@ public class changeDisplayEmployeeID : MonoBehaviour
     public TextMeshProUGUI RelationshipstatusText;
     public TextMeshProUGUI BioText;
     public EmployeeInfo infosource;
+    private int numberOfPeople;
 
     private int ID = 0;
 
@@ -20,21 +21,26 @@ public class changeDisplayEmployeeID : MonoBehaviour
         RelationshipstatusText.text = "RELATIONSHIP HERE";
         BioText.text = "BIO HERE";
         ID = 0;
+    }
+
+    public void Update(){
         UpdateTexts();
     }
 
     public void ChangeNumber(int direction)
     {
-        ID += direction;
+        numberOfPeople = infosource.getNumberOfPeople();
+        ID = (ID + direction) % numberOfPeople;
+        
         UpdateTexts();
     }
 
     private void UpdateTexts()
     {
         IDText.text = ID.ToString();
-        NameText.text = infosource.GetValue(ID,"First_Name") + " " + infosource.GetValue(ID,"Last_Name");
-        AgeText.text = infosource.GetValue(ID,"Age");
-        RelationshipstatusText.text = infosource.GetValue(ID,"Relation");
-        BioText.text = infosource.GetValue(ID,"Bio");
+        NameText.text = infosource.getValueString(ID,"firstName") + " " + infosource.getValueString(ID,"lastName");
+        AgeText.text = infosource.getValueString(ID,"Age") + " years old";
+        RelationshipstatusText.text = infosource.getValueString(ID,"relationshipStatus");
+        BioText.text = infosource.getValueString(ID,"Bio");
     }
 }

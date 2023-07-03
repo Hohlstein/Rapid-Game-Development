@@ -3,56 +3,71 @@ using System.Collections.Generic;
 
 public class EmployeeInfo : MonoBehaviour
 {
-    public List<Dictionary<string, string>> valueList = new List<Dictionary<string,string>>();
+
+    private GameObject[] employeeGameObjects;
+    private Mitarbeiter[] employees_list;
+    private Dictionary<int, Mitarbeiter> people = new Dictionary<int, Mitarbeiter>();
 
     public void Start(){
-        SetValue(0,"First_Name","John");
-        SetValue(0,"Last_Name","Doe");
-        SetValue(0,"Age","21");
-        SetValue(0,"Relation","Single");
-        SetValue(0,"Bio","Nothing much yet, I'm just kind of a loser, man!");
-
-        SetValue(1,"First_Name","Abraham");
-        SetValue(1,"Last_Name","Lincoln");
-        SetValue(1,"Age","200");
-        SetValue(1,"Relation","Dead");
-        SetValue(1,"Bio","Nothing much yet, I'm just kind of a president, man!");
+        employeeGameObjects = GameObject.FindGameObjectsWithTag("mitarbeiter"); 
+        Debug.Log("Found "+employeeGameObjects.Length.ToString()+ " employees!");
+        ConvertGameObjectsToEmployees(); 
+        for (int i = 0; i < employees_list.Length; i++)
+        {
+            int current_id = employees_list[i].getID();
+            people[current_id] = employees_list[i];
+            Debug.Log("Added "+employees_list[i].ToString());
+        }
     } 
 
-    public string GetValue(int ID,string key)
-    {
-        if (ID >= 0 && ID < valueList.Count)
-        {
-            return valueList[ID][key];
+    public string getValueString(int ID,string key){
+        key = key.ToLower();
+        string output = "NULL";
+        if (key == "firstname"){
+            output = people[ID].getFirstName().ToString();
         }
-        else
+        if (key == "lastname"){
+            output = people[ID].getLastName().ToString();
+        }
+        if (key == "age"){
+            output = people[ID].getAge().ToString();
+        }
+        if (key == "relationshipstatus"){
+            output = people[ID].getRelationshipStatus().ToString();
+        }
+        if (key == "bio"){
+            output = people[ID].getBio().ToString();
+        }
+        if (key == "codingskill"){
+            output = people[ID].getCodingSkill().ToString();
+        }
+        if (key == "gamedesignskill"){
+            output = people[ID].getGameDesignSkill().ToString();
+        }
+        if (key == "graphicdesignskill"){
+            output = people[ID].getGraphicDesignSkill().ToString();
+        }
+        if (key == "soundesignskill"){
+            output = people[ID].getSoundDesignSkill().ToString();
+        }
+        if (key == "stresslevel"){
+            output = people[ID].getStressLevel().ToString();
+        }
+        if (output == "NULL"){
+            Debug.Log("Requested "+key+" from employees, but that key is unknown!");
+        }
+        return output;
+    }
+
+    private void ConvertGameObjectsToEmployees(){
+        employees_list = new Mitarbeiter[employeeGameObjects.Length];
+        for (int i = 0; i < employeeGameObjects.Length; i++)
         {
-            Debug.LogError("Invalid index!");
-            return null;
+            employees_list[i] = employeeGameObjects[i].GetComponent<Mitarbeiter>();
         }
     }
 
-    public void SetValue(int ID, string key, string value)
-    {
-        if (ID >= 0)
-        {
-            if (ID >= valueList.Count){
-                Dictionary<string,string> emptyDictionary = new Dictionary<string,string>();
-                valueList.Add(emptyDictionary);
-            }
-            if (valueList[ID].ContainsKey(key))
-            {
-                valueList[ID][key] = value;
-            }
-            else
-            {
-                valueList[ID].Add(key, value);
-                Debug.Log(valueList[ID].ToString());
-            }
-        }
-        else
-        {
-            Debug.LogError("Invalid index: Below 0!");
-        }
+    public int getNumberOfPeople(){
+        return employees_list.Length;
     }
 }
