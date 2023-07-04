@@ -1,3 +1,6 @@
+/*
+Author: Klaus Wiegmann
+*/
 using UnityEngine;
 using System.Collections.Generic;
 

@@ -1,3 +1,6 @@
+/*
+Author: Klaus Wiegmann
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +11,10 @@ public class HiredEmployees : MonoBehaviour
     Diese Klasse merkt sich, welche Personen (zurzeit) als Angestellte ausgewählt sind.
     Diese Information wird im hired dictionary gespeichert.
     */
+    public GameObject HireListItem_prefab;
+    public Canvas canvas;
     private Dictionary<int,bool> hired;
+    private List<int> added_order;
     private int n;
 
     // Start is called before the first frame update
@@ -17,6 +23,7 @@ public class HiredEmployees : MonoBehaviour
         /*
         Überschreibt die gespeicherte Datenbank und trägt für alle IDs ein, dass sie noch nicht eingestellt sind.
         */
+        added_order = new List<int>();
         hired = new Dictionary<int,bool>();
         for (int i = 0; i < n; i++)
         {
@@ -33,6 +40,22 @@ public class HiredEmployees : MonoBehaviour
     }
 
     public void set(int ID, bool val){
+        if (val == true){
+            added_order.Add(ID);
+            GameObject instantiatedPrefab = Instantiate(HireListItem_prefab, canvas.transform);
+            HireList_ItemHandler itemHandler = instantiatedPrefab.GetComponent<HireList_ItemHandler>();
+            itemHandler.setID(ID);
+            itemHandler.setStartX(1710);
+            itemHandler.setStartY(50);
+            itemHandler.setTopOfList(856);
+            itemHandler.setDistanceBetweenItems(-215);
+            itemHandler.setHireListObject(this);
+        
+
+        }
+        else{
+            added_order.RemoveAt(getItemIndex(ID));
+        }
         hired[ID] = val;
     }
 
@@ -56,6 +79,21 @@ public class HiredEmployees : MonoBehaviour
             }
         }
         return output;
+    }
+
+    public int getItemIndex(int ID){
+        if (isHired(ID)){
+            for (int i = 0; i < added_order.Count; i++)
+            {
+             if (added_order[i] == ID){
+                return i;
+             }   
+            }
+            return 0;
+        }
+        else{
+            return 0;
+        }
     }
 
 }

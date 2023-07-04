@@ -1,3 +1,6 @@
+/*
+Author: Klaus Wiegmann
+*/
 using TMPro;
 using UnityEngine;
 
