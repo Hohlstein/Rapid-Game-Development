@@ -4,10 +4,16 @@ using System.Collections.Generic;
 public class EmployeeInfo : MonoBehaviour
 {
 
+    /*
+    Dieses Skript sucht zuerst nach GameObjekten mit "mitarbeiter" Tag, um diese in seine Datenbank aufzunehmen.
+    Später können über Getter Funktionen die Profilwerte der Mitarbeiter abgefragt werden.
+    */
+
     private GameObject[] employeeGameObjects;
     public HiredEmployees HiredEmployees;
     private Mitarbeiter[] employees_list;
     private Dictionary<int, Mitarbeiter> people = new Dictionary<int, Mitarbeiter>();
+
 
     public void Start(){
         employeeGameObjects = GameObject.FindGameObjectsWithTag("mitarbeiter"); 
@@ -19,7 +25,8 @@ public class EmployeeInfo : MonoBehaviour
             people[current_id] = employees_list[i];
             Debug.Log("Added "+employees_list[i].ToString());
         }
-        HiredEmployees.resetList(employees_list.Length);
+        HiredEmployees.setListLength(employees_list.Length);
+        HiredEmployees.resetList();
     } 
 
     public string getValueString(int ID,string key){
@@ -57,6 +64,26 @@ public class EmployeeInfo : MonoBehaviour
         }
         if (output == "NULL"){
             Debug.Log("Requested "+key+" from employees, but that key is unknown!");
+        }
+        return output;
+    }
+
+    public float getValueFloat(int ID,string key){
+        float output = 256;
+        if (key == "codingskill"){
+            output = people[ID].getCodingSkill();
+        }
+        if (key == "gamedesignskill"){
+            output = people[ID].getGameDesignSkill();
+        }
+        if (key == "graphicdesignskill"){
+            output = people[ID].getGraphicDesignSkill();
+        }
+        if (key == "sounddesignskill"){
+            output = people[ID].getSoundDesignSkill();
+        }
+        if (key == "stresslevel"){
+            output = people[ID].getStressLevel();
         }
         return output;
     }
