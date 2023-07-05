@@ -50,9 +50,10 @@ MonoBehaviour:
   age: 21
   relationshipStatus: Single
   bio: My name is John Doe and I'm here to make dough.
-  codingSkill: 0
-  gameDesignSkill: 0
-  GraphicDesignSkill: 0
-  soundDesignSkill: 0
+  codingSkill: 90
+  gameDesignSkill: 65
+  GraphicDesignSkill: 80
+  soundDesignSkill: 5
   stresslevel: 0
   workinghours: 0
+  profile_picture: {fileID: 21300000, guid: 4daf41925a86f54488636c39dd93d5d4, type: 3}

@@ -13,6 +13,9 @@ public class HiredEmployees : MonoBehaviour
     */
     public GameObject HireListItem_prefab;
     public Canvas canvas;
+    public EmployeeInfo infosource;
+    public changeDisplayEmployeeID ID_changer;
+    public GameObject hireList_parent;
     private Dictionary<int,bool> hired;
     private List<int> added_order;
     private int n;
@@ -44,14 +47,20 @@ public class HiredEmployees : MonoBehaviour
             added_order.Add(ID);
             GameObject instantiatedPrefab = Instantiate(HireListItem_prefab, canvas.transform);
             HireList_ItemHandler itemHandler = instantiatedPrefab.GetComponent<HireList_ItemHandler>();
+            itemHandler.transform.SetParent(hireList_parent.transform);
             itemHandler.setID(ID);
             itemHandler.setStartX(1710);
             itemHandler.setStartY(50);
             itemHandler.setTopOfList(856);
             itemHandler.setDistanceBetweenItems(-215);
             itemHandler.setHireListObject(this);
-        
+            itemHandler.SetIDChanger(ID_changer);
+            itemHandler.SetDisplayName(infosource.getValueString(ID,"firstName") + " " + infosource.getValueString(ID,"lastName")[0]+".");
+            itemHandler.SetAvatar(infosource.GetAvatar(ID));
+            float[] skillArray = {infosource.getValueFloat(ID,"codingskill"),infosource.getValueFloat(ID,"gamedesignskill"),infosource.getValueFloat(ID,"graphicdesignskill"),infosource.getValueFloat(ID,"sounddesignskill")};
+            itemHandler.SetSkillLevels(skillArray);          
 
+            
         }
         else{
             added_order.RemoveAt(getItemIndex(ID));

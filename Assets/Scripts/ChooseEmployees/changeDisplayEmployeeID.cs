@@ -3,6 +3,8 @@ Author: Klaus Wiegmann
 */
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 
 public class changeDisplayEmployeeID : MonoBehaviour
@@ -21,6 +23,7 @@ public class changeDisplayEmployeeID : MonoBehaviour
     public EmployeeInfo infosource;
     public Checkbox checkbox;
     public SmoothMove textParent;
+    public Image avatar;
 
     public PercentageBar CodingSkill;
     public PercentageBar GameDesignSkill;
@@ -52,8 +55,7 @@ public class changeDisplayEmployeeID : MonoBehaviour
         UpdateDisplayedValues();
     }
 
-    public void ChangeNumber(int direction)
-    {
+    public void ChangeID(int direction){
         /*
         Hier wird als Reaktion auf die Pfeil Buttons die ID gewechselt. Direction ist entweder -1 (linker Pfeil) oder 1 (rechter Pfeil.)
         Damit die ID keine ungültigen Werte annimmt, wird mit Modulo gerechnet.
@@ -66,8 +68,22 @@ public class changeDisplayEmployeeID : MonoBehaviour
         animateUIElements();
         UpdateDisplayedValues();
         
-
     }
+
+    public void SetID(int input_ID){
+        /*
+        Hier wird die ID manuell eingestellt. Dies ist z.B. der Fall, wenn man eine Person bereits zur Liste hinzugefügt hat und auf das Listenelement klickt, um zum Profil der Person zu gelangen.
+        */
+        numberOfPeople = infosource.getNumberOfPeople();
+        
+        if (ID >= 0 && ID < numberOfPeople) {
+            ID = input_ID;
+        }
+        animateUIElements();
+        UpdateDisplayedValues();
+        
+    }
+
 
     private void animateUIElements(){
         CodingSkill.setCurrentVal(0);
@@ -87,6 +103,7 @@ public class changeDisplayEmployeeID : MonoBehaviour
         AgeText.text = infosource.getValueString(ID,"Age") + " years old";
         RelationshipstatusText.text = infosource.getValueString(ID,"relationshipStatus");
         BioText.text = infosource.getValueString(ID,"Bio");
+        avatar.sprite = infosource.GetAvatar(ID);
 
         CodingSkill.setTargetVal(infosource.getValueFloat(ID,"codingskill"));
         GraphicDesignSkill.setTargetVal(infosource.getValueFloat(ID,"graphicdesignskill"));
