@@ -13,8 +13,11 @@ public class HiredEmployees : MonoBehaviour
     */
     public GameObject HireListItem_prefab;
     public Canvas canvas;
-    private Dictionary<int,bool> hired;
-    private List<int> added_order;
+
+
+    
+    private Dictionary<int,bool> hired = new Dictionary<int,bool>();
+    private List<int> added_order = new List<int>();
     private int n;
 
     // Start is called before the first frame update
