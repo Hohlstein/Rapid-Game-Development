@@ -50,9 +50,10 @@ MonoBehaviour:
   age: 60
   relationshipStatus: Dead
   bio: I used to be a great singer but then I died, pretty sad.
-  codingSkill: 0
-  gameDesignSkill: 0
-  GraphicDesignSkill: 0
-  soundDesignSkill: 0
+  codingSkill: 5
+  gameDesignSkill: 40
+  GraphicDesignSkill: 50
+  soundDesignSkill: 100
   stresslevel: 0
   workinghours: 0
+  profile_picture: {fileID: 21300000, guid: 9bc7a4ec7735ade4bbcb00f11ad7aad0, type: 3}

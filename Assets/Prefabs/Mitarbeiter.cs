@@ -27,6 +27,8 @@ public class Mitarbeiter : MonoBehaviour
     private int stresslevel;
       [SerializeField]
     private int workinghours;
+    [SerializeField]
+    private Sprite profile_picture;
 
 
  
@@ -89,6 +91,10 @@ public class Mitarbeiter : MonoBehaviour
     public int getStressed(int stress){
         this.stresslevel += stress;
         return this.stresslevel;
+    }
+
+    public Sprite GetAvatar(){
+      return profile_picture;
     }
 
    

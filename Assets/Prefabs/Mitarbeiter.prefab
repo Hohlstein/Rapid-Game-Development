@@ -56,3 +56,4 @@ MonoBehaviour:
   soundDesignSkill: 0
   stresslevel: 0
   workinghours: 0
+  profile_picture: {fileID: 21300000, guid: 4daf41925a86f54488636c39dd93d5d4, type: 3}

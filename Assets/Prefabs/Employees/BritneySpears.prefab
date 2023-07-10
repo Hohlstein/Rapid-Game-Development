@@ -50,9 +50,10 @@ MonoBehaviour:
   age: 300
   relationshipStatus: Famous
   bio: It's Britney, bro.
-  codingSkill: 0
-  gameDesignSkill: 0
-  GraphicDesignSkill: 0
-  soundDesignSkill: 0
+  codingSkill: 5
+  gameDesignSkill: 15
+  GraphicDesignSkill: 25
+  soundDesignSkill: 75
   stresslevel: 0
   workinghours: 0
+  profile_picture: {fileID: 21300000, guid: 147d15e07789afd4a855b043cdee0043, type: 3}

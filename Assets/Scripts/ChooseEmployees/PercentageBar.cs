@@ -8,34 +8,30 @@ using UnityEngine.UI;
 
 public class PercentageBar : MonoBehaviour
 {
-    public float current_val;
-    public float target_val;
+    public float Current_val;
+    public float Target_val;
     public float friction;
     public Image image;
     
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
+        if (Target_val == 1){
+            Debug.Log("DOING");
+        }
         RectTransform rectTransform = image.GetComponent<RectTransform>();
-        rectTransform.localScale = new Vector3(current_val/100, rectTransform.localScale.y, rectTransform.localScale.z);
-        if (current_val != target_val){
-            float change = (target_val-current_val)/friction;
-            setCurrentVal(current_val + change);
+        rectTransform.localScale = new Vector3(Current_val/100, rectTransform.localScale.y, rectTransform.localScale.z);
+        if (Current_val != Target_val){
+            float change = (Target_val-Current_val)/friction;
+            setCurrentVal(Current_val + change);
         }
     }
 
     public void setCurrentVal(float x){
-        current_val = x;
+        Current_val = x;
     }
 
     public void setTargetVal(float x){
-        target_val = x;
+        Target_val = x;
     }
 }

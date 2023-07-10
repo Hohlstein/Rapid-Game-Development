@@ -106,4 +106,8 @@ public class EmployeeInfo : MonoBehaviour
     public int getNumberOfPeople(){
         return employees_list.Length;
     }
+    
+    public Sprite GetAvatar(int ID){
+        return people[ID].GetAvatar();
+    }
 }

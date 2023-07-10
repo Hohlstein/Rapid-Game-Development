@@ -50,9 +50,10 @@ MonoBehaviour:
   age: 55
   relationshipStatus: Married
   bio: I'm kind of old and generally unskilled. Hire me!
-  codingSkill: 0
-  gameDesignSkill: 0
-  GraphicDesignSkill: 0
-  soundDesignSkill: 0
+  codingSkill: 90
+  gameDesignSkill: 90
+  GraphicDesignSkill: 20
+  soundDesignSkill: 25
   stresslevel: 0
   workinghours: 0
+  profile_picture: {fileID: 21300000, guid: e64563a3c7aabac488bcb8f53c1a1e0a, type: 3}
