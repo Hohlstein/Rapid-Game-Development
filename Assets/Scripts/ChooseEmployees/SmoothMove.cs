@@ -21,30 +21,35 @@ public class SmoothMove : MonoBehaviour
     float current_x;
     float current_y;
     public float friction;
+    public bool freeze;
 
     void Start()
     {
         /*
         Zu Beginn werden sowohl die aktuelle Position als auch die Zielposition auf die im Editor eingestellte Position des Objekts gestellt.
         */
-        current_x = transform.position.x;
-        current_y = transform.position.y;
-        target_x = current_x;
-        target_y = current_y;
+        if (freeze == false){
+            current_x = transform.position.x;
+            current_y = transform.position.y;
+            target_x = current_x;
+            target_y = current_y;
+        }
 
     }
 
     void Update()
     {
-        /*
-        Es wird in jedem Schritt die aktuelle Position berechet und damit die Differenz zur Zielposition berechnet.
-        Da die Differenz immer durch Friction geteilt wird, kommt man nie in einem Schritt ganz ans Ziel, sondern bewegt sich immer nur einen Bruchteil der benötigten Strecke weiter.
-        Dadurch entsteht eine "smoothe" Bewegung.
-        */
-        getPos();
-        float x_change = (target_x-current_x)/friction;
-        float y_change = (target_y-current_y)/friction;
-        step(x_change,y_change);
+        if (freeze == false){
+            /*
+            Es wird in jedem Schritt die aktuelle Position berechet und damit die Differenz zur Zielposition berechnet.
+            Da die Differenz immer durch Friction geteilt wird, kommt man nie in einem Schritt ganz ans Ziel, sondern bewegt sich immer nur einen Bruchteil der benötigten Strecke weiter.
+            Dadurch entsteht eine "smoothe" Bewegung.
+            */
+            getPos();
+            float x_change = (target_x-current_x)/friction;
+            float y_change = (target_y-current_y)/friction;
+            step(x_change,y_change);
+        }
     }
 
     public void setTargetX(float x){

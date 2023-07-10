@@ -99,7 +99,7 @@ public class changeDisplayEmployeeID : MonoBehaviour
         Die aktualisierten Werte werden bei infosource (INFO_HireList) abgefragt und an die jeweiligen UI Elemente weitergegeben.
         */
         IDText.text = ID.ToString();
-        NameText.text = infosource.getValueString(ID,"firstName") + " " + infosource.getValueString(ID,"lastName");
+        NameText.text = infosource.getValueString(ID,"firstName") + " '"+ infosource.getValueString(ID,"nickName") + "' " + infosource.getValueString(ID,"lastName");
         AgeText.text = infosource.getValueString(ID,"Age") + " years old";
         RelationshipstatusText.text = infosource.getValueString(ID,"relationshipStatus");
         BioText.text = infosource.getValueString(ID,"Bio");

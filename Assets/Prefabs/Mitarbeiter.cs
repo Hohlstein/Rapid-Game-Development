@@ -9,6 +9,8 @@ public class Mitarbeiter : MonoBehaviour
     private string firstName;
       [SerializeField]
     private string lastName;
+    [SerializeField]
+    private string nickName;
       [SerializeField]
     private int age;
       [SerializeField]
@@ -60,6 +62,9 @@ public class Mitarbeiter : MonoBehaviour
     public string getLastName(){
         return this.lastName;
     }
+    public string getNickName(){
+        return this.nickName;
+    }
     public int getAge(){
         return this.age;
     }
@@ -97,5 +102,6 @@ public class Mitarbeiter : MonoBehaviour
       return profile_picture;
     }
 
+    
    
 }
