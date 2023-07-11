@@ -36,7 +36,7 @@ public class MiniGameResultContainer : MonoBehaviour
     }
 
     public void Recycle(){
-        Destroy(this);
+         Destroy(gameObject);
     }
 
 }

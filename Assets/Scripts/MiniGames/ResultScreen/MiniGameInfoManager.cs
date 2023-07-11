@@ -32,6 +32,7 @@ public class MiniGameInfoManager : MonoBehaviour
         DisplayMessage.text = message;
         DisplayBar.setCurrentVal(0);
         DisplayBar.setTargetVal(percentage);
+        results.Recycle();
 
     }
 }
