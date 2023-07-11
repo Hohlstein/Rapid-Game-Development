@@ -1,5 +1,5 @@
 /*
-Author: Klaus Wiegmann
+Autor: Klaus Wiegmann
 */
 
 using System.Collections;

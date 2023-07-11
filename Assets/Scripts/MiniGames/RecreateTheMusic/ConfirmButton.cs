@@ -1,3 +1,7 @@
+/*
+Autor: Klaus Wiegmann
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,6 +12,7 @@ public class ConfirmButton : MonoBehaviour
     public MusicMG_PreviewManager manager;
     public Button button;
     public Spawn_Samples spawner;
+    public EndMiniGame minigame_ender;
     private List<AudioClip> user_solution;
     // Update is called once per frame
     void Update()
@@ -24,7 +29,7 @@ public class ConfirmButton : MonoBehaviour
     public void Clicked(){
         UpdateUserSolution();
         if (CheckUserAnswer(user_solution,GetSolution())){
-            Debug.Log("CORRECT!");
+            minigame_ender.EndNow(85,"Sehr gut gemacht, aber irgendwie auch nicht, bro.","SoundDesign");
         }   
         else{
             Debug.Log("INCORRECT!");

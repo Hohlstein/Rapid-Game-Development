@@ -16,9 +16,6 @@ public class PercentageBar : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Target_val == 1){
-            Debug.Log("DOING");
-        }
         RectTransform rectTransform = image.GetComponent<RectTransform>();
         rectTransform.localScale = new Vector3(Current_val/100, rectTransform.localScale.y, rectTransform.localScale.z);
         if (Current_val != Target_val){

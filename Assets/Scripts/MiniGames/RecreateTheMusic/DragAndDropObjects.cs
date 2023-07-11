@@ -1,3 +1,7 @@
+/*
+Autor: ChatGPT, Bearbeitet von Klaus Wiegmann
+*/
+
 using UnityEngine;
 using UnityEngine.EventSystems;
 
