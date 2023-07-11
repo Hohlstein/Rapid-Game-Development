@@ -123,6 +123,42 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &108918732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 108918733}
+  m_Layer: 5
+  m_Name: TEMP
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &108918733
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108918732}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 960, y: 540}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &208272884
 GameObject:
   m_ObjectHideFlags: 0
@@ -192,6 +228,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HireListItem_prefab: {fileID: 8678525324463267902, guid: 99c5f364821a9414cba033972e3994ea, type: 3}
   canvas: {fileID: 985366196}
+  infosource: {fileID: 1033534676}
+  ID_changer: {fileID: 0}
+  hireList_parent: {fileID: 108918732}
 --- !u!4 &233472163
 Transform:
   m_ObjectHideFlags: 0
@@ -825,6 +864,7 @@ MonoBehaviour:
   soundDesignSkill: 2
   stresslevel: 0
   workinghours: 0
+  profile_picture: {fileID: 0}
 --- !u!1 &532953114
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,7 +1175,6 @@ GameObject:
   - component: {fileID: 747776463}
   - component: {fileID: 747776466}
   - component: {fileID: 747776465}
-  - component: {fileID: 747776467}
   m_Layer: 5
   m_Name: Employee_4
   m_TagString: Untagged
@@ -1211,11 +1250,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 747776461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f63f0b37da8efea4599b092b572db48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8484505fe6345874e94e83c9218b2bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   notSelected: {fileID: 747776463}
   selected: {fileID: 21300000, guid: f9980556319f4564e9cbd9cda0039a79, type: 3}
+  selectedEmployeeName: {fileID: 798744675}
   defaultSprite: {fileID: 21300000, guid: 8df8223bf9c837843938db9354ded1fa, type: 3}
 --- !u!114 &747776466
 MonoBehaviour:
@@ -1246,9 +1286,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 747776467}
-          m_TargetAssemblyTypeName: ButtonClickHandler, Assembly-CSharp
-          m_MethodName: OnButtonClick
+        - m_Target: {fileID: 747776465}
+          m_TargetAssemblyTypeName: SelectEmployee, Assembly-CSharp
+          m_MethodName: DisplaySelectedName
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -1258,19 +1298,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &747776467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 747776461}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df0c11449d5092a48b3dae4f12763f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedEmployeeText: {fileID: 798744675}
 --- !u!1 &773373359
 GameObject:
   m_ObjectHideFlags: 0
@@ -2000,7 +2027,6 @@ MonoBehaviour:
   - {fileID: 894438280}
   - {fileID: 689576189}
   hiredEmployees: {fileID: 233472162}
-  workingHours: {fileID: 0}
 --- !u!1 &1033534675
 GameObject:
   m_ObjectHideFlags: 0
@@ -2199,6 +2225,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177526018}
   m_CullTransparentMesh: 1
+--- !u!1 &1270425463
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1270425464}
+  - component: {fileID: 1270425465}
+  m_Layer: 0
+  m_Name: Cold
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1270425464
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270425463}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1712421052}
+  m_Father: {fileID: 1849580591}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270425465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270425463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05e913280e7923418860d16b1a12c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventName: Cold
+  dialogueStart: {fileID: 0}
 --- !u!1 &1291222716
 GameObject:
   m_ObjectHideFlags: 0
@@ -2347,7 +2420,6 @@ GameObject:
   - component: {fileID: 1295881242}
   - component: {fileID: 1295881245}
   - component: {fileID: 1295881244}
-  - component: {fileID: 1295881246}
   m_Layer: 5
   m_Name: Employee_3
   m_TagString: Untagged
@@ -2443,9 +2515,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1295881246}
-          m_TargetAssemblyTypeName: ButtonClickHandler, Assembly-CSharp
-          m_MethodName: OnButtonClick
+        - m_Target: {fileID: 1295881245}
+          m_TargetAssemblyTypeName: SelectEmployee, Assembly-CSharp
+          m_MethodName: DisplaySelectedName
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2464,25 +2536,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1295881240}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f63f0b37da8efea4599b092b572db48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8484505fe6345874e94e83c9218b2bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   notSelected: {fileID: 1295881242}
   selected: {fileID: 21300000, guid: f9980556319f4564e9cbd9cda0039a79, type: 3}
+  selectedEmployeeName: {fileID: 798744675}
   defaultSprite: {fileID: 21300000, guid: 8df8223bf9c837843938db9354ded1fa, type: 3}
---- !u!114 &1295881246
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295881240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df0c11449d5092a48b3dae4f12763f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedEmployeeText: {fileID: 798744675}
 --- !u!1 &1346238680
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,6 +2812,7 @@ MonoBehaviour:
   soundDesignSkill: 90
   stresslevel: 0
   workinghours: 0
+  profile_picture: {fileID: 0}
 --- !u!1 &1543517432
 GameObject:
   m_ObjectHideFlags: 0
@@ -2765,7 +2826,6 @@ GameObject:
   - component: {fileID: 1543517434}
   - component: {fileID: 1543517437}
   - component: {fileID: 1543517436}
-  - component: {fileID: 1543517438}
   m_Layer: 5
   m_Name: Employee_2
   m_TagString: Untagged
@@ -2841,11 +2901,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1543517432}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f63f0b37da8efea4599b092b572db48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8484505fe6345874e94e83c9218b2bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   notSelected: {fileID: 1543517434}
   selected: {fileID: 21300000, guid: f9980556319f4564e9cbd9cda0039a79, type: 3}
+  selectedEmployeeName: {fileID: 798744675}
   defaultSprite: {fileID: 21300000, guid: 8df8223bf9c837843938db9354ded1fa, type: 3}
 --- !u!114 &1543517437
 MonoBehaviour:
@@ -2876,9 +2937,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1543517438}
-          m_TargetAssemblyTypeName: ButtonClickHandler, Assembly-CSharp
-          m_MethodName: OnButtonClick
+        - m_Target: {fileID: 1543517436}
+          m_TargetAssemblyTypeName: SelectEmployee, Assembly-CSharp
+          m_MethodName: DisplaySelectedName
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2888,19 +2949,55 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!114 &1543517438
+--- !u!1 &1712421051
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712421052}
+  - component: {fileID: 1712421053}
+  m_Layer: 0
+  m_Name: DialogueStart
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1712421052
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712421051}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1270425464}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1712421053
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543517432}
+  m_GameObject: {fileID: 1712421051}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df0c11449d5092a48b3dae4f12763f01, type: 3}
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectedEmployeeText: {fileID: 798744675}
+  text: Hey Boss. This night I ran to the toilet like 5 times, I have diarrea. Is
+    it okay to take some days off?
+  eventOption: 0
+  playerAnswer: {fileID: 0}
+  finalNode: 0
 --- !u!1 &1728694779
 GameObject:
   m_ObjectHideFlags: 0
@@ -2957,6 +3054,39 @@ MonoBehaviour:
   soundDesignSkill: 25
   stresslevel: 0
   workinghours: 0
+  profile_picture: {fileID: 0}
+--- !u!1 &1849580590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1849580591}
+  m_Layer: 0
+  m_Name: DialogueTree
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1849580591
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1849580590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1270425464}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1928941151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2970,7 +3100,6 @@ GameObject:
   - component: {fileID: 1928941153}
   - component: {fileID: 1928941156}
   - component: {fileID: 1928941157}
-  - component: {fileID: 1928941158}
   m_Layer: 5
   m_Name: Employee_1
   m_TagString: Untagged
@@ -3066,9 +3195,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-        - m_Target: {fileID: 1928941158}
-          m_TargetAssemblyTypeName: ButtonClickHandler, Assembly-CSharp
-          m_MethodName: OnButtonClick
+        - m_Target: {fileID: 1928941157}
+          m_TargetAssemblyTypeName: SelectEmployee, Assembly-CSharp
+          m_MethodName: DisplaySelectedName
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -3087,25 +3216,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1928941151}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f63f0b37da8efea4599b092b572db48b, type: 3}
+  m_Script: {fileID: 11500000, guid: 8484505fe6345874e94e83c9218b2bb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   notSelected: {fileID: 1928941153}
   selected: {fileID: 21300000, guid: f9980556319f4564e9cbd9cda0039a79, type: 3}
+  selectedEmployeeName: {fileID: 798744675}
   defaultSprite: {fileID: 21300000, guid: 8df8223bf9c837843938db9354ded1fa, type: 3}
---- !u!114 &1928941158
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1928941151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df0c11449d5092a48b3dae4f12763f01, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedEmployeeText: {fileID: 798744675}
 --- !u!1 &1984788124
 GameObject:
   m_ObjectHideFlags: 0

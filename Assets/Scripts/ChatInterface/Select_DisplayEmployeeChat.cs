@@ -6,20 +6,26 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
 
-public class SelectEmployee : MonoBehaviour{
+public class Select_DisplayEmployeeChat : MonoBehaviour{
     public Image notSelected;
     public Sprite selected;
 
-    public static SelectEmployee activeButton; // Track the active button
-
+    public static Select_DisplayEmployeeChat activeButton; // Track the active button
+    public TextMeshProUGUI selectedEmployeeName;
     public Sprite defaultSprite;
 
-    void start() {
+    void Start() {
 
     }
 
     void Update() {
+        
+    }
 
+    public void DisplaySelectedName() {
+        string buttonText = GetComponentInChildren<TextMeshProUGUI>().text;
+        Debug.Log(buttonText);
+        selectedEmployeeName.text = buttonText;
     }
 
     public void Selected() {
@@ -31,7 +37,7 @@ public class SelectEmployee : MonoBehaviour{
         notSelected.sprite = selected;
     }
 
-    public void ResetButton()
+    private void ResetButton()
     {
         notSelected.sprite = defaultSprite;
     }

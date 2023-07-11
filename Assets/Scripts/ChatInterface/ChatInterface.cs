@@ -13,7 +13,7 @@ public class ChatInterface : MonoBehaviour{
     private int numberOfPeople;
 
     private void Start() {
-        FillHireList(); //temp method development only (causes white square on scene but will be removed later)
+        FillHireList(); //temp method development only (will be removed later once HireList scene passes on information)
         UpdateTextFields();
     }
 
