@@ -41,6 +41,9 @@ public class EmployeeInfo : MonoBehaviour
         if (key == "lastname"){
             output = people[ID].getLastName().ToString();
         }
+        if (key == "nickname"){
+            output = people[ID].getNickName().ToString();
+        }
         if (key == "age"){
             output = people[ID].getAge().ToString();
         }
