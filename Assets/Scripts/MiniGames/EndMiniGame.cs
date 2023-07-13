@@ -21,4 +21,8 @@ public class EndMiniGame : MonoBehaviour
         container.SetGameType(gametype);
         SceneManager.LoadScene("MiniGameResultScreen");
     }
+
+    public void TimeOut(){
+        EndNow(0, "You ran out of time!","ANY");
+    }
 }

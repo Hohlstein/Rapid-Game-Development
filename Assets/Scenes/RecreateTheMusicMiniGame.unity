@@ -511,7 +511,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -822.39, y: -442}
+  m_AnchoredPosition: {x: -822, y: -470}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1000342137
@@ -568,8 +568,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -623,10 +623,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68de5b68fadaf8a4fb205a35cb474d86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  placement: 0
   Seconds: 120
   DisplayText: {fileID: 1000342137}
   ColorChangeThreshold: 15
-  freeze: 0
+  freeze: 1
+  minigame_ender: {fileID: 1890520275}
 --- !u!1 &1024936192
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +958,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e5e3121241e778945b7df35887a0d928, type: 3}
   - {fileID: 8300000, guid: f11628b5d79635344bf4055d36aaaf95, type: 3}
   - {fileID: 8300000, guid: a25d7e13be0c8bf4085fda688de7f25b, type: 3}
+  timer: {fileID: 1000342139}
 --- !u!4 &1575523679
 Transform:
   m_ObjectHideFlags: 0

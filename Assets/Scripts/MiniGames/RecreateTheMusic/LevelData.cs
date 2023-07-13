@@ -9,7 +9,8 @@ using UnityEngine;
 public class LevelData : MonoBehaviour
 {
     public AudioClip[] clips;
-    // Start is called before the first frame update
+    public Countdown  timer;
+    private float timer_seconds;
 
     public (Dictionary<int,(string, AudioClip)>,List<AudioClip>) GetLevel(int level){
         Dictionary<int,(string, AudioClip)> samples = new Dictionary<int,(string, AudioClip)>();
@@ -22,6 +23,7 @@ public class LevelData : MonoBehaviour
             samples.Add(3,("standard",clips[2]));
             
             solution_numbers = new List<int>() {2,0,2,1};
+            timer_seconds = 60;
         }
 
         for (int i = 0; i < solution_numbers.Count; i++)
@@ -29,7 +31,8 @@ public class LevelData : MonoBehaviour
             solution.Add(clips[solution_numbers[i]]);
         }
 
-
+        timer.SetRemainingSeconds(timer_seconds);
+        timer.Unfreeze();
         return (samples,solution);
     }
 }
