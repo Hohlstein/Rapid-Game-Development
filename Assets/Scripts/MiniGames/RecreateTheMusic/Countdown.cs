@@ -13,21 +13,21 @@ public class Countdown : MonoBehaviour
 {
     public enum PlacementOptions
     {
-        BottomLeft,
         TopLeft,
         TopRight,
+        BottomLeft,
         BottomRight
     }
 
     public PlacementOptions placement;
     public float Seconds;
-    public TextMeshProUGUI DisplayText;
+    private TextMeshProUGUI DisplayText;
     public int ColorChangeThreshold;
     public bool freeze;
     public EndMiniGame minigame_ender;
     
 
-
+    private RectTransform object_transform;
     private Color startColor;
     private Color thresholdColor;
     private int DisplaySeconds;
@@ -36,9 +36,11 @@ public class Countdown : MonoBehaviour
     private float StartClockTime;
 
     void Start(){
+        DisplayText = GetComponent<TextMeshProUGUI>();
         StartClockTime = Time.time;
         startColor = DisplayText.color;
         thresholdColor = new Color32(255,0,0,255);
+        object_transform = (RectTransform)gameObject.transform;
     }
 
 
@@ -82,23 +84,23 @@ public class Countdown : MonoBehaviour
 
     private void GoToPlacementPosition()
     {
-        Vector3 newPosition = transform.position;
+        Vector3 newPosition = DisplayText.transform.localPosition;
         if (placement == PlacementOptions.BottomLeft || placement == PlacementOptions.BottomRight)
         {
-            newPosition.y = 70;
+            newPosition.y = (-1080)/2 + 70;
         }
         if (placement == PlacementOptions.TopLeft || placement == PlacementOptions.TopRight)
         {
-            newPosition.y = 1080 - 70;
+            newPosition.y = (1080/2) - 70;
         }
         if (placement == PlacementOptions.BottomLeft || placement == PlacementOptions.TopLeft)
         {
-            newPosition.x = 138;
+            newPosition.x =(-1920/2) + 138;
         }
         if (placement == PlacementOptions.BottomRight || placement == PlacementOptions.TopRight)
         {
-            newPosition.x = 1920 - 138;
+            newPosition.x = (1920/2) - 138;
         }
-        transform.position = newPosition;
+        DisplayText.transform.localPosition = newPosition;
     }
 }
