@@ -23,7 +23,7 @@ public class changeDisplayEmployeeID : MonoBehaviour
     public EmployeeInfo infosource;
     public Checkbox checkbox;
     public SmoothMove textParent;
-    public Image avatar;
+    public AvatarManager avatar;
 
     public PercentageBar CodingSkill;
     public PercentageBar GameDesignSkill;
@@ -103,7 +103,7 @@ public class changeDisplayEmployeeID : MonoBehaviour
         AgeText.text = infosource.getValueString(ID,"Age") + " years old";
         RelationshipstatusText.text = infosource.getValueString(ID,"relationshipStatus");
         BioText.text = infosource.getValueString(ID,"Bio");
-        avatar.sprite = infosource.GetAvatar(ID);
+        avatar.SetEmployee(infosource.getMitarbeiterObject(ID));
 
         CodingSkill.setTargetVal(infosource.getValueFloat(ID,"codingskill"));
         GraphicDesignSkill.setTargetVal(infosource.getValueFloat(ID,"graphicdesignskill"));
