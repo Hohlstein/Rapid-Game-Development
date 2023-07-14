@@ -13,6 +13,12 @@ public class PlayerAnswer : MonoBehaviour{
     private DialogueNode nextNode;
         [SerializeField]
     private bool finalNode;
+        [SerializeField]
+    private bool positive;
+        [SerializeField]
+    private bool neutral;
+        [SerializeField]
+    private bool negative;
 
     void Start() {
         if(finalNode == true) {

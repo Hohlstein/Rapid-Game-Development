@@ -11,7 +11,7 @@ public class DialogueTreeRoot : MonoBehaviour
     private String eventName;
 
     [SerializeField]
-    private DialogueNode dialogueStart;
+    private List<DialogueNode> dialogueStart;
 
     void Start()
     {
@@ -28,7 +28,7 @@ public class DialogueTreeRoot : MonoBehaviour
         return eventName;
     }
 
-    public DialogueNode getDialogueStart() {
+    public List<DialogueNode> getDialogueStart() {
         return dialogueStart;
     }
 }
