@@ -1,21 +1,31 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum DifficultyLevel
+{
+    Easy,
+    Medium,
+    Hard
+}
+
 public class Difficulty : MonoBehaviour
 {
-    public GameObject[] difficultyImages; // Array von Schwierigkeitsbildern, zwischen denen gewechselt wird
-    public GameObject leftArrow; // Game-Objekt des linken Pfeils
-    public GameObject rightArrow; // Game-Objekt des rechten Pfeils
+    public GameObject[] difficultyImages;
+    public GameObject leftArrow;
+    public GameObject rightArrow;
+    public Button okButton;
+    public static string selectedDiffi = "SelectedDifficulty";
 
-    private int currentIndex = 0; // Aktueller Index des angezeigten Bildes
+    private int currentIndex = 0;
+    private DifficultyLevel selectedDifficulty;
 
     private void Start()
     {
         UpdateDisplayedImage();
         UpdateArrowVisibility();
+        okButton.onClick.AddListener(OnOkButtonClicked);
     }
 
-    // Diese Methode zeigt das entsprechende Schwierigkeitsbild an und versteckt die anderen
     private void UpdateDisplayedImage()
     {
         for (int i = 0; i < difficultyImages.Length; i++)
@@ -27,21 +37,12 @@ public class Difficulty : MonoBehaviour
         }
     }
 
-    // Diese Methode zeigt oder versteckt den linken und rechten Pfeil basierend auf der aktuellen Schwierigkeit
     private void UpdateArrowVisibility()
     {
-        if (currentIndex == 0)
-            leftArrow.SetActive(false); // Verstecke den linken Pfeil für die einfachste Schwierigkeit
-        else
-            leftArrow.SetActive(true);
-
-        if (currentIndex == difficultyImages.Length - 1)
-            rightArrow.SetActive(false); // Verstecke den rechten Pfeil für die höchste Schwierigkeit
-        else
-            rightArrow.SetActive(true);
+        leftArrow.SetActive(currentIndex != 0);
+        rightArrow.SetActive(currentIndex != difficultyImages.Length - 1);
     }
 
-    // Methode für den linken Pfeil-Button
     public void LeftArrowButton()
     {
         currentIndex--;
@@ -51,7 +52,6 @@ public class Difficulty : MonoBehaviour
         UpdateArrowVisibility();
     }
 
-    // Methode für den rechten Pfeil-Button
     public void RightArrowButton()
     {
         currentIndex++;
@@ -59,5 +59,12 @@ public class Difficulty : MonoBehaviour
             currentIndex = difficultyImages.Length - 1;
         UpdateDisplayedImage();
         UpdateArrowVisibility();
+    }
+
+    public void OnOkButtonClicked()
+    {
+        selectedDifficulty = (DifficultyLevel)currentIndex;
+        PlayerPrefs.SetString("SelectedDifficulty", selectedDifficulty.ToString());
+        Debug.Log("Selected Difficulty: " + selectedDifficulty);
     }
 }
