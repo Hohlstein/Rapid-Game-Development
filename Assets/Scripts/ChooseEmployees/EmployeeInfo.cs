@@ -113,4 +113,10 @@ public class EmployeeInfo : MonoBehaviour
     public Sprite GetAvatar(int ID){
         return people[ID].GetAvatar();
     }
+
+    public Mitarbeiter getMitarbeiterObject(int ID){
+        return people[ID];
+    }
+    
+
 }
