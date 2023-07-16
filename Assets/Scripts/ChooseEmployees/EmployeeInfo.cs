@@ -113,6 +113,17 @@ public class EmployeeInfo : MonoBehaviour
     public Mitarbeiter getMitarbeiterObject(int ID){
         return people[ID];
     }
-    
+    public void SetValueInteger(int ID, string key, int value)
+    {
+        if (people.ContainsKey(ID))
+        {
+            Mitarbeiter employee = people[ID];
+
+            if (key == "workinghours")
+            {
+                employee.setWorkinghours(value);
+            }
+        }
+    }
 
 }
