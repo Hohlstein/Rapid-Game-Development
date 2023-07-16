@@ -30,7 +30,7 @@ public class Countdown : MonoBehaviour
     private RectTransform object_transform;
     private Color startColor;
     private Color thresholdColor;
-    private int DisplaySeconds;
+    public int DisplaySeconds;
     private string minutes;
     private string seconds;
     private float StartClockTime;

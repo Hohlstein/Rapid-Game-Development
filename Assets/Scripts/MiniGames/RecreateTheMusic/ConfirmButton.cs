@@ -13,6 +13,7 @@ public class ConfirmButton : MonoBehaviour
     public Button button;
     public Spawn_Samples spawner;
     public EndMiniGame minigame_ender;
+    public Countdown timer;
     private List<AudioClip> user_solution;
     // Update is called once per frame
     void Update()
@@ -29,7 +30,9 @@ public class ConfirmButton : MonoBehaviour
     public void Clicked(){
         UpdateUserSolution();
         if (CheckUserAnswer(user_solution,GetSolution())){
-            minigame_ender.EndNow(85,"Sehr gut gemacht, aber irgendwie auch nicht, bro.","SoundDesign");
+            int result_score = Mathf.RoundToInt((timer.DisplaySeconds/timer.Seconds)*100);
+            string result_message = "No message here.";
+            minigame_ender.EndNow(result_score,result_message,"SoundDesign");
         }   
         else{
             Debug.Log("INCORRECT!");

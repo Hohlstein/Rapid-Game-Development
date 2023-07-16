@@ -1294,6 +1294,7 @@ MonoBehaviour:
   button: {fileID: 1890520271}
   spawner: {fileID: 110068085}
   minigame_ender: {fileID: 1890520275}
+  timer: {fileID: 1600032723}
 --- !u!114 &1890520275
 MonoBehaviour:
   m_ObjectHideFlags: 0
