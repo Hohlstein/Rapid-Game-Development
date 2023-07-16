@@ -67,7 +67,7 @@ public class Arbeitsteiling : MonoBehaviour
             var w = worker.GetComponent<Mitarbeiter>();
             int id = w.getID();
 
-            if (infoSource.HiredEmployees.isHired(id))
+           
             {
                 map.Add(id, w.getFirstName() + " " + w.getLastName()[0] + ".");
                 ID = id;
@@ -245,4 +245,6 @@ public class Arbeitsteiling : MonoBehaviour
         float sum = coding + gameDesign + graphic + sound;
         SumText.text = sum.ToString();
     }
+
+
 }

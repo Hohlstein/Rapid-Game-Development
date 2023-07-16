@@ -713,19 +713,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 215673038}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 921766603}
-        m_TargetAssemblyTypeName: Arbeitsteiling, Assembly-CSharp
-        m_MethodName: ChangeID
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &215673038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,10 +761,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 215673035}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acbaa5cfdb6886c4f8eddb61e3b366fe, type: 3}
+  m_Script: {fileID: 11500000, guid: c69d8292842d64a4d82228696340584a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 2
+  ID: 0
 --- !u!1 &229393080
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,19 +849,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 229393083}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 921766603}
-        m_TargetAssemblyTypeName: Arbeitsteiling, Assembly-CSharp
-        m_MethodName: ChangeID
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &229393083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -921,7 +897,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 229393080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acbaa5cfdb6886c4f8eddb61e3b366fe, type: 3}
+  m_Script: {fileID: 11500000, guid: c69d8292842d64a4d82228696340584a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ID: 0
@@ -1190,19 +1166,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 309573408}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 921766603}
-        m_TargetAssemblyTypeName: Arbeitsteiling, Assembly-CSharp
-        m_MethodName: ChangeID
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &309573408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1250,10 +1214,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 309573405}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acbaa5cfdb6886c4f8eddb61e3b366fe, type: 3}
+  m_Script: {fileID: 11500000, guid: c69d8292842d64a4d82228696340584a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 1
+  ID: 0
 --- !u!1 &314858532
 GameObject:
   m_ObjectHideFlags: 0
@@ -3729,7 +3693,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 921766598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baf513a73203bf24fae3b6c0ac685f45, type: 3}
+  m_Script: {fileID: 11500000, guid: 21e861e128b0e6340ad3d643fac54baa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   NameText: {fileID: 1466711612}
@@ -3745,11 +3709,7 @@ MonoBehaviour:
   GameDesignSlider: {fileID: 314858534}
   GraphicDesignSlider: {fileID: 1933650546}
   SoundDesignSlider: {fileID: 963414106}
-  textAnimationY: 600
-  firstButton: {fileID: 0}
-  secondButton: {fileID: 0}
-  thirdButton: {fileID: 0}
-  fourthButton: {fileID: 0}
+  textAnimationY: 0
   notSelected: {fileID: 21300000, guid: 63b1bfd117a2ff04ea2715a53949b966, type: 3}
   selected: {fileID: 21300000, guid: 6e5e6befa61b43d43bfae85c46049d4d, type: 3}
 --- !u!1 &956629920
@@ -6056,19 +6016,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1923958720}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 921766603}
-        m_TargetAssemblyTypeName: Arbeitsteiling, Assembly-CSharp
-        m_MethodName: ChangeID
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1923958720
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6116,10 +6064,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1923958717}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acbaa5cfdb6886c4f8eddb61e3b366fe, type: 3}
+  m_Script: {fileID: 11500000, guid: c69d8292842d64a4d82228696340584a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ID: 3
+  ID: 0
 --- !u!1 &1927937077
 GameObject:
   m_ObjectHideFlags: 0
