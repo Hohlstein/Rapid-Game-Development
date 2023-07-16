@@ -235,8 +235,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     chooseOptionbar.text = answerOptions[answerIndex_4].getText();
                 }
             }
-        }
-        
+        }  
     }
  
     public void AnswerOptionsUp() {
