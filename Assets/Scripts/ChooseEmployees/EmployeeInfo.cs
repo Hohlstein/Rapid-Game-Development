@@ -94,6 +94,10 @@ public class EmployeeInfo : MonoBehaviour
         return output;
     }
 
+    public int getWorkingHours(int ID) {
+        return people[ID].getWorkingHours();
+    }
+
     private void ConvertGameObjectsToEmployees(){
         employees_list = new Mitarbeiter[employeeGameObjects.Length];
         for (int i = 0; i < employeeGameObjects.Length; i++)
