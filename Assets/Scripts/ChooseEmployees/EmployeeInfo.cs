@@ -94,6 +94,10 @@ public class EmployeeInfo : MonoBehaviour
         return output;
     }
 
+    public int getWorkingHours(int ID) {
+        return people[ID].getWorkingHours();
+    }
+
     private void ConvertGameObjectsToEmployees(){
         employees_list = new Mitarbeiter[employeeGameObjects.Length];
         for (int i = 0; i < employeeGameObjects.Length; i++)
@@ -109,4 +113,21 @@ public class EmployeeInfo : MonoBehaviour
     public Sprite GetAvatar(int ID){
         return people[ID].GetAvatar();
     }
+
+    public Mitarbeiter getMitarbeiterObject(int ID){
+        return people[ID];
+    }
+    public void SetValueInteger(int ID, string key, int value)
+    {
+        if (people.ContainsKey(ID))
+        {
+            Mitarbeiter employee = people[ID];
+
+            if (key == "workinghours")
+            {
+                employee.setWorkinghours(value);
+            }
+        }
+    }
+
 }

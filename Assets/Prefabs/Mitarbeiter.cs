@@ -93,9 +93,15 @@ public class Mitarbeiter : MonoBehaviour
         return this.workinghours;
     }
 
-    public int getStressed(int stress){
+    public int getStressed(int stress)
+    {
         this.stresslevel += stress;
         return this.stresslevel;
+    }
+
+    public void setWorkinghours(int value)
+    {
+        workinghours = value;
     }
 
     public Sprite GetAvatar(){
