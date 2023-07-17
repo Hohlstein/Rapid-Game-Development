@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
@@ -7,7 +8,7 @@ using TMPro;
 public class Visualisation : MonoBehaviour
 {
 
-    public EmployeeInfo infoSource;
+    
     private List<Mitarbeiter> Hired_Employee_Objects;
     
     public TMP_Text CodingValue;
@@ -22,25 +23,21 @@ public class Visualisation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float coding = FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f);
-        float gamedesign = FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f);
-        float graphicdesign = FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f);
-        float sounddesign = FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"));
+        float coding = FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/200;
+        float gamedesign = FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/200;
+        float graphicdesign = FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/200;
+        float sounddesign = FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/200;
         
-        /*CodingSkill.setCurrentVal(4000);
-        GameDesignSkill.setCurrentVal(4000);
-        GraphicDesignSkill.setCurrentVal(4000);
-        SoundDesignSkill.setCurrentVal(4000);*/
 
-        CodingSkill.setTargetVal(coding);
-        GameDesignSkill.setTargetVal(gamedesign);
-        GraphicDesignSkill.setTargetVal(graphicdesign);
-        SoundDesignSkill.setTargetVal(sounddesign);
+        CodingSkill.setTargetVal((float)Math.Round(coding));
+        GameDesignSkill.setTargetVal((float)Math.Round(gamedesign));
+        GraphicDesignSkill.setTargetVal((float)Math.Round(graphicdesign));
+        SoundDesignSkill.setTargetVal((float)Math.Round(sounddesign));
 
-        CodingValue.text = (coding*4000/100).ToString() + "%";
-        GameDesignValue.text = (gamedesign*4000/100).ToString() + "%";
-        GraphicDesignValue.text = (graphicdesign*4000/100).ToString() + "%";
-        SoundDesignValue.text = (sounddesign*4000/100).ToString() + "%";
+        CodingValue.text = (Math.Round(coding)).ToString() + "%";
+        GameDesignValue.text = (Math.Round(gamedesign)).ToString() + "%";
+        GraphicDesignValue.text = (Math.Round(graphicdesign)).ToString() + "%";
+        SoundDesignValue.text = (Math.Round(sounddesign)).ToString() + "%";
     
     }
 
@@ -81,7 +78,7 @@ public class Visualisation : MonoBehaviour
     }
 
     float CalculateSoundDesignTime() {
-        float saver = 0;
+        float saver = 1f;
         GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
         FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
         Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
