@@ -150,11 +150,18 @@ public class Arbeitsteiling : MonoBehaviour
         numberOfPeople = infoSource.getNumberOfPeople();
         if (newID >= 0 && newID < numberOfPeople)
         {
+            // Vor dem Wechseln des Mitarbeiters die Slider auf 0 setzen
+            CodingSlider.value = 0;
+            GameDesignSlider.value = 0;
+            GraphicDesignSlider.value = 0;
+            SoundDesignSlider.value = 0;
+
             ID = newID;
         }
         animateUIElements();
         UpdateDisplayedValues();
     }
+
 
     private void animateUIElements()
     {
