@@ -7,9 +7,12 @@ public class FinalizeEmployeeList : MonoBehaviour
     private HiredEmployees HireInfo;
     private List<Mitarbeiter> Hired_Employee_Objects;
     // Start is called before the first frame update
+    void Start(){
+        DontDestroyOnLoad(gameObject);
+    }
 
     public void FinalizeEmployees(){
-        DontDestroyOnLoad(gameObject);
+        
         HireInfo = GameObject.FindObjectOfType<HiredEmployees>();
         Dictionary<int,bool> BoolList = HireInfo.getHireList();
         GameObject[] employeeGameObjects = GameObject.FindGameObjectsWithTag("mitarbeiter"); 
@@ -22,6 +25,7 @@ public class FinalizeEmployeeList : MonoBehaviour
             }
             else{
                 Hired_Employee_Objects.Add(current_employee);
+                Debug.Log("Added : "+ current_employee.getFirstName());
             }
         }
     }

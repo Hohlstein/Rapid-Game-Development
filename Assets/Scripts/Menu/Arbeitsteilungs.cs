@@ -61,13 +61,12 @@ public class Arbeitsteiling : MonoBehaviour
 
         var workers = GameObject.FindGameObjectsWithTag("mitarbeiter");
         Dictionary<int, string> map = new Dictionary<int, string>();
-
         foreach (var worker in workers)
         {
             var w = worker.GetComponent<Mitarbeiter>();
             int id = w.getID();
 
-           
+            if (!map.ContainsKey(id)) // Check if the key already exists
             {
                 map.Add(id, w.getFirstName() + " " + w.getLastName()[0] + ".");
                 ID = id;
