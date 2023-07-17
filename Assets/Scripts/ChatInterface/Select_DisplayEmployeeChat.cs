@@ -10,6 +10,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public EmployeeInfo employeeInfo;
     public HiredEmployees hireList;
 
+    public GameObject ok_button;
+    public GameObject tutorialText;
+
     public Image selectedObject;
     public Sprite selectedSprite;
     public Sprite defaultSprite;
@@ -22,6 +25,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     
     private bool answeredEmployee_1;
     public GameObject chatHolder_1;
+    public ScrollRect scrollRect_1;
     public GameObject chatScrollRect_1;
     private int dialogueIndex_1; 
     private int answerIndex_1;
@@ -30,6 +34,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
 
     public GameObject chatScrollRect_2;
     public GameObject chatHolder_2;
+    public ScrollRect scrollRect_2;
     private bool answeredEmployee_2;
     private int dialogueIndex_2;
     private int answerIndex_2;
@@ -38,6 +43,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
 
     public GameObject chatScrollRect_3;
     public GameObject chatHolder_3;
+    public ScrollRect scrollRect_3;
     private bool answeredEmployee_3;
     private int dialogueIndex_3;
     private int answerIndex_3;
@@ -45,6 +51,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
 
     public GameObject chatScrollRect_4;
     public GameObject chatHolder_4;
+    public ScrollRect scrollRect_4;
     private bool answeredEmployee_4;
     private int dialogueIndex_4;
     private int answerIndex_4;
@@ -56,6 +63,11 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public TextMeshProUGUI chooseOptionbar;
 
     void Start() {
+        scrollRect_1.verticalNormalizedPosition = 1f;
+        scrollRect_2.verticalNormalizedPosition = 1f;
+        scrollRect_3.verticalNormalizedPosition = 1f;
+        scrollRect_4.verticalNormalizedPosition = 1f;
+        ok_button.SetActive(false);
         chatScrollRect_1.SetActive(false);
         chatScrollRect_2.SetActive(false);
         chatScrollRect_3.SetActive(false);
@@ -70,9 +82,22 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     }
 
     void Update() {
-        
+        checkIfAllAnswered();
     }
 
+    private void checkIfAllAnswered() {
+        ok_button.SetActive(false);
+        if(answeredEmployee_1 == true){
+            if(answeredEmployee_2 == true) {
+                if(answeredEmployee_3 == true) {
+                    if(answeredEmployee_4 == true) {
+                        tutorialText.SetActive(false);
+                        ok_button.SetActive(true);
+                    }
+                }
+            }
+        }
+    }
     public void DisplaySelectedName(GameObject clickedObject) {
         Transform findName;
         if(clickedObject.name == "Employee_1") {

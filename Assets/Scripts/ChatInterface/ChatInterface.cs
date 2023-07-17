@@ -13,6 +13,8 @@ public class ChatInterface : MonoBehaviour{
     private int numberOfPeople;
 
     private void Start() {
+        //Decommented once connected to other scenes 
+        //HiredEmployees = GameObject.Find("INFO_HireList"); 
         FillHireList(); //temp method development only (will be removed later once HireList scene passes on information)
         UpdateTextFields();
     }
