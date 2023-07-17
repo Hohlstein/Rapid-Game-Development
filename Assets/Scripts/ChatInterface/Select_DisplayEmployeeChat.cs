@@ -43,6 +43,10 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     private int answerIndex_2;
     private int answeredAmount_2;
 
+    public AvatarManager avatar1;
+    public AvatarManager avatar2;
+    public AvatarManager avatar3;
+    public AvatarManager avatar4;
 
     public GameObject chatScrollRect_3;
     public GameObject chatHolder_3;
@@ -72,7 +76,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
 
         UpdateTextFields();
-        UpdateAvatarFields();
         scrollRect_1.verticalNormalizedPosition = 1f;
         scrollRect_2.verticalNormalizedPosition = 1f;
         scrollRect_3.verticalNormalizedPosition = 1f;
@@ -93,31 +96,20 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         answeredEmployee_3 = false;
         answeredEmployee_4 = false;
         totalHours.GetComponentInChildren<TextMeshProUGUI>().text = "";
+        
     }
 
     private void UpdateAvatarFields() {
-        GameObject obj;
-        AvatarManager avatar;
-        obj = GameObject.Find("employee_1_avatar");
-        avatar = obj.GetComponent<AvatarManager>();
-        avatar.SetEmployee(Hired_Employee_Objects[0]);
-
-        obj = GameObject.Find("employee_2_avatar");
-        avatar = obj.GetComponent<AvatarManager>();
-        avatar.SetEmployee(Hired_Employee_Objects[1]);
-
-        obj = GameObject.Find("employee_3_avatar");
-        avatar = obj.GetComponent<AvatarManager>();
-        avatar.SetEmployee(Hired_Employee_Objects[2]);
-
-        obj = GameObject.Find("employee_4_avatar");
-        avatar = obj.GetComponent<AvatarManager>();
-        avatar.SetEmployee(Hired_Employee_Objects[3]);
+        avatar1.SetEmployee(Hired_Employee_Objects[0]);
+        avatar2.SetEmployee(Hired_Employee_Objects[1]);
+        avatar3.SetEmployee(Hired_Employee_Objects[2]);
+        avatar4.SetEmployee(Hired_Employee_Objects[3]);
     }
     
     void Update() {
         checkIfAllAnswered();
         updateTotalHoursField();
+        UpdateAvatarFields();
     }
 
     //Updates the totalhours shown for the selected employee

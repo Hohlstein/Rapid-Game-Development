@@ -15,11 +15,15 @@ public class AvatarManager : MonoBehaviour
     public float size;
 
     private Sprite DisplaySprite;
-    private Image image;
+    public Image image;
 
     void Start(){
-        image = GetComponent<Image>();
+        Image temp_image = GetComponent<Image>();
+        if (temp_image != null){
+            image = temp_image;
+        }
         DisplaySprite = DefaultSprite;
+        UpdateSprite();
     }
 
     void Update(){
@@ -29,12 +33,14 @@ public class AvatarManager : MonoBehaviour
     }
 
     public void SetEmployee(Mitarbeiter employee){
-        DisplaySprite = employee.GetAvatar();
+        DisplaySprite = employee.GetAvatar();   
         UpdateSprite();
     }
 
     private void UpdateSprite(){
-        image.sprite = DisplaySprite;
+        if (DisplaySprite != null){
+            image.sprite = DisplaySprite;
+        }
     }
 
     public void GoTo(float x, float y){
