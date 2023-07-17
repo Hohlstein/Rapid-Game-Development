@@ -59,15 +59,17 @@ public class Arbeitsteiling : MonoBehaviour
 
         buttons = GetComponentsInChildren<Button>();
 
-        var workers = GameObject.FindGameObjectsWithTag("mitarbeiter");
-        Dictionary<int, string> map = new Dictionary<int, string>();
+        GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
+        FinalizeEmployeeList FinalizedEmployeeHireList = obj.GetComponent<FinalizeEmployeeList>();
+        List<Mitarbeiter> workers = FinalizedEmployeeHireList.GetEmployeeList();
 
+        Dictionary<int, string> map = new Dictionary<int, string>();
         foreach (var worker in workers)
         {
             var w = worker.GetComponent<Mitarbeiter>();
             int id = w.getID();
 
-           
+            if (!map.ContainsKey(id)) // Check if the key already exists
             {
                 map.Add(id, w.getFirstName() + " " + w.getLastName()[0] + ".");
                 ID = id;
@@ -147,14 +149,21 @@ public class Arbeitsteiling : MonoBehaviour
 
     public void ChangeID(int newID)
     {
-        numberOfPeople = infoSource.getNumberOfPeople();
+        numberOfPeople = 8;
         if (newID >= 0 && newID < numberOfPeople)
         {
+            // Vor dem Wechseln des Mitarbeiters die Slider auf 0 setzen
+            CodingSlider.value = 0;
+            GameDesignSlider.value = 0;
+            GraphicDesignSlider.value = 0;
+            SoundDesignSlider.value = 0;
+
             ID = newID;
         }
         animateUIElements();
         UpdateDisplayedValues();
     }
+
 
     private void animateUIElements()
     {
@@ -167,15 +176,23 @@ public class Arbeitsteiling : MonoBehaviour
 
     private void UpdateDisplayedValues()
     {
+        GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
+        FinalizeEmployeeList FinalizedEmployeeHireList = obj.GetComponent<FinalizeEmployeeList>();
+        Mitarbeiter current_employee = FinalizedEmployeeHireList.GetEmployee(ID);
+        
+        
+        NameText.text = current_employee.getFirstName() + " " + current_employee.getLastName()[0] + ".";
+        
+       
 
-        NameText.text = infoSource.getValueString(ID, "firstName") + " " + infoSource.getValueString(ID, "lastName")[0] + ".";
+        FindObjectOfType<AvatarManager>().SetEmployee(current_employee);
+        
+       
 
-        avatar.sprite = infoSource.GetAvatar(ID);
-
-        CodingSkill.setTargetVal(infoSource.getValueFloat(ID, "codingskill"));
-        GraphicDesignSkill.setTargetVal(infoSource.getValueFloat(ID, "graphicdesignskill"));
-        GameDesignSkill.setTargetVal(infoSource.getValueFloat(ID, "gamedesignskill"));
-        SoundDesignSkill.setTargetVal(infoSource.getValueFloat(ID, "sounddesignskill"));
+        CodingSkill.setTargetVal(current_employee.getCodingSkill());
+        GraphicDesignSkill.setTargetVal(current_employee.getGraphicDesignSkill());
+        GameDesignSkill.setTargetVal(current_employee.getGameDesignSkill());
+        SoundDesignSkill.setTargetVal(current_employee.getSoundDesignSkill());
 
     }
 
@@ -186,6 +203,10 @@ public class Arbeitsteiling : MonoBehaviour
 
     public void SetSumOfSliderValues()
     {
+        GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
+        FinalizeEmployeeList FinalizedEmployeeHireList = obj.GetComponent<FinalizeEmployeeList>();
+        Mitarbeiter current_employee = FinalizedEmployeeHireList.GetEmployee(ID);
+
         float coding = CodingSlider.value;
         float gameDesign = GameDesignSlider.value;
         float graphic = GraphicDesignSlider.value;
@@ -200,10 +221,12 @@ public class Arbeitsteiling : MonoBehaviour
         if (sound == _2Value)
             sound = 2.0f;
 
-
-
         float sum = coding + gameDesign + graphic + sound;
-        infoSource.SetValueInteger(ID, "workinghours", (int)sum);
+        current_employee.setWorkinghours((int)sum);
+        current_employee.SetgraphicDesignHours((int)graphic);
+        current_employee.SetcodingHours((int)coding);
+        current_employee.SetgameDesignHours((int)gameDesign);
+        current_employee.SetsoundDesignHours((int)sound);
     }
 
     private void SnapSliderValues(Slider slider, float[] snapValues)

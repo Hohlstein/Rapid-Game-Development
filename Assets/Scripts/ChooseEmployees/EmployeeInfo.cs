@@ -20,13 +20,12 @@ public class EmployeeInfo : MonoBehaviour
 
     public void Start(){
         employeeGameObjects = GameObject.FindGameObjectsWithTag("mitarbeiter"); 
-        Debug.Log("Found "+employeeGameObjects.Length.ToString()+ " employees!");
         ConvertGameObjectsToEmployees(); 
         for (int i = 0; i < employees_list.Length; i++)
         {
+            employees_list[i].ResetAllHours();
             int current_id = employees_list[i].getID();
             people[current_id] = employees_list[i];
-            Debug.Log("Added "+employees_list[i].ToString());
         }
         HiredEmployees.setListLength(employees_list.Length);
         HiredEmployees.resetList();
@@ -127,7 +126,25 @@ public class EmployeeInfo : MonoBehaviour
             {
                 employee.setWorkinghours(value);
             }
+            if (key == "graphicDesignHours")
+            {
+                employee.SetgraphicDesignHours(value);
+            }
+            if (key == "codingHours")
+            {
+                employee.SetcodingHours(value);
+            }
+            if (key == "gameDesignHours")
+            {
+                employee.SetgameDesignHours(value);
+            }
+            if (key == "sounddesignskill")
+            {
+                employee.SetsoundDesignHours(value);
+            }
+
         }
+
     }
 
 }
