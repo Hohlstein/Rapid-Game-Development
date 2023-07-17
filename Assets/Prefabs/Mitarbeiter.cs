@@ -48,10 +48,7 @@ public class Mitarbeiter : MonoBehaviour
     void Start()
     
     {        
-        this.stresslevel = 0;
-        this.workinghours = 0;
-        DontDestroyOnLoad(this.gameObject);
-        
+        DontDestroyOnLoad(this.gameObject);  
     }
 
     // Update is called once per frame

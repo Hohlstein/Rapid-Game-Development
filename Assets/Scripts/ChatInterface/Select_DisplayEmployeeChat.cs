@@ -77,6 +77,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         scrollRect_2.verticalNormalizedPosition = 1f;
         scrollRect_3.verticalNormalizedPosition = 1f;
         scrollRect_4.verticalNormalizedPosition = 1f;
+
+        selectedEmployeeName.enabled = false;
+        totalHours.SetActive(false);
         ok_button.SetActive(false);
         chatScrollRect_1.SetActive(false);
         chatScrollRect_2.SetActive(false);
@@ -84,6 +87,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         chatScrollRect_4.SetActive(false);
 
         chooseOptionbarParent.SetActive(false);
+
         answeredEmployee_1 = false;
         answeredEmployee_2 = false;
         answeredEmployee_3 = false;
@@ -119,16 +123,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Updates the totalhours shown for the selected employee
     private void updateTotalHoursField(){
         if(selectedObject.name == "Employee_1"){
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text = Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
         }
         if(selectedObject.name == "Employee_2"){
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text = Hired_Employee_Objects[1].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[1].getWorkingHours()+"";
         }
         if(selectedObject.name == "Employee_3"){
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text = Hired_Employee_Objects[2].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[2].getWorkingHours()+"";
         }
         if(selectedObject.name == "Employee_4"){
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text = Hired_Employee_Objects[3].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[3].getWorkingHours()+"";
         }
     }
 
@@ -159,34 +163,36 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     }
     //Checks which employee has been clicked anmd displays the name on top of the chat, also activates the corresponding chat panel
     public void DisplaySelectedName(GameObject clickedObject) {
+        totalHours.SetActive(true);
         Transform findName;
+        selectedEmployeeName.enabled = true;
         if(clickedObject.name == "Employee_1") {
             findName = clickedObject.transform.Find("employee_1_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text = Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
         }
         if(clickedObject.name == "Employee_2") {
             findName = clickedObject.transform.Find("employee_2_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text = Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
         }
         if(clickedObject.name == "Employee_3") {
             findName = clickedObject.transform.Find("employee_3_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text = Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
         }
         if(clickedObject.name == "Employee_4") {
             findName = clickedObject.transform.Find("employee_4_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text = Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
         }
         
     }
