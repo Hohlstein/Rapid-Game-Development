@@ -70,7 +70,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
         FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
         Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
-        Debug.Log("Anzahl Objekte in Liste" +  Hired_Employee_Objects.Count);
 
         UpdateTextFields();
         scrollRect_1.verticalNormalizedPosition = 1f;
@@ -380,10 +379,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         answeredEmployee_1 = true;
                         chooseOptionbar.text = "";
                         selectedObject.sprite = answeredSelectedSprite;
-                        adjustEmployeeValues();
+                        adjustEmployeeValuesAfterPlayerResponse();
                     }
                 }else{
-                    Debug.Log("Text der gesendet wird: "+ chooseOptionbar.text);
                     GameObject sentText_1 = Instantiate(sentPrefab, chatHolder_1.transform);
                     for (int i = 0; i < answeredAmount_1; i++){
                         sentText_1.transform.position = sentText_1.transform.position- new Vector3(0f,450f);
@@ -396,6 +394,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         answeredEmployee_1 = true;
                         chooseOptionbar.text = ""; 
                         selectedObject.sprite = answeredSelectedSprite;
+                        adjustEmployeeValuesAfterPlayerResponse();
                     }
                 }  
             }
@@ -416,9 +415,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         answeredEmployee_2 = true;
                         chooseOptionbar.text = "";
                         selectedObject.sprite = answeredSelectedSprite;
+                        adjustEmployeeValuesAfterPlayerResponse();
                     }
                 }else{
-                    Debug.Log("Text der gesendet wird: "+ chooseOptionbar.text);
                     GameObject sentText_2 = Instantiate(sentPrefab, chatHolder_2.transform);
                     for (int i = 0; i < answeredAmount_2; i++){
                         sentText_2.transform.position = sentText_2.transform.position- new Vector3(0f,450f);
@@ -431,6 +430,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         answeredEmployee_2 = true;
                         chooseOptionbar.text = "";
                         selectedObject.sprite = answeredSelectedSprite;
+                        adjustEmployeeValuesAfterPlayerResponse();
                     }
                 }  
             }
@@ -450,9 +450,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         answeredEmployee_3 = true;
                         chooseOptionbar.text = "";
                         selectedObject.sprite = answeredSelectedSprite;
+                        adjustEmployeeValuesAfterPlayerResponse();
                     }
                 }else{
-                    Debug.Log("Text der gesendet wird: "+ chooseOptionbar.text);
                     GameObject sentText_3 = Instantiate(sentPrefab, chatHolder_3.transform);
                     for (int i = 0; i < answeredAmount_3; i++){
                         sentText_3.transform.position = sentText_3.transform.position- new Vector3(0f,450f);
@@ -465,6 +465,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         answeredEmployee_3 = true;
                         chooseOptionbar.text = "";
                         selectedObject.sprite = answeredSelectedSprite;
+                        adjustEmployeeValuesAfterPlayerResponse();
                     }
                 }  
             }
@@ -484,9 +485,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         answeredEmployee_4 = true;
                         chooseOptionbar.text = "";
                         selectedObject.sprite = answeredSelectedSprite;
+                        adjustEmployeeValuesAfterPlayerResponse();
                     }
                 }else{
-                    Debug.Log("Text der gesendet wird: "+ chooseOptionbar.text);
                     GameObject sentText_4 = Instantiate(sentPrefab, chatHolder_4.transform);
                     for (int i = 0; i < answeredAmount_4; i++){
                         sentText_4.transform.position = sentText_4.transform.position- new Vector3(0f,450f);
@@ -499,6 +500,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         answeredEmployee_4 = true;
                         chooseOptionbar.text = "";
                         selectedObject.sprite = answeredSelectedSprite;
+                        adjustEmployeeValuesAfterPlayerResponse();
                     }
                 }  
             }
@@ -519,6 +521,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 answeredEmployee_1 = true;
                 chooseOptionbar.text = "";
                 selectedObject.sprite = answeredSelectedSprite;
+                adjustEmployeeValuesAfterEmployeeResponse(answer);
             } 
         }
 
@@ -535,6 +538,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 answeredEmployee_2 = true;
                 chooseOptionbar.text = "";
                 selectedObject.sprite = answeredSelectedSprite;
+                adjustEmployeeValuesAfterEmployeeResponse(answer);
             }
         }
         if(selectedObject.name == "Employee_3") {
@@ -550,6 +554,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 answeredEmployee_3 = true;
                 chooseOptionbar.text = "";
                 selectedObject.sprite = answeredSelectedSprite;
+                adjustEmployeeValuesAfterEmployeeResponse(answer);
             }
         }
         if(selectedObject.name == "Employee_4") {
@@ -565,6 +570,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 answeredEmployee_4 = true;
                 chooseOptionbar.text = "";
                 selectedObject.sprite = answeredSelectedSprite;
+                adjustEmployeeValuesAfterEmployeeResponse(answer);
             }
         }  
     }
@@ -587,17 +593,112 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             chooseOptionbar.text = answerOptions[answerIndex_4].getText();
         }
     }
-    private void adjustEmployeeValues(){
+
+    //Adds to or substracts from working hours of employees depending on getWorkingHoursUp() bool.
+    //WorkingHoursUp bool and and AmountOfHoursChanging is defined when creating dialogue trees in editor
+    //!!!!!! Productivity and Relationship adjustments are NYI !!!!!!!
+    private void adjustEmployeeValuesAfterPlayerResponse(){
         if(selectedObject.name == "Employee_1") {
+            if(answerOptions[answerIndex_1].getAmountOfHoursChanging() == 0){
+
+            }else{
+                if(answerOptions[answerIndex_1].getWorkingHoursUp() == true) {
+                Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() + answerOptions[answerIndex_1].getAmountOfHoursChanging());
+                }
+                if(answerOptions[answerIndex_1].getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() - answerOptions[answerIndex_1].getAmountOfHoursChanging());
+                }
+            } 
+        }
+
+        if(selectedObject.name == "Employee_2") {
+            if(answerOptions[answerIndex_2].getAmountOfHoursChanging() == 0){
+
+            }else{
+                if(answerOptions[answerIndex_2].getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() + answerOptions[answerIndex_2].getAmountOfHoursChanging());
+                }
+                if(answerOptions[answerIndex_2].getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() - answerOptions[answerIndex_2].getAmountOfHoursChanging());
+                } 
+            }
+        }
+
+        if(selectedObject.name == "Employee_3") {
+            if(answerOptions[answerIndex_3].getAmountOfHoursChanging() == 0){
+
+            }else{
+                if(answerOptions[answerIndex_3].getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() + answerOptions[answerIndex_3].getAmountOfHoursChanging());
+                }
+                if(answerOptions[answerIndex_3].getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() - answerOptions[answerIndex_3].getAmountOfHoursChanging());
+                }
+            }
+        }
+
+        if(selectedObject.name == "Employee_4") {
+            if(answerOptions[answerIndex_4].getAmountOfHoursChanging() == 0){
+                
+            }else{
+                if(answerOptions[answerIndex_4].getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() + answerOptions[answerIndex_4].getAmountOfHoursChanging());
+                }
+                if(answerOptions[answerIndex_4].getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() - answerOptions[answerIndex_4].getAmountOfHoursChanging());
+                } 
+            }
+        }
+    }
+
+    private void adjustEmployeeValuesAfterEmployeeResponse(DialogueNode employeeResponse){
+        if(selectedObject.name == "Employee_1") {
+            if(employeeResponse.getAmountOfHoursChanging() == 0) {
+
+            }else{
+                if(employeeResponse.getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() + employeeResponse.getAmountOfHoursChanging());
+                }
+                if(employeeResponse.getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
+                } 
+            }
         }
         if(selectedObject.name == "Employee_2") {
-           
+            if(employeeResponse.getAmountOfHoursChanging() == 0) {
+
+            }else{
+                if(employeeResponse.getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() + employeeResponse.getAmountOfHoursChanging());
+                }
+                if(employeeResponse.getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
+                } 
+            }
         }
         if(selectedObject.name == "Employee_3") {
-           
+            if(employeeResponse.getAmountOfHoursChanging() == 0) {
+
+            }else{
+                if(employeeResponse.getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() + employeeResponse.getAmountOfHoursChanging());
+                }
+                if(employeeResponse.getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
+                } 
+            }
         }
         if(selectedObject.name == "Employee_4") {
-            
+            if(employeeResponse.getAmountOfHoursChanging() == 0) {
+
+            }else{
+                if(employeeResponse.getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() + employeeResponse.getAmountOfHoursChanging());
+                }
+                if(employeeResponse.getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
+                } 
+            }
         }
     }
 }
