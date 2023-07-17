@@ -23,10 +23,10 @@ public class Visualisation : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        float coding = FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/200;
-        float gamedesign = FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/200;
-        float graphicdesign = FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/200;
-        float sounddesign = FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/200;
+        float coding = FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/250;
+        float gamedesign = FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/250;
+        float graphicdesign = FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/250;
+        float sounddesign = FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/250;
         
 
         CodingSkill.setTargetVal((float)Math.Round(coding));
