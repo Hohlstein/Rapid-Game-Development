@@ -28,7 +28,9 @@ public class MiniGameInfoManager : MonoBehaviour
         message = results.GetMessage();
 
         BarColorSetter.SetGameType(gametype);
-        DisplayScore.text = percentage.ToString() + "%";
+        float MiniGameBoost = (1f+percentage/100f);
+        DisplayScore.text = MiniGameBoost.ToString()+"x";
+        PlayerPrefs.SetFloat("MiniGameBoost",MiniGameBoost);
         DisplayMessage.text = message;
         DisplayBar.setCurrentVal(0);
         DisplayBar.setTargetVal(percentage);
