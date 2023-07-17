@@ -41,6 +41,4 @@ public class FinalizeEmployeeList : MonoBehaviour
     public List<Mitarbeiter> GetEmployeeList(){
         return Hired_Employee_Objects;
     }
-
-
 }
