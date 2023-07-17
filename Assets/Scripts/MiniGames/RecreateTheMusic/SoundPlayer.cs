@@ -14,6 +14,7 @@ public class SoundPlayer : MonoBehaviour
     public Sprite play;
     public Sprite pause;
     public void PlaySingle(AudioClip clip){
+        Stop();
         audioSource.clip = clip;
         audioSource.Play();
     }
@@ -39,6 +40,9 @@ public class SoundPlayer : MonoBehaviour
 
             // Wait until the current audio clip finishes playing
             yield return new WaitForSeconds(audioSource.clip.length-0.03f);
+            if (playback == "NULL"){
+                yield break;
+            }
         }
 
         // All audio clips have been played
