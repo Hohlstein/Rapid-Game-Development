@@ -14,6 +14,7 @@ public class SoundPlayer : MonoBehaviour
     public Sprite play;
     public Sprite pause;
     public void PlaySingle(AudioClip clip){
+        Stop();
         audioSource.clip = clip;
         audioSource.Play();
     }
@@ -25,20 +26,28 @@ public class SoundPlayer : MonoBehaviour
         StartCoroutine(PlaySoundList(list));
     }
 
-    private System.Collections.IEnumerator PlaySoundList(List<AudioClip> soundList)
+    private IEnumerator PlaySoundList(List<AudioClip> audioClips)
     {
-        for (int i = 0; i < soundList.Count; i++)
+        for (int i = 0; i < audioClips.Count; i++)
         {
-            if (playback != "NULL"){
-                audioSource.clip = soundList[i];
-                audioSource.Play();
+            if (playback != "NULL")
+            audioSource.clip = audioClips[i];
 
-                yield return new WaitForSeconds(audioSource.clip.length);
+            // Preload the audio data
+            audioSource.clip.LoadAudioData();
+
+            audioSource.Play();
+
+            // Wait until the current audio clip finishes playing
+            yield return new WaitForSeconds(audioSource.clip.length-0.03f);
+            if (playback == "NULL"){
+                yield break;
             }
         }
-        playback = "NULL";
-        
 
+        // All audio clips have been played
+        Debug.Log("Finished playing audio list.");
+        playback = "NULL";
     }
 
     public void Stop(){

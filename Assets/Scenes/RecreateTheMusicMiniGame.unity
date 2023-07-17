@@ -287,6 +287,7 @@ MonoBehaviour:
   preview_manager: {fileID: 1688509064}
   soundplayer: {fileID: 1660015039}
   leveldata: {fileID: 1575523678}
+  difficultymanager: {fileID: 882180649}
 --- !u!1 &730075075
 GameObject:
   m_ObjectHideFlags: 0
@@ -584,6 +585,50 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &882180648
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 882180650}
+  - component: {fileID: 882180649}
+  m_Layer: 0
+  m_Name: DifficultyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &882180649
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882180648}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7517f0f8787d348975ee691dc1bc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &882180650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 882180648}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1024936192
 GameObject:
@@ -914,6 +959,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e5e3121241e778945b7df35887a0d928, type: 3}
   - {fileID: 8300000, guid: f11628b5d79635344bf4055d36aaaf95, type: 3}
   - {fileID: 8300000, guid: a25d7e13be0c8bf4085fda688de7f25b, type: 3}
+  - {fileID: 8300000, guid: 21315c761ad5179469a453ed5c6dfe76, type: 3}
+  - {fileID: 8300000, guid: ea6ab05bf6d5daf478a9d080b9f36e4d, type: 3}
+  - {fileID: 8300000, guid: 6c96ba13bd1be9d48aa6a92eafb3bf13, type: 3}
+  - {fileID: 8300000, guid: 27eee5008f1cdd744b55513c1f783d34, type: 3}
+  - {fileID: 8300000, guid: 0582cb410469862409737a8f90650589, type: 3}
+  - {fileID: 8300000, guid: 89d550b7b23a43842970ffebcba92920, type: 3}
   timer: {fileID: 1600032723}
 --- !u!4 &1575523679
 Transform:
@@ -977,7 +1028,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 0
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

@@ -39,6 +39,8 @@ public class Mitarbeiter : MonoBehaviour
     private int soundDesignHours;
     [SerializeField]
     private Sprite profile_picture;
+    [SerializeField]
+    private bool CategoryHoursAssigned;
 
 
  
@@ -120,26 +122,43 @@ public class Mitarbeiter : MonoBehaviour
     public void setWorkinghours(int value)
     {
         workinghours = value;
+        CategoryHoursAssigned = true;
     }
     public void SetcodingHours(int value)
     {
         codingHours = value;
+        CategoryHoursAssigned = true;
     }
     public void SetgameDesignHours(int value)
     {
         gameDesignHours = value;
+        CategoryHoursAssigned = true;
     }
     public void SetgraphicDesignHours(int value)
     {
         graphicDesignHours = value;
+        CategoryHoursAssigned = true;
     }
 
     public void SetsoundDesignHours(int value)
     {
         soundDesignHours = value;
+        CategoryHoursAssigned = true;
     }
 
+    public bool AreCategoryHoursAssigned()
+    {
+        return CategoryHoursAssigned;
+    }
 
+    public void ResetAllHours(){
+      workinghours = 0;
+      codingHours = 0;
+      gameDesignHours = 0;
+      graphicDesignHours = 0;
+      soundDesignHours = 0;
+      CategoryHoursAssigned = false;
+    }
 
 
     public Sprite GetAvatar(){
