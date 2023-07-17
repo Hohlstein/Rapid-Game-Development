@@ -127,7 +127,25 @@ public class EmployeeInfo : MonoBehaviour
             {
                 employee.setWorkinghours(value);
             }
+            if (key == "graphicDesignHours")
+            {
+                employee.SetgraphicDesignHours(value);
+            }
+            if (key == "codingHours")
+            {
+                employee.SetcodingHours(value);
+            }
+            if (key == "gameDesignHours")
+            {
+                employee.SetgameDesignHours(value);
+            }
+            if (key == "sounddesignskill")
+            {
+                employee.SetsoundDesignHours(value);
+            }
+
         }
+
     }
 
 }

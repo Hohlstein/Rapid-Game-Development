@@ -150,11 +150,18 @@ public class Arbeitsteiling : MonoBehaviour
         numberOfPeople = infoSource.getNumberOfPeople();
         if (newID >= 0 && newID < numberOfPeople)
         {
+            // Vor dem Wechseln des Mitarbeiters die Slider auf 0 setzen
+            CodingSlider.value = 0;
+            GameDesignSlider.value = 0;
+            GraphicDesignSlider.value = 0;
+            SoundDesignSlider.value = 0;
+
             ID = newID;
         }
         animateUIElements();
         UpdateDisplayedValues();
     }
+
 
     private void animateUIElements()
     {
@@ -170,7 +177,20 @@ public class Arbeitsteiling : MonoBehaviour
 
         NameText.text = infoSource.getValueString(ID, "firstName") + " " + infoSource.getValueString(ID, "lastName")[0] + ".";
 
-        avatar.sprite = infoSource.GetAvatar(ID);
+        
+
+        var workers = GameObject.FindGameObjectsWithTag("mitarbeiter");
+       
+        foreach (var worker in workers)
+        {
+            var w = worker.GetComponent<Mitarbeiter>();
+            int id = w.getID();
+            if (ID == id)
+            {
+                FindObjectOfType<AvatarManager>().SetEmployee(worker.GetComponent<Mitarbeiter>());
+            }
+        }
+       
 
         CodingSkill.setTargetVal(infoSource.getValueFloat(ID, "codingskill"));
         GraphicDesignSkill.setTargetVal(infoSource.getValueFloat(ID, "graphicdesignskill"));
@@ -200,10 +220,12 @@ public class Arbeitsteiling : MonoBehaviour
         if (sound == _2Value)
             sound = 2.0f;
 
-
-
         float sum = coding + gameDesign + graphic + sound;
         infoSource.SetValueInteger(ID, "workinghours", (int)sum);
+        infoSource.SetValueInteger(ID, "graphicDesignHours", (int)graphic);
+        infoSource.SetValueInteger(ID, "codingHours", (int)coding);
+        infoSource.SetValueInteger(ID, "gameDesignHours", (int)gameDesign);
+        infoSource.SetValueInteger(ID, "sounddesignskill", (int)sound);
     }
 
     private void SnapSliderValues(Slider slider, float[] snapValues)
