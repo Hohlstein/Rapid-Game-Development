@@ -8,35 +8,29 @@ using System.Collections.Generic;
 public class ChatInterface : MonoBehaviour{
     public EmployeeInfo employeeInfo;
     public List<TextMeshProUGUI> employeeNames;
-    public HiredEmployees hiredEmployees;
+    private List<Mitarbeiter> Hired_Employee_Objects;
 
     private int numberOfPeople;
 
     private void Start() {
-        //Decommented once connected to other scenes 
-        //HiredEmployees = GameObject.Find("INFO_HireList"); 
-        FillHireList(); //temp method development only (will be removed later once HireList scene passes on information)
+        GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
+        FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
+        Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
+        foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
+            Debug.Log("Mitarbeiter in Liste" + mitarbeiter.name);
+        }
         UpdateTextFields();
     }
 
     private void UpdateTextFields() {
-        Dictionary<int,bool> hireList = hiredEmployees.getHireList();
         foreach(TextMeshProUGUI employeeName in employeeNames) {
             employeeName.text = "temp";
         }
-
         int index = 0;
-        foreach(KeyValuePair<int,bool> hire in hireList) {
-            if(hire.Value == true) {
-                employeeNames[index].text = employeeInfo.getValueString(index,"firstName") + " " + employeeInfo.getValueString(index,"lastName");
-                index++;
-            }   
+        foreach(Mitarbeiter hired in Hired_Employee_Objects) {
+                employeeNames[index].text = hired.getFirstName() + " " + hired.getLastName();
+                index++; 
        }
-    }
-    public void FillHireList() {
-        for(int i= 0; i < 4; i++) {
-            hiredEmployees.set(i,true);
-        }
     }
 }
 

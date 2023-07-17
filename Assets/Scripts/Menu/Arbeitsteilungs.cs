@@ -170,7 +170,8 @@ public class Arbeitsteiling : MonoBehaviour
 
         NameText.text = infoSource.getValueString(ID, "firstName") + " " + infoSource.getValueString(ID, "lastName")[0] + ".";
 
-        avatar.sprite = infoSource.GetAvatar(ID);
+        //Decomment later
+        //avatar.sprite = infoSource.GetAvatar(ID);
 
         CodingSkill.setTargetVal(infoSource.getValueFloat(ID, "codingskill"));
         GraphicDesignSkill.setTargetVal(infoSource.getValueFloat(ID, "graphicdesignskill"));
