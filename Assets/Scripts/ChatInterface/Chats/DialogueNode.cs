@@ -19,6 +19,12 @@ public class DialogueNode : MonoBehaviour {
     [SerializeField]
     private bool finalNode;
 
+    [SerializeField]
+    private bool workingHoursUp; //True means + hours, false means -hours
+
+    [SerializeField]
+    private int amountOfHoursChanging;
+
     void Start() {
     }
 
@@ -36,5 +42,13 @@ public class DialogueNode : MonoBehaviour {
 
     public List<PlayerAnswer> getPlayerAnswer() {
         return playerAnswer;
+    }
+
+    public int getAmountOfHoursChanging() {
+        return amountOfHoursChanging;
+    }
+
+    public bool getWorkingHoursUp() {
+        return workingHoursUp;
     }
 }

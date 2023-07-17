@@ -306,9 +306,8 @@ MonoBehaviour:
   text: I have to cover your shift then, how about 1 day?
   nextNode: {fileID: 431869085}
   finalNode: 0
-  positive: 0
-  neutral: 1
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &108918732
 GameObject:
   m_ObjectHideFlags: 0
@@ -394,9 +393,8 @@ MonoBehaviour:
     in your absence. Get well soon!
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 16
 --- !u!1 &148243421
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,9 +442,8 @@ MonoBehaviour:
   text: Okay, get your rest
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 8
 --- !u!1 &169799726
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +492,8 @@ MonoBehaviour:
   eventOption: 0
   playerAnswer: []
   finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 8
 --- !u!1 &172110285
 GameObject:
   m_ObjectHideFlags: 0
@@ -591,9 +590,8 @@ MonoBehaviour:
   text: "That\xB4s not possible, at all."
   nextNode: {fileID: 1469647188}
   finalNode: 0
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &233472161
 GameObject:
   m_ObjectHideFlags: 0
@@ -690,9 +688,8 @@ MonoBehaviour:
   text: I can only give you 2 hours off, hope that it's still enough.
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 1
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 2
 --- !u!1 &288799441
 GameObject:
   m_ObjectHideFlags: 0
@@ -742,9 +739,8 @@ MonoBehaviour:
     Take care !
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 1
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 8
 --- !u!1 &290797695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1006,9 +1002,8 @@ MonoBehaviour:
   text: Yes! It is possible.
   nextNode: {fileID: 662103841}
   finalNode: 0
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &336987504
 GameObject:
   m_ObjectHideFlags: 0
@@ -1064,6 +1059,8 @@ MonoBehaviour:
   - {fileID: 108103017}
   - {fileID: 188950250}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &345478951
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,9 +1108,8 @@ MonoBehaviour:
   text: You have to cover other shifts the coming weeks then
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 1
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 16
 --- !u!1 &402032250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1240,6 +1236,8 @@ MonoBehaviour:
   playerAnswer:
   - {fileID: 1460847949}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &432151256
 GameObject:
   m_ObjectHideFlags: 0
@@ -1300,7 +1298,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 60
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -1421,9 +1419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '47
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 442fcffaec63d844a95c1056c02a0214, type: 2}
   m_sharedMaterial: {fileID: -7082258480960990512, guid: 442fcffaec63d844a95c1056c02a0214, type: 2}
@@ -1548,9 +1544,8 @@ MonoBehaviour:
     workload for the week.
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &476551445
 GameObject:
   m_ObjectHideFlags: 0
@@ -1827,9 +1822,8 @@ MonoBehaviour:
   text: You can take the day off, but next time it has to be more in advance.
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 4
 --- !u!1 &553665490
 GameObject:
   m_ObjectHideFlags: 0
@@ -1974,6 +1968,8 @@ MonoBehaviour:
   - {fileID: 1433280613}
   - {fileID: 345478953}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &662103839
 GameObject:
   m_ObjectHideFlags: 0
@@ -2026,6 +2022,8 @@ MonoBehaviour:
   - {fileID: 541223272}
   - {fileID: 846030815}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &676987159
 GameObject:
   m_ObjectHideFlags: 0
@@ -2076,6 +2074,8 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 1
 --- !u!1 &680531155
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,9 +2124,8 @@ MonoBehaviour:
   text: This should be fine for us.
   nextNode: {fileID: 574678851}
   finalNode: 0
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &689576187
 GameObject:
   m_ObjectHideFlags: 0
@@ -3173,9 +3172,8 @@ MonoBehaviour:
   text: "I have to tell you, that it\xB4s not possible, sorry."
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &866764151
 GameObject:
   m_ObjectHideFlags: 0
@@ -3232,6 +3230,8 @@ MonoBehaviour:
   - {fileID: 288799443}
   - {fileID: 469471707}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &894438278
 GameObject:
   m_ObjectHideFlags: 0
@@ -3478,7 +3478,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 60
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -3704,6 +3704,8 @@ MonoBehaviour:
   - {fileID: 1396513867}
   - {fileID: 1458193669}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1033534675
 GameObject:
   m_ObjectHideFlags: 0
@@ -3929,9 +3931,8 @@ MonoBehaviour:
   text: I am sorry to tell you, but its not possible right now.
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1157338282
 GameObject:
   m_ObjectHideFlags: 0
@@ -3981,9 +3982,8 @@ MonoBehaviour:
     in your absence. Get well soon!
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 16
 --- !u!1 &1217335702
 GameObject:
   m_ObjectHideFlags: 0
@@ -4026,6 +4026,7 @@ MonoBehaviour:
   answeredSelectedSprite: {fileID: 21300000, guid: 5158aa8d70cb0d24a8e2a96880560073, type: 3}
   answeredSprite: {fileID: 21300000, guid: 059167716810bc94caba849b8fcbfe0d, type: 3}
   selectedEmployeeName: {fileID: 798744675}
+  totalHours: {fileID: 813460935}
   recievedPrefab: {fileID: 6983553689237663538, guid: 912123fc69233064cac86d5e0c62e90c, type: 3}
   sentPrefab: {fileID: 2072662696885723258, guid: 4342254d767f0164a9b7965394b673cd, type: 3}
   chatHolder_1: {fileID: 748128817}
@@ -4112,6 +4113,8 @@ MonoBehaviour:
   eventOption: 0
   playerAnswer: []
   finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1256322459
 GameObject:
   m_ObjectHideFlags: 0
@@ -4167,6 +4170,8 @@ MonoBehaviour:
   - {fileID: 1896177832}
   - {fileID: 1967386962}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1262915132
 GameObject:
   m_ObjectHideFlags: 0
@@ -4219,6 +4224,8 @@ MonoBehaviour:
   - {fileID: 315375673}
   - {fileID: 1927867644}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1270425463
 GameObject:
   m_ObjectHideFlags: 0
@@ -4441,6 +4448,8 @@ MonoBehaviour:
   - {fileID: 265534933}
   - {fileID: 0}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1342850026
 GameObject:
   m_ObjectHideFlags: 0
@@ -4489,9 +4498,8 @@ MonoBehaviour:
     workload for the week.
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1346238680
 GameObject:
   m_ObjectHideFlags: 0
@@ -4628,7 +4636,7 @@ MonoBehaviour:
   m_Elasticity: 0.1
   m_Inertia: 1
   m_DecelerationRate: 0.135
-  m_ScrollSensitivity: 1
+  m_ScrollSensitivity: 60
   m_Viewport: {fileID: 0}
   m_HorizontalScrollbar: {fileID: 0}
   m_VerticalScrollbar: {fileID: 0}
@@ -4741,9 +4749,8 @@ MonoBehaviour:
     your workload in your absence. Take care !
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 32
 --- !u!1 &1402591612
 GameObject:
   m_ObjectHideFlags: 0
@@ -4928,9 +4935,8 @@ MonoBehaviour:
   text: No problem, your welcome.
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 16
 --- !u!1 &1458193667
 GameObject:
   m_ObjectHideFlags: 0
@@ -4979,9 +4985,8 @@ MonoBehaviour:
     go to Hospital, but i expect you back to work tommorow !
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 4
 --- !u!1 &1460847947
 GameObject:
   m_ObjectHideFlags: 0
@@ -5029,9 +5034,8 @@ MonoBehaviour:
   text: Okay than be here on those two days, in the office
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1469647186
 GameObject:
   m_ObjectHideFlags: 0
@@ -5084,6 +5088,8 @@ MonoBehaviour:
   - {fileID: 1979146962}
   - {fileID: 1517346742}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1517346740
 GameObject:
   m_ObjectHideFlags: 0
@@ -5132,9 +5138,8 @@ MonoBehaviour:
   text: No unfortunately not.
   nextNode: {fileID: 1227574303}
   finalNode: 1
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1543517432
 GameObject:
   m_ObjectHideFlags: 0
@@ -5255,58 +5260,6 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
---- !u!1 &1659170751
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1659170752}
-  - component: {fileID: 1659170753}
-  m_Layer: 0
-  m_Name: PlayerAnswerNeutral
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1659170752
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659170751}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1712421052}
-  m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1659170753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659170751}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  text: I'm sorry to hear that you're not feeling well. Your health is important,
-    so please take the day off. Unfortunately, i need you back at work tommorow.
-    Take care !
-  nextNode: {fileID: 0}
-  finalNode: 1
-  positive: 0
-  neutral: 1
-  negative: 0
 --- !u!1 &1712421051
 GameObject:
   m_ObjectHideFlags: 0
@@ -5338,7 +5291,6 @@ Transform:
   m_Children:
   - {fileID: 127066751}
   - {fileID: 1342850027}
-  - {fileID: 1659170752}
   m_Father: {fileID: 1270425464}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5360,8 +5312,10 @@ MonoBehaviour:
   playerAnswer:
   - {fileID: 1342850028}
   - {fileID: 127066752}
-  - {fileID: 1659170753}
+  - {fileID: 0}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1782645848
 GameObject:
   m_ObjectHideFlags: 0
@@ -5411,9 +5365,8 @@ MonoBehaviour:
     to show up!
   nextNode: {fileID: 676987161}
   finalNode: 0
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1820158424
 GameObject:
   m_ObjectHideFlags: 0
@@ -5461,9 +5414,8 @@ MonoBehaviour:
   text: I just set it in the schedule, you are free to go.
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 4
 --- !u!1 &1832375900
 GameObject:
   m_ObjectHideFlags: 0
@@ -5711,9 +5663,8 @@ MonoBehaviour:
     care and make sure to inform me of any developments.
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 1
-  neutral: 0
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 8
 --- !u!1 &1919472686
 GameObject:
   m_ObjectHideFlags: 0
@@ -5767,6 +5718,8 @@ MonoBehaviour:
   - {fileID: 148243423}
   - {fileID: 1782645850}
   finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1927867642
 GameObject:
   m_ObjectHideFlags: 0
@@ -5815,9 +5768,8 @@ MonoBehaviour:
   text: You are asking really short term.
   nextNode: {fileID: 1342540674}
   finalNode: 0
-  positive: 0
-  neutral: 1
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1928941151
 GameObject:
   m_ObjectHideFlags: 0
@@ -6034,9 +5986,8 @@ MonoBehaviour:
     come to work as soon as possible !
   nextNode: {fileID: 0}
   finalNode: 1
-  positive: 0
-  neutral: 0
-  negative: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 1
 --- !u!1 &1979146960
 GameObject:
   m_ObjectHideFlags: 0
@@ -6085,9 +6036,8 @@ MonoBehaviour:
   text: How about 1 day?
   nextNode: {fileID: 169799728}
   finalNode: 0
-  positive: 0
-  neutral: 1
-  negative: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
 --- !u!1 &1984788124
 GameObject:
   m_ObjectHideFlags: 0
