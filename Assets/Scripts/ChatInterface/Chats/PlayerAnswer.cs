@@ -14,11 +14,9 @@ public class PlayerAnswer : MonoBehaviour{
         [SerializeField]
     private bool finalNode;
         [SerializeField]
-    private bool positive;
+    private bool workingHoursUp; //True means + hours, false means - hours
         [SerializeField]
-    private bool neutral;
-        [SerializeField]
-    private bool negative;
+    private int amountOfHoursChanging;
 
     void Start() {
         if(finalNode == true) {
@@ -43,5 +41,13 @@ public class PlayerAnswer : MonoBehaviour{
 
     public bool getFinalNode() {
         return finalNode;
+    }
+
+    public bool getWorkingHoursUp() {
+        return workingHoursUp;
+    }
+
+    public int getAmountOfHoursChanging() {
+        return amountOfHoursChanging;
     }
 }
