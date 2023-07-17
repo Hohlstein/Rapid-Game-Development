@@ -29,6 +29,14 @@ public class Mitarbeiter : MonoBehaviour
     private int stresslevel;
       [SerializeField]
     private int workinghours;
+      [SerializeField]
+    private int codingHours;
+      [SerializeField]
+    private int gameDesignHours;
+      [SerializeField]
+    private int graphicDesignHours;
+      [SerializeField]
+    private int soundDesignHours;
     [SerializeField]
     private Sprite profile_picture;
 
@@ -40,8 +48,6 @@ public class Mitarbeiter : MonoBehaviour
     {        
         this.stresslevel = 0;
         this.workinghours = 0;
-
-
         DontDestroyOnLoad(this.gameObject);
         
     }
@@ -91,6 +97,18 @@ public class Mitarbeiter : MonoBehaviour
     }
     public int getWorkingHours(){
         return this.workinghours;
+    }
+    public int getCodingHours(){
+        return this.codingHours;
+    }
+    public int getGameDesignHours(){
+        return this.gameDesignHours;
+    }
+    public int getGrapicDesignHours(){
+        return this.graphicDesignHours;
+    }
+    public int getSoundDesignHours(){
+        return this.soundDesignHours;
     }
 
     public int getStressed(int stress)
