@@ -1419,9 +1419,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '47
-
-'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 442fcffaec63d844a95c1056c02a0214, type: 2}
   m_sharedMaterial: {fileID: -7082258480960990512, guid: 442fcffaec63d844a95c1056c02a0214, type: 2}
@@ -2077,7 +2075,7 @@ MonoBehaviour:
   - {fileID: 0}
   finalNode: 1
   workingHoursUp: 0
-  amountOfHoursChanging: 5
+  amountOfHoursChanging: 1
 --- !u!1 &680531155
 GameObject:
   m_ObjectHideFlags: 0
@@ -4028,6 +4026,7 @@ MonoBehaviour:
   answeredSelectedSprite: {fileID: 21300000, guid: 5158aa8d70cb0d24a8e2a96880560073, type: 3}
   answeredSprite: {fileID: 21300000, guid: 059167716810bc94caba849b8fcbfe0d, type: 3}
   selectedEmployeeName: {fileID: 798744675}
+  totalHours: {fileID: 813460935}
   recievedPrefab: {fileID: 6983553689237663538, guid: 912123fc69233064cac86d5e0c62e90c, type: 3}
   sentPrefab: {fileID: 2072662696885723258, guid: 4342254d767f0164a9b7965394b673cd, type: 3}
   chatHolder_1: {fileID: 748128817}
