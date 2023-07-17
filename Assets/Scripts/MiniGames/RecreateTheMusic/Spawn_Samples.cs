@@ -5,7 +5,7 @@ Autor: Klaus Wiegmann
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.Linq;
 
 public class Spawn_Samples : MonoBehaviour
 {
@@ -14,6 +14,8 @@ public class Spawn_Samples : MonoBehaviour
     public MusicMG_PreviewManager preview_manager;
     public SoundPlayer soundplayer;
     public LevelData leveldata;
+    public DifficultyManager difficultymanager;
+
     private Dictionary<int,(string, AudioClip)> SampleData;
     private List<AudioClip> Solution;
 
@@ -25,18 +27,20 @@ public class Spawn_Samples : MonoBehaviour
         bool_array[0] = true;
         bool_array[1] = false;
 
-        LoadLevel(1);
+        LoadLevel(difficultymanager.GetLevelInt());
         ICollection<int> SampleDataKeys = SampleData.Keys;
-        int index = 0;
+        List<int> RandomIndexOrder = GetRandomizedIntList(0,SampleDataKeys.Count);
+        int count = 0;
         foreach (int key in SampleDataKeys)
         {
-            for (int j = 0; j <= 1; j++)
+            int index = RandomIndexOrder[count];
+            for (int bool_choice = 0; bool_choice <= 1; bool_choice++)
             {
                 string sampletype = SampleData[key].Item1;
                 AudioClip audioclip = SampleData[key].Item2;
-                SpawnSample(index, bool_array[j],sampletype,soundplayer,audioclip);   
+                SpawnSample(index, bool_array[bool_choice],sampletype,soundplayer,audioclip);   
             }  
-            index++;
+            count++;
         }
 
             
@@ -52,6 +56,18 @@ public class Spawn_Samples : MonoBehaviour
         sample_main.staticOnly = staticOnly;
         sample_main.setType(type);
         sample_main.GetReady(index,preview_manager,soundplayer,audioclip);
+    }
+
+    private List<int> GetRandomizedIntList(int x, int y){
+        List<int> output = new List<int>();
+        System.Random random = new System.Random();
+        while (output.Count < y-x){
+            int num = random.Next(x,y);
+            if (output.Contains(num) == false){
+                output.Add(num);
+            }
+        }
+        return output;
     }
 
     private void LoadLevel(int level){
