@@ -121,6 +121,26 @@ public class Mitarbeiter : MonoBehaviour
     {
         workinghours = value;
     }
+    public void SetcodingHours(int value)
+    {
+        codingHours = value;
+    }
+    public void SetgameDesignHours(int value)
+    {
+        gameDesignHours = value;
+    }
+    public void SetgraphicDesignHours(int value)
+    {
+        graphicDesignHours = value;
+    }
+
+    public void SetsoundDesignHours(int value)
+    {
+        soundDesignHours = value;
+    }
+
+
+
 
     public Sprite GetAvatar(){
       return profile_picture;
