@@ -13,7 +13,7 @@ public class UiControler : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManagement.changeScene("Difficultymenue");
+        SceneManagement.changeScene("DifficultyMenu");
 
 
     }
