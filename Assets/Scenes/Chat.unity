@@ -2395,7 +2395,7 @@ MonoBehaviour:
   playerAnswer:
   - {fileID: 0}
   - {fileID: 0}
-  finalNode: 0
+  finalNode: 1
 --- !u!1 &680531155
 GameObject:
   m_ObjectHideFlags: 0
@@ -4692,7 +4692,7 @@ MonoBehaviour:
   - {fileID: 977705016}
   - {fileID: 172110287}
   - {fileID: 480108766}
-  - {fileID: 172110287}
+  - {fileID: 2029836141}
   chooseOptionbarParent: {fileID: 478598319}
   chooseOptionbar: {fileID: 19719347}
 --- !u!4 &1217335704

@@ -5,6 +5,7 @@ using UnityEngine;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine.UI;
+using System;
 
 public class Select_DisplayEmployeeChat : MonoBehaviour{
     public List<TextMeshProUGUI> employeeNames;
@@ -70,9 +71,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
         Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
         Debug.Log("Anzahl Objekte in Liste" +  Hired_Employee_Objects.Count);
-        foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
-            Debug.Log("Mitarbeiter in Liste" + mitarbeiter.name);
-        }
 
         UpdateTextFields();
         scrollRect_1.verticalNormalizedPosition = 1f;
@@ -90,7 +88,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         answeredEmployee_2 = false;
         answeredEmployee_3 = false;
         answeredEmployee_4 = false;
-
     }
     
     void Update() {
@@ -235,7 +232,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 1 chat panel, also displays the first option in your send bar
     private void recieveMessage_1() {
         answeredAmount_1=0;
-        dialogueIndex_1 = 3; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
+        dialogueIndex_1 = 1; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
         GameObject recievedText_1 = Instantiate(recievedPrefab, chatHolder_1.transform);
 
         recievedText_1.GetComponentInChildren<TextMeshProUGUI>().text = dialogues[dialogueIndex_1].getDialogueStart()[0].getText();
@@ -245,7 +242,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 2 chat panel, also displays the first option in your send bar
     private void recieveMessage_2() {
         answeredAmount_2=0;
-        dialogueIndex_2 = 3; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
+        dialogueIndex_2 = 2; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
         GameObject recievedText_2 = Instantiate(recievedPrefab, chatHolder_2.transform);
         recievedText_2.GetComponentInChildren<TextMeshProUGUI>().text = dialogues[dialogueIndex_2].getDialogueStart()[0].getText();
         answerOptions = dialogues[dialogueIndex_2].getDialogueStart()[0].getPlayerAnswer();
@@ -254,7 +251,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 3 chat panel, also displays the first option in your send bar
     private void recieveMessage_3() {
         answeredAmount_3=0;
-        dialogueIndex_3 = 4; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
+        dialogueIndex_3 = 3; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
         GameObject recievedText_3 = Instantiate(recievedPrefab, chatHolder_3.transform);
         recievedText_3.GetComponentInChildren<TextMeshProUGUI>().text = dialogues[dialogueIndex_3].getDialogueStart()[0].getText();
         answerOptions = dialogues[dialogueIndex_3].getDialogueStart()[0].getPlayerAnswer();
@@ -383,6 +380,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         answeredEmployee_1 = true;
                         chooseOptionbar.text = "";
                         selectedObject.sprite = answeredSelectedSprite;
+                        adjustEmployeeValues();
                     }
                 }else{
                     Debug.Log("Text der gesendet wird: "+ chooseOptionbar.text);
@@ -396,7 +394,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                         sendEmployeeAnswer(answerOptions[answerIndex_1].getNextNode());
                     }else{
                         answeredEmployee_1 = true;
-                        chooseOptionbar.text = "";
+                        chooseOptionbar.text = ""; 
                         selectedObject.sprite = answeredSelectedSprite;
                     }
                 }  
@@ -568,8 +566,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 chooseOptionbar.text = "";
                 selectedObject.sprite = answeredSelectedSprite;
             }
-        }
-        
+        }  
     }
     //Displays the response options to the before recieved message from the employee on followup messages not on first recieved one
     public void displayResponseToEmployeeAnswer(List<PlayerAnswer> answers) {
@@ -588,6 +585,19 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         if(selectedObject.name == "Employee_4") {
             answerOptions = answers;
             chooseOptionbar.text = answerOptions[answerIndex_4].getText();
+        }
+    }
+    private void adjustEmployeeValues(){
+        if(selectedObject.name == "Employee_1") {
+        }
+        if(selectedObject.name == "Employee_2") {
+           
+        }
+        if(selectedObject.name == "Employee_3") {
+           
+        }
+        if(selectedObject.name == "Employee_4") {
+            
         }
     }
 }
