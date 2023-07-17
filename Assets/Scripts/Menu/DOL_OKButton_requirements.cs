@@ -27,7 +27,6 @@ public class DOL_OKButton_requirements : MonoBehaviour
         foreach (var employee in employees)
             {
                 if (employee.AreCategoryHoursAssigned() == false){
-                    Debug.Log(employee.getFirstName());
                     return false;
                 }
             }
