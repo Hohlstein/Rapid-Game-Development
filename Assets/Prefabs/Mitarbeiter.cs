@@ -152,7 +152,7 @@ public class Mitarbeiter : MonoBehaviour
     }
 
     public void ResetAllHours(){
-      workinghours = 0;
+      workinghours = 32;
       codingHours = 0;
       gameDesignHours = 0;
       graphicDesignHours = 0;

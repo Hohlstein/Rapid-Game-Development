@@ -38,7 +38,7 @@ public class AvatarManager : MonoBehaviour
     }
 
     public void GoTo(float x, float y){
-        Vector3 pos = new Vector3(x,y,0);
+        Vector3 pos = new Vector3(x,y);
         transform.localPosition = pos;
     }
     public void SetX(float x){
