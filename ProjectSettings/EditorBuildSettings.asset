@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Arbeitsteilung.unity
     guid: 73a0a75a0ee58c7418abb8492eea2dd6
+  - enabled: 1
+    path: Assets/Scenes/MiniGamePreLobby.unity
+    guid: 6e6cdf3764fdaab4383d16f9258c942d
   m_configObjects: {}

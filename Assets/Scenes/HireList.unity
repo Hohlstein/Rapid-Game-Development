@@ -780,6 +780,51 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
+--- !u!1 &519001300
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 519001302}
+  - component: {fileID: 519001301}
+  m_Layer: 0
+  m_Name: Tutorial_InfoBoxSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &519001301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519001300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d957b46ba96cf134aaef4fe3d14d327c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InfoBox_prefab: {fileID: 178798624165243385, guid: b3e2a1ed565882a4dac9779b4ca8799c, type: 3}
+--- !u!4 &519001302
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519001300}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &715233197
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4092,3 +4137,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98d915df5ab73534a91d554273332aa7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  infobox_prefab: {fileID: 0}

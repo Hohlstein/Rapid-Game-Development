@@ -65,6 +65,7 @@ public class Difficulty : MonoBehaviour
     {
         selectedDifficulty = (DifficultyLevel)currentIndex;
         PlayerPrefs.SetString("SelectedDifficulty", selectedDifficulty.ToString());
+        PlayerPrefs.SetInt("ShowTutorialInfoBoxes",1);
         SceneManagement.changeScene("HireList");
     }
 }
