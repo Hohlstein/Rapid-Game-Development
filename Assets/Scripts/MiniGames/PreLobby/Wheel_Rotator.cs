@@ -21,6 +21,19 @@ public class Wheel_Rotator : MonoBehaviour
     public GameObject introText_obj;
     public float drag;
     public bool has_been_turned = false;
+
+    private Dictionary<int,string> mapping = new Dictionary<int, string>()
+{
+    { 0*43, "Sound Design" },
+    { 1*43, "Graphic Design" },
+    { 2*43, "Game Design" },
+    { 3*43, "Coding" },
+    { 4*43, "Sound Design" },
+    { 5*43, "Graphic Design" },
+    { 6*43, "Game Design" },
+    { 7*43, "Coding" },
+    { 8*43, "Special" },
+};
     
     private bool gave_result = true;
     private bool moving = false;
@@ -71,9 +84,9 @@ public class Wheel_Rotator : MonoBehaviour
     }
 
     private string computeResult(){
-        List<string> possible_results = new List<string> {"Sound Design","Graphic Design", "Game Design", "Coding" };
-        int result_index = (int)(getRotation() % 180)/45;
-        return possible_results[result_index];
+        int field = (int)getRotation()%360/43;
+        return mapping[field*43];
+        //return possible_results[result_index];
     }
 
     private float getRotation(){
@@ -105,7 +118,7 @@ public class Wheel_Rotator : MonoBehaviour
     private void checkIfHaptic(){
         float zRotation = getRotation();
         
-        if (zRotation % 45 < 2 || zRotation % 45 > 43 && rotationSpeed.z > 5){
+        if (zRotation % 43 < 2 || zRotation % 43 > 41 && rotationSpeed.z > 5){
             if (haptic_clicked == false){
                 haptic_clicked = true;
                 audioplayer.Play();
