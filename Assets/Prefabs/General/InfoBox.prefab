@@ -84,6 +84,7 @@ MonoBehaviour:
   title_TMP: {fileID: 3427966247305534970}
   body_TMP: {fileID: 5643882169362636203}
   animation: {fileID: 4920958970256534767}
+  BalancingData: {fileID: 11400000, guid: 5b64311e6a2dd1a4b8d423eb97b4092d, type: 2}
 --- !u!1 &490237023606909362
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class InfoBox_Manager : MonoBehaviour
     public TMP_Manager title_TMP;
     public TMP_Manager body_TMP;
     public InfoBox_Animation animation;
+    public BalancingData BalancingData;
 
     private string scene;
     private string title;

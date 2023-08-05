@@ -22,7 +22,6 @@ public class Wheel_Rotator : MonoBehaviour
     public float drag;
     public bool has_been_turned = false;
     
-    private float prev_zRotation = 0;
     private bool gave_result = true;
     private bool moving = false;
     private bool haptic_clicked = true;
