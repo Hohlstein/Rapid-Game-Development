@@ -12,7 +12,8 @@ public class LuckResultDisplay : MonoBehaviour
         Coding,
         GameDesign,
         GraphicDesign,
-        SoundDesign
+        SoundDesign,
+        Special
     }
     private Dictionary<Category,List<(string,string,string)>> games = new Dictionary<Category,List<(string,string,string)>>();
 
@@ -52,26 +53,33 @@ public class LuckResultDisplay : MonoBehaviour
         GraphicDesignGames.Add(("[Graphic Design Game]","[Graphic Design Game Description]","GraphicDesignGame"));
         List<(string,string,string)> SoundDesignGames = new List<(string,string,string)>();
         SoundDesignGames.Add(("Recreate the Music","Use the playback button to listen to the music you must recreate.\n\nYou're given samples which must be placed into the box at the bottom, in their correct order. You can listen to samples by clicking on them.\n\nWhen you're done and you think your order is correct, click the confirmation button.","RecreateTheMusicMiniGame"));
+        List<(string,string,string)> SpecialGames = new List<(string,string,string)>();
+        SpecialGames.Add(("Fix the coffee machine","[Description here]","CoffeMachineGame"));
 
         games.Add(Category.Coding,CodingGames);
         games.Add(Category.GameDesign,GameDesignGames);
         games.Add(Category.GraphicDesign,GraphicDesignGames);
         games.Add(Category.SoundDesign,SoundDesignGames);
+        games.Add(Category.Special,SpecialGames);
     }
 
     private Category MapStringToCategory(string x){
         x = x.ToLower();
+        x = x.Replace(" ", "");
         if (x == "coding"){
             return Category.Coding;
         }
-        if (x == "gamedesign" || x == "game design"){
+        if (x == "gamedesign"){
             return Category.GameDesign;
         }
-        if (x == "graphicdesign" || x == "graphic design"){
+        if (x == "graphicdesign"){
             return Category.GraphicDesign;
         }
-        if (x == "sounddesign" || x == "sound design"){
+        if (x == "sounddesign"){
             return Category.SoundDesign;
+        }
+        if (x == "special"){
+            return Category.Special;
         }
         Debug.LogError("Could not convert "+x+" to a Category enum!");
         return Category.Coding;
