@@ -41,7 +41,7 @@ public class LevelData : MonoBehaviour
             timer_seconds = 60;
         }
         if (level == 3){
-            samples.Add(0,("short",clips[3]));
+            samples.Add(0,("standard",clips[3]));
             samples.Add(1,("short",clips[4]));
             samples.Add(2,("short",clips[3]));
             samples.Add(3,("short",clips[4]));

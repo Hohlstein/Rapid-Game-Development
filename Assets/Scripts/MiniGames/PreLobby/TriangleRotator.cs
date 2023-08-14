@@ -19,12 +19,12 @@ public class TriangleRotator : MonoBehaviour
     {
         Quaternion currentRotation = transform.rotation;
         float z_rotation = currentRotation.eulerAngles.z;
-        if (Mathf.Abs(z_rotation) > 60){
+        if (Mathf.Abs(z_rotation) > 30){
             if (z_rotation > 0){
-                setZ(60f);
+                setZ(30f);
             }
             else{
-                setZ(-60f);
+                setZ(-30f);
             }
             
         }

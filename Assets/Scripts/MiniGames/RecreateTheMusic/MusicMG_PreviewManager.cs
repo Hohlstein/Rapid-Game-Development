@@ -64,7 +64,7 @@ public class MusicMG_PreviewManager : MonoBehaviour
     public void DropSample(MusicSample_Main sample){
         int insertion_index = CalcInsertionIndex(sample);
         placed_samples.Insert(insertion_index,sample);
-        sample.setTargetX(378 + sample.GetPixelWidth()/2 + GetWidthUpUntilSampleIndex(insertion_index));
+        sample.setTargetX(sample.GetPixelWidth()/2 + GetWidthUpUntilSampleIndex(insertion_index));
         sample.setTargetY(108);
 
     }
@@ -73,8 +73,9 @@ public class MusicMG_PreviewManager : MonoBehaviour
         float output = 0;
         for (int i = 0; i < index; i++)
         {
-            output += placed_samples[i].GetPixelWidth();
+            output += placed_samples[i].GetPixelWidth()-2;
         }
+        Debug.Log(output);
         return output;
     }
 

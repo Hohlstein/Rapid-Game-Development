@@ -148,10 +148,10 @@ public class MusicSample_Main : MonoBehaviour
     public float GetPixelWidth(){
 
         if (type == SampleType.Short){
-            return 114;
+            return 115;
         }
         if (type == SampleType.Standard){
-            return 228;
+            return 230;
         }
 
         return 0;
