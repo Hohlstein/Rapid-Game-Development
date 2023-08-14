@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FinalizeEmployeeList : MonoBehaviour
 {
+    //Dieses Skript enthält die Liste aller ausgewählten Mitarbeiter.
     private HiredEmployees HireInfo;
     private List<Mitarbeiter> Hired_Employee_Objects;
     // Start is called before the first frame update
@@ -17,6 +18,7 @@ public class FinalizeEmployeeList : MonoBehaviour
         Dictionary<int,bool> BoolList = HireInfo.getHireList();
         GameObject[] employeeGameObjects = GameObject.FindGameObjectsWithTag("mitarbeiter"); 
         Hired_Employee_Objects = new List<Mitarbeiter>();
+        //Alle Mitarbeiter Objekte, die nicht vom Spieler ausgewählt wurden, werden gelöscht. Die anderen werden in die Hired_Employee_Objects Liste hinzugefügt.
         for (int i = 0; i < employeeGameObjects.Length; i++)
         {
             Mitarbeiter current_employee = employeeGameObjects[i].GetComponent<Mitarbeiter>();

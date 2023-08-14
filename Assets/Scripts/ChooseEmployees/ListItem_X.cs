@@ -48,6 +48,8 @@ public class ListItem_X : MonoBehaviour
                     instance_button.interactable = false;
                 }
                 if (Input.GetMouseButtonDown(0) && clickable){
+                    UIAudioPlayer UISounds = GetComponent<UIAudioPlayer>();
+                    UISounds.TriggerSound(0);
                     clickable = false;
                     HiredEmployees_object.set(ID,false);
                 }               

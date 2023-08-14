@@ -1,3 +1,5 @@
+//Autor: Klaus Wiegmann
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +9,8 @@ using System;
 
 public class LuckResultDisplay : MonoBehaviour
 {
+    //Dieses Skript wählt, jenachdem, welche Kategorie das Glücksrad entschieden hat, eins der Minispiele in dieser Kategorie und
+    //kümmert sich ums Anzeigen des Namen sowie der Beschreibung des Spiels.
     enum Category
     {
         Coding,
@@ -23,6 +27,7 @@ public class LuckResultDisplay : MonoBehaviour
     public StartMiniGame Play_button;
     void Start()
     {
+        //Anfangs werden Name und Beschreibung versteckt, indem sie auf einen leeren String gesetzt werden. Auch der Play Button muss deaktiviert werden.
         Minigame_title.text = "";
         Minigame_desc.text = "";
         Play_Obj.SetActive(false);
@@ -30,14 +35,18 @@ public class LuckResultDisplay : MonoBehaviour
     }
     
     public void ShowResult(string category){
+        //Zuerst wird die eingegebene Kategorie, die als String übergeben wurde, zu einem category enum konvertiert, um damit weiterzuarbeiten.
         Category chosenCategory = MapStringToCategory(category);
+        //Die Anzahl Spiele, die es für diese Kategorie gibt wird gezählt und eins von diesen wird zufällig ausgewählt.
         List<(string,string,string)> possibleGames = games[chosenCategory];
         System.Random random = new System.Random();
         int randomInt = random.Next(0, possibleGames.Count-1);
         (string,string,string) chosenGame = possibleGames[randomInt];
+        //Nun, da das Spiel ausgewählt wurde, können der Name und die Beschreibung angezeigt werden.
         Minigame_title.text = chosenGame.Item1;
         Minigame_desc.text = chosenGame.Item2;
         string MiniGameScene = chosenGame.Item3;
+        //Dem Play Button wird übermittelt, zu welcher Scene (welchem Minigame) er folglich wechseln muss und wird aktiviert.
         Play_button.SetTargetScene(MiniGameScene);
         Play_Obj.SetActive(true);
     }

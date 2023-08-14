@@ -40,6 +40,7 @@ public class HireList_ItemHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Bei jedem Frame muss überprüft werden, ob dieser Mitarbeiter noch ausgewählt ist.
         checkIfListItemExists();
         smoothMover.setTargetX(startX);
         smoothMover.setTargetY(topOfListY + YDistanceBetweenItems*getItemIndex());
@@ -70,6 +71,7 @@ public class HireList_ItemHandler : MonoBehaviour
     }    
 
     private void checkIfListItemExists(){
+        //Falls der zugehörige Mitarbeiter nicht mehr ausgewählt ist, muss dieses Objekt zerstört werden.
         if(HiredEmployees_object.isHired(ID) == false){
             SelfDestruct selfDestructScript = GetComponent<SelfDestruct>();
             selfDestructScript.execute();
@@ -81,6 +83,7 @@ public class HireList_ItemHandler : MonoBehaviour
     }
 
     public void DeleteItemFromList(){
+        //Wenn "x" gedrückt wird, um diesen Mitarbeiter zu entfernen, muss bei HiredEmployees der Wert dieser Mitarbeiter ID auf false gestellt werden.
         if (deleteOrderSent == false){
             deleteOrderSent = true;
             HiredEmployees_object.set(ID,false);
