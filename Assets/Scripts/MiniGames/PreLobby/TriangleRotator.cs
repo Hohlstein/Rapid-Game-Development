@@ -18,7 +18,23 @@ public class TriangleRotator : MonoBehaviour
     void Update()
     {
         Quaternion currentRotation = transform.rotation;
-        float newZ = currentRotation.eulerAngles.z * returnAmout;
+        float z_rotation = currentRotation.eulerAngles.z;
+        if (Mathf.Abs(z_rotation) > 60){
+            if (z_rotation > 0){
+                setZ(60f);
+            }
+            else{
+                setZ(-60f);
+            }
+            
+        }
+        float newZ = z_rotation * returnAmout;
+        setZ(newZ);
+        
+    }
+
+    private void setZ(float newZ){
+        Quaternion currentRotation = transform.rotation;
         Quaternion newRotation = Quaternion.Euler(currentRotation.eulerAngles.x, currentRotation.eulerAngles.y, newZ);
         transform.rotation = newRotation;
     }
