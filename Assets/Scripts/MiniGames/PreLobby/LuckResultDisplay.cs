@@ -35,6 +35,7 @@ public class LuckResultDisplay : MonoBehaviour
     }
     
     public void ShowResult(string category){
+        SetGames();
         //Zuerst wird die eingegebene Kategorie, die als String übergeben wurde, zu einem category enum konvertiert, um damit weiterzuarbeiten.
         Category chosenCategory = MapStringToCategory(category);
         //Die Anzahl Spiele, die es für diese Kategorie gibt wird gezählt und eins von diesen wird zufällig ausgewählt.
