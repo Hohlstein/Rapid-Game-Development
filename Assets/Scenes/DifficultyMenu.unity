@@ -192,6 +192,7 @@ GameObject:
   - component: {fileID: 273947272}
   - component: {fileID: 273947271}
   - component: {fileID: 273947270}
+  - component: {fileID: 273947273}
   m_Layer: 0
   m_Name: Ok
   m_TagString: Untagged
@@ -262,7 +263,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 273947271}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 273947273}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &273947271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -301,6 +314,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 273947268}
   m_CullTransparentMesh: 1
+--- !u!114 &273947273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273947268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 3cabe42e2adad3c44a5e29a1f8fd2652, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -625,6 +652,7 @@ GameObject:
   - component: {fileID: 1228278655}
   - component: {fileID: 1228278654}
   - component: {fileID: 1228278653}
+  - component: {fileID: 1228278656}
   m_Layer: 0
   m_Name: Left Arrow
   m_TagString: Untagged
@@ -708,6 +736,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1228278656}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1228278654
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,6 +786,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1228278651}
   m_CullTransparentMesh: 1
+--- !u!114 &1228278656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228278651}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 59db340a4a32bca4b9281b5379961524, type: 3}
 --- !u!1 &1239802361
 GameObject:
   m_ObjectHideFlags: 0
@@ -861,6 +915,7 @@ GameObject:
   - component: {fileID: 1857532222}
   - component: {fileID: 1857532221}
   - component: {fileID: 1857532220}
+  - component: {fileID: 1857532223}
   m_Layer: 0
   m_Name: Rights Arrow
   m_TagString: Untagged
@@ -944,6 +999,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1857532223}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1857532221
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -982,6 +1049,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1857532218}
   m_CullTransparentMesh: 1
+--- !u!114 &1857532223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857532218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 59db340a4a32bca4b9281b5379961524, type: 3}
 --- !u!1 &1898315147
 GameObject:
   m_ObjectHideFlags: 0

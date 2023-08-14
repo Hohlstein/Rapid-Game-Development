@@ -18,6 +18,7 @@ public class AvatarManager : MonoBehaviour
     public Image image;
 
     void Start(){
+        //Damit auf jeden Fall etwas angezeigt wird, wird anfangs die Image Komponente auf das festgelegte DefaultSprite gesetzt.
         Image temp_image = GetComponent<Image>();
         if (temp_image != null){
             image = temp_image;
@@ -27,12 +28,14 @@ public class AvatarManager : MonoBehaviour
     }
 
     void Update(){
+        //Die Größe und Position werden am laufenden Band aktualisiert, sodass theoretisch auch von außen gesteuerte Animationen möglich sind.
         SetSize(size);
         GoTo(X_Pos,Y_Pos);
         UpdateSprite();
     }
 
     public void SetEmployee(Mitarbeiter employee){
+        //Ändert den anzuzeigenden Sprite auf den des aktuell ausgewählten Mitarbeiters.
         DisplaySprite = employee.GetAvatar();   
         UpdateSprite();
     }

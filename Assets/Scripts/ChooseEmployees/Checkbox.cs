@@ -30,10 +30,13 @@ public class Checkbox : MonoBehaviour
         /*
         Ist der Schalter zurzeit an, wird er auf aus gestellt. Sonst andersrum.
         */
+        UIAudioPlayer UISounds = GetComponent<UIAudioPlayer>();
         if (toggle){
+            UISounds.TriggerSound(1);
             toggle = false;
         }
         else{
+            UISounds.TriggerSound(0);
             toggle = true;
         }
         /*

@@ -1,6 +1,4 @@
-/*
-Autor: Klaus Wiegmann
-*/
+//Autor: Klaus Wiegmann
 
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +7,8 @@ using System.Linq;
 
 public class Spawn_Samples : MonoBehaviour
 {
+    //Dieses Skript erhökt von LevelData die Samples, die gespawned werden müssen. 
+    //Diese werden dann in einer zufälligen Reihenfolge instanziiert und ihnen werden alle Eigenschaften übermittelt, die sie benötigen.
     public GameObject sample_prefab;
     public Transform set_parent;
     public MusicMG_PreviewManager preview_manager;
@@ -34,6 +34,8 @@ public class Spawn_Samples : MonoBehaviour
         foreach (int key in SampleDataKeys)
         {
             int index = RandomIndexOrder[count];
+            //Da für jedes Sample auch ein Schatten gespawned werden muss, wird das zweite Argument (ob es ein Schatten ist oder nicht) einmal auf true und einmal auf
+            //false gesetzt. So wird im Grunde jedes Sample zweimal gespawned, wobei einmal ein Schatten statt ein ziehbares Sample gespawned wird.
             for (int bool_choice = 0; bool_choice <= 1; bool_choice++)
             {
                 string sampletype = SampleData[key].Item1;

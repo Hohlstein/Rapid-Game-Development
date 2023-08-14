@@ -1,6 +1,4 @@
-/*
-Autor: Klaus Wiegmann
-*/
+//Autor: Klaus Wiegmann
 
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +7,7 @@ using UnityEngine.UI;
 
 public class MMMG_PreviewPlayback : MonoBehaviour
 {
+    //Funktioniert sehr ähnlich wie Goal_PlayButton. Für nähere Erklärung der Funktionalität, bitte dort schauen.
     public MusicMG_PreviewManager manager;
     public Button button;
     public SoundPlayer soundplayer;
