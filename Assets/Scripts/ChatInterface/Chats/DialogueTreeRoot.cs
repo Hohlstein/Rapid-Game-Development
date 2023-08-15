@@ -13,9 +13,12 @@ public class DialogueTreeRoot : MonoBehaviour
     [SerializeField]
     private List<DialogueNode> dialogueStart;
 
+    [SerializeField]
+    private Rarity rarity;
+
     void Start()
     {
-
+        DontDestroyOnLoad(this.gameObject);  
     }
 
     void Update()

@@ -19,6 +19,7 @@ public class PlayerAnswer : MonoBehaviour{
     private int amountOfHoursChanging;
 
     void Start() {
+        DontDestroyOnLoad(this.gameObject);  
         if(finalNode == true) {
             nextNode = null;
         }
