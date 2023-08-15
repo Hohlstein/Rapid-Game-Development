@@ -99,8 +99,8 @@ public class Wheel_Rotator : MonoBehaviour
 
     private string computeResult(){
         //Der relative Rotationswinkel wird berechnet (durch Modulo 360 liegt er im Bereich 0-359) und die dazu gemappete Kategorie zurückgegeben.
-        int field = (int)getRotation()%360;
-        return mapping[field];
+        int field = (int)getRotation()%360/43;
+        return mapping[field*43];
     }
 
     private float getRotation(){

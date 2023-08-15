@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
+
 public class GameController : MonoBehaviour
 {
     [SerializeField]
@@ -25,6 +26,10 @@ public class GameController : MonoBehaviour
 
     private string firstGuessTexture, secondGuessTexture;
 
+    public Countdown timer; 
+
+    public EndMiniGame minigame_ender;
+
     
 
     // Start is called before the first frame update
@@ -37,7 +42,9 @@ public class GameController : MonoBehaviour
         AddListeners();
         AddTextures();
         Shuffle(gameTextures);
-        gameGuesses = gameTextures.Count / 2;
+        gameGuesses = gameTextures.Count / 4;
+        Debug.Log("There are" + gameGuesses);
+
     }
 
     void AddTextures() {
@@ -77,6 +84,7 @@ public class GameController : MonoBehaviour
             btns[secondGuessIndex].image.sprite = gameTextures[secondGuessIndex];
             btns[firstGuessIndex].interactable = true;
             countGuesses++;
+            Debug.Log("This is count guess number" + countGuesses);
             StartCoroutine(CheckIfTexturesMatch());
         }
 
@@ -102,9 +110,13 @@ public class GameController : MonoBehaviour
     
     void CheckIfGameIsFinished() {
         countCorrectGuesses++;
+        Debug.Log("This is correct guess number" + countCorrectGuesses);
         if(countCorrectGuesses == gameGuesses) {
             Debug.Log("Game Finished");
             Debug.Log("It took you" + countGuesses + "many guess(es) to finish the game");
+            int result_score = Mathf.RoundToInt((timer.DisplaySeconds/timer.Seconds)*100);
+            string result_message = "No message here.";
+            minigame_ender.EndNow(result_score,result_message,"GraphicDesign");
         }
     }
 
@@ -116,6 +128,10 @@ public class GameController : MonoBehaviour
             list[randomIndex] = temp;
         }
     }
+
+   
+
+
 }
 
 
