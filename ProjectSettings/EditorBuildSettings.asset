@@ -50,7 +50,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGamePreLobby.unity
     guid: 6e6cdf3764fdaab4383d16f9258c942d
-  - enabled: 1
-    path: Assets/Scenes/TextureMinigame.unity
-    guid: 14d4567f2519635488ba79931a23c367
   m_configObjects: {}
