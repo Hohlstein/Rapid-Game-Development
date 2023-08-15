@@ -310,7 +310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bafe2f47f53a5564c9c7d2acd714df20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: {x: 0, y: 0, z: 0}
   audioplayer: {fileID: 29547079}
   triangle: {fileID: 129728714}
   category_header: {fileID: 139725996}
@@ -318,7 +317,7 @@ MonoBehaviour:
   container: {fileID: 27125741}
   ContainerDSP_obj: {fileID: 761878077}
   introText_obj: {fileID: 797069598}
-  drag: 0.999
+  friction: 0.999
   drumRollSound: {fileID: 8300000, guid: 9395b81d66e1883409a9a0647c217d3f, type: 3}
   has_been_turned: 0
   UISounds: {fileID: 29547080}
@@ -366,6 +365,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 29547080}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 29547077}
         m_TargetAssemblyTypeName: Wheel_Rotator, Assembly-CSharp
         m_MethodName: Push
@@ -489,6 +500,7 @@ MonoBehaviour:
   clips:
   - {fileID: 8300000, guid: 009d581fd9afe4943b2ff564f026831b, type: 3}
   - {fileID: 8300000, guid: 9c7a34f590083e9489761a8998f4328b, type: 3}
+  - {fileID: 8300000, guid: 262d3d1d33371074990ae95e21e9388c, type: 3}
 --- !u!1 &129728710
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,8 +590,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1f4095527df84444be91f9e4fac734b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flipAmount: 1
-  returnAmout: 0.99
+  flipAmount: 2
+  returnAmount: 0.9
 --- !u!1 &139725994
 GameObject:
   m_ObjectHideFlags: 0

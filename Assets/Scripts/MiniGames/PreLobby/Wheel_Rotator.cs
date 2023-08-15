@@ -16,7 +16,7 @@ public class Wheel_Rotator : MonoBehaviour
     public Container container;
     public GameObject ContainerDSP_obj;
     public GameObject introText_obj;
-    public float friction;
+    public float friction = 0.999f;
     public AudioClip drumRollSound;
     public bool has_been_turned = false;
     public UIAudioPlayer UISounds;
@@ -64,14 +64,15 @@ public class Wheel_Rotator : MonoBehaviour
             category_header.text = computeResult();
             ContainerDSP_obj.SetActive(true);
             introText_obj.SetActive(false);
+            if (moving == false && gave_result == false){
+            //Falls sich das Rad nicht mehr dreht und das Ergebnis noch nicht übergeben wurde, wird dies getan.
+                giveResult();
+        }
         }
         else{
             button.enabled = true;
         }
-        if (moving == false && gave_result == false){
-            //Falls sich das Rad nicht mehr dreht und das Ergebnis noch nicht übergeben wurde, wird dies getan.
-            giveResult();
-        }
+        
     }
 
     private void SetRotationRandomly(){
@@ -99,8 +100,8 @@ public class Wheel_Rotator : MonoBehaviour
 
     private string computeResult(){
         //Der relative Rotationswinkel wird berechnet (durch Modulo 360 liegt er im Bereich 0-359) und die dazu gemappete Kategorie zurückgegeben.
-        int field = (int)getRotation()%360;
-        return mapping[field];
+        int field = (int)getRotation()%360/43;
+        return mapping[field*43];
     }
 
     private float getRotation(){
@@ -116,7 +117,7 @@ public class Wheel_Rotator : MonoBehaviour
             has_been_turned = true;
             //Das Rad wird angestuppst, mit einer zufälligen Rotationskraft. Hierdurch wird das Ergebnis nochmals zufällig gemacht, nachdem es bereits zu Beginn auf einen
             //zufälligen Ausgangswinkel gedreht wurde.
-            int randomInt = Random.Range(250, 1750);
+            int randomInt = Random.Range(620, 1500);
             changeRotationSpeed(randomInt);
             moving = true;
             StartDrumRoll();
