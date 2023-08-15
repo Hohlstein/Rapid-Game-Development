@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 203502481}
   - component: {fileID: 203502483}
   - component: {fileID: 203502484}
+  - component: {fileID: 203502485}
   m_Layer: 0
   m_Name: Game Controller
   m_TagString: Untagged
@@ -292,6 +293,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 52fc8923fc43e6f44936ce123c4d9adc, type: 3}
   - {fileID: 21300000, guid: 74a0973e25e5cd84598756322879397f, type: 3}
   - {fileID: 21300000, guid: 7bca33f99f79ab74c8b5ed385796fd1a, type: 3}
+  UISounds: {fileID: 203502485}
   gameTextures:
   - {fileID: 21300000, guid: 30dac40e7ad540b4a94faa1b13d25d9a, type: 3}
   - {fileID: 21300000, guid: 8cff434c163ac374ca36a03533a23fd8, type: 3}
@@ -373,7 +375,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   placement: 2
-  Seconds: 20
+  Seconds: 300
   ColorChangeThreshold: 15
   freeze: 0
   minigame_ender: {fileID: 203502484}

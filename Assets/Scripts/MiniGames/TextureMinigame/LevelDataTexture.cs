@@ -20,10 +20,10 @@ public class LevelDataTexture : MonoBehaviour
             timer_seconds = 240;
         }
         if (level == 2) {
-            timer_seconds = 90;
+            timer_seconds = 120;
         }
         if (level == 3){
-            timer_seconds = 30;
+            timer_seconds = 50;
         }
     }
 
