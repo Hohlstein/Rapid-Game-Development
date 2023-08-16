@@ -25,7 +25,7 @@ public class StartMiniGame : MonoBehaviour
             }
             else{
                 Debug.Log("ATTENTION!!! Should switch to: "+next_scene+", but switching to RecreateTheMusicMiniGame, since other minigames are in development.");
-                SceneManagement.changeScene("RecreateTheMusicMiniGame");
+                SceneManagement.changeScene("TextureMinigame");
             }
             
         }

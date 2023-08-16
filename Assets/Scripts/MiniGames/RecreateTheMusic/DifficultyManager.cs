@@ -9,6 +9,7 @@ public class DifficultyManager : MonoBehaviour
     public int GetLevelInt(){
         //Die im DifficultyMenu festgelegte Schwierigkeit wird aus technischen Gründen in einen int übersetzt.
         string diff = PlayerPrefs.GetString("SelectedDifficulty");
+        Debug.Log("Diffulty Manager level is" + diff);
         if(diff=="Easy"){
             return 1;
         }

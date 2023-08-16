@@ -14,6 +14,7 @@ public class LevelData : MonoBehaviour
 
     //Dieses Skript übergibt je nach Schwierigkeitsgrad eine andere Reihe an Samples und eine andere Lösung, sodass hiermit das Level bereitgestellt wird.
     public (Dictionary<int,(string, AudioClip)>,List<AudioClip>) GetLevel(int level){
+        Debug.Log("Current level is" + level);
         samples = new Dictionary<int,(string, AudioClip)>();
         List<AudioClip> solution = new List<AudioClip>();
         solution_numbers = new List<int>();
