@@ -21,10 +21,6 @@ public class Arbeitsteiling : MonoBehaviour
     public Slider GameDesignSlider;
     public Slider GraphicDesignSlider;
     public Slider SoundDesignSlider;
-    public TextMeshProUGUI CodingText;
-    public TextMeshProUGUI GameDesignText;
-    public TextMeshProUGUI GraphicDesignText;
-    public TextMeshProUGUI SoundDesignText;
     private int numberOfPeople;
     public float textAnimationY;
     private int ID = 0;
@@ -32,8 +28,6 @@ public class Arbeitsteiling : MonoBehaviour
     public Sprite notSelected;
     public Sprite selected;
     private Dictionary<int, float[]> assignedHours = new Dictionary<int, float[]>();
-    private float maxTotalHours = 32; // Maximum total hours allowed
-    private float remainingHours = 32;
 
     private float _2Value = 1.5f;
 
@@ -47,15 +41,21 @@ public class Arbeitsteiling : MonoBehaviour
         NameText.text = "NAME HERE";
         ID = 0;
 
+        CodingSlider.minValue = 0;
+        GameDesignSlider.minValue = 0;
+        GraphicDesignSlider.minValue = 0;
+        SoundDesignSlider.minValue = 0;
+
+        CodingSlider.maxValue = 8;
+        GameDesignSlider.maxValue = 8;
+        GraphicDesignSlider.maxValue = 8;
+        SoundDesignSlider.maxValue = 8;
 
 
-
-        CodingSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(CodingSlider.value, CodingSlider); });
-        GameDesignSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(GameDesignSlider.value, GameDesignSlider); });
-        GraphicDesignSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(GraphicDesignSlider.value, GraphicDesignSlider); });
-        SoundDesignSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(SoundDesignSlider.value, SoundDesignSlider); });
-
-
+        CodingSlider.onValueChanged.AddListener((value) => UpdateSumText());
+        GameDesignSlider.onValueChanged.AddListener((value) => UpdateSumText());
+        GraphicDesignSlider.onValueChanged.AddListener((value) => UpdateSumText());
+        SoundDesignSlider.onValueChanged.AddListener((value) => UpdateSumText());
 
         buttons = GetComponentsInChildren<Button>();
 
@@ -91,23 +91,6 @@ public class Arbeitsteiling : MonoBehaviour
                 }
             }
         }
-
-        GameObject object2 = GameObject.Find("FinalizedHiredEmployeeList");
-        FinalizeEmployeeList FinalizedEmployeeHireList2 = object2.GetComponent<FinalizeEmployeeList>();
-        Mitarbeiter current_employee = FinalizedEmployeeHireList2.GetEmployee(ID);
-        maxTotalHours = current_employee.getWorkingHours();
-
-        CodingSlider.minValue = 0;
-        GameDesignSlider.minValue = 0;
-        GraphicDesignSlider.minValue = 0;
-        SoundDesignSlider.minValue = 0;
-
-        CodingSlider.maxValue = maxTotalHours;
-        GameDesignSlider.maxValue = maxTotalHours;
-        GraphicDesignSlider.maxValue = maxTotalHours;
-        SoundDesignSlider.maxValue = maxTotalHours;
-
-        UpdateTexts(maxTotalHours);
     }
 
 
@@ -156,10 +139,10 @@ public class Arbeitsteiling : MonoBehaviour
 
     public void Update()
     {
-        //SnapSliderValues(CodingSlider, new float[] { 0, _2Value, 4, 6, 32 });
-        //SnapSliderValues(GameDesignSlider, new float[] { 0, _2Value, 4, 6, 32 });
-        //SnapSliderValues(GraphicDesignSlider, new float[] { 0, _2Value, 4, 6, 32 });
-        //SnapSliderValues(SoundDesignSlider, new float[] { 0, _2Value, 4, 6, 32 });
+        SnapSliderValues(CodingSlider, new float[] { 0, _2Value, 4, 6, 8 });
+        SnapSliderValues(GameDesignSlider, new float[] { 0, _2Value, 4, 6, 8 });
+        SnapSliderValues(GraphicDesignSlider, new float[] { 0, _2Value, 4, 6, 8 });
+        SnapSliderValues(SoundDesignSlider, new float[] { 0, _2Value, 4, 6, 8 });
 
         UpdateDisplayedValues();
     }
@@ -174,24 +157,8 @@ public class Arbeitsteiling : MonoBehaviour
             GameDesignSlider.value = 0;
             GraphicDesignSlider.value = 0;
             SoundDesignSlider.value = 0;
-            ID = newID;
-            GameObject object2 = GameObject.Find("FinalizedHiredEmployeeList");
-            FinalizeEmployeeList FinalizedEmployeeHireList2 = object2.GetComponent<FinalizeEmployeeList>();
-            Mitarbeiter current_employee = FinalizedEmployeeHireList2.GetEmployee(ID);
-            maxTotalHours = current_employee.getWorkingHours();
-
-            CodingSlider.minValue = 0;
-            GameDesignSlider.minValue = 0;
-            GraphicDesignSlider.minValue = 0;
-            SoundDesignSlider.minValue = 0;
-
-            CodingSlider.maxValue = maxTotalHours;
-            GameDesignSlider.maxValue = maxTotalHours;
-            GraphicDesignSlider.maxValue = maxTotalHours;
-            SoundDesignSlider.maxValue = maxTotalHours;
-
-            UpdateTexts(maxTotalHours);
             LoadAssignedHours(ID);
+            ID = newID;
         }
         animateUIElements();
         UpdateDisplayedValues();
@@ -298,36 +265,20 @@ public class Arbeitsteiling : MonoBehaviour
         float graphic = GraphicDesignSlider.value;
         float sound = SoundDesignSlider.value;
 
+        if (coding == _2Value)
+            coding = 2.0f;
+        if (gameDesign == _2Value)
+            gameDesign = 2.0f;
+        if (graphic == _2Value)
+            graphic = 2.0f;
+        if (sound == _2Value)
+            sound = 2.0f;
+
+
+
         float sum = coding + gameDesign + graphic + sound;
-
-        if (sum > maxTotalHours)
-        {
-            float overflow = sum - maxTotalHours;
-
-            // Distribute the overflow back to the sliders
-            float adjustment = overflow / 4;
-            coding -= adjustment;
-            gameDesign -= adjustment;
-            graphic -= adjustment;
-            sound -= adjustment;
-
-            // Make sure the values are within bounds
-            coding = Mathf.Clamp(coding, 0, maxTotalHours);
-            gameDesign = Mathf.Clamp(gameDesign, 0, maxTotalHours);
-            graphic = Mathf.Clamp(graphic, 0, maxTotalHours);
-            sound = Mathf.Clamp(sound, 0, maxTotalHours);
-        }
-
-        CodingSlider.value = coding;
-        GameDesignSlider.value = gameDesign;
-        GraphicDesignSlider.value = graphic;
-        SoundDesignSlider.value = sound;
-
         SumText.text = sum.ToString();
     }
-
-
-
 
     private void LoadAssignedHours(int employeeID)
     {
@@ -392,28 +343,4 @@ public class Arbeitsteiling : MonoBehaviour
         return 0;
     }
 
-    private void OnSliderValueChanged(float newValue, Slider slider)
-    {
-        float totalValue = CodingSlider.value + GameDesignSlider.value + GraphicDesignSlider.value + SoundDesignSlider.value;
-
-        if (totalValue > maxTotalHours)
-        {
-            float excessValue = totalValue - maxTotalHours;
-            float adjustedValue = newValue - excessValue;
-            slider.value = adjustedValue;
-        }
-
-        int sum = (int)CodingSlider.value + (int)GameDesignSlider.value + (int)GraphicDesignSlider.value + (int)SoundDesignSlider.value;
-        SumText.text = sum.ToString("F0"); // Display as a whole number without decimal places
-        Debug.Log("dsgfsdf" + sum);
-    }
-
-    private void UpdateTexts(float remainingHours)
-    {
-        CodingText.text = $"{remainingHours:F0}h";
-        GameDesignText.text = $"{remainingHours * 0.75:F0}h";
-        GraphicDesignText.text = $"{remainingHours * 0.5:F0}h";
-        SoundDesignText.text = $"{(remainingHours * 0.25):F0}h";
-    }
 }
-
