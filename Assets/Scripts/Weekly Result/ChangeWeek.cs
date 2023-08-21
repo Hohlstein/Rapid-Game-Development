@@ -30,6 +30,6 @@ public class ChangeWeek : MonoBehaviour
         Week week = obj.GetComponent<Week>();
         week.nextWeek();
 
-        SceneManagement.changeScene("Chat");
+        SceneManagement.changeScene("WeekStartScreen");
     }
 }
