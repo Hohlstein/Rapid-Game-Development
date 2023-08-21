@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChangeWeek : MonoBehaviour
 {
@@ -28,6 +29,11 @@ public class ChangeWeek : MonoBehaviour
 
         GameObject obj = GameObject.Find("WeekInfo");
         Week week = obj.GetComponent<Week>();
+        int weekNumber = GameObject.Find("WeekInfo").GetComponent<Week>().getWeek();
+        if (weekNumber >= 5) {
+            SceneManagement.changeScene("Endscreen");
+            return;
+        }
         week.nextWeek();
 
         SceneManagement.changeScene("Chat");
