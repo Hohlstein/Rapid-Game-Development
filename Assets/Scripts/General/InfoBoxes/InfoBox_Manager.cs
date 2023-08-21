@@ -9,6 +9,7 @@ public class InfoBox_Manager : MonoBehaviour
     public TMP_Manager title_TMP;
     public TMP_Manager body_TMP;
     public InfoBox_Animation animation;
+    public UIAudioPlayer UISounds;
     public BalancingData BalancingData;
 
     private string scene;
@@ -25,6 +26,7 @@ public class InfoBox_Manager : MonoBehaviour
     private sizes size;
 
     public void VoidOKPressed(){
+        UISounds.TriggerSound(1);
         animation.FadeDownWithDestroy(gameObject);
     }
 
@@ -67,6 +69,10 @@ public class InfoBox_Manager : MonoBehaviour
             body = "The game's progress depends on the efficiency of your employees. Finishing a minigame quickly will increase the overall productivity for the week within the minigame's category, so do your best!";
             size = sizes.medium;
             prepared = true;
+        }
+
+        if (prepared){
+            UISounds.TriggerSound(0);
         }
     }
 

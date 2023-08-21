@@ -1,6 +1,4 @@
-/*
-Autor: Klaus Wiegmann
-*/
+//Autor: Klaus Wiegmann
 
 using System.Collections;
 using System.Collections.Generic;
@@ -48,20 +46,27 @@ public class Countdown : MonoBehaviour
     void Update()
     {
         GoToPlacementPosition();
-
+        //Die Anzeige kann eingefroren werden. Ist sie nicht eingefrorer, aktualisiert sie die übrigen Sekunden.
         if (freeze == false){
+            //Die Sekunden, die übrig bleiben, werden über die Systemzeit berechnet. So ist die Anzeige FPS/Performance unabhängig.
+            //DisplaySeconds enthält die übrigen Sekunden als solche, also z.B. bei 1:05 Minuten als 65.
             DisplaySeconds = (int)Mathf.RoundToInt(Seconds-(Time.time - StartClockTime));;
             if (DisplaySeconds < 0){
+                //Ist der Timer abgelaufen, wird dies dem minigame_ender mitgeteilt.
                 DisplaySeconds = 0;
                 minigame_ender.TimeOut();
             }
+            //Die Sekunden und Minuten Anzahl werden berechnet.
             seconds = (DisplaySeconds % 60).ToString();
             if (DisplaySeconds % 60 < 10){
+                //Ist die Sekundenzahl einstellig, wird eine führende 0 hinzugefügt.
                 seconds = "0"+seconds;
             }
             minutes = (DisplaySeconds/60).ToString();
         }
         DisplayText.text = minutes + ":" + seconds;
+        //Ist die übrige Zeit in Sekunden kleiner als der ColorChangeThreshold, wird die Farbe der Anzeige auf die thresholdColor gewechselt
+        //(z.B. Rot, wenn nur noch 15 Sekunden übrig sind.)
         if (DisplaySeconds <= ColorChangeThreshold){
             DisplayText.color = thresholdColor;
         }
@@ -84,6 +89,8 @@ public class Countdown : MonoBehaviour
 
     private void GoToPlacementPosition()
     {
+        //Damit dieses Skript sehr einfach in mehreren MiniGames verwendet werden kann, kann die Ecke, in der der Timer angezeigt werden soll, einfach im Unity Editor
+        //per Dropdown festgelegt werden.
         Vector3 newPosition = DisplayText.transform.localPosition;
         if (placement == PlacementOptions.BottomLeft || placement == PlacementOptions.BottomRight)
         {

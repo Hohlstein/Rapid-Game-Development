@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Linq;
 
+
 public class GameController : MonoBehaviour
 {
     [SerializeField]
     private Sprite coveredTexture;
 
     public Sprite[] textureCards;
+    public UIAudioPlayer UISounds;
 
     public List<Sprite> gameTextures = new List<Sprite>();
 
@@ -25,6 +27,11 @@ public class GameController : MonoBehaviour
 
     private string firstGuessTexture, secondGuessTexture;
 
+    public Countdown timer; 
+    private float timer_seconds;
+
+    public EndMiniGame minigame_ender;
+
     
 
     // Start is called before the first frame update
@@ -37,7 +44,11 @@ public class GameController : MonoBehaviour
         AddListeners();
         AddTextures();
         Shuffle(gameTextures);
-        gameGuesses = gameTextures.Count / 2;
+        gameGuesses = gameTextures.Count / 4;
+        Debug.Log("There are" + gameGuesses);
+        string diff = PlayerPrefs.GetString("SelectedDifficulty");
+        GetLevel(GetLevelInt());
+
     }
 
     void AddTextures() {
@@ -63,6 +74,7 @@ public class GameController : MonoBehaviour
     }
 
     public void PickTexture() {
+        UISounds.TriggerSound(0);
         if(!firstGuess) {
             firstGuess = true;
             firstGuessIndex = int.Parse(UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject.name);
@@ -77,21 +89,25 @@ public class GameController : MonoBehaviour
             btns[secondGuessIndex].image.sprite = gameTextures[secondGuessIndex];
             btns[firstGuessIndex].interactable = true;
             countGuesses++;
+            Debug.Log("This is count guess number" + countGuesses);
             StartCoroutine(CheckIfTexturesMatch());
         }
 
     }
 
     IEnumerator CheckIfTexturesMatch() {
-        yield return new WaitForSeconds (.5f);
         if(firstGuessTexture == secondGuessTexture) {
-            yield return new WaitForSeconds (.5f);
+            UISounds.TriggerSound(1);
+            yield return new WaitForSeconds (1.5f);
             btns[firstGuessIndex].interactable = false;
             btns[secondGuessIndex].interactable = false;
             btns[firstGuessIndex].image.color = new Color(0, 0, 0, 0);
             btns[secondGuessIndex].image.color = new Color(0, 0, 0, 0);
+            UISounds.TriggerSound(3);
             CheckIfGameIsFinished();
         } else {
+            yield return new WaitForSeconds (.5f);
+            UISounds.TriggerSound(2);
             yield return new WaitForSeconds (.5f);
             btns[firstGuessIndex].image.sprite = coveredTexture;
             btns[secondGuessIndex].image.sprite = coveredTexture;
@@ -102,9 +118,13 @@ public class GameController : MonoBehaviour
     
     void CheckIfGameIsFinished() {
         countCorrectGuesses++;
+        Debug.Log("This is correct guess number" + countCorrectGuesses);
         if(countCorrectGuesses == gameGuesses) {
             Debug.Log("Game Finished");
             Debug.Log("It took you" + countGuesses + "many guess(es) to finish the game");
+            int result_score = Mathf.RoundToInt((timer.DisplaySeconds/timer.Seconds)*100);
+            string result_message = "No message here.";
+            minigame_ender.EndNow(result_score,result_message,"GraphicDesign");
         }
     }
 
@@ -116,6 +136,47 @@ public class GameController : MonoBehaviour
             list[randomIndex] = temp;
         }
     }
+
+    public void GetLevel(int level){
+        Debug.Log("The level is " + level);
+        SetSamplesAndTimer(level);
+        timer.SetRemainingSeconds(timer_seconds);
+        timer.Unfreeze();
+    }
+
+    private void SetSamplesAndTimer(int level){
+        if (level == 1){
+            timer_seconds = 240;
+        }
+        if (level == 2) {
+            timer_seconds = 120;
+        }
+        if (level == 3){
+            timer_seconds = 50;
+        }
+    }
+
+    // Start is called before the first frame update
+    public int GetLevelInt(){
+        //Die im DifficultyMenu festgelegte Schwierigkeit wird aus technischen Gründen in einen int übersetzt.
+        string diff = PlayerPrefs.GetString("SelectedDifficulty");
+        Debug.Log("Diffulty Manager level is" + diff);
+        if(diff=="Easy"){
+            return 1;
+        }
+        if(diff=="Medium"){
+            return 3;
+        }
+        if(diff=="Hard"){
+            return 3;
+        }
+        Debug.LogError("Difficulty val "+diff+"unknown, couldn't load level data!");
+        return 999;
+    }
+
+   
+
+
 }
 
 

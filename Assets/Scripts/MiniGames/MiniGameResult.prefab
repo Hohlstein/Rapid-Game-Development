@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7490804585825797357}
   - component: {fileID: 5144883777700041348}
+  - component: {fileID: -8255245292768706517}
   m_Layer: 0
   m_Name: MiniGameResult
   m_TagString: mitarbeiter
@@ -44,3 +45,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b27f1fc29df6b44bbbe2b59f75c91dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-8255245292768706517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3601581404770357820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938158d8be64c96478eaae1daeba0634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}

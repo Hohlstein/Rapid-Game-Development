@@ -1,6 +1,5 @@
-/*
-Autor: Klaus Wiegmann
-*/
+//Autor: Klaus Wiegmann
+
 
 using System.Collections;
 using System.Collections.Generic;
@@ -9,6 +8,7 @@ using UnityEngine.UI;
 
 public class MMMG_InsertionMarker : MonoBehaviour
 {
+    //Dieses Skript ist für den Marker zuständig, der angezeigt wird, wenn der Spieler ein Sample ins Feld zieht. Durch ihn wird klar, wohin das Sample abgelegt wird.
     private int index;
     private int standard_x;
     private bool show;
@@ -60,6 +60,7 @@ public class MMMG_InsertionMarker : MonoBehaviour
     }
 
     private void UpdateSize(){
+        //Eine kleine Animation, durch die der Marker sichtbarer wird. Er passt seine vertikale Länge laufend an, sodass diese anhand einer Sinuswelle animiert wird.
         float angleInRadians = Mathf.Deg2Rad * tick;
         float sinusValue = Mathf.Sin(angleInRadians);
         Vector3 currentScale = transform.localScale;

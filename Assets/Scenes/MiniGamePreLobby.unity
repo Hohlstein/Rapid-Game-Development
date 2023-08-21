@@ -232,6 +232,7 @@ GameObject:
   - component: {fileID: 29547077}
   - component: {fileID: 29547078}
   - component: {fileID: 29547079}
+  - component: {fileID: 29547080}
   m_Layer: 5
   m_Name: Wheel
   m_TagString: Untagged
@@ -246,14 +247,14 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29547073}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7491292, w: 0.662424}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2035144882}
   m_RootOrder: -1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 97.03}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 605.3, y: 540}
@@ -279,7 +280,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b632737adc3790e48b946865364a5bbc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 543316a59ffb74d4db41f0b58ea12cef, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -309,7 +310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bafe2f47f53a5564c9c7d2acd714df20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationSpeed: {x: 0, y: 0, z: 0}
   audioplayer: {fileID: 29547079}
   triangle: {fileID: 129728714}
   category_header: {fileID: 139725996}
@@ -317,8 +317,10 @@ MonoBehaviour:
   container: {fileID: 27125741}
   ContainerDSP_obj: {fileID: 761878077}
   introText_obj: {fileID: 797069598}
-  drag: 0.999
+  friction: 0.998
+  drumRollSound: {fileID: 8300000, guid: 9395b81d66e1883409a9a0647c217d3f, type: 3}
   has_been_turned: 0
+  UISounds: {fileID: 29547080}
 --- !u!114 &29547078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,6 +365,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 29547080}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 29547077}
         m_TargetAssemblyTypeName: Wheel_Rotator, Assembly-CSharp
         m_MethodName: Push
@@ -471,6 +485,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &29547080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29547073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 009d581fd9afe4943b2ff564f026831b, type: 3}
+  - {fileID: 8300000, guid: 9c7a34f590083e9489761a8998f4328b, type: 3}
+  - {fileID: 8300000, guid: 262d3d1d33371074990ae95e21e9388c, type: 3}
 --- !u!1 &129728710
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +527,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129728710}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -560,8 +590,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1f4095527df84444be91f9e4fac734b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flipAmount: 1
-  returnAmout: 0.96
+  flipAmount: 2
+  returnAmount: 0.9
 --- !u!1 &139725994
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,6 +909,7 @@ GameObject:
   - component: {fileID: 563420224}
   - component: {fileID: 563420223}
   - component: {fileID: 563420225}
+  - component: {fileID: 563420226}
   m_Layer: 0
   m_Name: PLAY_Button
   m_TagString: Untagged
@@ -1012,6 +1043,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 563420226}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &563420225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1024,6 +1067,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3fcb7a93cf0781b4f852abde000c883d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &563420226
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563420219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 3cabe42e2adad3c44a5e29a1f8fd2652, type: 3}
+  - {fileID: 8300000, guid: 4d2e561c7c332224ebdfbfc1d763cdd4, type: 3}
 --- !u!1 &709409929
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,3 +1,5 @@
+//Autor: Klaus Wiegmann
+
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,6 +7,8 @@ using UnityEngine.UI;
 
 public class Container : MonoBehaviour
 {
+    //Dieses Skript dient nur dazu, beim Container rechts das Sprite zu ändern, sobald das Minispiel festgelegt wurde.
+    
     public Image img;
     public List<Sprite> sprites;
     

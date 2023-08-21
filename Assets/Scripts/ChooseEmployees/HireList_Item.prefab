@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 8437577073582851789}
   - component: {fileID: 1677619495174348289}
   - component: {fileID: 804381508050901621}
+  - component: {fileID: 4566061731153148991}
   m_Layer: 3
   m_Name: X_Button
   m_TagString: Untagged
@@ -139,6 +140,20 @@ MonoBehaviour:
   itemHandler: {fileID: 222513743897371051}
   HiredEmployees_object: {fileID: 0}
   distanceThreshold: 35
+--- !u!114 &4566061731153148991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571479036748364357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 570df0d9d93b03044a5091058c251b7c, type: 3}
 --- !u!1 &676262696512491447
 GameObject:
   m_ObjectHideFlags: 0
@@ -270,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 25
   image: {fileID: 2404367777527673209}
 --- !u!1 &1719261495771981725
 GameObject:
@@ -576,7 +591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 25
   image: {fileID: 6779637307436967463}
 --- !u!1 &4197494798881066285
 GameObject:
@@ -862,7 +877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 25
   image: {fileID: 6480008011618474735}
 --- !u!1 &7686790868114619878
 GameObject:
@@ -1106,6 +1121,7 @@ GameObject:
   - component: {fileID: 8850529274180919319}
   - component: {fileID: 3118593053666299812}
   - component: {fileID: 1202344130257317276}
+  - component: {fileID: -8441100928737397209}
   m_Layer: 3
   m_Name: HireList_Item
   m_TagString: Untagged
@@ -1184,7 +1200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dea5baf2836f424189de565a460f04a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friction: 25
+  friction: 7
   freeze: 0
 --- !u!114 &3118593053666299812
 MonoBehaviour:
@@ -1254,6 +1270,19 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &-8441100928737397209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8678525324463267902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips: []
 --- !u!1 &8868670516095634238
 GameObject:
   m_ObjectHideFlags: 0
@@ -1345,5 +1374,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 25
   image: {fileID: 8065590302482917408}

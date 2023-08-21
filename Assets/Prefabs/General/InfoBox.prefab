@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3428552811021737418}
   - component: {fileID: 2355654844863399786}
   - component: {fileID: 2656917434897799962}
+  - component: {fileID: 6627743870161515996}
   m_Layer: 0
   m_Name: InfoBox
   m_TagString: Untagged
@@ -84,7 +85,23 @@ MonoBehaviour:
   title_TMP: {fileID: 3427966247305534970}
   body_TMP: {fileID: 5643882169362636203}
   animation: {fileID: 4920958970256534767}
+  UISounds: {fileID: 6627743870161515996}
   BalancingData: {fileID: 11400000, guid: 5b64311e6a2dd1a4b8d423eb97b4092d, type: 2}
+--- !u!114 &6627743870161515996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178798624165243385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 1d0630a7248460b4d991021f58c51795, type: 3}
+  - {fileID: 8300000, guid: 262d3d1d33371074990ae95e21e9388c, type: 3}
 --- !u!1 &490237023606909362
 GameObject:
   m_ObjectHideFlags: 0

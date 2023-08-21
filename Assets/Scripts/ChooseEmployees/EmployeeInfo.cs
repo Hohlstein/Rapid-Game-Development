@@ -23,7 +23,7 @@ public class EmployeeInfo : MonoBehaviour
         ConvertGameObjectsToEmployees(); 
         for (int i = 0; i < employees_list.Length; i++)
         {
-            employees_list[i].ResetAllHours();
+         //   employees_list[i].ResetAllHours();
             int current_id = employees_list[i].getID();
             people[current_id] = employees_list[i];
         }

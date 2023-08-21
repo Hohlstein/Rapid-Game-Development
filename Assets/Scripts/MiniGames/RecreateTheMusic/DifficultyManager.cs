@@ -1,3 +1,4 @@
+//Autor: Klaus Wiegmann
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,7 +7,9 @@ public class DifficultyManager : MonoBehaviour
 {
     // Start is called before the first frame update
     public int GetLevelInt(){
+        //Die im DifficultyMenu festgelegte Schwierigkeit wird aus technischen Gründen in einen int übersetzt.
         string diff = PlayerPrefs.GetString("SelectedDifficulty");
+        Debug.Log("Diffulty Manager level is" + diff);
         if(diff=="Easy"){
             return 1;
         }
