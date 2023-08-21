@@ -1192,7 +1192,7 @@ MonoBehaviour:
     m_HighlightedColor: {r: 0.6603774, g: 0.6603774, b: 0.6603774, a: 1}
     m_PressedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     m_SelectedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_DisabledColor: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 0.09019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
   m_SpriteState:
@@ -1278,6 +1278,7 @@ MonoBehaviour:
   image: {fileID: 955530669}
   onSprite: {fileID: 21300000, guid: 269efc014bb6b774aab16c7aece545c6, type: 3}
   offSprite: {fileID: 21300000, guid: 32009c890b76de5438c5e8d357697d64, type: 3}
+  button: {fileID: 955530668}
 --- !u!114 &955530672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1347,7 +1348,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 35
+  friction: 10
   image: {fileID: 959373562}
 --- !u!114 &959373561
 MonoBehaviour:
@@ -2386,7 +2387,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 35
+  friction: 10
   image: {fileID: 1214178147}
 --- !u!1 &1241477384
 GameObject:
@@ -3110,6 +3111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da6e4c3033781864b8f1573f8a82bb28, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weekNumber: 0
 --- !u!4 &1546255144
 Transform:
   m_ObjectHideFlags: 0
@@ -3945,7 +3947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 35
+  friction: 10
   image: {fileID: 1879495341}
 --- !u!114 &1879495340
 MonoBehaviour:
@@ -4052,7 +4054,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 35
+  friction: 10
   image: {fileID: 2014093494}
 --- !u!114 &2014093493
 MonoBehaviour:

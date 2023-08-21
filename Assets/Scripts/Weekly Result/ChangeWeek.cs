@@ -36,6 +36,6 @@ public class ChangeWeek : MonoBehaviour
         }
         week.nextWeek();
 
-        SceneManagement.changeScene("Chat");
+        SceneManagement.changeScene("WeekStartScreen");
     }
 }
