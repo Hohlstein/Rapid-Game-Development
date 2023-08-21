@@ -13,6 +13,7 @@ public class Arbeitsteiling : MonoBehaviour
     public EmployeeInfo infoSource;
 
     public TextMeshProUGUI SumText;
+    public TextMeshProUGUI AvailableHours;
     public PercentageBar CodingSkill;
     public PercentageBar GameDesignSkill;
     public PercentageBar GraphicDesignSkill;
@@ -46,10 +47,10 @@ public class Arbeitsteiling : MonoBehaviour
         GraphicDesignSlider.minValue = 0;
         SoundDesignSlider.minValue = 0;
 
-        CodingSlider.maxValue = 8;
-        GameDesignSlider.maxValue = 8;
-        GraphicDesignSlider.maxValue = 8;
-        SoundDesignSlider.maxValue = 8;
+        CodingSlider.maxValue = 32;
+        GameDesignSlider.maxValue = 32;
+        GraphicDesignSlider.maxValue = 32;
+        SoundDesignSlider.maxValue = 32;
 
 
         CodingSlider.onValueChanged.AddListener((value) => UpdateSumText());
@@ -87,10 +88,13 @@ public class Arbeitsteiling : MonoBehaviour
 
                 if (id.ID == ID)
                 {
+
                     SelectButton(button);
+                  
                 }
             }
         }
+          ChangeID(ID);
     }
 
 
@@ -139,10 +143,10 @@ public class Arbeitsteiling : MonoBehaviour
 
     public void Update()
     {
-        SnapSliderValues(CodingSlider, new float[] { 0, _2Value, 4, 6, 8 });
-        SnapSliderValues(GameDesignSlider, new float[] { 0, _2Value, 4, 6, 8 });
-        SnapSliderValues(GraphicDesignSlider, new float[] { 0, _2Value, 4, 6, 8 });
-        SnapSliderValues(SoundDesignSlider, new float[] { 0, _2Value, 4, 6, 8 });
+        SnapSliderValues(CodingSlider, new float[] { 0, _2Value, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32 });
+        SnapSliderValues(GameDesignSlider, new float[] { 0, _2Value, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32});
+        SnapSliderValues(GraphicDesignSlider, new float[] { 0, _2Value, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32 });
+        SnapSliderValues(SoundDesignSlider, new float[] { 0, _2Value, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32});
 
         UpdateDisplayedValues();
     }
@@ -158,12 +162,21 @@ public class Arbeitsteiling : MonoBehaviour
             GraphicDesignSlider.value = 0;
             SoundDesignSlider.value = 0;
             LoadAssignedHours(ID);
+            LoadAvailableHours(ID);
             ID = newID;
         }
         animateUIElements();
         UpdateDisplayedValues();
     }
 
+    private void LoadAvailableHours(int id)
+    {
+        GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
+        FinalizeEmployeeList FinalizedEmployeeHireList = obj.GetComponent<FinalizeEmployeeList>();
+        Mitarbeiter current_employee = FinalizedEmployeeHireList.GetEmployee(ID);
+        AvailableHours.text = current_employee.getWorkingHours().ToString();
+
+    }
 
     private void animateUIElements()
     {
@@ -185,6 +198,7 @@ public class Arbeitsteiling : MonoBehaviour
         GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
         FinalizeEmployeeList FinalizedEmployeeHireList = obj.GetComponent<FinalizeEmployeeList>();
         Mitarbeiter current_employee = FinalizedEmployeeHireList.GetEmployee(ID);
+
 
 
         NameText.text = current_employee.getFirstName() + " " + current_employee.getLastName()[0] + ".";
@@ -228,7 +242,7 @@ public class Arbeitsteiling : MonoBehaviour
             sound = 2.0f;
 
         float sum = coding + gameDesign + graphic + sound;
-        current_employee.setWorkinghours((int)sum);
+        //current_employee.setWorkinghours((int)sum);
         current_employee.SetgraphicDesignHours((int)graphic);
         current_employee.SetcodingHours((int)coding);
         current_employee.SetgameDesignHours((int)gameDesign);
