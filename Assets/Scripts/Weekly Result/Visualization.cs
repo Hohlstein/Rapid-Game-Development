@@ -198,7 +198,7 @@ public class Visualisation : MonoBehaviour
         gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
         graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
         sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/1000;
-        PlayerPrefs.DeleteKey("Codingforweekly");
+        
         
         }
 
@@ -208,7 +208,7 @@ public class Visualisation : MonoBehaviour
         gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
         graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
         sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/1000;
-        PlayerPrefs.DeleteKey("GameDesignforweekly");
+        
         }
 
         if (PlayerPrefs.GetString("GraphicDesignforweekly") == "GraphicDesignforweekly") {
@@ -217,7 +217,7 @@ public class Visualisation : MonoBehaviour
         gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
         graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
         sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/1000;
-        PlayerPrefs.DeleteKey("GraphicDesignforweekly");
+        
         }
 
         if (PlayerPrefs.GetString("SoundDesignforweekly") == "SoundDesignforweekly") {
@@ -226,7 +226,7 @@ public class Visualisation : MonoBehaviour
         gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
         graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
         sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
-        PlayerPrefs.DeleteKey("SoundDesignforweekly");
+        
         }
 
         if (PlayerPrefs.GetString("Specialforweekly") == "Specialforweekly") {
@@ -235,7 +235,7 @@ public class Visualisation : MonoBehaviour
         gamedesign = gamesaver + FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
         graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
         sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
-        PlayerPrefs.DeleteKey("Specialforweekly");
+        
         }
     }
 
