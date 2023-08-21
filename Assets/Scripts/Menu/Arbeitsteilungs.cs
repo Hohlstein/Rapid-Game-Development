@@ -18,6 +18,10 @@ public class Arbeitsteiling : MonoBehaviour
     public PercentageBar GameDesignSkill;
     public PercentageBar GraphicDesignSkill;
     public PercentageBar SoundDesignSkill;
+    public TextMeshProUGUI Text1;
+    public TextMeshProUGUI Text2;
+    public TextMeshProUGUI Text3;
+    public TextMeshProUGUI Text4;
     public Slider CodingSlider;
     public Slider GameDesignSlider;
     public Slider GraphicDesignSlider;
@@ -29,7 +33,8 @@ public class Arbeitsteiling : MonoBehaviour
     public Sprite notSelected;
     public Sprite selected;
     private Dictionary<int, float[]> assignedHours = new Dictionary<int, float[]>();
-
+    private float maxTotalHours = 32; 
+    private float remainingHours = 32;
     private float _2Value = 1.5f;
 
 
@@ -53,10 +58,12 @@ public class Arbeitsteiling : MonoBehaviour
         SoundDesignSlider.maxValue = 32;
 
 
-        CodingSlider.onValueChanged.AddListener((value) => UpdateSumText());
-        GameDesignSlider.onValueChanged.AddListener((value) => UpdateSumText());
-        GraphicDesignSlider.onValueChanged.AddListener((value) => UpdateSumText());
-        SoundDesignSlider.onValueChanged.AddListener((value) => UpdateSumText());
+
+        CodingSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(CodingSlider.value, CodingSlider); });
+        GameDesignSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(GameDesignSlider.value, GameDesignSlider); });
+        GraphicDesignSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(GraphicDesignSlider.value, GraphicDesignSlider); });
+        SoundDesignSlider.onValueChanged.AddListener(delegate { OnSliderValueChanged(SoundDesignSlider.value, SoundDesignSlider); });
+
 
         buttons = GetComponentsInChildren<Button>();
 
@@ -95,6 +102,23 @@ public class Arbeitsteiling : MonoBehaviour
             }
         }
           ChangeID(ID);
+
+        GameObject object2 = GameObject.Find("FinalizedHiredEmployeeList");
+        FinalizeEmployeeList FinalizedEmployeeHireList2 = object2.GetComponent<FinalizeEmployeeList>();
+        Mitarbeiter current_employee = FinalizedEmployeeHireList2.GetEmployee(ID);
+        maxTotalHours = current_employee.getWorkingHours();
+
+        CodingSlider.minValue = 0;
+        GameDesignSlider.minValue = 0;
+        GraphicDesignSlider.minValue = 0;
+        SoundDesignSlider.minValue = 0;
+
+        CodingSlider.maxValue = maxTotalHours;
+        GameDesignSlider.maxValue = maxTotalHours;
+        GraphicDesignSlider.maxValue = maxTotalHours;
+        SoundDesignSlider.maxValue = maxTotalHours;
+
+        UpdateTexts(maxTotalHours);
     }
 
 
@@ -143,11 +167,11 @@ public class Arbeitsteiling : MonoBehaviour
 
     public void Update()
     {
-        SnapSliderValues(CodingSlider, new float[] { 0, _2Value, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32 });
-        SnapSliderValues(GameDesignSlider, new float[] { 0, _2Value, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32});
-        SnapSliderValues(GraphicDesignSlider, new float[] { 0, _2Value, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32 });
-        SnapSliderValues(SoundDesignSlider, new float[] { 0, _2Value, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32});
-
+        /*SnapSliderValues(CodingSlider, new float[] { 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32 }) ;
+        SnapSliderValues(GameDesignSlider, new float[] { 0, 2, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32});
+        SnapSliderValues(GraphicDesignSlider, new float[] { 0, 2, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32 });
+        SnapSliderValues(SoundDesignSlider, new float[] { 0, 2, 4, 6, 8, 10,12,14,16,18,20,22,24,26,28,30,32});
+        */
         UpdateDisplayedValues();
     }
 
@@ -156,7 +180,7 @@ public class Arbeitsteiling : MonoBehaviour
         numberOfPeople = 8;
         if (newID >= 0 && newID < numberOfPeople)
         {
-            // Vor dem Wechseln des Mitarbeiters die Slider auf 0 setzen
+           
             CodingSlider.value = 0;
             GameDesignSlider.value = 0;
             GraphicDesignSlider.value = 0;
@@ -164,6 +188,24 @@ public class Arbeitsteiling : MonoBehaviour
             LoadAssignedHours(ID);
             LoadAvailableHours(ID);
             ID = newID;
+
+            GameObject object2 = GameObject.Find("FinalizedHiredEmployeeList");
+            FinalizeEmployeeList FinalizedEmployeeHireList2 = object2.GetComponent<FinalizeEmployeeList>();
+            Mitarbeiter current_employee = FinalizedEmployeeHireList2.GetEmployee(ID);
+            maxTotalHours = current_employee.getWorkingHours();
+
+            CodingSlider.minValue = 0;
+            GameDesignSlider.minValue = 0;
+            GraphicDesignSlider.minValue = 0;
+            SoundDesignSlider.minValue = 0;
+
+            CodingSlider.maxValue = maxTotalHours;
+            GameDesignSlider.maxValue = maxTotalHours;
+            GraphicDesignSlider.maxValue = maxTotalHours;
+            SoundDesignSlider.maxValue = maxTotalHours;
+            LoadAssignedHours(ID);
+            LoadAvailableHours(ID);
+            UpdateTexts(maxTotalHours);
         }
         animateUIElements();
         UpdateDisplayedValues();
@@ -356,5 +398,39 @@ public class Arbeitsteiling : MonoBehaviour
 
         return 0;
     }
+
+    private void OnSliderValueChanged(float newValue, Slider slider)
+    {
+        slider.value = Mathf.RoundToInt(slider.value);
+        float totalValue = CodingSlider.value + GameDesignSlider.value + GraphicDesignSlider.value + SoundDesignSlider.value;
+
+        if (totalValue > maxTotalHours)
+        {
+            float excessValue = totalValue - maxTotalHours;
+            float adjustedValue = newValue - excessValue;
+            adjustedValue = Mathf.RoundToInt(adjustedValue); // Round the adjusted value
+            slider.value = adjustedValue;
+        }
+
+
+        int sum = (int)CodingSlider.value + (int)GameDesignSlider.value +
+                  (int)GraphicDesignSlider.value + (int)SoundDesignSlider.value;
+
+        SumText.text = sum.ToString(); // No need for formatting here
+        Debug.Log("Sum: " + sum);
+    }
+
+    private void UpdateTexts(float remainingHours)
+    {
+        int remainingHoursInt = Mathf.RoundToInt(remainingHours);
+
+        Text1.text = $"{remainingHoursInt}h";
+        Text2.text = $"{Mathf.RoundToInt(remainingHoursInt * 0.75f)}h";
+        Text3.text = $"{Mathf.RoundToInt(remainingHoursInt * 0.5f)}h";
+        Text4.text = $"{Mathf.RoundToInt(remainingHoursInt * 0.25f)}h";
+        
+    }
+
+
 
 }
