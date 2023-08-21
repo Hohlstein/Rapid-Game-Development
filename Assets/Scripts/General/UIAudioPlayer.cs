@@ -27,19 +27,10 @@ public class UIAudioPlayer : MonoBehaviour
     private void CreateAudioSource(AudioClip clip){
         //Damit der Spieler beliebig oft/schnell auf einen Button klicken kann, ohne dass der UI Sound abgehackt wird, wird für jeden Sound ein neues audioObject instanziiert,
         //welches nur dazu da ist, den einen AudioClip abzuspielen. Dieses Objekt wird, sobald der Sound abgespielt wurde, wieder gelöscht um Speicher zu sparen und keinen
-        //Memory Leak zu verursachen.
+        //Memory Leak zu verursachen. 
         GameObject audioObject = new GameObject("UIAudioPlayer");
-        //Damit z.B. "OK" Buttons, die zur nächsten Scene führen, dennoch ihren Sound abspielen können, darf das audioObject beim Szenenwechsel nicht zerstört werden.
-        DontDestroyOnLoad(audioObject);
-        AudioSource audioSource = audioObject.AddComponent<AudioSource>();
-        audioSource.clip = clip;
-        audioSource.Play();
-        StartCoroutine(SelfDestructAfterSound(audioSource));
+        UIAudioInstanceManager audioSource = audioObject.AddComponent<UIAudioInstanceManager>();
+        audioSource.Play(clip);
     }
 
-    IEnumerator SelfDestructAfterSound(AudioSource audioSource)
-    {
-        yield return new WaitForSeconds(audioSource.clip.length);
-        Destroy(audioSource.gameObject);
-    }
 }
