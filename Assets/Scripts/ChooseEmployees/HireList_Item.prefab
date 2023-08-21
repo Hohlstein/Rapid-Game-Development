@@ -285,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 25
   image: {fileID: 2404367777527673209}
 --- !u!1 &1719261495771981725
 GameObject:
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 25
   image: {fileID: 6779637307436967463}
 --- !u!1 &4197494798881066285
 GameObject:
@@ -877,7 +877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 25
   image: {fileID: 6480008011618474735}
 --- !u!1 &7686790868114619878
 GameObject:
@@ -1200,7 +1200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dea5baf2836f424189de565a460f04a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friction: 25
+  friction: 7
   freeze: 0
 --- !u!114 &3118593053666299812
 MonoBehaviour:
@@ -1374,5 +1374,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 25
   image: {fileID: 8065590302482917408}

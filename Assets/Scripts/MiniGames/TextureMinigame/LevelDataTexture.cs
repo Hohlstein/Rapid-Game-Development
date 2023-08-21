@@ -10,6 +10,7 @@ public class LevelDataTexture : MonoBehaviour
 
     
     public void GetLevel(int level){
+        Debug.Log("The level is " + level);
         SetSamplesAndTimer(level);
         timer.SetRemainingSeconds(timer_seconds);
         timer.Unfreeze();

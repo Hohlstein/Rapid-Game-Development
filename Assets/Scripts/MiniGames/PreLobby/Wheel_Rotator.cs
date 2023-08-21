@@ -57,6 +57,7 @@ public class Wheel_Rotator : MonoBehaviour
         //Es muss überprüft werden, ob in diesem Frame einer der Feldränder der Kategorien überschritten wurde. Wenn ja, muss simuliert werden, dass das Dreieck anstößt.
         checkIfHaptic();
         slowdown();
+        Debug.Log(rotationSpeed);
         if (has_been_turned){
             //Falls das Rad gedreht wurde, darf es nicht nochmal anklickbar sein.
             button.enabled = false;
@@ -117,7 +118,7 @@ public class Wheel_Rotator : MonoBehaviour
             has_been_turned = true;
             //Das Rad wird angestuppst, mit einer zufälligen Rotationskraft. Hierdurch wird das Ergebnis nochmals zufällig gemacht, nachdem es bereits zu Beginn auf einen
             //zufälligen Ausgangswinkel gedreht wurde.
-            int randomInt = Random.Range(620, 1500);
+            int randomInt = Random.Range(400, 800);
             changeRotationSpeed(randomInt);
             moving = true;
             StartDrumRoll();
@@ -129,7 +130,7 @@ public class Wheel_Rotator : MonoBehaviour
         //Das Rad muss mit der Zeit seine Rotationskraft verlieren. Außerdem wird überprüft, ob das Rad bereits beinahe angehalten hat (rotationSpeed.z < 2.)
         //Falls ja, wird es ganz angehalten, da bei so niedriger Rotationsgeschwindigkeit sowieso kaum noch eine Bewegung wahrgenommen wird.
         rotationSpeed = rotationSpeed*friction;
-        if (rotationSpeed.z < 2){
+        if (rotationSpeed.z < 8){
             rotationSpeed.z = 0;
             moving = false;
         }
@@ -145,7 +146,7 @@ public class Wheel_Rotator : MonoBehaviour
             if (haptic_clicked == false){
                 haptic_clicked = true;
                 audioplayer.Play();
-                changeRotationSpeed(-5);
+                changeRotationSpeed(-10);
                 triangle.flip(rotationSpeed.z);
 
             }

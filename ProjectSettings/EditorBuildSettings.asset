@@ -35,7 +35,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/HireListArbeitsteilung.unity
     guid: 478b0a0afa3dc804486899f5cfcbe7d2
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Endscreen.unity
     guid: ddba9e58a40fdfb4ea1a3124fba45b48
   - enabled: 0

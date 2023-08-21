@@ -28,6 +28,7 @@ public class GameController : MonoBehaviour
     private string firstGuessTexture, secondGuessTexture;
 
     public Countdown timer; 
+    private float timer_seconds;
 
     public EndMiniGame minigame_ender;
 
@@ -45,6 +46,8 @@ public class GameController : MonoBehaviour
         Shuffle(gameTextures);
         gameGuesses = gameTextures.Count / 4;
         Debug.Log("There are" + gameGuesses);
+        string diff = PlayerPrefs.GetString("SelectedDifficulty");
+        GetLevel(GetLevelInt());
 
     }
 
@@ -93,10 +96,9 @@ public class GameController : MonoBehaviour
     }
 
     IEnumerator CheckIfTexturesMatch() {
-        yield return new WaitForSeconds (.5f);
         if(firstGuessTexture == secondGuessTexture) {
             UISounds.TriggerSound(1);
-            yield return new WaitForSeconds (1f);
+            yield return new WaitForSeconds (1.5f);
             btns[firstGuessIndex].interactable = false;
             btns[secondGuessIndex].interactable = false;
             btns[firstGuessIndex].image.color = new Color(0, 0, 0, 0);
@@ -104,6 +106,7 @@ public class GameController : MonoBehaviour
             UISounds.TriggerSound(3);
             CheckIfGameIsFinished();
         } else {
+            yield return new WaitForSeconds (.5f);
             UISounds.TriggerSound(2);
             yield return new WaitForSeconds (.5f);
             btns[firstGuessIndex].image.sprite = coveredTexture;
@@ -132,6 +135,43 @@ public class GameController : MonoBehaviour
             list[i] = list[randomIndex];
             list[randomIndex] = temp;
         }
+    }
+
+    public void GetLevel(int level){
+        Debug.Log("The level is " + level);
+        SetSamplesAndTimer(level);
+        timer.SetRemainingSeconds(timer_seconds);
+        timer.Unfreeze();
+    }
+
+    private void SetSamplesAndTimer(int level){
+        if (level == 1){
+            timer_seconds = 240;
+        }
+        if (level == 2) {
+            timer_seconds = 120;
+        }
+        if (level == 3){
+            timer_seconds = 50;
+        }
+    }
+
+    // Start is called before the first frame update
+    public int GetLevelInt(){
+        //Die im DifficultyMenu festgelegte Schwierigkeit wird aus technischen Gründen in einen int übersetzt.
+        string diff = PlayerPrefs.GetString("SelectedDifficulty");
+        Debug.Log("Diffulty Manager level is" + diff);
+        if(diff=="Easy"){
+            return 1;
+        }
+        if(diff=="Medium"){
+            return 3;
+        }
+        if(diff=="Hard"){
+            return 3;
+        }
+        Debug.LogError("Difficulty val "+diff+"unknown, couldn't load level data!");
+        return 999;
     }
 
    
