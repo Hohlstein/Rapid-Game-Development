@@ -3,22 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChangeWeek : MonoBehaviour
+public class GameReset : MonoBehaviour
 {
-
-    // Start is called before the first frame update
-    void Start()
+    public static void changeScene()
     {
-      
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-      
-    }
-
-    public void nextWeek(){
         GameObject[] employeeGameObjects = GameObject.FindGameObjectsWithTag("mitarbeiter"); 
          for (int i = 0; i < employeeGameObjects.Length; i++)
         {
@@ -26,12 +14,9 @@ public class ChangeWeek : MonoBehaviour
             current_employee.ResetAllHours();
             Debug.Log(current_employee.getWorkingHours());
         }
+        GameObject.Find("WeekInfo").GetComponent<Week>().setWeek(0);
 
-        GameObject obj = GameObject.Find("WeekInfo");
-        Week week = obj.GetComponent<Week>();
-        int weekNumber = GameObject.Find("WeekInfo").GetComponent<Week>().getWeek();
-        week.nextWeek();
 
-        SceneManagement.changeScene("WeekStartScreen");
+        SceneManagement.changeScene("MainMenu");
     }
 }

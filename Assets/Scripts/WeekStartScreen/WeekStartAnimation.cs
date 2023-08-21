@@ -126,6 +126,11 @@ public class WeekStartAnimation : MonoBehaviour
             flashCount++;
         }
         yield return new WaitForSeconds(1f);
+        Debug.Log("weeks: " + currentNumberOfWeeks);
+        if (currentNumberOfWeeks >= 5) {
+            SceneManagement.changeScene("Endscreen");
+            yield break;
+        }
         SceneManagement.changeScene("Chat");
     }
 
