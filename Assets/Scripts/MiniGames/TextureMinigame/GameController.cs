@@ -96,10 +96,9 @@ public class GameController : MonoBehaviour
     }
 
     IEnumerator CheckIfTexturesMatch() {
-        yield return new WaitForSeconds (.5f);
         if(firstGuessTexture == secondGuessTexture) {
             UISounds.TriggerSound(1);
-            yield return new WaitForSeconds (1f);
+            yield return new WaitForSeconds (1.5f);
             btns[firstGuessIndex].interactable = false;
             btns[secondGuessIndex].interactable = false;
             btns[firstGuessIndex].image.color = new Color(0, 0, 0, 0);
@@ -107,6 +106,7 @@ public class GameController : MonoBehaviour
             UISounds.TriggerSound(3);
             CheckIfGameIsFinished();
         } else {
+            yield return new WaitForSeconds (.5f);
             UISounds.TriggerSound(2);
             yield return new WaitForSeconds (.5f);
             btns[firstGuessIndex].image.sprite = coveredTexture;
