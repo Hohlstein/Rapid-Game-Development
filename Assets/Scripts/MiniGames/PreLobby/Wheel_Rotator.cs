@@ -57,7 +57,6 @@ public class Wheel_Rotator : MonoBehaviour
         //Es muss überprüft werden, ob in diesem Frame einer der Feldränder der Kategorien überschritten wurde. Wenn ja, muss simuliert werden, dass das Dreieck anstößt.
         checkIfHaptic();
         slowdown();
-        Debug.Log(rotationSpeed);
         if (has_been_turned){
             //Falls das Rad gedreht wurde, darf es nicht nochmal anklickbar sein.
             button.enabled = false;

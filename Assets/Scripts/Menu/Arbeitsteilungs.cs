@@ -417,7 +417,7 @@ public class Arbeitsteiling : MonoBehaviour
                   (int)GraphicDesignSlider.value + (int)SoundDesignSlider.value;
 
         SumText.text = sum.ToString(); // No need for formatting here
-        Debug.Log("Sum: " + sum);
+        //Debug.Log("Sum: " + sum);
     }
 
     private void UpdateTexts(float remainingHours)
