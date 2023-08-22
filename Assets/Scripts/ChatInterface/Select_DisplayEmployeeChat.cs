@@ -165,27 +165,31 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
             totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
+            Debug.Log("HiredEmployeeObject_1 "+ Hired_Employee_Objects[0].getFirstName() + Hired_Employee_Objects[0].getLastName());
         }
         if(clickedObject.name == "Employee_2") {
             findName = clickedObject.transform.Find("employee_2_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[1].getWorkingHours()+"";
+            Debug.Log("HiredEmployeeObject_2"+ Hired_Employee_Objects[1].getFirstName() + Hired_Employee_Objects[1].getLastName() );
         }
         if(clickedObject.name == "Employee_3") {
             findName = clickedObject.transform.Find("employee_3_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[2].getWorkingHours()+"";
+            Debug.Log("HiredEmployeeObject_3 "+ Hired_Employee_Objects[2].getFirstName()+ Hired_Employee_Objects[2].getLastName());
         }
         if(clickedObject.name == "Employee_4") {
             findName = clickedObject.transform.Find("employee_4_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[3].getWorkingHours()+"";
+            Debug.Log("HiredEmployeeObject_4 "+ Hired_Employee_Objects[3].getFirstName()+ Hired_Employee_Objects[3].getLastName());
         }
         
     }
@@ -237,8 +241,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             recieveMessage_4();
         }
     }
-    //Bug: As soon as 1 is answered all get Answered Sprite once deselected
-    //Resets the button to standard unselected or answeredUnselected Sprite
+    //Resets the selected buttons' sprite once it is deselected 
     private void ResetButton()
     {
         selectedObject.sprite = defaultSprite;
@@ -273,10 +276,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 1 chat panel, also displays the first option in your send bar
     private void recieveMessage_1() {
         answeredAmount_1=0;
-        dialogue_1= rng.getRandomDialogueOption(); 
+        dialogue_1= rng.getRandomDialogueOption(Hired_Employee_Objects[0]); 
         GameObject recievedText_1 = Instantiate(recievedPrefab, chatHolder_1.transform);
 
-        Debug.Log(dialogue_1);
         recievedText_1.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_1.getText();
         answerOptions = dialogue_1.getPlayerAnswer();
         chooseOptionbar.text = answerOptions[answerIndex_1].getText();
@@ -284,7 +286,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 2 chat panel, also displays the first option in your send bar
     private void recieveMessage_2() {
         answeredAmount_2=0;
-        dialogue_2 = rng.getRandomDialogueOption(); 
+        dialogue_2 = rng.getRandomDialogueOption(Hired_Employee_Objects[1]); 
         GameObject recievedText_2 = Instantiate(recievedPrefab, chatHolder_2.transform);
 
         recievedText_2.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_2.getText();
@@ -294,7 +296,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 3 chat panel, also displays the first option in your send bar
     private void recieveMessage_3() {
         answeredAmount_3=0;
-        dialogue_3 = rng.getRandomDialogueOption(); 
+        dialogue_3 = rng.getRandomDialogueOption(Hired_Employee_Objects[2]); 
         GameObject recievedText_3 = Instantiate(recievedPrefab, chatHolder_3.transform);
 
         recievedText_3.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_3.getText();
@@ -304,7 +306,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 4 chat panel, also displays the first option in your send bar
     private void recieveMessage_4() {
         answeredAmount_4=0;
-        dialogue_4 = rng.getRandomDialogueOption(); 
+        dialogue_4 = rng.getRandomDialogueOption(Hired_Employee_Objects[3]); 
         GameObject recievedText_4 = Instantiate(recievedPrefab, chatHolder_4.transform);
 
         recievedText_4.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_4.getText();

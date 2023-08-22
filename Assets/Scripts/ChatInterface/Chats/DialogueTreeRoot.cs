@@ -7,8 +7,6 @@ using UnityEngine;
 
 public class DialogueTreeRoot : MonoBehaviour
 {
-    [SerializeField]
-    private String eventName;
 
     [SerializeField]
     private List<DialogueNode> dialogueStart;
@@ -24,11 +22,6 @@ public class DialogueTreeRoot : MonoBehaviour
     void Update()
     {
 
-    }
-
-    public string GetEventName()
-    {
-        return eventName;
     }
 
     public List<DialogueNode> getDialogueStart() {

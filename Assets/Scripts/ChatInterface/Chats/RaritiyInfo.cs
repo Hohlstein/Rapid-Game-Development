@@ -3,7 +3,10 @@ public enum Rarity
 {
     common,
     rare,
-    veryRare
+    veryRare,
+    problem,
+    minigameSpecific,
+    miniGameGeneric
 }
 
 public class RarityInfo {
