@@ -11,9 +11,6 @@ public class DialogueNode : MonoBehaviour {
     private string text;
 
     [SerializeField]
-    private int eventOption;
-
-    [SerializeField]
     private List<PlayerAnswer> playerAnswer;
 
     [SerializeField]

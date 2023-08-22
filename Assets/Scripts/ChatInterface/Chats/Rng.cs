@@ -12,8 +12,11 @@ public class Rng : MonoBehaviour{
     private List<DialogueTreeRoot> problemDialogues;
         [SerializeField]
     private List<DialogueTreeRoot> miniGameDialoguesSound;
+        [SerializeField]
     private List<DialogueTreeRoot> miniGameDialoguesGraphic;
-    private List<DialogueTreeRoot> miniGameDialoguesStory;
+        [SerializeField]
+    private List<DialogueTreeRoot> miniGameDialoguesStory; 
+        [SerializeField]
     private List<DialogueTreeRoot> miniGameDialoguesCoding;
     
     private int weekTracker;
@@ -58,6 +61,7 @@ public class Rng : MonoBehaviour{
     }
     //Chooses the right category and the appropriate dialogue option
     private DialogueTreeRoot chooseRandomMiniGameDialogue(Mitarbeiter employee) {
+        //lastPlayedMiniGame = PlayerPrefs.GetString("Codingforweekly")/("GameDesignforweekly")/("GraphicDesignforweekly")/("SoundDesignforweekly");
         return null;
     } 
 
@@ -79,11 +83,9 @@ public class Rng : MonoBehaviour{
         //Vermerken der Bereiche durch die entsprechende Liste in den Dialogen da diesma keine raritys brauch ich nur die liste
         //
         //if(Bedingung) muss noch gesetzt werden
-        //if(1 == 0) {//!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        //if() {//!!!!!!!!!!!!!!!!!!!!!!!!!!!
             
-            //int random = UnityEngine.Random.Range(0,miniGameDialogues.Count-1);
-            //dialogueStarts = miniGameDialogues[random].getDialogueStart();
-            //selectedDialogueStart = dialogueStarts[UnityEngine.Random.Range(0,dialogueStarts.Count-1)];
+            //getRandomMiniGameDialogue
         //}
         return selectedDialogueStart;
     }
