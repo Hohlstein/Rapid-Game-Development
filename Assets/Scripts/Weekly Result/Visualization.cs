@@ -20,14 +20,34 @@ public class Visualisation : MonoBehaviour
     public PercentageBar GameDesignSkill;
     public PercentageBar GraphicDesignSkill;
     public PercentageBar SoundDesignSkill;
+
+
+    private float coding;
+    private float gamedesign;
+    private float graphicdesign;
+    private float sounddesign;
+
+    private float codesaver;
+    private float gamesaver;
+    private float graphicsaver;
+    private float soundsaver;
+
+    private float bulb;
+
+
     // Start is called before the first frame update
     void Start()
     {
-        float coding = FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/250;
-        float gamedesign = FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/250;
-        float graphicdesign = FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/250;
-        float sounddesign = FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/250;
-        
+        LookForWeek();
+        Debug.Log("Coding value: " + coding);
+        codesaver = PlayerPrefs.GetFloat("codingvalue");
+        gamesaver = PlayerPrefs.GetFloat("gamedesignvalue");
+        graphicsaver = PlayerPrefs.GetFloat("graphicdesignvalue");
+        soundsaver = PlayerPrefs.GetFloat("sounddesignvalue");
+
+        CalculateForVisual();
+
+        Debug.Log("FINAL GAME DESIGN VALUE: " + gamedesign);
 
         CodingSkill.setTargetVal((float)Math.Round(coding));
         GameDesignSkill.setTargetVal((float)Math.Round(gamedesign));
@@ -38,54 +58,63 @@ public class Visualisation : MonoBehaviour
         GameDesignValue.text = (Math.Round(gamedesign)).ToString() + "%";
         GraphicDesignValue.text = (Math.Round(graphicdesign)).ToString() + "%";
         SoundDesignValue.text = (Math.Round(sounddesign)).ToString() + "%";
+
+        PlayerPrefs.SetFloat("codingvalue", coding);
+        PlayerPrefs.SetFloat("gamedesignvalue", gamedesign);
+        PlayerPrefs.SetFloat("graphicdesignvalue", graphicdesign);
+        PlayerPrefs.SetFloat("sounddesignvalue", sounddesign);
+
+        
     
     }
 
     
 
     float CalculateCodingTime() {
-        float saver = 0;
+        float CodingSaver = 0;
         GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
         FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
         Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
         foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
-            saver += mitarbeiter.getCodingSkill();
+            CodingSaver += mitarbeiter.getCodingSkill();
         }
-        return saver;
+        return CodingSaver;
     }
 
     float CalculateGameDesignTime() {
-        float saver = 0;
+        float GameDesignSaver = 0;
         GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
         FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
         Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
         foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
-            saver += mitarbeiter.getGameDesignSkill();
+            GameDesignSaver += mitarbeiter.getGameDesignSkill();
         }
-        return saver;
+        Debug.Log("GameDesign Skills should be 90, but is " + GameDesignSaver);
+        return GameDesignSaver;
+        
     }
     
 
     float CalculateGraphicDesignTime() {
-        float saver = 0;
+        float GraphicDesignSaver = 0;
         GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
         FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
         Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
         foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
-            saver += mitarbeiter.getGraphicDesignSkill();
+            GraphicDesignSaver += mitarbeiter.getGraphicDesignSkill();
         }
-        return saver;
+        return GraphicDesignSaver;
     }
 
     float CalculateSoundDesignTime() {
-        float saver = 1f;
+        float SoundDesignSaver = 0;
         GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
         FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
         Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
         foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
-            saver += mitarbeiter.getSoundDesignSkill();
+            SoundDesignSaver += mitarbeiter.getSoundDesignSkill();
         }
-        return saver;
+        return SoundDesignSaver;
     }
 
    float CalculateCodeWork() {
@@ -107,6 +136,7 @@ public class Visualisation : MonoBehaviour
         foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
             saver += mitarbeiter.getGameDesignHours();
         }
+        Debug.Log("GameDesignHours should be 32, but are" + saver);
         return saver;
     }
 
@@ -132,20 +162,81 @@ public class Visualisation : MonoBehaviour
         return saver;
     }
 
-    float CalculateStressLevel() {
-        float saver = 0;
-        GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
-        FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
-        Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
-        foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
-            saver += mitarbeiter.getStressLevel();
-        }
-        return saver;
-    }
-    
 
     float FinalCalculation(float x, float y, float z) {
         return x*y*z;
+    }
+
+    void LookForWeek() {
+        int weekNumber = GameObject.Find("WeekInfo").GetComponent<Week>().getWeek();
+        switch (weekNumber) 
+        {
+            case 1:
+            PlayerPrefs.SetFloat("codingvalue", 0);
+            PlayerPrefs.SetFloat("gamedesignvalue", 0);
+            PlayerPrefs.SetFloat("graphicdesignvalue", 0);
+            PlayerPrefs.SetFloat("sounddesignvalue", 0);
+            break;
+
+            default:
+            break;
+        }
+    }
+
+    void CalculateForVisual() {
+        Debug.Log("Coding value: " + coding);
+        codesaver = PlayerPrefs.GetFloat("codingvalue");
+        gamesaver = PlayerPrefs.GetFloat("gamedesignvalue");
+        graphicsaver = PlayerPrefs.GetFloat("graphicdesignvalue");
+        soundsaver = PlayerPrefs.GetFloat("sounddesignvalue");
+
+        Debug.Log("Gamesaver is" + gamesaver);
+
+        if (PlayerPrefs.GetString("Codingforweekly") == "Codingforweekly") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("Codingforweekly"));
+        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
+        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
+        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/1000;
+        
+        
+        }
+
+        if (PlayerPrefs.GetString("GameDesignforweekly") == "GameDesignforweekly") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("GameDesignforweekly"));
+        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/1000;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
+        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/1000;
+        
+        }
+
+        if (PlayerPrefs.GetString("GraphicDesignforweekly") == "GraphicDesignforweekly") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("GraphicDesignforweekly"));    
+        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/1000;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
+        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/1000;
+        
+        }
+
+        if (PlayerPrefs.GetString("SoundDesignforweekly") == "SoundDesignforweekly") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("SoundDesignforweekly"));    
+        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/1000;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
+        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
+        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        
+        }
+
+        if (PlayerPrefs.GetString("Specialforweekly") == "Specialforweekly") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("Specialforweekly"));    
+        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        gamedesign = gamesaver + FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        
+        }
     }
 
 }

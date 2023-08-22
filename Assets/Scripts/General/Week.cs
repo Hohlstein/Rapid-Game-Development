@@ -27,4 +27,8 @@ public class Week : MonoBehaviour
     public int getWeek(){
         return weekNumber;
     }
+
+    public void setWeek(int w) {
+        weekNumber = w;
+    }
 }

@@ -37,6 +37,7 @@ public class LuckResultDisplay : MonoBehaviour
         SetGames();
         //Zuerst wird die eingegebene Kategorie, die als String übergeben wurde, zu einem category enum konvertiert, um damit weiterzuarbeiten.
         Category chosenCategory = MapStringToCategory(category);
+        SetBonusCategory(category);
         //Die Anzahl Spiele, die es für diese Kategorie gibt wird gezählt und eins von diesen wird zufällig ausgewählt.
         List<(string,string,string)> possibleGames = games[chosenCategory];
         System.Random random = new System.Random();
@@ -75,6 +76,7 @@ public class LuckResultDisplay : MonoBehaviour
     private Category MapStringToCategory(string x){
         x = x.ToLower();
         x = x.Replace(" ", "");
+        Debug.Log("this is " + x);
         if (x == "coding"){
             return Category.Coding;
         }
@@ -92,6 +94,26 @@ public class LuckResultDisplay : MonoBehaviour
         }
         Debug.LogError("Could not convert "+x+" to a Category enum!");
         return Category.Coding;
+    }
+
+    private void SetBonusCategory(string x) {
+        x = x.ToLower();
+        x = x.Replace(" ", "");
+        if (x == "coding"){
+            PlayerPrefs.SetString("Codingforweekly", "Codingforweekly");
+        }
+        if (x == "gamedesign"){
+            PlayerPrefs.SetString("GameDesignforweekly", "GameDesignforweekly");
+        }
+        if (x == "graphicdesign"){
+            PlayerPrefs.SetString("GraphicDesignforweekly", "GraphicDesignforweekly");
+        }
+        if (x == "sounddesign"){
+            PlayerPrefs.SetString("SoundDesignforweekly", "SoundDesignforweekly");
+        }
+        if (x == "special"){
+            PlayerPrefs.SetString("Specialforweekly", "Specialforweekly");
+        }
     }
     
 
