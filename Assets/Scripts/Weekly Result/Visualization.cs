@@ -192,8 +192,8 @@ public class Visualisation : MonoBehaviour
 
         Debug.Log("Gamesaver is" + gamesaver);
 
-        if (PlayerPrefs.GetString("Codingforweekly") == "Codingforweekly") {
-        Debug.Log("This is bonus " + PlayerPrefs.GetString("Codingforweekly"));
+        if (PlayerPrefs.GetString("LastMinigame") == "coding") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMiniGame"));
         coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
         gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
         graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
@@ -202,8 +202,8 @@ public class Visualisation : MonoBehaviour
         
         }
 
-        if (PlayerPrefs.GetString("GameDesignforweekly") == "GameDesignforweekly") {
-        Debug.Log("This is bonus " + PlayerPrefs.GetString("GameDesignforweekly"));
+        if (PlayerPrefs.GetString("LastMinigame") == "gamedesign") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));
         coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/1000;
         gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
         graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
@@ -211,8 +211,8 @@ public class Visualisation : MonoBehaviour
         
         }
 
-        if (PlayerPrefs.GetString("GraphicDesignforweekly") == "GraphicDesignforweekly") {
-        Debug.Log("This is bonus " + PlayerPrefs.GetString("GraphicDesignforweekly"));    
+        if (PlayerPrefs.GetString("LastMinigame") == "graphicdesign") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));    
         coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/1000;
         gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
         graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
@@ -220,8 +220,8 @@ public class Visualisation : MonoBehaviour
         
         }
 
-        if (PlayerPrefs.GetString("SoundDesignforweekly") == "SoundDesignforweekly") {
-        Debug.Log("This is bonus " + PlayerPrefs.GetString("SoundDesignforweekly"));    
+        if (PlayerPrefs.GetString("LastMinigame") == "sounddesign") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));    
         coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/1000;
         gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
         graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
@@ -229,8 +229,8 @@ public class Visualisation : MonoBehaviour
         
         }
 
-        if (PlayerPrefs.GetString("Specialforweekly") == "Specialforweekly") {
-        Debug.Log("This is bonus " + PlayerPrefs.GetString("Specialforweekly"));    
+        if (PlayerPrefs.GetString("LastMinigame") == "special") {
+        Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));    
         coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
         gamedesign = gamesaver + FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
         graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;

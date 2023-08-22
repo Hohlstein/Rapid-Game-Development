@@ -99,21 +99,8 @@ public class LuckResultDisplay : MonoBehaviour
     private void SetBonusCategory(string x) {
         x = x.ToLower();
         x = x.Replace(" ", "");
-        if (x == "coding"){
-            PlayerPrefs.SetString("Codingforweekly", "Codingforweekly");
-        }
-        if (x == "gamedesign"){
-            PlayerPrefs.SetString("GameDesignforweekly", "GameDesignforweekly");
-        }
-        if (x == "graphicdesign"){
-            PlayerPrefs.SetString("GraphicDesignforweekly", "GraphicDesignforweekly");
-        }
-        if (x == "sounddesign"){
-            PlayerPrefs.SetString("SoundDesignforweekly", "SoundDesignforweekly");
-        }
-        if (x == "special"){
-            PlayerPrefs.SetString("Specialforweekly", "Specialforweekly");
-        }
+        PlayerPrefs.SetString("LastMinigame", x);
+        
     }
     
 
