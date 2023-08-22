@@ -11,10 +11,11 @@ public class GameReset : MonoBehaviour
          for (int i = 0; i < employeeGameObjects.Length; i++)
         {
             Mitarbeiter current_employee = employeeGameObjects[i].GetComponent<Mitarbeiter>();
-            current_employee.ResetAllHours();
-            Debug.Log(current_employee.getWorkingHours());
+            Destroy(current_employee);
+            Destroy(employeeGameObjects[i]);
+            
         }
-        GameObject.Find("WeekInfo").GetComponent<Week>().setWeek(0);
+        GameObject.Find("WeekInfo").GetComponent<Week>().setWeek(1);
 
 
         SceneManagement.changeScene("MainMenu");
