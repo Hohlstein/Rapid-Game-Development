@@ -31,6 +31,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject chatHolder_1; 
     public ScrollRect scrollRect_1;
     public GameObject chatScrollRect_1;
+    private bool messageRecieved_1;
     private DialogueNode dialogue_1; //sets which dialogue is used from the dialogue list
     private int answerIndex_1; //sets which answer option is currently displayed
     private int answeredAmount_1; //tracks how many answers have been sent to properly set position of text bubbles
@@ -38,6 +39,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject chatScrollRect_2;
     public GameObject chatHolder_2;
     public ScrollRect scrollRect_2;
+    private bool messageRecieved_2;
     private bool answeredEmployee_2;
     private DialogueNode dialogue_2;
     private int answerIndex_2;
@@ -51,6 +53,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject chatScrollRect_3;
     public GameObject chatHolder_3;
     public ScrollRect scrollRect_3;
+    private bool messageRecieved_3;
     private bool answeredEmployee_3;
     private DialogueNode dialogue_3;
     private int answerIndex_3;
@@ -59,6 +62,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject chatScrollRect_4;
     public GameObject chatHolder_4;
     public ScrollRect scrollRect_4;
+    private bool messageRecieved_4;
     private bool answeredEmployee_4;
     private DialogueNode dialogue_4;
     private int answerIndex_4;
@@ -214,7 +218,10 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 clickedObject.sprite = answeredSelectedSprite;
             }
             chatScrollRect_1.SetActive(true);
-            recieveMessage_1();
+            if(messageRecieved_1 == false) {
+                recieveMessage_1();
+            }
+            
         }
         if(clickedObject.name == "Employee_2") {
             if(answeredEmployee_2 == true) {
@@ -222,7 +229,10 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 clickedObject.sprite = answeredSelectedSprite;
             }
             chatScrollRect_2.SetActive(true);
-            recieveMessage_2();
+            if(messageRecieved_2 == false) {
+                recieveMessage_2();
+            }
+           
         }
         if(clickedObject.name == "Employee_3") {
             if(answeredEmployee_3 == true) {
@@ -230,7 +240,10 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 clickedObject.sprite = answeredSelectedSprite;
             }
             chatScrollRect_3.SetActive(true);
-            recieveMessage_3();
+            if(messageRecieved_3 == false) {
+                recieveMessage_3();
+            }
+            
         }
         if(clickedObject.name == "Employee_4") {
             if(answeredEmployee_4 == true) {
@@ -238,7 +251,10 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 clickedObject.sprite = answeredSelectedSprite;
             }
             chatScrollRect_4.SetActive(true);
-            recieveMessage_4();
+            if(messageRecieved_4 == false) {
+                recieveMessage_4();
+            }
+            
         }
     }
     //Resets the selected buttons' sprite once it is deselected 
@@ -277,6 +293,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     private void recieveMessage_1() {
         answeredAmount_1=0;
         dialogue_1= rng.getRandomDialogueOption(Hired_Employee_Objects[0]); 
+        messageRecieved_1 = true;
         GameObject recievedText_1 = Instantiate(recievedPrefab, chatHolder_1.transform);
 
         recievedText_1.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_1.getText();
@@ -287,6 +304,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     private void recieveMessage_2() {
         answeredAmount_2=0;
         dialogue_2 = rng.getRandomDialogueOption(Hired_Employee_Objects[1]); 
+        messageRecieved_2 = true;
         GameObject recievedText_2 = Instantiate(recievedPrefab, chatHolder_2.transform);
 
         recievedText_2.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_2.getText();
@@ -297,6 +315,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     private void recieveMessage_3() {
         answeredAmount_3=0;
         dialogue_3 = rng.getRandomDialogueOption(Hired_Employee_Objects[2]); 
+        messageRecieved_3 = true;
         GameObject recievedText_3 = Instantiate(recievedPrefab, chatHolder_3.transform);
 
         recievedText_3.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_3.getText();
@@ -307,6 +326,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     private void recieveMessage_4() {
         answeredAmount_4=0;
         dialogue_4 = rng.getRandomDialogueOption(Hired_Employee_Objects[3]); 
+        messageRecieved_4 = true;
         GameObject recievedText_4 = Instantiate(recievedPrefab, chatHolder_4.transform);
 
         recievedText_4.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_4.getText();

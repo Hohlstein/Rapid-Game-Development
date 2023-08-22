@@ -16,7 +16,7 @@ public class DialogueTreeRoot : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(this.gameObject);  
+        this.gameObject.SetActive(false);  
     }
 
     void Update()

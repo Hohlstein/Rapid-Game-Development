@@ -26,7 +26,7 @@ public class DialogueNode : MonoBehaviour {
     private int amountOfHoursChanging;
 
     void Start() {
-        DontDestroyOnLoad(this.gameObject);  
+        this.gameObject.SetActive(false);
     }
 
     void Update() {
