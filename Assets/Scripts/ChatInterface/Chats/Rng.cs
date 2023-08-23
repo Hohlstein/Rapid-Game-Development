@@ -64,7 +64,7 @@ public class Rng : MonoBehaviour{
     //Chooses the right category and the appropriate dialogue option
     private DialogueTreeRoot chooseRandomMiniGameDialogue(Mitarbeiter employee) {
         DialogueTreeRoot selectedDialogue = null;
-        string lastPlayedMiniGame = PlayerPrefs.GetString("LastMiniGame");
+        string lastPlayedMiniGame = PlayerPrefs.GetString("LastMinigame");
         float miniGameBoost = PlayerPrefs.GetFloat("MiniGameBoost");
         Debug.Log("LastplayedMiniGame: "+ lastPlayedMiniGame);
         Debug.Log("miniGameBoost" + miniGameBoost);
