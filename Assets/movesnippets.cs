@@ -11,7 +11,7 @@ public class movesnippets : MonoBehaviour
     public GameObject  snippetspawnPoint;
     public List<GameObject> spawnPointlist;
     private bool newinstance = true;
-    private int speed = 1;
+    private double speed = 0.5;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,10 +20,10 @@ public class movesnippets : MonoBehaviour
             case 1:
             break;
             case 2:
-            speed = 3;
+            speed = 1;
             break;
             case 3:
-            speed = 5;
+            speed = 3;
             break;
             default:
             break;
@@ -39,7 +39,7 @@ public class movesnippets : MonoBehaviour
             newinstance = false;
         }
         else{
-              transform.position = transform.position + Vector3.up * speed *Time.deltaTime;
+              transform.position = transform.position + Vector3.up * (float)speed *Time.deltaTime;
              
         }
 
