@@ -28208,7 +28208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueStart:
-  - {fileID: 0}
+  - {fileID: 75295509}
   rarity: 5
 --- !u!1 &1559560909
 GameObject:
