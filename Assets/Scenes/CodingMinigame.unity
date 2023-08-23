@@ -372,6 +372,7 @@ GameObject:
   m_Component:
   - component: {fileID: 90191997}
   - component: {fileID: 90191998}
+  - component: {fileID: 90191999}
   m_Layer: 0
   m_Name: snippets
   m_TagString: Untagged
@@ -426,6 +427,18 @@ MonoBehaviour:
   - {fileID: 98203409}
   - {fileID: 656864884}
   - {fileID: 840343360}
+--- !u!114 &90191999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 90191996}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7517f0f8787d348975ee691dc1bc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &98203409
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,6 +896,7 @@ GameObject:
   - component: {fileID: 586832145}
   - component: {fileID: 586832144}
   - component: {fileID: 586832146}
+  - component: {fileID: 586832147}
   m_Layer: 0
   m_Name: GameLogic
   m_TagString: Untagged
@@ -942,6 +956,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 3601581404770357820, guid: 4f31bc015b7ab974da87a8e4fa3f1384, type: 3}
+--- !u!114 &586832147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586832143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938158d8be64c96478eaae1daeba0634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 0}
 --- !u!1 &638208415
 GameObject:
   m_ObjectHideFlags: 0
@@ -2378,6 +2405,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1149232581}
   - component: {fileID: 1149232582}
+  - component: {fileID: 1149232583}
   m_Layer: 0
   m_Name: snippets
   m_TagString: Untagged
@@ -2432,6 +2460,18 @@ MonoBehaviour:
   - {fileID: 98203409}
   - {fileID: 656864884}
   - {fileID: 840343360}
+--- !u!114 &1149232583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1149232580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7517f0f8787d348975ee691dc1bc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1197630845
 GameObject:
   m_ObjectHideFlags: 0
@@ -3246,6 +3286,10 @@ PrefabInstance:
       propertyPath: DisplaySeconds
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -790854684028008647, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
+      propertyPath: minigame_ender
+      value: 
+      objectReference: {fileID: 586832146}
     - target: {fileID: 1950116364251302180, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -4203,47 +4247,3 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1950244886}
   m_CullTransparentMesh: 1
---- !u!1 &1964337548
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1964337550}
-  - component: {fileID: 1964337549}
-  m_Layer: 0
-  m_Name: DifficultyManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1964337549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964337548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa7517f0f8787d348975ee691dc1bc48, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1964337550
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1964337548}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
