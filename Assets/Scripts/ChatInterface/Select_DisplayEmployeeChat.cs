@@ -727,10 +727,10 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             if(currentAnswers_1[answerIndex_1].getAmountOfStressChanging() == 0) {
 
             }else{
-                if(currentAnswers_1[answerIndex_1].getStressLevelUp == true) {
+                if(currentAnswers_1[answerIndex_1].getStressLevelUp() == true) {
                     Hired_Employee_Objects[0].getStressed(currentAnswers_1[answerIndex_1].getAmountOfStressChanging());
                 }
-                if(currentAnswers_1[answerIndex_1].getStressLevelUp == false) {
+                if(currentAnswers_1[answerIndex_1].getStressLevelUp() == false) {
                     Hired_Employee_Objects[0].removeStress(currentAnswers_1[answerIndex_1].getAmountOfStressChanging());
                 }
             }
@@ -750,10 +750,10 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             if(currentAnswers_2[answerIndex_2].getAmountOfStressChanging() == 0) {
 
             }else{
-                if(currentAnswers_2[answerIndex_2].getStressLevelUp == true) {
+                if(currentAnswers_2[answerIndex_2].getStressLevelUp() == true) {
                     Hired_Employee_Objects[1].getStressed(currentAnswers_2[answerIndex_2].getAmountOfStressChanging());
                 }
-                if(currentAnswers_1[answerIndex_1].getStressLevelUp == false) {
+                if(currentAnswers_1[answerIndex_1].getStressLevelUp() == false) {
                     Hired_Employee_Objects[1].removeStress(currentAnswers_2[answerIndex_2].getAmountOfStressChanging());
                 }
             }
@@ -773,10 +773,10 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             if(currentAnswers_3[answerIndex_3].getAmountOfStressChanging() == 0) {
 
             }else{
-                if(currentAnswers_3[answerIndex_3].getStressLevelUp == true) {
+                if(currentAnswers_3[answerIndex_3].getStressLevelUp() == true) {
                     Hired_Employee_Objects[2].getStressed(currentAnswers_3[answerIndex_3].getAmountOfStressChanging());
                 }
-                if(currentAnswers_3[answerIndex_3].getStressLevelUp == false) {
+                if(currentAnswers_3[answerIndex_3].getStressLevelUp() == false) {
                     Hired_Employee_Objects[2].removeStress(currentAnswers_3[answerIndex_3].getAmountOfStressChanging());
                 }
             }
@@ -796,10 +796,10 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             if(currentAnswers_4[answerIndex_4].getAmountOfStressChanging() == 0) {
 
             }else{
-                if(currentAnswers_4[answerIndex_4].getStressLevelUp == true) {
+                if(currentAnswers_4[answerIndex_4].getStressLevelUp() == true) {
                     Hired_Employee_Objects[3].getStressed(currentAnswers_4[answerIndex_4].getAmountOfStressChanging());
                 }
-                if(currentAnswers_4[answerIndex_4].getStressLevelUp == false) {
+                if(currentAnswers_4[answerIndex_4].getStressLevelUp() == false) {
                     Hired_Employee_Objects[3].removeStress(currentAnswers_4[answerIndex_4].getAmountOfStressChanging());
                 }
             }

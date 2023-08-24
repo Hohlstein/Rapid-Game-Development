@@ -116,7 +116,7 @@ public class Mitarbeiter : MonoBehaviour
         return this.stresslevel;
     }
 
-    public int removeStress(int stress) {
+    public void removeStress(int stress) {
       this.stresslevel -= stress;
     }
 
