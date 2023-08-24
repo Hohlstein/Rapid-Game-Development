@@ -27,4 +27,12 @@ public class DialogueTreeRoot : MonoBehaviour
     public List<DialogueNode> getDialogueStart() {
         return dialogueStart;
     }
+
+    public Rarity getRarity(){
+        return rarity;
+    }
+
+    public void deleteStartOption(int index) {
+        dialogueStart.RemoveAt(index);
+    }
 }

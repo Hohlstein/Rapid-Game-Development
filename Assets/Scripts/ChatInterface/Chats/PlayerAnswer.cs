@@ -35,6 +35,9 @@ public class PlayerAnswer : MonoBehaviour{
     public string getText() {
         return text;
     }
+    public void setText(string text) {
+        this.text = text;
+    }
 
     public DialogueNode getNextNode() {
         return nextNode;

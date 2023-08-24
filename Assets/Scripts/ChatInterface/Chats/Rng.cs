@@ -23,6 +23,14 @@ public class Rng : MonoBehaviour{
     
     private int weekTracker;
 
+    private int dialogueIndex;
+
+    private bool miniGameDialogueTracker; 
+
+
+    void Start() {
+        DontDestroyOnLoad(this.gameObject);
+    }
     //gets a randomly generated rarity and passes it to chooseRandomDialoge
     private Rarity getRandomRarity(){
         RarityInfo commonRarity = new RarityInfo(Rarity.common);
@@ -73,21 +81,24 @@ public class Rng : MonoBehaviour{
                 if(employee.getCodingSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesCoding[2];
                 }else{
-                    selectedDialogue = miniGameDialoguesCoding[generateSpecificMiniGameDialogueIndex("bad")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("bad");
+                    selectedDialogue = miniGameDialoguesCoding[dialogueIndex];
                 }
             }
             if(miniGameBoost > 1.33 && miniGameBoost <= 1.66) {
                 if(employee.getCodingSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesCoding[5];
                 }else{
-                    selectedDialogue = miniGameDialoguesCoding[generateSpecificMiniGameDialogueIndex("decent")];
+                    dialogueIndex= generateSpecificMiniGameDialogueIndex("decent");
+                    selectedDialogue = miniGameDialoguesCoding[dialogueIndex];
                 }
             }  
             if(miniGameBoost > 1.66) {
                 if(employee.getCodingSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesCoding[8];
                 }else{
-                    selectedDialogue = miniGameDialoguesCoding[generateSpecificMiniGameDialogueIndex("good")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("good");
+                    selectedDialogue = miniGameDialoguesCoding[dialogueIndex];
                 }
             }
         }
@@ -97,21 +108,24 @@ public class Rng : MonoBehaviour{
                 if(employee.getGameDesignSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesStory[2];
                 }else{
-                    selectedDialogue = miniGameDialoguesStory[generateSpecificMiniGameDialogueIndex("bad")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("bad");
+                    selectedDialogue = miniGameDialoguesStory[dialogueIndex];
                 } 
             }
             if(miniGameBoost > 1.33 && miniGameBoost <= 1.66) {
                 if(employee.getGameDesignSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesStory[5];
                 }else{
-                    selectedDialogue = miniGameDialoguesStory[generateSpecificMiniGameDialogueIndex("decent")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("decent");
+                    selectedDialogue = miniGameDialoguesStory[dialogueIndex];
                 }
             }
             if(miniGameBoost > 1.66) {
                 if(employee.getGameDesignSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesStory[8];
                 }else{
-                    selectedDialogue = miniGameDialoguesStory[generateSpecificMiniGameDialogueIndex("good")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("good");
+                    selectedDialogue = miniGameDialoguesStory[dialogueIndex];
                 }
             }
         }
@@ -121,7 +135,8 @@ public class Rng : MonoBehaviour{
                 if(employee.getGraphicDesignSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesGraphic[2];
                 }else{
-                    selectedDialogue = miniGameDialoguesGraphic[generateSpecificMiniGameDialogueIndex("bad")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("bad");
+                    selectedDialogue = miniGameDialoguesGraphic[dialogueIndex];
                 }
                 
             }
@@ -129,14 +144,16 @@ public class Rng : MonoBehaviour{
                 if(employee.getGraphicDesignSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesGraphic[5];
                 }else{
-                    selectedDialogue = miniGameDialoguesGraphic[generateSpecificMiniGameDialogueIndex("decent")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("decent");
+                    selectedDialogue = miniGameDialoguesGraphic[dialogueIndex];
                 }
             }
             if(miniGameBoost > 1.66) {
                 if(employee.getGraphicDesignSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesGraphic[8];
                 }else{
-                    selectedDialogue = miniGameDialoguesGraphic[generateSpecificMiniGameDialogueIndex("good")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("good");
+                    selectedDialogue = miniGameDialoguesGraphic[dialogueIndex];
                 }
             }
         }
@@ -146,7 +163,8 @@ public class Rng : MonoBehaviour{
                 if(employee.getSoundDesignSkill() < skillThreshold) {
                     selectedDialogue = miniGameDialoguesSound[2];
                 }else{
-                    selectedDialogue = miniGameDialoguesSound[generateSpecificMiniGameDialogueIndex("bad")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("bad");
+                    selectedDialogue = miniGameDialoguesSound[dialogueIndex];
                 }
                 
             }
@@ -154,17 +172,20 @@ public class Rng : MonoBehaviour{
                 if(employee.getSoundDesignSkill() < skillThreshold) {
                     selectedDialogue = miniGameDialoguesSound[5];
                 }else{
-                    selectedDialogue = miniGameDialoguesSound[generateSpecificMiniGameDialogueIndex("bad")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("decent");
+                    selectedDialogue = miniGameDialoguesSound[dialogueIndex];
                 }
             }
             if(miniGameBoost > 1.66) {
                 if(employee.getSoundDesignSkill() < skillThreshold) {
                     selectedDialogue = miniGameDialoguesSound[8];
                 }else{
-                    selectedDialogue = miniGameDialoguesSound[generateSpecificMiniGameDialogueIndex("bad")];
+                    dialogueIndex = generateSpecificMiniGameDialogueIndex("good");
+                    selectedDialogue = miniGameDialoguesSound[dialogueIndex];
                 }
             }
         }
+        miniGameDialogueTracker = true;
         return selectedDialogue;
     } 
 
@@ -175,8 +196,9 @@ public class Rng : MonoBehaviour{
         DialogueTreeRoot selectedDialogue = null;
         DialogueNode selectedDialogueStart = null; 
         int randomNumber = UnityEngine.Random.Range(0,4);
+        int startIndex = 0;
         Debug.Log("Woche: "+ weekTracker);
-        if(randomNumber >=2 && weekTracker > 1){
+        if(randomNumber >=2 && weekTracker > 1 && miniGameDialogueTracker == false){
             selectedDialogue = chooseRandomMiniGameDialogue(employee);
              Debug.Log("IM in MINIGAME DIALOGUES");
         }else{
@@ -186,9 +208,16 @@ public class Rng : MonoBehaviour{
             Debug.Log("SelectedDialogue" + selectedDialogue);
             dialogueStarts = selectedDialogue.getDialogueStart();
             if(dialogueStarts.Count == 1) {
-            selectedDialogueStart = dialogueStarts[0];
+                selectedDialogueStart = dialogueStarts[0];
+                removeDialogueOptions(dialogueIndex, startIndex, selectedDialogue.getRarity());
+            }else{
+                startIndex = UnityEngine.Random.Range(0,dialogueStarts.Count);
+                Debug.Log("StartIndex: "+startIndex);
+                Debug.Log("DialogueStarts.Count() "+dialogueStarts.Count);
+                selectedDialogueStart = dialogueStarts[startIndex]; //HIER MAYBE COUNT -1 muss ich noch testen
+                removeDialogueOptions(dialogueIndex, startIndex, selectedDialogue.getRarity());
             }
-            selectedDialogueStart = dialogueStarts[UnityEngine.Random.Range(0,dialogueStarts.Count)]; //HIER MAYBE COUNT -1 muss ich noch testen
+            
         
         
         return selectedDialogueStart;
@@ -206,6 +235,27 @@ public class Rng : MonoBehaviour{
             randomNumber = UnityEngine.Random.Range(6,8);
         }
         return randomNumber;
+    }
+
+    private void removeDialogueOptions(int dialogueIndexDelete, int startIndexDelete,Rarity rarity){
+        if(rarity == Rarity.common){
+            commonDialogues[dialogueIndexDelete].deleteStartOption(startIndexDelete);
+            if(commonDialogues[dialogueIndexDelete].getDialogueStart().Count == 0){
+                commonDialogues.RemoveAt(dialogueIndexDelete);
+            }
+        }
+        if(rarity == Rarity.rare){
+            rareDialogues[dialogueIndexDelete].deleteStartOption(startIndexDelete);
+            if(rareDialogues[dialogueIndexDelete].getDialogueStart().Count == 0){
+                rareDialogues.RemoveAt(dialogueIndexDelete);
+            }
+        }
+        if(rarity == Rarity.veryRare){
+            veryRareDialogues[dialogueIndexDelete].deleteStartOption(startIndexDelete);
+            if(veryRareDialogues[dialogueIndexDelete].getDialogueStart().Count == 0){
+                veryRareDialogues.RemoveAt(dialogueIndexDelete);
+            }
+        }
     }
 
 }   
