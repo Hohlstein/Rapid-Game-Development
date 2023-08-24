@@ -17,6 +17,10 @@ public class PlayerAnswer : MonoBehaviour{
     private bool workingHoursUp; //True means + hours, false means - hours
         [SerializeField]
     private int amountOfHoursChanging;
+        [SerializeField]
+    private bool stressLevelUp; //True means + Stress, false means - stress
+        [SerializeField]
+    private int amountOfStressChanging;
 
     void Start() {
         this.gameObject.SetActive(false);
@@ -53,5 +57,13 @@ public class PlayerAnswer : MonoBehaviour{
 
     public int getAmountOfHoursChanging() {
         return amountOfHoursChanging;
+    }
+
+    public bool getStressLevelUp(){
+        return stressLevelUp;
+    }
+
+    public int getAmountOfStressChanging() {
+        return amountOfStressChanging;
     }
 }

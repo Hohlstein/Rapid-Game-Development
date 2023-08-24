@@ -7,20 +7,20 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DialogueNode : MonoBehaviour {
-    [SerializeField]
+        [SerializeField]
     private string text;
-
-    [SerializeField]
+        [SerializeField]
     private List<PlayerAnswer> playerAnswer;
-
-    [SerializeField]
+        [SerializeField]
     private bool finalNode;
-
-    [SerializeField]
+        [SerializeField]
     private bool workingHoursUp; //True means + hours, false means -hours
-
-    [SerializeField]
+        [SerializeField]
     private int amountOfHoursChanging;
+        [SerializeField]
+    private bool stressLevelUp; //True means + Stress, false means - stress
+        [SerializeField]
+    private int amountOfStressChanging;
 
     void Start() {
         this.gameObject.SetActive(false);
@@ -48,5 +48,13 @@ public class DialogueNode : MonoBehaviour {
 
     public bool getWorkingHoursUp() {
         return workingHoursUp;
+    }
+
+    public bool getStressLevelUp(){
+        return stressLevelUp;
+    }
+
+    public int getAmountOfStressChanging() {
+        return amountOfStressChanging;
     }
 }

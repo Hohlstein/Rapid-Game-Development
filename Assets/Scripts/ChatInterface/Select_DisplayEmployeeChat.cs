@@ -723,7 +723,17 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 if(currentAnswers_1[answerIndex_1].getWorkingHoursUp() == false) {
                     Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() - currentAnswers_1[answerIndex_1].getAmountOfHoursChanging());
                 }
-            } 
+            }
+            if(currentAnswers_1[answerIndex_1].getAmountOfStressChanging() == 0) {
+
+            }else{
+                if(currentAnswers_1[answerIndex_1].getStressLevelUp == true) {
+                    Hired_Employee_Objects[0].getStressed(currentAnswers_1[answerIndex_1].getAmountOfStressChanging());
+                }
+                if(currentAnswers_1[answerIndex_1].getStressLevelUp == false) {
+                    Hired_Employee_Objects[0].removeStress(currentAnswers_1[answerIndex_1].getAmountOfStressChanging());
+                }
+            }
         }
 
         if(selectedObject.name == "Employee_2") {
@@ -736,6 +746,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 if(currentAnswers_2[answerIndex_2].getWorkingHoursUp() == false) {
                     Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() - currentAnswers_2[answerIndex_2].getAmountOfHoursChanging());
                 } 
+            }
+            if(currentAnswers_2[answerIndex_2].getAmountOfStressChanging() == 0) {
+
+            }else{
+                if(currentAnswers_2[answerIndex_2].getStressLevelUp == true) {
+                    Hired_Employee_Objects[1].getStressed(currentAnswers_2[answerIndex_2].getAmountOfStressChanging());
+                }
+                if(currentAnswers_1[answerIndex_1].getStressLevelUp == false) {
+                    Hired_Employee_Objects[1].removeStress(currentAnswers_2[answerIndex_2].getAmountOfStressChanging());
+                }
             }
         }
 
@@ -750,6 +770,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() - currentAnswers_3[answerIndex_3].getAmountOfHoursChanging());
                 }
             }
+            if(currentAnswers_3[answerIndex_3].getAmountOfStressChanging() == 0) {
+
+            }else{
+                if(currentAnswers_3[answerIndex_3].getStressLevelUp == true) {
+                    Hired_Employee_Objects[2].getStressed(currentAnswers_3[answerIndex_3].getAmountOfStressChanging());
+                }
+                if(currentAnswers_3[answerIndex_3].getStressLevelUp == false) {
+                    Hired_Employee_Objects[2].removeStress(currentAnswers_3[answerIndex_3].getAmountOfStressChanging());
+                }
+            }
         }
 
         if(selectedObject.name == "Employee_4") {
@@ -762,6 +792,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 if(currentAnswers_4[answerIndex_4].getWorkingHoursUp() == false) {
                     Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() - currentAnswers_4[answerIndex_4].getAmountOfHoursChanging());
                 } 
+            }
+            if(currentAnswers_4[answerIndex_4].getAmountOfStressChanging() == 0) {
+
+            }else{
+                if(currentAnswers_4[answerIndex_4].getStressLevelUp == true) {
+                    Hired_Employee_Objects[3].getStressed(currentAnswers_4[answerIndex_4].getAmountOfStressChanging());
+                }
+                if(currentAnswers_4[answerIndex_4].getStressLevelUp == false) {
+                    Hired_Employee_Objects[3].removeStress(currentAnswers_4[answerIndex_4].getAmountOfStressChanging());
+                }
             }
         }
     }
@@ -778,6 +818,17 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
                 } 
             }
+            if(employeeResponse.getAmountOfStressChanging() == 0){
+
+            }else {
+                if(employeeResponse.getStressLevelUp() == true) {
+                    Hired_Employee_Objects[0].getStressed(employeeResponse.getAmountOfStressChanging());
+                }
+                if(employeeResponse.getStressLevelUp() == false) {
+                    Hired_Employee_Objects[0].removeStress(employeeResponse.getAmountOfStressChanging());
+                }
+            }
+                
         }
         if(selectedObject.name == "Employee_2") {
             if(employeeResponse.getAmountOfHoursChanging() == 0) {
@@ -789,6 +840,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 if(employeeResponse.getWorkingHoursUp() == false) {
                     Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
                 } 
+            }
+            if(employeeResponse.getAmountOfStressChanging() == 0){
+
+            }else {
+                if(employeeResponse.getStressLevelUp() == true) {
+                    Hired_Employee_Objects[1].getStressed(employeeResponse.getAmountOfStressChanging());
+                }
+                if(employeeResponse.getStressLevelUp() == false) {
+                    Hired_Employee_Objects[1].removeStress(employeeResponse.getAmountOfStressChanging());
+                }
             }
         }
         if(selectedObject.name == "Employee_3") {
@@ -802,6 +863,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
                 } 
             }
+            if(employeeResponse.getAmountOfStressChanging() == 0){
+
+            }else {
+                if(employeeResponse.getStressLevelUp() == true) {
+                    Hired_Employee_Objects[2].getStressed(employeeResponse.getAmountOfStressChanging());
+                }
+                if(employeeResponse.getStressLevelUp() == false) {
+                    Hired_Employee_Objects[2].removeStress(employeeResponse.getAmountOfStressChanging());
+                }
+            }
         }
         if(selectedObject.name == "Employee_4") {
             if(employeeResponse.getAmountOfHoursChanging() == 0) {
@@ -813,6 +884,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 if(employeeResponse.getWorkingHoursUp() == false) {
                     Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
                 } 
+            }
+            if(employeeResponse.getAmountOfStressChanging() == 0){
+
+            }else {
+                if(employeeResponse.getStressLevelUp() == true) {
+                    Hired_Employee_Objects[3].getStressed(employeeResponse.getAmountOfStressChanging());
+                }
+                if(employeeResponse.getStressLevelUp() == false) {
+                    Hired_Employee_Objects[3].removeStress(employeeResponse.getAmountOfStressChanging());
+                }
             }
         }
     }
