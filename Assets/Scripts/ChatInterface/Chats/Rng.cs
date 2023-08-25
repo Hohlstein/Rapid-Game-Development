@@ -18,24 +18,22 @@ public class Rng : MonoBehaviour{
     private List<DialogueTreeRoot> miniGameDialoguesStory; 
         [SerializeField]
     private List<DialogueTreeRoot> miniGameDialoguesCoding;
-
     private int skillThreshold = 60;
-    
     private int weekTracker;
-
     private int dialogueIndex;
-
     private bool miniGameDialogueTracker;
-
     private int existingProblemCharacterTracker; 
-
     private int problemDialogueIndex;
+    private List<Mitarbeiter> Hired_Employee_Objects;
 
     
 
 
     void Start() {
         DontDestroyOnLoad(this.gameObject);
+        GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
+        FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
+        Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
     }
     //gets a randomly generated rarity and passes it to chooseRandomDialoge
     private Rarity getRandomRarity(){
@@ -280,6 +278,15 @@ public class Rng : MonoBehaviour{
             problemDialogueIndex = 1;
             existingProblemCharacterTracker++;
             selectedDialogue = problemDialogues[dialogueIndex];
+
+
+            int randomEmployee = UnityEngine.Random.Range(0,Hired_Employee_Objects.Count);
+            
+            while(Hired_Employee_Objects[randomEmployee] == employee) {
+                randomEmployee = UnityEngine.Random.Range(0,Hired_Employee_Objects.Count);
+            }
+            Hired_Employee_Objects[randomEmployee].setProblemCharacter(true);
+            employee.setProblemCharacter(false);
         }
         if(existingProblemCharacterTracker == 2){
             selectedDialogue = problemDialogues[problemDialogueIndex+1];
@@ -289,7 +296,7 @@ public class Rng : MonoBehaviour{
     }
 
     //Rolls whether an employee will become a problem character
-    //After first dialogue second dialoge must be from another employee
+    //WICHTIG !!!!!!!!!!!!!!!!!!!!!!!!!! After first dialogue option second dialoge must be from different employee !!!!!!!!!!!!!!!!!!!!!!
     private bool makeProblemCharacter(Mitarbeiter employee) {
         if(weekTracker > 1) {
             int randomNumber = UnityEngine.Random.Range(1, 31);
