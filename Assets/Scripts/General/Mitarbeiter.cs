@@ -41,6 +41,7 @@ public class Mitarbeiter : MonoBehaviour
     private Sprite profile_picture;
     [SerializeField]
     private bool CategoryHoursAssigned;
+    private bool problemCharacter;
 
 
  
@@ -164,6 +165,14 @@ public class Mitarbeiter : MonoBehaviour
 
     public Sprite GetAvatar(){
       return profile_picture;
+    }
+
+    public void setProblemCharacter (bool problemCharacter) {
+      this.problemCharacter = problemCharacter;
+    }
+
+    public bool getProblemCharacter () {
+      return problemCharacter;
     }
 
     

@@ -25,7 +25,13 @@ public class Rng : MonoBehaviour{
 
     private int dialogueIndex;
 
-    private bool miniGameDialogueTracker; 
+    private bool miniGameDialogueTracker;
+
+    private int existingProblemCharacterTracker; 
+
+    private int problemDialogueIndex;
+
+    
 
 
     void Start() {
@@ -189,7 +195,7 @@ public class Rng : MonoBehaviour{
         return selectedDialogue;
     } 
 
-    //Vielleicht sollte ich auch bei denen mit mehr wie einer startoption die startoption randomizen und nach verwendung rauslöschen 
+    //Chooses between all the possible randomized dialogueOptions 
     public DialogueNode getRandomDialogueOption(Mitarbeiter employee){
         weekTracker = GameObject.Find("WeekInfo").GetComponent<Week>().getWeek();
         List<DialogueNode> dialogueStarts;
@@ -198,31 +204,37 @@ public class Rng : MonoBehaviour{
         int randomNumber = UnityEngine.Random.Range(0,4);
         int startIndex = 0;
         Debug.Log("Woche: "+ weekTracker);
-        if(randomNumber >=2 && weekTracker > 1 && miniGameDialogueTracker == false){
-            selectedDialogue = chooseRandomMiniGameDialogue(employee);
-             Debug.Log("IM in MINIGAME DIALOGUES");
+        if(employee.getProblemCharacter() == true && existingProblemCharacterTracker >=1) {
+            selectedDialogue = chooseRandomProblemDialogue(employee);
         }else{
-            selectedDialogue = chooseRandomRarityDialogue(getRandomRarity());
-            Debug.Log("IM in RARITY DIALOGUES");
-        }    
-            Debug.Log("SelectedDialogue" + selectedDialogue);
-            dialogueStarts = selectedDialogue.getDialogueStart();
-            if(dialogueStarts.Count == 1) {
-                selectedDialogueStart = dialogueStarts[0];
-                removeDialogueOptions(dialogueIndex, startIndex, selectedDialogue.getRarity());
+            if(randomNumber >=2 && weekTracker > 1 && miniGameDialogueTracker == false){
+                selectedDialogue = chooseRandomMiniGameDialogue(employee);
+                Debug.Log("IM in MINIGAME DIALOGUES");
             }else{
-                startIndex = UnityEngine.Random.Range(0,dialogueStarts.Count);
-                Debug.Log("StartIndex: "+startIndex);
-                Debug.Log("DialogueStarts.Count() "+dialogueStarts.Count);
-                selectedDialogueStart = dialogueStarts[startIndex]; //HIER MAYBE COUNT -1 muss ich noch testen
-                removeDialogueOptions(dialogueIndex, startIndex, selectedDialogue.getRarity());
-            }
-            
-        
-        
+                selectedDialogue = chooseRandomRarityDialogue(getRandomRarity());
+                Debug.Log("IM in RARITY DIALOGUES");
+            }    
+                
+                dialogueStarts = selectedDialogue.getDialogueStart();
+                if(problemDialogueIndex == 1){
+                    selectedDialogueStart= dialogueStarts[problemDialogueIndex];
+                    problemDialogueIndex = 0;
+                }
+                if(dialogueStarts.Count == 1) {
+                    selectedDialogueStart = dialogueStarts[0];
+                    removeDialogueOptions(dialogueIndex, startIndex, selectedDialogue.getRarity());
+                }else{
+                    startIndex = UnityEngine.Random.Range(0,dialogueStarts.Count);
+                    Debug.Log("StartIndex: "+startIndex);
+                    Debug.Log("DialogueStarts.Count() "+dialogueStarts.Count);
+                    selectedDialogueStart = dialogueStarts[startIndex]; //HIER MAYBE COUNT -1 muss ich noch testen
+                    removeDialogueOptions(dialogueIndex, startIndex, selectedDialogue.getRarity());
+                }
+        }
         return selectedDialogueStart;
     }
 
+    //generates the index for the Specific MiniGameDialogues
     private int generateSpecificMiniGameDialogueIndex(string score){
         int randomNumber = 0;
         if(score == "bad"){
@@ -237,6 +249,7 @@ public class Rng : MonoBehaviour{
         return randomNumber;
     }
 
+    //removes dialogues from the corresponding list
     private void removeDialogueOptions(int dialogueIndexDelete, int startIndexDelete,Rarity rarity){
         if(rarity == Rarity.common){
             commonDialogues[dialogueIndexDelete].deleteStartOption(startIndexDelete);
@@ -258,4 +271,37 @@ public class Rng : MonoBehaviour{
         }
     }
 
-}   
+    //Chooses Random Problem Dialogue
+    private DialogueTreeRoot chooseRandomProblemDialogue(Mitarbeiter employee){
+        DialogueTreeRoot selectedDialogue = null;
+        if(existingProblemCharacterTracker == 1){
+            int randomNumber =  UnityEngine.Random.Range(0,problemDialogues.Count);
+            dialogueIndex = randomNumber;
+            problemDialogueIndex = 1;
+            existingProblemCharacterTracker++;
+            selectedDialogue = problemDialogues[dialogueIndex];
+        }
+        if(existingProblemCharacterTracker == 2){
+            selectedDialogue = problemDialogues[problemDialogueIndex+1];
+            existingProblemCharacterTracker = 0;
+        }
+        return selectedDialogue;
+    }
+
+    //Rolls whether an employee will become a problem character
+    //After first dialogue second dialoge must be from another employee
+    private bool makeProblemCharacter(Mitarbeiter employee) {
+        if(weekTracker > 1) {
+            int randomNumber = UnityEngine.Random.Range(1, 31);
+            if(existingProblemCharacterTracker == 0){
+                if(randomNumber == 20) 
+                    employee.setProblemCharacter(true);
+                    return true;
+                    existingProblemCharacterTracker = 1;
+                }else {
+                    return false;
+                }
+        }
+        return false; 
+    }      
+}
