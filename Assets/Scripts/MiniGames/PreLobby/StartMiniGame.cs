@@ -20,7 +20,7 @@ public class StartMiniGame : MonoBehaviour
         }
         else{
             //Dem Play Button wurde die Scene für's Minigame übermittelt und nun wird dazu gewechselt.
-            if (next_scene == "RecreateTheMusicMiniGame" || next_scene == "TextureMinigame"){
+            if (next_scene == "RecreateTheMusicMiniGame" || next_scene == "TextureMinigame" || next_scene == "CodingMiniGame"){
                 SceneManagement.changeScene(next_scene);
             }
             else{

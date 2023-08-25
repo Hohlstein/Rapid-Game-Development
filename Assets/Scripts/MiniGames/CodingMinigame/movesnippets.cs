@@ -11,10 +11,23 @@ public class movesnippets : MonoBehaviour
     public GameObject  snippetspawnPoint;
     public List<GameObject> spawnPointlist;
     private bool newinstance = true;
+    private double speed = 0.5;
     // Start is called before the first frame update
     void Start()
     {
         shuffle();
+        switch(gameObject.GetComponent<DifficultyManager>().GetLevelInt()){
+            case 1:
+            break;
+            case 2:
+            speed = 1;
+            break;
+            case 3:
+            speed = 3;
+            break;
+            default:
+            break;
+        }
     }
 
     // Update is called once per frame
@@ -26,7 +39,7 @@ public class movesnippets : MonoBehaviour
             newinstance = false;
         }
         else{
-              transform.position = transform.position + Vector3.up * 3 *Time.deltaTime;
+              transform.position = transform.position + Vector3.up * (float)speed *Time.deltaTime;
              
         }
 

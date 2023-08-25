@@ -19,7 +19,7 @@ public class CodingMiniGameLogic : MonoBehaviour
     private int neededId = 0;
     private int timer_seconds = 30;
     public GameObject neededCodeSnippetspawnPoint;
-    // Start is called before the first frame update
+
     void Start()
     {
 
@@ -43,9 +43,16 @@ public class CodingMiniGameLogic : MonoBehaviour
 
     public void test(int id){
         if(id == neededId ){
-            
-           
-            this.GetComponent<EndMiniGame>().EndNow(100, "Good Job!", "Coding");
+            if(timer.GetRemainingSeconds() == "30" ||timer.GetRemainingSeconds() =="29"||timer.GetRemainingSeconds() =="28" )
+            {
+                this.GetComponent<EndMiniGame>().EndNow(100, "Very Good Job!", "coding");
+            }else if(timer.GetRemainingSeconds().Length == 2 && timer.GetRemainingSeconds()[0] == '2'){
+                    this.GetComponent<EndMiniGame>().EndNow(75, " Good Job!", "coding");
+            }else if (timer.GetRemainingSeconds().Length == 2 && timer.GetRemainingSeconds()[0] == '1'){
+                    this.GetComponent<EndMiniGame>().EndNow(50, "Good Job!", "coding");
+            }else if (timer.GetRemainingSeconds().Length == 1){
+                    this.GetComponent<EndMiniGame>().EndNow(25, "Good Job!", "coding");
+            }
         }
         else{
             Debug.Log("Not Found");

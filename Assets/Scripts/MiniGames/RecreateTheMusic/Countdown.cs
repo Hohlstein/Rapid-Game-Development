@@ -79,6 +79,12 @@ public class Countdown : MonoBehaviour
         Seconds = s;
     }
 
+    public string GetRemainingSeconds(){
+        return seconds;
+    }
+
+
+
     public void Freeze(){
         freeze = true;
     }

@@ -56,7 +56,7 @@ public class LuckResultDisplay : MonoBehaviour
         //Um ein neues Minigame hinzufügen: z.B. in CodingGames neuen (string,string,string) Tuple hinzufügen.
         //String 1 ist der Minigame Name, 2 ist die Beschreibung und 3 ist der Name der Scene des Games.
         List<(string,string,string)> CodingGames = new List<(string,string,string)>();
-        CodingGames.Add(("[Coding Game]","[Coding Game Description]","CodingGame"));
+        CodingGames.Add(("[Coding Game]","[Coding Game Description]","CodingMiniGame"));
         List<(string,string,string)> GameDesignGames = new List<(string,string,string)>();
         GameDesignGames.Add(("[Game Design Game]","[Game Design Game Description]","GameDesignGame"));
         List<(string,string,string)> GraphicDesignGames = new List<(string,string,string)>();
