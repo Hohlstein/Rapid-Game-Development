@@ -36,7 +36,16 @@ public class WeekStartAnimation : MonoBehaviour
         weeksLeft_move.freeze = true;
         WeeksLeftDisplay.enabled = false;
         WeekDisplay.text = "Week "+currentNumberOfWeeks;
-        WeeksLeftDisplay.text = (deadlineNumberOfWeeks-currentNumberOfWeeks)+" weeks left";
+        int NumberOfWeeksLeft = (deadlineNumberOfWeeks-currentNumberOfWeeks);
+        if (NumberOfWeeksLeft > 1){
+            WeeksLeftDisplay.text = NumberOfWeeksLeft + " weeks left";
+        }
+        if (NumberOfWeeksLeft == 1){
+            WeeksLeftDisplay.text = NumberOfWeeksLeft + " week left";
+        }
+        else{
+            WeeksLeftDisplay.text = "Final week!";
+        }
         StartAnimations();
         
 
@@ -126,6 +135,12 @@ public class WeekStartAnimation : MonoBehaviour
             flashCount++;
         }
         yield return new WaitForSeconds(1f);
+        Debug.Log("weeks: " + currentNumberOfWeeks);
+        Debug.Log("Deadline: "+deadlineNumberOfWeeks);
+        if (currentNumberOfWeeks >= deadlineNumberOfWeeks) {
+            SceneManagement.changeScene("Endscreen");
+            yield break;
+        }
         SceneManagement.changeScene("Chat");
     }
 

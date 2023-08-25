@@ -37,6 +37,7 @@ public class LuckResultDisplay : MonoBehaviour
         SetGames();
         //Zuerst wird die eingegebene Kategorie, die als String übergeben wurde, zu einem category enum konvertiert, um damit weiterzuarbeiten.
         Category chosenCategory = MapStringToCategory(category);
+        SetBonusCategory(category);
         //Die Anzahl Spiele, die es für diese Kategorie gibt wird gezählt und eins von diesen wird zufällig ausgewählt.
         List<(string,string,string)> possibleGames = games[chosenCategory];
         System.Random random = new System.Random();
@@ -55,7 +56,7 @@ public class LuckResultDisplay : MonoBehaviour
         //Um ein neues Minigame hinzufügen: z.B. in CodingGames neuen (string,string,string) Tuple hinzufügen.
         //String 1 ist der Minigame Name, 2 ist die Beschreibung und 3 ist der Name der Scene des Games.
         List<(string,string,string)> CodingGames = new List<(string,string,string)>();
-        CodingGames.Add(("[Coding Game]","[Coding Game Description]","CodingGame"));
+        CodingGames.Add(("[Coding Game]","[Coding Game Description]","CodingMiniGame"));
         List<(string,string,string)> GameDesignGames = new List<(string,string,string)>();
         GameDesignGames.Add(("[Game Design Game]","[Game Design Game Description]","GameDesignGame"));
         List<(string,string,string)> GraphicDesignGames = new List<(string,string,string)>();
@@ -75,6 +76,7 @@ public class LuckResultDisplay : MonoBehaviour
     private Category MapStringToCategory(string x){
         x = x.ToLower();
         x = x.Replace(" ", "");
+        Debug.Log("this is " + x);
         if (x == "coding"){
             return Category.Coding;
         }
@@ -92,6 +94,13 @@ public class LuckResultDisplay : MonoBehaviour
         }
         Debug.LogError("Could not convert "+x+" to a Category enum!");
         return Category.Coding;
+    }
+
+    private void SetBonusCategory(string x) {
+        x = x.ToLower();
+        x = x.Replace(" ", "");
+        PlayerPrefs.SetString("LastMinigame", x);
+        
     }
     
 

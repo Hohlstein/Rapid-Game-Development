@@ -35,9 +35,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/HireListArbeitsteilung.unity
     guid: 478b0a0afa3dc804486899f5cfcbe7d2
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Endscreen.unity
-    guid: ddba9e58a40fdfb4ea1a3124fba45b48
+    guid: eb6dbe233e56f4c4f8cb78281cf30591
   - enabled: 0
     path: Assets/Scenes/DivisionOfLabor.unity
     guid: 6633c988891e1bf47a6793e3fc4893f8
@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MiniGamePreLobby.unity
     guid: 6e6cdf3764fdaab4383d16f9258c942d
+  - enabled: 1
+    path: Assets/Scenes/CodingMinigame.unity
+    guid: d987faceb7fa1e04b8e46f70862c41f5
   - enabled: 1
     path: Assets/Scenes/TextureMinigame.unity
     guid: 14d4567f2519635488ba79931a23c367
