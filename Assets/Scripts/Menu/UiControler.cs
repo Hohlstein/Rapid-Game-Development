@@ -20,7 +20,7 @@ public class UiControler : MonoBehaviour
 
     public void Continue()
     {
-       
+      
     }
 
     public void Quit()
