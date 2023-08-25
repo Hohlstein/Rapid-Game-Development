@@ -7,15 +7,16 @@ using UnityEngine;
 
 public class DialogueTreeRoot : MonoBehaviour
 {
-    [SerializeField]
-    private String eventName;
 
     [SerializeField]
     private List<DialogueNode> dialogueStart;
 
+    [SerializeField]
+    private Rarity rarity;
+
     void Start()
     {
-
+        this.gameObject.SetActive(false);  
     }
 
     void Update()
@@ -23,12 +24,15 @@ public class DialogueTreeRoot : MonoBehaviour
 
     }
 
-    public string GetEventName()
-    {
-        return eventName;
-    }
-
     public List<DialogueNode> getDialogueStart() {
         return dialogueStart;
+    }
+
+    public Rarity getRarity(){
+        return rarity;
+    }
+
+    public void deleteStartOption(int index) {
+        dialogueStart.RemoveAt(index);
     }
 }
