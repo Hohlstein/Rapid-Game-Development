@@ -59,4 +59,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WeekStartScreen.unity
     guid: e468e4011f499b640a1851a7429c468c
+  - enabled: 1
+    path: Assets/Scenes/ScriptWriterMiniGame.unity
+    guid: ed4bf357bf9810848bb75125d2403677
   m_configObjects: {}

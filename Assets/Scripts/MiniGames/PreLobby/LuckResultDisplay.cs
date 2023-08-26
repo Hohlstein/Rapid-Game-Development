@@ -56,15 +56,15 @@ public class LuckResultDisplay : MonoBehaviour
         //Um ein neues Minigame hinzufügen: z.B. in CodingGames neuen (string,string,string) Tuple hinzufügen.
         //String 1 ist der Minigame Name, 2 ist die Beschreibung und 3 ist der Name der Scene des Games.
         List<(string,string,string)> CodingGames = new List<(string,string,string)>();
-        CodingGames.Add(("[Coding Game]","[Coding Game Description]","CodingMiniGame"));
+        CodingGames.Add(("Master Debugger","The top shows you the code snippet you're looking for. Click the piece of code that's exactly the same!","CodingMiniGame"));
         List<(string,string,string)> GameDesignGames = new List<(string,string,string)>();
-        GameDesignGames.Add(("[Game Design Game]","[Game Design Game Description]","ScriptWriterMiniGame"));
+        GameDesignGames.Add(("Script Writer","Copy the original script you see on the left as fast as possible.\n\nBut be careful: Typing a wrong letter will end the minigame prematurely!","ScriptWriterMiniGame"));
         List<(string,string,string)> GraphicDesignGames = new List<(string,string,string)>();
         GraphicDesignGames.Add(("Texture Memory","A GitHub server issue has created duplicates of all the game textures!\n\nClick textures to open them. Try to find the pairs and open both to solve the duplicate conflict!\nSolve all conflicts to finish the minigame!","TextureMinigame"));
         List<(string,string,string)> SoundDesignGames = new List<(string,string,string)>();
         SoundDesignGames.Add(("Recreate the Music","Use the playback button to listen to the music you must recreate.\n\nYou're given samples which must be placed into the box at the bottom, in their correct order. You can listen to samples by clicking on them.\n\nWhen you're done and you think your order is correct, click the confirmation button.","RecreateTheMusicMiniGame"));
         List<(string,string,string)> SpecialGames = new List<(string,string,string)>();
-        SpecialGames.Add(("Fix the coffee machine","[Description here]","CoffeMachineGame"));
+        SpecialGames.Add(("Fix the coffee machine","The office coffee machine has some wires crossed!\nLook inside the machine and connect the correct wires to boost the productivity of your entire team!","CoffeMachineGame"));
 
         games.Add(Category.Coding,CodingGames);
         games.Add(Category.GameDesign,GameDesignGames);
@@ -76,7 +76,6 @@ public class LuckResultDisplay : MonoBehaviour
     private Category MapStringToCategory(string x){
         x = x.ToLower();
         x = x.Replace(" ", "");
-        Debug.Log("this is " + x);
         if (x == "coding"){
             return Category.Coding;
         }

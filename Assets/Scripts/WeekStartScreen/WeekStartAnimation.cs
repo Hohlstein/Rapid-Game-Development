@@ -43,7 +43,7 @@ public class WeekStartAnimation : MonoBehaviour
         if (NumberOfWeeksLeft == 1){
             WeeksLeftDisplay.text = NumberOfWeeksLeft + " week left";
         }
-        else{
+        if (NumberOfWeeksLeft == 0){
             WeeksLeftDisplay.text = "Final week!";
         }
         StartAnimations();

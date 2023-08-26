@@ -44,7 +44,6 @@ public class Line : MonoBehaviour
                     if (hit.transform.name == this.name)
                     {
 
-                        
                         lr.enabled = true;
                         _rightbox = true;
                     }

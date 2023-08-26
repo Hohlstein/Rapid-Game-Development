@@ -63,6 +63,7 @@ public class Randomly : MonoBehaviour
             {
                 if (!line.finish)
                 {
+                    
                     allFinished = false;
                     break;
                 }
@@ -70,8 +71,9 @@ public class Randomly : MonoBehaviour
 
             if (allFinished)
             {
+                CoffeeMachineWin win = GetComponent<CoffeeMachineWin>();
                 winFlag = true; 
-                Debug.Log("Win");
+                win.WinGame();
             }
         }
     }
