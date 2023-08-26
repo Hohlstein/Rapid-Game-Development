@@ -9,8 +9,8 @@ public class Line : MonoBehaviour
     Vector3 mouseDir;
     Camera cam;
     LineRenderer lr;
-    public int maxLine = 5;
-    bool finish = false;
+    public int maxLine = 15;
+    public bool finish = false;
     bool _rightbox = false;
     public Transform a;
 
@@ -43,8 +43,7 @@ public class Line : MonoBehaviour
                 {
                     if (hit.transform.name == this.name)
                     {
-                        
-                        Debug.Log("My object is clicked by mouse");
+
                         lr.enabled = true;
                         _rightbox = true;
                     }
@@ -71,8 +70,8 @@ public class Line : MonoBehaviour
                         endpos = a.position;
                         finish = true;
                         lr.SetPosition(1, endpos);
-                       
-         
+
+
                     }
                 }
 

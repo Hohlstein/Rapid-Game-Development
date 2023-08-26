@@ -788,7 +788,7 @@ MonoBehaviour:
   WeekDisplay: {fileID: 2087342818}
   WeeksLeftDisplay: {fileID: 211633881}
   weeksLeft_move: {fileID: 211633883}
-  currentNumberOfWeeks: 1
+  currentNumberOfWeeks: 0
   deadlineNumberOfWeeks: 5
   flagTransform: {fileID: 527260179}
   triangleTransform: {fileID: 1957213214}
