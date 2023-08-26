@@ -31,8 +31,4 @@ public class DialogueTreeRoot : MonoBehaviour
     public Rarity getRarity(){
         return rarity;
     }
-
-    public void deleteStartOption(int index) {
-        dialogueStart.RemoveAt(index);
-    }
 }
