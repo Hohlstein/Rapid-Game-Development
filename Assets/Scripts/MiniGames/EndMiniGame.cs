@@ -6,7 +6,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 public class EndMiniGame : MonoBehaviour
 {
     public GameObject prefab;
@@ -23,6 +23,10 @@ public class EndMiniGame : MonoBehaviour
     }
 
     public void TimeOut(){
+        if(this.gameObject is TMP_InputField){
+            gameObject.GetComponent<scriptWriterMiniGameLogic>().calculatePoints();
+            return;
+        }
         EndNow(0, "You ran out of time!","ANY");
     }
 }

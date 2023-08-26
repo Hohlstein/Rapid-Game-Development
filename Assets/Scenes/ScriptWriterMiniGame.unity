@@ -221,10 +221,12 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 74931584}
+  - component: {fileID: 74931589}
   - component: {fileID: 74931588}
   - component: {fileID: 74931587}
   - component: {fileID: 74931586}
   - component: {fileID: 74931585}
+  - component: {fileID: 74931590}
   m_Layer: 5
   m_Name: InputField (TMP)
   m_TagString: Untagged
@@ -265,6 +267,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08263a65d90ed8e4a920495c6d5268eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  textfield: {fileID: 74931586}
+  leftText: {fileID: 2129468193}
   timer: {fileID: 462467818}
 --- !u!114 &74931586
 MonoBehaviour:
@@ -323,7 +327,7 @@ MonoBehaviour:
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
   m_RegexValue: 
-  m_GlobalPointSize: 40
+  m_GlobalPointSize: 36
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -345,7 +349,19 @@ MonoBehaviour:
       m_Calls: []
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 74931585}
+        m_TargetAssemblyTypeName: scriptWriterMiniGameLogic, Assembly-CSharp
+        m_MethodName: checkText
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_OnTouchScreenKeyboardStatusChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -402,6 +418,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 74931583}
   m_CullTransparentMesh: 1
+--- !u!114 &74931589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74931583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 938158d8be64c96478eaae1daeba0634, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3601581404770357820, guid: 4f31bc015b7ab974da87a8e4fa3f1384, type: 3}
+--- !u!114 &74931590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 74931583}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa7517f0f8787d348975ee691dc1bc48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &279193164
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,8 +549,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -634,7 +675,7 @@ PrefabInstance:
     - target: {fileID: -790854684028008647, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
       propertyPath: minigame_ender
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 74931589}
     - target: {fileID: 1950116364251302180, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1179,13 +1220,26 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-    eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-    At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,
-    no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit
-    amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-    labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-    et justo duo dolores et ea rebum. '
+  m_text: 'I am the very model of a modern major general,
+
+    I''ve information
+    vegetable, animal, and mineral,
+
+    I know the kings of England, and I quote
+    the fights historical
+
+    From Marathon to Waterloo, in order categorical;
+
+    I''m
+    very well acquainted, too, with matters mathematical,
+
+    I understand equations,
+    both the simple and quadratical,
+
+    About binomial theorem I''m teeming with
+    a lot o'' news,
+
+    With many cheerful facts about the square of the hypotenuse.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1212,8 +1266,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1347,8 +1401,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

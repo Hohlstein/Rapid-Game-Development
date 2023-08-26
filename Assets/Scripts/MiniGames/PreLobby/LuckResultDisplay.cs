@@ -58,7 +58,7 @@ public class LuckResultDisplay : MonoBehaviour
         List<(string,string,string)> CodingGames = new List<(string,string,string)>();
         CodingGames.Add(("[Coding Game]","[Coding Game Description]","CodingMiniGame"));
         List<(string,string,string)> GameDesignGames = new List<(string,string,string)>();
-        GameDesignGames.Add(("[Game Design Game]","[Game Design Game Description]","GameDesignGame"));
+        GameDesignGames.Add(("[Game Design Game]","[Game Design Game Description]","ScriptWriterMiniGame"));
         List<(string,string,string)> GraphicDesignGames = new List<(string,string,string)>();
         GraphicDesignGames.Add(("Texture Memory","A GitHub server issue has created duplicates of all the game textures!\n\nClick textures to open them. Try to find the pairs and open both to solve the duplicate conflict!\nSolve all conflicts to finish the minigame!","TextureMinigame"));
         List<(string,string,string)> SoundDesignGames = new List<(string,string,string)>();

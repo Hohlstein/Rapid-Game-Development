@@ -31,17 +31,21 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject chatHolder_1; 
     public ScrollRect scrollRect_1;
     public GameObject chatScrollRect_1;
-    private int dialogueIndex_1; //sets which dialogue is used from the dialogue list
+    private bool messageRecieved_1; //tracks whether a message has already been recieved from this employee
+    private DialogueNode dialogue_1; //sets which dialogue is used from the dialogue list
     private int answerIndex_1; //sets which answer option is currently displayed
     private int answeredAmount_1; //tracks how many answers have been sent to properly set position of text bubbles
+    private List<PlayerAnswer> currentAnswers_1; //tracks the current answers so you can switch between chats at any time
 
     public GameObject chatScrollRect_2;
     public GameObject chatHolder_2;
     public ScrollRect scrollRect_2;
+    private bool messageRecieved_2;
     private bool answeredEmployee_2;
-    private int dialogueIndex_2;
+    private DialogueNode dialogue_2;
     private int answerIndex_2;
     private int answeredAmount_2;
+    private List<PlayerAnswer> currentAnswers_2;
 
     public AvatarManager avatar1;
     public AvatarManager avatar2;
@@ -51,23 +55,27 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject chatScrollRect_3;
     public GameObject chatHolder_3;
     public ScrollRect scrollRect_3;
+    private bool messageRecieved_3;
     private bool answeredEmployee_3;
-    private int dialogueIndex_3;
+    private DialogueNode dialogue_3;
     private int answerIndex_3;
     private int answeredAmount_3;
+    private List<PlayerAnswer> currentAnswers_3;
 
     public GameObject chatScrollRect_4;
     public GameObject chatHolder_4;
     public ScrollRect scrollRect_4;
+    private bool messageRecieved_4;
     private bool answeredEmployee_4;
-    private int dialogueIndex_4;
+    private DialogueNode dialogue_4;
     private int answerIndex_4;
     private int answeredAmount_4;
+    private List<PlayerAnswer> currentAnswers_4;
 
-    private List<PlayerAnswer> answerOptions; //holds all current answer options
-    public List<DialogueTreeRoot> dialogues;
     public GameObject chooseOptionbarParent;
     public TextMeshProUGUI chooseOptionbar;
+
+    public Rng rng;
     
     //Finds HiredEmployeeList and deactivates all fields that shouldnt be seen yet
     void Start() {
@@ -164,27 +172,31 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
             totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
+            Debug.Log("HiredEmployeeObject_1 "+ Hired_Employee_Objects[0].getFirstName() + Hired_Employee_Objects[0].getLastName());
         }
         if(clickedObject.name == "Employee_2") {
             findName = clickedObject.transform.Find("employee_2_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[1].getWorkingHours()+"";
+            Debug.Log("HiredEmployeeObject_2"+ Hired_Employee_Objects[1].getFirstName() + Hired_Employee_Objects[1].getLastName() );
         }
         if(clickedObject.name == "Employee_3") {
             findName = clickedObject.transform.Find("employee_3_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[2].getWorkingHours()+"";
+            Debug.Log("HiredEmployeeObject_3 "+ Hired_Employee_Objects[2].getFirstName()+ Hired_Employee_Objects[2].getLastName());
         }
         if(clickedObject.name == "Employee_4") {
             findName = clickedObject.transform.Find("employee_4_name");
             string buttonText = findName.GetComponent<TextMeshProUGUI>().text; 
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
-            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
+            totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[3].getWorkingHours()+"";
+            Debug.Log("HiredEmployeeObject_4 "+ Hired_Employee_Objects[3].getFirstName()+ Hired_Employee_Objects[3].getLastName());
         }
         
     }
@@ -195,7 +207,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         chatScrollRect_2.SetActive(false);
         chatScrollRect_3.SetActive(false);
         chatScrollRect_4.SetActive(false);
-
+        chooseOptionbar.text = "";
         if (selectedObject.name != clickedObject.name)
         {
             ResetButton();
@@ -207,37 +219,63 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             if(answeredEmployee_1 == true) {
                 chatScrollRect_1.SetActive(true);
                 clickedObject.sprite = answeredSelectedSprite;
+            }else{
+                chatScrollRect_1.SetActive(true);
+                if(messageRecieved_1 == false) {
+                recieveMessage_1();
+                }else{
+                chooseOptionbar.text = currentAnswers_1[answerIndex_1].getText();
+                }
             }
-            chatScrollRect_1.SetActive(true);
-            recieveMessage_1();
+            
+            
         }
         if(clickedObject.name == "Employee_2") {
             if(answeredEmployee_2 == true) {
                 chatScrollRect_2.SetActive(true);
                 clickedObject.sprite = answeredSelectedSprite;
+            }else{
+                chatScrollRect_2.SetActive(true);
+                if(messageRecieved_2 == false) {
+                recieveMessage_2();
+                }else{
+                chooseOptionbar.text = currentAnswers_2[answerIndex_2].getText();
             }
-            chatScrollRect_2.SetActive(true);
-            recieveMessage_2();
+            }
+            
         }
         if(clickedObject.name == "Employee_3") {
             if(answeredEmployee_3 == true) {
                 chatScrollRect_3.SetActive(true);
                 clickedObject.sprite = answeredSelectedSprite;
+            }else{
+                chatScrollRect_3.SetActive(true);
+            if(messageRecieved_3 == false) {
+                recieveMessage_3();
+            }else{
+                chooseOptionbar.text = currentAnswers_3[answerIndex_3].getText();
             }
-            chatScrollRect_3.SetActive(true);
-            recieveMessage_3();
+            }
+            
+            
         }
         if(clickedObject.name == "Employee_4") {
             if(answeredEmployee_4 == true) {
                 chatScrollRect_4.SetActive(true);
                 clickedObject.sprite = answeredSelectedSprite;
+            }else{
+               chatScrollRect_4.SetActive(true);
+                if(messageRecieved_4 == false) {
+                recieveMessage_4();
+                }else{
+                chooseOptionbar.text = currentAnswers_4[answerIndex_4].getText();
+                } 
             }
-            chatScrollRect_4.SetActive(true);
-            recieveMessage_4();
+            
+            
         }
     }
-    //Bug: As soon as 1 is answered all get Answered Sprite once deselected
-    //Resets the button to standard unselected or answeredUnselected Sprite
+    //Resets the selected buttons' sprite once it is deselected 
     private void ResetButton()
     {
         selectedObject.sprite = defaultSprite;
@@ -272,84 +310,111 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 1 chat panel, also displays the first option in your send bar
     private void recieveMessage_1() {
         answeredAmount_1=0;
-        dialogueIndex_1 = 1; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
+        dialogue_1= rng.getRandomDialogueOption(Hired_Employee_Objects[0]); 
+        messageRecieved_1 = true;
         GameObject recievedText_1 = Instantiate(recievedPrefab, chatHolder_1.transform);
 
-        recievedText_1.GetComponentInChildren<TextMeshProUGUI>().text = dialogues[dialogueIndex_1].getDialogueStart()[0].getText();
-        answerOptions = dialogues[dialogueIndex_1].getDialogueStart()[0].getPlayerAnswer();
-        chooseOptionbar.text = answerOptions[answerIndex_1].getText();
+        recievedText_1.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_1.getText();
+        if(dialogue_1.getFinalNode() == true) {
+            answeredEmployee_1 = true;
+            clearAnswerOptions(currentAnswers_1);
+        }else{
+            currentAnswers_1 = dialogue_1.getPlayerAnswer();
+            chooseOptionbar.text = currentAnswers_1[answerIndex_1].getText();
+        }
     }
     //Sends the according message to employee 2 chat panel, also displays the first option in your send bar
     private void recieveMessage_2() {
         answeredAmount_2=0;
-        dialogueIndex_2 = 2; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
+        dialogue_2 = rng.getRandomDialogueOption(Hired_Employee_Objects[1]); 
+        messageRecieved_2 = true;
         GameObject recievedText_2 = Instantiate(recievedPrefab, chatHolder_2.transform);
-        recievedText_2.GetComponentInChildren<TextMeshProUGUI>().text = dialogues[dialogueIndex_2].getDialogueStart()[0].getText();
-        answerOptions = dialogues[dialogueIndex_2].getDialogueStart()[0].getPlayerAnswer();
-        chooseOptionbar.text = answerOptions[answerIndex_2].getText();
+
+        recievedText_2.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_2.getText();
+        if(dialogue_2.getFinalNode() == true) {
+            answeredEmployee_2 = true;
+            clearAnswerOptions(currentAnswers_2);
+        }else{
+            currentAnswers_2 = dialogue_2.getPlayerAnswer();
+            chooseOptionbar.text = currentAnswers_2[answerIndex_2].getText();
+        }
     }
     //Sends the according message to employee 3 chat panel, also displays the first option in your send bar
     private void recieveMessage_3() {
         answeredAmount_3=0;
-        dialogueIndex_3 = 3; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
+        dialogue_3 = rng.getRandomDialogueOption(Hired_Employee_Objects[2]); 
+        messageRecieved_3 = true;
         GameObject recievedText_3 = Instantiate(recievedPrefab, chatHolder_3.transform);
-        recievedText_3.GetComponentInChildren<TextMeshProUGUI>().text = dialogues[dialogueIndex_3].getDialogueStart()[0].getText();
-        answerOptions = dialogues[dialogueIndex_3].getDialogueStart()[0].getPlayerAnswer();
-        chooseOptionbar.text = answerOptions[answerIndex_3].getText();
+
+        recievedText_3.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_3.getText();
+        if(dialogue_3.getFinalNode() == true) {
+            answeredEmployee_3 = true;
+            clearAnswerOptions(currentAnswers_3);
+        }else{
+            currentAnswers_3 = dialogue_3.getPlayerAnswer();
+            chooseOptionbar.text = currentAnswers_3[answerIndex_3].getText();
+        }
     }
     //Sends the according message to employee 4 chat panel, also displays the first option in your send bar
     private void recieveMessage_4() {
         answeredAmount_4=0;
-        dialogueIndex_4= 5; //param hardcoded for dev purposes will be changed once i got a way to trigger the right dialogues
+        dialogue_4 = rng.getRandomDialogueOption(Hired_Employee_Objects[3]); 
+        messageRecieved_4 = true;
         GameObject recievedText_4 = Instantiate(recievedPrefab, chatHolder_4.transform);
-        recievedText_4.GetComponentInChildren<TextMeshProUGUI>().text = dialogues[dialogueIndex_4].getDialogueStart()[0].getText();
-        answerOptions = dialogues[dialogueIndex_4].getDialogueStart()[0].getPlayerAnswer();
-        chooseOptionbar.text = answerOptions[answerIndex_4].getText();
+
+        recievedText_4.GetComponentInChildren<TextMeshProUGUI>().text = dialogue_4.getText();
+        if(dialogue_4.getFinalNode() == true) {
+            answeredEmployee_4 = true;
+            clearAnswerOptions(currentAnswers_4);
+        }else{
+            currentAnswers_4 = dialogue_4.getPlayerAnswer();
+            chooseOptionbar.text = currentAnswers_4[answerIndex_4].getText();
+        }
     }
     //Displays the different answeroptions on different chat panels depending on selectedObject on your chat bar.
     //Called by Down Button on click
     public void AnswerOptionsDown() {
         if(selectedObject.name == "Employee_1") {
-            if(answerOptions != null) {
+            if(currentAnswers_1 != null) {
                 answerIndex_1++;
-                if(answerIndex_1 < answerOptions.Count) {
-                    chooseOptionbar.text = answerOptions[answerIndex_1].getText();
+                if(answerIndex_1 < currentAnswers_1.Count) {
+                    chooseOptionbar.text = currentAnswers_1[answerIndex_1].getText();
                 }else{
                     answerIndex_1 =0;
-                    chooseOptionbar.text = answerOptions[answerIndex_1].getText();
+                    chooseOptionbar.text = currentAnswers_1[answerIndex_1].getText();
                 }
             }
         }
         if(selectedObject.name == "Employee_2") {
-            if(answerOptions != null) {
+            if(currentAnswers_2 != null) {
                 answerIndex_2++;
-                if(answerIndex_2 < answerOptions.Count) {
-                    chooseOptionbar.text = answerOptions[answerIndex_2].getText();
+                if(answerIndex_2 < currentAnswers_2.Count) {
+                    chooseOptionbar.text = currentAnswers_2[answerIndex_2].getText();
                 }else{
                     answerIndex_2 =0;
-                    chooseOptionbar.text = answerOptions[answerIndex_2].getText();
+                    chooseOptionbar.text = currentAnswers_2[answerIndex_2].getText();
                 }
             }
         }
         if(selectedObject.name == "Employee_3") {
-            if(answerOptions != null) {
+            if(currentAnswers_3 != null) {
                 answerIndex_3++;
-                if(answerIndex_3 < answerOptions.Count) {
-                    chooseOptionbar.text = answerOptions[answerIndex_3].getText();
+                if(answerIndex_3 < currentAnswers_3.Count) {
+                    chooseOptionbar.text = currentAnswers_3[answerIndex_3].getText();
                 }else{
                     answerIndex_3 =0;
-                    chooseOptionbar.text = answerOptions[answerIndex_3].getText();
+                    chooseOptionbar.text = currentAnswers_3[answerIndex_3].getText();
                 }
             }
         }
         if(selectedObject.name == "Employee_4") {
-            if(answerOptions != null) {
+            if(currentAnswers_4 != null) {
                 answerIndex_4++;
-                if(answerIndex_4 < answerOptions.Count) {
-                    chooseOptionbar.text = answerOptions[answerIndex_4].getText();
+                if(answerIndex_4 < currentAnswers_4.Count) {
+                    chooseOptionbar.text = currentAnswers_4[answerIndex_4].getText();
                 }else{
                     answerIndex_4 =0;
-                    chooseOptionbar.text = answerOptions[answerIndex_4].getText();
+                    chooseOptionbar.text = currentAnswers_4[answerIndex_4].getText();
                 }
             }
         }  
@@ -358,64 +423,73 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Called by Up Button on click
     public void AnswerOptionsUp() {
         if(selectedObject.name == "Employee_1") {
-            if(answerOptions != null) {
+            if(currentAnswers_1 != null) {
                 if(answerIndex_1 == 0) {
-                    answerIndex_1 = answerOptions.Count-1;
-                    chooseOptionbar.text = answerOptions[answerIndex_1].getText();
+                    answerIndex_1 = currentAnswers_1.Count-1;
+                    chooseOptionbar.text = currentAnswers_1[answerIndex_1].getText();
                 }else {
                     answerIndex_1--;
-                    chooseOptionbar.text = answerOptions[answerIndex_1].getText();
+                    chooseOptionbar.text = currentAnswers_1[answerIndex_1].getText();
                 }
             }
         }
         if(selectedObject.name == "Employee_2") {
-            if(answerOptions != null) {
+            if(currentAnswers_2 != null) {
                 if(answerIndex_2 == 0) {
-                    answerIndex_2 = answerOptions.Count-1;
-                    chooseOptionbar.text = answerOptions[answerIndex_2].getText();
+                    answerIndex_2 = currentAnswers_2.Count-1;
+                    chooseOptionbar.text = currentAnswers_2[answerIndex_2].getText();
                 }else {
                     answerIndex_2--;
-                    chooseOptionbar.text = answerOptions[answerIndex_2].getText();
+                    chooseOptionbar.text = currentAnswers_2[answerIndex_2].getText();
                 }
             }
         }
         if(selectedObject.name == "Employee_3") {
-            if(answerOptions != null) {
+            if(currentAnswers_3 != null) {
                 if(answerIndex_3 == 0) {
-                    answerIndex_3 = answerOptions.Count-1;
-                    chooseOptionbar.text = answerOptions[answerIndex_3].getText();
+                    answerIndex_3 = currentAnswers_3.Count-1;
+                    chooseOptionbar.text = currentAnswers_3[answerIndex_3].getText();
                 }else {
                     answerIndex_3--;
-                    chooseOptionbar.text = answerOptions[answerIndex_3].getText();
+                    chooseOptionbar.text = currentAnswers_3[answerIndex_3].getText();
                 }
             }
         }
         if(selectedObject.name == "Employee_4") {
-            if(answerOptions != null) {
+            if(currentAnswers_4 != null) {
                 if(answerIndex_4 == 0) {
-                    answerIndex_4 = answerOptions.Count-1;
-                    chooseOptionbar.text = answerOptions[answerIndex_4].getText();
+                    answerIndex_4 = currentAnswers_4.Count-1;
+                    chooseOptionbar.text = currentAnswers_4[answerIndex_4].getText();
                 }else {
                     answerIndex_4--;
-                    chooseOptionbar.text = answerOptions[answerIndex_4].getText();
+                    chooseOptionbar.text = currentAnswers_4[answerIndex_4].getText();
                 }
             }
         }   
     }  
+    private void clearAnswerOptions(List<PlayerAnswer> currentAnswers){
+        if(currentAnswers != null ){
+            foreach (PlayerAnswer answer in currentAnswers) {
+                answer.setText("");
+            }
+            chooseOptionbar.text = "";
+        }
+    }
     //Checks which employee is selected and sends the corresponding answer, checks if it was the last dialogue node if yes it clears option bar 
     //and disables any send Functions
     public void sendAnswer() {
         if(selectedObject.name == "Employee_1") {
             if(answeredEmployee_1 != true) {
                 if(answeredAmount_1 == 0) {
-                    answerOptions = dialogues[dialogueIndex_1].getDialogueStart()[0].getPlayerAnswer();
+                                    //Maybe Here
+                    currentAnswers_1 = dialogue_1.getPlayerAnswer();
                     GameObject sentText_1 = Instantiate(sentPrefab,chatHolder_1.transform);
-                    sentText_1.GetComponentInChildren<TextMeshProUGUI>().text = answerOptions[answerIndex_1].getText();
+                    sentText_1.GetComponentInChildren<TextMeshProUGUI>().text = currentAnswers_1[answerIndex_1].getText();
                     answeredAmount_1++;
-                    if(answerOptions[answerIndex_1].getFinalNode() == false) {
+                    if(currentAnswers_1[answerIndex_1].getFinalNode() == false) {
                         int saveAnswerIndex = answerIndex_1;
                         answerIndex_1 = 0;
-                        sendEmployeeAnswer(answerOptions[saveAnswerIndex].getNextNode());
+                        sendEmployeeAnswer(currentAnswers_1[saveAnswerIndex].getNextNode());
                     }else{
                         answeredEmployee_1 = true;
                         chooseOptionbar.text = "";
@@ -429,8 +503,8 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     }
                     sentText_1.GetComponentInChildren<TextMeshProUGUI>().text = chooseOptionbar.text;
                     answeredAmount_1++;
-                    if(answerOptions[answerIndex_1].getFinalNode() == false) {
-                        sendEmployeeAnswer(answerOptions[answerIndex_1].getNextNode());
+                    if(currentAnswers_1[answerIndex_1].getFinalNode() == false) {
+                        sendEmployeeAnswer(currentAnswers_1[answerIndex_1].getNextNode());
                     }else{
                         answeredEmployee_1 = true;
                         chooseOptionbar.text = ""; 
@@ -444,14 +518,14 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         if(selectedObject.name == "Employee_2") {
             if(answeredEmployee_2 != true) {
                 if(answeredAmount_2 == 0) {
-                    answerOptions = dialogues[dialogueIndex_2].getDialogueStart()[0].getPlayerAnswer();
+                    currentAnswers_4 = dialogue_2.getPlayerAnswer();
                     GameObject sentText_2 = Instantiate(sentPrefab,chatHolder_2.transform);
-                    sentText_2.GetComponentInChildren<TextMeshProUGUI>().text = answerOptions[answerIndex_2].getText();
+                    sentText_2.GetComponentInChildren<TextMeshProUGUI>().text = currentAnswers_2[answerIndex_2].getText();
                     answeredAmount_2++;
-                    if(answerOptions[answerIndex_2].getFinalNode() == false) {
+                    if(currentAnswers_2[answerIndex_2].getFinalNode() == false) {
                         int saveAnswerIndex = answerIndex_2;
                         answerIndex_2 = 0;
-                        sendEmployeeAnswer(answerOptions[saveAnswerIndex].getNextNode());
+                        sendEmployeeAnswer(currentAnswers_2[saveAnswerIndex].getNextNode());
                     }else{
                         answeredEmployee_2 = true;
                         chooseOptionbar.text = "";
@@ -465,8 +539,8 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     }
                     sentText_2.GetComponentInChildren<TextMeshProUGUI>().text = chooseOptionbar.text;
                     answeredAmount_2++;
-                    if(answerOptions[answerIndex_2].getFinalNode() == false) {
-                        sendEmployeeAnswer(answerOptions[answerIndex_2].getNextNode());
+                    if(currentAnswers_2[answerIndex_2].getFinalNode() == false) {
+                        sendEmployeeAnswer(currentAnswers_2[answerIndex_2].getNextNode());
                     }else{
                         answeredEmployee_2 = true;
                         chooseOptionbar.text = "";
@@ -479,14 +553,14 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         if(selectedObject.name == "Employee_3") {
             if(answeredEmployee_3 != true) {
                 if(answeredAmount_3 == 0) {
-                    answerOptions = dialogues[dialogueIndex_3].getDialogueStart()[0].getPlayerAnswer();
+                    currentAnswers_3 = dialogue_3.getPlayerAnswer();
                     GameObject sentText_3 = Instantiate(sentPrefab,chatHolder_3.transform);
-                    sentText_3.GetComponentInChildren<TextMeshProUGUI>().text = answerOptions[answerIndex_3].getText();
+                    sentText_3.GetComponentInChildren<TextMeshProUGUI>().text = currentAnswers_3[answerIndex_3].getText();
                     answeredAmount_3++;
-                    if(answerOptions[answerIndex_3].getFinalNode() == false) {
+                    if(currentAnswers_3[answerIndex_3].getFinalNode() == false) {
                         int saveAnswerIndex = answerIndex_3;
                         answerIndex_3 = 0;
-                        sendEmployeeAnswer(answerOptions[saveAnswerIndex].getNextNode());
+                        sendEmployeeAnswer(currentAnswers_3[saveAnswerIndex].getNextNode());
                     }else{
                         answeredEmployee_3 = true;
                         chooseOptionbar.text = "";
@@ -500,8 +574,8 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     }
                     sentText_3.GetComponentInChildren<TextMeshProUGUI>().text = chooseOptionbar.text;
                     answeredAmount_3++;
-                    if(answerOptions[answerIndex_3].getFinalNode() == false) {
-                        sendEmployeeAnswer(answerOptions[answerIndex_3].getNextNode());
+                    if(currentAnswers_3[answerIndex_3].getFinalNode() == false) {
+                        sendEmployeeAnswer(currentAnswers_3[answerIndex_3].getNextNode());
                     }else{
                         answeredEmployee_3 = true;
                         chooseOptionbar.text = "";
@@ -514,14 +588,14 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         if(selectedObject.name == "Employee_4") {
             if(answeredEmployee_4 != true) {
                 if(answeredAmount_4 == 0) {
-                    answerOptions = dialogues[dialogueIndex_4].getDialogueStart()[0].getPlayerAnswer();
+                    currentAnswers_4 = dialogue_4.getPlayerAnswer();
                     GameObject sentText_4 = Instantiate(sentPrefab,chatHolder_4.transform);
-                    sentText_4.GetComponentInChildren<TextMeshProUGUI>().text = answerOptions[answerIndex_4].getText();
+                    sentText_4.GetComponentInChildren<TextMeshProUGUI>().text = currentAnswers_4[answerIndex_4].getText();
                     answeredAmount_4++;
-                    if(answerOptions[answerIndex_4].getFinalNode() == false) {
+                    if(currentAnswers_4[answerIndex_4].getFinalNode() == false) {
                         int saveAnswerIndex = answerIndex_4;
                         answerIndex_4 = 0;
-                        sendEmployeeAnswer(answerOptions[saveAnswerIndex].getNextNode());
+                        sendEmployeeAnswer(currentAnswers_4[saveAnswerIndex].getNextNode());
                     }else{
                         answeredEmployee_4 = true;
                         chooseOptionbar.text = "";
@@ -535,8 +609,8 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     }
                     sentText_4.GetComponentInChildren<TextMeshProUGUI>().text = chooseOptionbar.text;
                     answeredAmount_4++;
-                    if(answerOptions[answerIndex_4].getFinalNode() == false) {
-                        sendEmployeeAnswer(answerOptions[answerIndex_4].getNextNode());
+                    if(currentAnswers_4[answerIndex_4].getFinalNode() == false) {
+                        sendEmployeeAnswer(currentAnswers_4[answerIndex_4].getNextNode());
                     }else{
                         answeredEmployee_4 = true;
                         chooseOptionbar.text = "";
@@ -618,20 +692,20 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Displays the response options to the before recieved message from the employee on followup messages not on first recieved one
     public void displayResponseToEmployeeAnswer(List<PlayerAnswer> answers) {
         if(selectedObject.name == "Employee_1") {
-            answerOptions = answers;
-            chooseOptionbar.text = answerOptions[answerIndex_1].getText();
+            currentAnswers_1 = answers;
+            chooseOptionbar.text = currentAnswers_1[answerIndex_1].getText();
         }
         if(selectedObject.name == "Employee_2") {
-            answerOptions = answers;
-            chooseOptionbar.text = answerOptions[answerIndex_2].getText();
+            currentAnswers_2 = answers;
+            chooseOptionbar.text = currentAnswers_2[answerIndex_2].getText();
         }
         if(selectedObject.name == "Employee_3") {
-            answerOptions = answers;
-            chooseOptionbar.text = answerOptions[answerIndex_3].getText();
+            currentAnswers_3 = answers;
+            chooseOptionbar.text = currentAnswers_3[answerIndex_3].getText();
         }
         if(selectedObject.name == "Employee_4") {
-            answerOptions = answers;
-            chooseOptionbar.text = answerOptions[answerIndex_4].getText();
+            currentAnswers_4 = answers;
+            chooseOptionbar.text = currentAnswers_4[answerIndex_4].getText();
         }
     }
 
@@ -640,54 +714,94 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //!!!!!! Productivity and Relationship adjustments are NYI !!!!!!!
     private void adjustEmployeeValuesAfterPlayerResponse(){
         if(selectedObject.name == "Employee_1") {
-            if(answerOptions[answerIndex_1].getAmountOfHoursChanging() == 0){
+            if(currentAnswers_1[answerIndex_1].getAmountOfHoursChanging() == 0){
 
             }else{
-                if(answerOptions[answerIndex_1].getWorkingHoursUp() == true) {
-                Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() + answerOptions[answerIndex_1].getAmountOfHoursChanging());
+                if(currentAnswers_1[answerIndex_1].getWorkingHoursUp() == true) {
+                Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() + currentAnswers_1[answerIndex_1].getAmountOfHoursChanging());
                 }
-                if(answerOptions[answerIndex_1].getWorkingHoursUp() == false) {
-                    Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() - answerOptions[answerIndex_1].getAmountOfHoursChanging());
+                if(currentAnswers_1[answerIndex_1].getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() - currentAnswers_1[answerIndex_1].getAmountOfHoursChanging());
                 }
-            } 
+            }
+            if(currentAnswers_1[answerIndex_1].getAmountOfStressChanging() == 0) {
+
+            }else{
+                if(currentAnswers_1[answerIndex_1].getStressLevelUp() == true) {
+                    Hired_Employee_Objects[0].getStressed(currentAnswers_1[answerIndex_1].getAmountOfStressChanging());
+                }
+                if(currentAnswers_1[answerIndex_1].getStressLevelUp() == false) {
+                    Hired_Employee_Objects[0].removeStress(currentAnswers_1[answerIndex_1].getAmountOfStressChanging());
+                }
+            }
         }
 
         if(selectedObject.name == "Employee_2") {
-            if(answerOptions[answerIndex_2].getAmountOfHoursChanging() == 0){
+            if(currentAnswers_2[answerIndex_2].getAmountOfHoursChanging() == 0){
 
             }else{
-                if(answerOptions[answerIndex_2].getWorkingHoursUp() == true) {
-                    Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() + answerOptions[answerIndex_2].getAmountOfHoursChanging());
+                if(currentAnswers_2[answerIndex_2].getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() + currentAnswers_2[answerIndex_2].getAmountOfHoursChanging());
                 }
-                if(answerOptions[answerIndex_2].getWorkingHoursUp() == false) {
-                    Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() - answerOptions[answerIndex_2].getAmountOfHoursChanging());
+                if(currentAnswers_2[answerIndex_2].getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() - currentAnswers_2[answerIndex_2].getAmountOfHoursChanging());
                 } 
+            }
+            if(currentAnswers_2[answerIndex_2].getAmountOfStressChanging() == 0) {
+
+            }else{
+                if(currentAnswers_2[answerIndex_2].getStressLevelUp() == true) {
+                    Hired_Employee_Objects[1].getStressed(currentAnswers_2[answerIndex_2].getAmountOfStressChanging());
+                }
+                if(currentAnswers_1[answerIndex_1].getStressLevelUp() == false) {
+                    Hired_Employee_Objects[1].removeStress(currentAnswers_2[answerIndex_2].getAmountOfStressChanging());
+                }
             }
         }
 
         if(selectedObject.name == "Employee_3") {
-            if(answerOptions[answerIndex_3].getAmountOfHoursChanging() == 0){
+            if(currentAnswers_3[answerIndex_3].getAmountOfHoursChanging() == 0){
 
             }else{
-                if(answerOptions[answerIndex_3].getWorkingHoursUp() == true) {
-                    Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() + answerOptions[answerIndex_3].getAmountOfHoursChanging());
+                if(currentAnswers_3[answerIndex_3].getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() + currentAnswers_3[answerIndex_3].getAmountOfHoursChanging());
                 }
-                if(answerOptions[answerIndex_3].getWorkingHoursUp() == false) {
-                    Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() - answerOptions[answerIndex_3].getAmountOfHoursChanging());
+                if(currentAnswers_3[answerIndex_3].getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() - currentAnswers_3[answerIndex_3].getAmountOfHoursChanging());
+                }
+            }
+            if(currentAnswers_3[answerIndex_3].getAmountOfStressChanging() == 0) {
+
+            }else{
+                if(currentAnswers_3[answerIndex_3].getStressLevelUp() == true) {
+                    Hired_Employee_Objects[2].getStressed(currentAnswers_3[answerIndex_3].getAmountOfStressChanging());
+                }
+                if(currentAnswers_3[answerIndex_3].getStressLevelUp() == false) {
+                    Hired_Employee_Objects[2].removeStress(currentAnswers_3[answerIndex_3].getAmountOfStressChanging());
                 }
             }
         }
 
         if(selectedObject.name == "Employee_4") {
-            if(answerOptions[answerIndex_4].getAmountOfHoursChanging() == 0){
+            if(currentAnswers_4[answerIndex_4].getAmountOfHoursChanging() == 0){
                 
             }else{
-                if(answerOptions[answerIndex_4].getWorkingHoursUp() == true) {
-                    Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() + answerOptions[answerIndex_4].getAmountOfHoursChanging());
+                if(currentAnswers_4[answerIndex_4].getWorkingHoursUp() == true) {
+                    Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() + currentAnswers_4[answerIndex_4].getAmountOfHoursChanging());
                 }
-                if(answerOptions[answerIndex_4].getWorkingHoursUp() == false) {
-                    Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() - answerOptions[answerIndex_4].getAmountOfHoursChanging());
+                if(currentAnswers_4[answerIndex_4].getWorkingHoursUp() == false) {
+                    Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() - currentAnswers_4[answerIndex_4].getAmountOfHoursChanging());
                 } 
+            }
+            if(currentAnswers_4[answerIndex_4].getAmountOfStressChanging() == 0) {
+
+            }else{
+                if(currentAnswers_4[answerIndex_4].getStressLevelUp() == true) {
+                    Hired_Employee_Objects[3].getStressed(currentAnswers_4[answerIndex_4].getAmountOfStressChanging());
+                }
+                if(currentAnswers_4[answerIndex_4].getStressLevelUp() == false) {
+                    Hired_Employee_Objects[3].removeStress(currentAnswers_4[answerIndex_4].getAmountOfStressChanging());
+                }
             }
         }
     }
@@ -704,6 +818,17 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     Hired_Employee_Objects[0].setWorkinghours(Hired_Employee_Objects[0].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
                 } 
             }
+            if(employeeResponse.getAmountOfStressChanging() == 0){
+
+            }else {
+                if(employeeResponse.getStressLevelUp() == true) {
+                    Hired_Employee_Objects[0].getStressed(employeeResponse.getAmountOfStressChanging());
+                }
+                if(employeeResponse.getStressLevelUp() == false) {
+                    Hired_Employee_Objects[0].removeStress(employeeResponse.getAmountOfStressChanging());
+                }
+            }
+                
         }
         if(selectedObject.name == "Employee_2") {
             if(employeeResponse.getAmountOfHoursChanging() == 0) {
@@ -715,6 +840,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 if(employeeResponse.getWorkingHoursUp() == false) {
                     Hired_Employee_Objects[1].setWorkinghours(Hired_Employee_Objects[1].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
                 } 
+            }
+            if(employeeResponse.getAmountOfStressChanging() == 0){
+
+            }else {
+                if(employeeResponse.getStressLevelUp() == true) {
+                    Hired_Employee_Objects[1].getStressed(employeeResponse.getAmountOfStressChanging());
+                }
+                if(employeeResponse.getStressLevelUp() == false) {
+                    Hired_Employee_Objects[1].removeStress(employeeResponse.getAmountOfStressChanging());
+                }
             }
         }
         if(selectedObject.name == "Employee_3") {
@@ -728,6 +863,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                     Hired_Employee_Objects[2].setWorkinghours(Hired_Employee_Objects[2].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
                 } 
             }
+            if(employeeResponse.getAmountOfStressChanging() == 0){
+
+            }else {
+                if(employeeResponse.getStressLevelUp() == true) {
+                    Hired_Employee_Objects[2].getStressed(employeeResponse.getAmountOfStressChanging());
+                }
+                if(employeeResponse.getStressLevelUp() == false) {
+                    Hired_Employee_Objects[2].removeStress(employeeResponse.getAmountOfStressChanging());
+                }
+            }
         }
         if(selectedObject.name == "Employee_4") {
             if(employeeResponse.getAmountOfHoursChanging() == 0) {
@@ -739,6 +884,16 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 if(employeeResponse.getWorkingHoursUp() == false) {
                     Hired_Employee_Objects[3].setWorkinghours(Hired_Employee_Objects[3].getWorkingHours() - employeeResponse.getAmountOfHoursChanging());
                 } 
+            }
+            if(employeeResponse.getAmountOfStressChanging() == 0){
+
+            }else {
+                if(employeeResponse.getStressLevelUp() == true) {
+                    Hired_Employee_Objects[3].getStressed(employeeResponse.getAmountOfStressChanging());
+                }
+                if(employeeResponse.getStressLevelUp() == false) {
+                    Hired_Employee_Objects[3].removeStress(employeeResponse.getAmountOfStressChanging());
+                }
             }
         }
     }
