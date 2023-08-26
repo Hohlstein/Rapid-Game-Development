@@ -41,7 +41,9 @@ public class Mitarbeiter : MonoBehaviour
     private Sprite profile_picture;
     [SerializeField]
     private bool CategoryHoursAssigned;
-    private bool problemCharacter;
+    private int problemCharacter; //1 Means approaches boss with problem, 2 means cause of the problem
+
+    private int followUpForProblemDialogueIndex; //necessary to give the right follow up for problem dialogue
 
 
  
@@ -167,12 +169,21 @@ public class Mitarbeiter : MonoBehaviour
       return profile_picture;
     }
 
-    public void setProblemCharacter (bool problemCharacter) {
+    public void setProblemCharacter (int problemCharacter) {
       this.problemCharacter = problemCharacter;
     }
 
-    public bool getProblemCharacter () {
+    public void setProblemCharacter (int problemCharacter, int followUpForProblemDialogueIndex) {
+      this.problemCharacter = problemCharacter;
+      this.followUpForProblemDialogueIndex = followUpForProblemDialogueIndex;
+    }
+
+    public int getProblemCharacter () {
       return problemCharacter;
+    }
+
+    public int getFollowUpForProblemDialogueIndex(){
+      return followUpForProblemDialogueIndex;
     }
 
     

@@ -22,8 +22,9 @@ public class DialogueNode : MonoBehaviour {
         [SerializeField]
     private int amountOfStressChanging;
 
-    void Start() {
-        this.gameObject.SetActive(false);
+    void Start()
+    {
+        DontDestroyOnLoad(gameObject);
     }
 
     void Update() {

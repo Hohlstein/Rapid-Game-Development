@@ -23,7 +23,7 @@ public class PlayerAnswer : MonoBehaviour{
     private int amountOfStressChanging;
 
     void Start() {
-        this.gameObject.SetActive(false);
+        DontDestroyOnLoad(gameObject);
         if(finalNode == true) {
             nextNode = null;
         }
