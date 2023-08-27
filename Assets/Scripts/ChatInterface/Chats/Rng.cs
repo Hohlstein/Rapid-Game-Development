@@ -220,8 +220,6 @@ public class Rng : MonoBehaviour{
         DialogueNode selectedDialogueStart = null; 
         int randomNumber =UnityEngine.Random.Range(0,4);
         int startIndex = 0;
-        Debug.Log("weekFollowUpProblemWasSet,WeekTracker"+weekFollowUpProblemWasSet+","+weekTracker);
-        Debug.Log("1. IF: "+employee.getProblemCharacter()+" / "+ existingProblemCharacterTracker);
         if(employee.getProblemCharacter() > 0 && existingProblemCharacterTracker >=1 && weekFollowUpProblemWasSet != weekTracker) {
             Debug.Log("2.IF: "+employee.getProblemCharacter());
             if(employee.getProblemCharacter() == 2 && weekFollowUpProblemWasSet != weekTracker) {
@@ -251,7 +249,6 @@ public class Rng : MonoBehaviour{
             }
         }
         dialogueStarts = selectedDialogue.getDialogueStart();
-        Debug.Log("Employee ProblemCharacter / ProblemDialogueIndex "+ employee.getProblemCharacter() + " / "+ problemDialogueIndex);
         if(employee.getProblemCharacter() == 2 && problemDialogueIndex == 2){
             Debug.Log("CHOSE FOLLOW UP DIALOGUE");
             selectedDialogueStart=dialogueStarts[1];
@@ -264,14 +261,11 @@ public class Rng : MonoBehaviour{
         }else if(employee.getProblemCharacter() == 1 && problemDialogueIndex == 1){
             selectedDialogueStart=dialogueStarts[0];
             employee.setProblemCharacter(0);
-            Debug.Log("Chosen ProblemDialogueStart is: "+dialogueStarts[0].getText());
         }else{
             if(dialogueStarts.Count == 1) {
-                Debug.Log("Im in normal start chooser for Count = 1");
                 selectedDialogueStart = dialogueStarts[0];
                 removeDialogueOptions(dialogueIndex, startIndex, selectedDialogue.getRarity());
             }else{
-                Debug.Log("im in the last else");
                 startIndex = UnityEngine.Random.Range(0,dialogueStarts.Count);
                 selectedDialogueStart = dialogueStarts[startIndex];
                 removeDialogueOptions(dialogueIndex, startIndex, selectedDialogue.getRarity());
@@ -352,9 +346,7 @@ public class Rng : MonoBehaviour{
     }
 
     //Rolls whether an employee will become a problem character
-    //WICHTIG !!!!!!!!!!!!!!!!!!!!!!!!!! After first dialogue option second dialogue must be from different employee !!!!!!!!!!!!!!!!!!!!!!
     public void makeProblemCharacter(Mitarbeiter employee) {
-        Debug.Log("IM NOT ALLOWED TO COME BEFORE AWAKE");
         weekTracker = GameObject.Find("WeekInfo").GetComponent<Week>().getWeek();
         bool checkForFollowUpProblemEmployee = false;
         foreach (Mitarbeiter employeeToCheck in Hired_Employee_Objects)
@@ -365,7 +357,7 @@ public class Rng : MonoBehaviour{
         }
         if(weekTracker > 1) {
             if(checkForFollowUpProblemEmployee == false){
-                int randomNumber = UnityEngine.Random.Range(1, 2); //MUSS (1,31) sein momentan nur dev option
+                int randomNumber = UnityEngine.Random.Range(1, 2); 
                 if(existingProblemCharacterTracker == 0){
                     if(randomNumber == 1) 
                     employee.setProblemCharacter(1);

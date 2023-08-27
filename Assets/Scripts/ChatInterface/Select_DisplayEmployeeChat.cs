@@ -15,6 +15,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject tutorialText;
 
     public Image selectedObject; //tracks currently selected sprite
+
     //Holders for the different sprites needed when selecting/deselecting
     public Sprite selectedSprite;
     public Sprite defaultSprite;
@@ -200,7 +201,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         }
         
     }
-    //Bug: If answered then deselected and reselected answeredSprite isnt showing normal one is showing instead
     //Changes the sprite of the selected Employee 
     public void Selected(Image clickedObject) {
         chatScrollRect_1.SetActive(false);
@@ -723,7 +723,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
 
     //Adds to or substracts from working hours of employees depending on getWorkingHoursUp() bool.
     //WorkingHoursUp bool and and AmountOfHoursChanging is defined when creating dialogue trees in editor
-    //!!!!!! Productivity and Relationship adjustments are NYI !!!!!!!
     private void adjustEmployeeValuesAfterPlayerResponse(){
         if(selectedObject.name == "Employee_1") {
             if(currentAnswers_1[answerIndex_1].getAmountOfHoursChanging() == 0){
