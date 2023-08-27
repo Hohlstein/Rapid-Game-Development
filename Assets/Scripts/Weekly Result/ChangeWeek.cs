@@ -30,6 +30,10 @@ public class ChangeWeek : MonoBehaviour
         GameObject obj = GameObject.Find("WeekInfo");
         Week week = obj.GetComponent<Week>();
         int weekNumber = GameObject.Find("WeekInfo").GetComponent<Week>().getWeek();
+        if (weekNumber >= 5) {
+            SceneManagement.changeScene("Cutscene");
+            return;
+        }
         week.nextWeek();
 
         SceneManagement.changeScene("WeekStartScreen");

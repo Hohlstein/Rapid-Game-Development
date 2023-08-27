@@ -43,7 +43,7 @@ public class WeekStartAnimation : MonoBehaviour
         if (NumberOfWeeksLeft == 1){
             WeeksLeftDisplay.text = NumberOfWeeksLeft + " week left";
         }
-        else{
+        if (NumberOfWeeksLeft == 0){
             WeeksLeftDisplay.text = "Final week!";
         }
         StartAnimations();
@@ -137,10 +137,6 @@ public class WeekStartAnimation : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Debug.Log("weeks: " + currentNumberOfWeeks);
         Debug.Log("Deadline: "+deadlineNumberOfWeeks);
-        if (currentNumberOfWeeks >= deadlineNumberOfWeeks) {
-            SceneManagement.changeScene("Endscreen");
-            yield break;
-        }
         SceneManagement.changeScene("Chat");
     }
 
