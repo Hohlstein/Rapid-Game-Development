@@ -14668,6 +14668,7 @@ GameObject:
   - component: {fileID: 747304679}
   - component: {fileID: 747304682}
   - component: {fileID: 747304681}
+  - component: {fileID: 747304683}
   m_Layer: 5
   m_Name: OK_Button
   m_TagString: Untagged
@@ -14801,6 +14802,32 @@ MonoBehaviour:
           m_StringArgument: Arbeitsteilung
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 747304683}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &747304683
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747304677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 3cabe42e2adad3c44a5e29a1f8fd2652, type: 3}
 --- !u!1 &747365853
 GameObject:
   m_ObjectHideFlags: 0
@@ -14864,6 +14891,7 @@ GameObject:
   - component: {fileID: 747776464}
   - component: {fileID: 747776463}
   - component: {fileID: 747776466}
+  - component: {fileID: 747776467}
   m_Layer: 5
   m_Name: Employee_4
   m_TagString: Untagged
@@ -14972,6 +15000,32 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 747776467}
+          m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+          m_MethodName: TriggerSound
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &747776467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747776461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 570df0d9d93b03044a5091058c251b7c, type: 3}
 --- !u!1 &748128817
 GameObject:
   m_ObjectHideFlags: 0
@@ -15469,6 +15523,7 @@ GameObject:
   - component: {fileID: 773373362}
   - component: {fileID: 773373361}
   - component: {fileID: 773373363}
+  - component: {fileID: 773373364}
   m_Layer: 5
   m_Name: chatOptions_Down
   m_TagString: Untagged
@@ -15590,6 +15645,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 773373364}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &773373364
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 773373359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: ef7b5a9aa7cc44441ae48b76989eb7eb, type: 3}
 --- !u!1 &774046767
 GameObject:
   m_ObjectHideFlags: 0
@@ -20531,6 +20612,7 @@ GameObject:
   - component: {fileID: 1040929838}
   - component: {fileID: 1040929837}
   - component: {fileID: 1040929839}
+  - component: {fileID: 1040929840}
   m_Layer: 5
   m_Name: chatSend
   m_TagString: Untagged
@@ -20652,6 +20734,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1040929840}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1040929840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1040929835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 59db340a4a32bca4b9281b5379961524, type: 3}
 --- !u!1 &1042680018
 GameObject:
   m_ObjectHideFlags: 0
@@ -26353,6 +26461,7 @@ GameObject:
   - component: {fileID: 1295881243}
   - component: {fileID: 1295881242}
   - component: {fileID: 1295881244}
+  - component: {fileID: 1295881245}
   m_Layer: 5
   m_Name: Employee_3
   m_TagString: Untagged
@@ -26461,6 +26570,32 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1295881245}
+          m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+          m_MethodName: TriggerSound
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1295881245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295881240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 570df0d9d93b03044a5091058c251b7c, type: 3}
 --- !u!1 &1298084535
 GameObject:
   m_ObjectHideFlags: 0
@@ -30608,6 +30743,7 @@ GameObject:
   - component: {fileID: 1543517435}
   - component: {fileID: 1543517434}
   - component: {fileID: 1543517437}
+  - component: {fileID: 1543517438}
   m_Layer: 5
   m_Name: Employee_2
   m_TagString: Untagged
@@ -30716,6 +30852,32 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1543517438}
+          m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+          m_MethodName: TriggerSound
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1543517438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1543517432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 570df0d9d93b03044a5091058c251b7c, type: 3}
 --- !u!1 &1547783583
 GameObject:
   m_ObjectHideFlags: 0
@@ -37690,6 +37852,7 @@ GameObject:
   - component: {fileID: 1928941154}
   - component: {fileID: 1928941153}
   - component: {fileID: 1928941156}
+  - component: {fileID: 1928941157}
   m_Layer: 5
   m_Name: Employee_1
   m_TagString: Untagged
@@ -37798,6 +37961,32 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
+        - m_Target: {fileID: 1928941157}
+          m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+          m_MethodName: TriggerSound
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+--- !u!114 &1928941157
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1928941151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 570df0d9d93b03044a5091058c251b7c, type: 3}
 --- !u!1 &1929217848
 GameObject:
   m_ObjectHideFlags: 0
@@ -38942,6 +39131,7 @@ GameObject:
   - component: {fileID: 1984788127}
   - component: {fileID: 1984788126}
   - component: {fileID: 1984788129}
+  - component: {fileID: 1984788130}
   m_Layer: 5
   m_Name: chatOptions_Up
   m_TagString: Untagged
@@ -39063,6 +39253,32 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1984788130}
+        m_TargetAssemblyTypeName: UIAudioPlayer, Assembly-CSharp
+        m_MethodName: TriggerSound
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1984788130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1984788124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: befeeb8ed7809ee499e19571b13939f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: ef7b5a9aa7cc44441ae48b76989eb7eb, type: 3}
 --- !u!1 &1985964863
 GameObject:
   m_ObjectHideFlags: 0
