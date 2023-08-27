@@ -172,6 +172,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &18244949
 GameObject:
   m_ObjectHideFlags: 0
@@ -221,6 +223,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &19719346
 GameObject:
   m_ObjectHideFlags: 0
@@ -454,6 +458,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &26685614
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,6 +510,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &27506488
 GameObject:
   m_ObjectHideFlags: 0
@@ -553,6 +561,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &28399061
 GameObject:
   m_ObjectHideFlags: 0
@@ -603,6 +613,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &29136011
 GameObject:
   m_ObjectHideFlags: 0
@@ -656,6 +668,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &33519711
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,6 +719,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &35523753
 GameObject:
   m_ObjectHideFlags: 0
@@ -754,6 +770,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &37250075
 GameObject:
   m_ObjectHideFlags: 0
@@ -809,6 +827,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &38365938
 GameObject:
   m_ObjectHideFlags: 0
@@ -862,6 +882,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &38516128
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +933,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &40569914
 GameObject:
   m_ObjectHideFlags: 0
@@ -964,6 +988,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &41194226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1015,6 +1041,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &47155026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,6 +1140,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &51178997
 GameObject:
   m_ObjectHideFlags: 0
@@ -1162,6 +1192,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &53520241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1211,6 +1243,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &54803420
 GameObject:
   m_ObjectHideFlags: 0
@@ -1260,6 +1294,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &58000587
 GameObject:
   m_ObjectHideFlags: 0
@@ -1310,6 +1346,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &64894443
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,6 +1399,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &65497484
 GameObject:
   m_ObjectHideFlags: 0
@@ -1458,6 +1498,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &75295507
 GameObject:
   m_ObjectHideFlags: 0
@@ -1514,6 +1556,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &75739595
 GameObject:
   m_ObjectHideFlags: 0
@@ -1569,6 +1613,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &79979003
 GameObject:
   m_ObjectHideFlags: 0
@@ -1619,6 +1665,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &83622798
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +1716,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &85742241
 GameObject:
   m_ObjectHideFlags: 0
@@ -1719,6 +1769,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &85977914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1816,6 +1868,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &88807386
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,6 +1919,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &89572083
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,6 +1970,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &92928087
 GameObject:
   m_ObjectHideFlags: 0
@@ -1963,6 +2021,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &94349896
 GameObject:
   m_ObjectHideFlags: 0
@@ -2013,6 +2073,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &95738397
 GameObject:
   m_ObjectHideFlags: 0
@@ -2100,6 +2162,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &100469041
 GameObject:
   m_ObjectHideFlags: 0
@@ -2150,6 +2214,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &101819606
 GameObject:
   m_ObjectHideFlags: 0
@@ -2200,6 +2266,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &108103015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2250,6 +2318,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &109661421
 GameObject:
   m_ObjectHideFlags: 0
@@ -2347,6 +2417,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &110137607
 GameObject:
   m_ObjectHideFlags: 0
@@ -2444,6 +2516,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &119884736
 GameObject:
   m_ObjectHideFlags: 0
@@ -2495,6 +2569,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &120604973
 GameObject:
   m_ObjectHideFlags: 0
@@ -2544,6 +2620,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &123459044
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,6 +2672,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &127066750
 GameObject:
   m_ObjectHideFlags: 0
@@ -2645,6 +2725,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 16
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &131031637
 GameObject:
   m_ObjectHideFlags: 0
@@ -2701,6 +2783,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &132988544
 GameObject:
   m_ObjectHideFlags: 0
@@ -2756,6 +2840,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &136235401
 GameObject:
   m_ObjectHideFlags: 0
@@ -2809,6 +2895,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &136309391
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,6 +2998,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &139981382
 GameObject:
   m_ObjectHideFlags: 0
@@ -2963,6 +3053,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &142360180
 GameObject:
   m_ObjectHideFlags: 0
@@ -3012,6 +3104,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &142870274
 GameObject:
   m_ObjectHideFlags: 0
@@ -3061,6 +3155,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &142935100
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,6 +3206,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &144079630
 GameObject:
   m_ObjectHideFlags: 0
@@ -3160,6 +3258,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &148243421
 GameObject:
   m_ObjectHideFlags: 0
@@ -3209,6 +3309,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 8
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &148332350
 GameObject:
   m_ObjectHideFlags: 0
@@ -3258,6 +3360,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &151257846
 GameObject:
   m_ObjectHideFlags: 0
@@ -3307,6 +3411,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &157229319
 GameObject:
   m_ObjectHideFlags: 0
@@ -3358,6 +3464,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &159666524
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,6 +3613,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &167455379
 GameObject:
   m_ObjectHideFlags: 0
@@ -3561,6 +3671,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &169241249
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,6 +3722,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &169514611
 GameObject:
   m_ObjectHideFlags: 0
@@ -3663,6 +3777,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &169799726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3712,6 +3828,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 8
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &169978206
 GameObject:
   m_ObjectHideFlags: 0
@@ -3761,6 +3879,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &171492303
 GameObject:
   m_ObjectHideFlags: 0
@@ -3810,6 +3930,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &172110285
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,6 +4035,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &179603218
 GameObject:
   m_ObjectHideFlags: 0
@@ -3963,6 +4087,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &179857276
 GameObject:
   m_ObjectHideFlags: 0
@@ -4013,6 +4139,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &179988092
 GameObject:
   m_ObjectHideFlags: 0
@@ -4066,6 +4194,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &180302580
 GameObject:
   m_ObjectHideFlags: 0
@@ -4119,6 +4249,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &188950248
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,6 +4301,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &195765527
 GameObject:
   m_ObjectHideFlags: 0
@@ -4218,6 +4352,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &199883486
 GameObject:
   m_ObjectHideFlags: 0
@@ -4267,6 +4403,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &201567478
 GameObject:
   m_ObjectHideFlags: 0
@@ -4322,6 +4460,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &201815728
 GameObject:
   m_ObjectHideFlags: 0
@@ -4372,6 +4512,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &203354353
 GameObject:
   m_ObjectHideFlags: 0
@@ -4427,6 +4569,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &204768259
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,6 +4624,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &205525624
 GameObject:
   m_ObjectHideFlags: 0
@@ -4535,6 +4681,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &207467544
 GameObject:
   m_ObjectHideFlags: 0
@@ -4584,6 +4732,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 1
   amountOfHoursChanging: 5
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &208919003
 GameObject:
   m_ObjectHideFlags: 0
@@ -4633,6 +4783,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &210939499
 GameObject:
   m_ObjectHideFlags: 0
@@ -4682,6 +4834,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &212482472
 GameObject:
   m_ObjectHideFlags: 0
@@ -4735,6 +4889,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &214806065
 GameObject:
   m_ObjectHideFlags: 0
@@ -4832,6 +4988,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &221140633
 GameObject:
   m_ObjectHideFlags: 0
@@ -4881,6 +5039,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &224194765
 GameObject:
   m_ObjectHideFlags: 0
@@ -4930,6 +5090,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &227062043
 GameObject:
   m_ObjectHideFlags: 0
@@ -4985,6 +5147,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &228542397
 GameObject:
   m_ObjectHideFlags: 0
@@ -5035,6 +5199,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &233368585
 GameObject:
   m_ObjectHideFlags: 0
@@ -5090,6 +5256,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &245500440
 GameObject:
   m_ObjectHideFlags: 0
@@ -5188,6 +5356,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &252542565
 GameObject:
   m_ObjectHideFlags: 0
@@ -5290,6 +5460,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &257687728
 GameObject:
   m_ObjectHideFlags: 0
@@ -5340,6 +5512,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &257950310
 GameObject:
   m_ObjectHideFlags: 0
@@ -5389,6 +5563,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &260668090
 GameObject:
   m_ObjectHideFlags: 0
@@ -5438,6 +5614,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &261823513
 GameObject:
   m_ObjectHideFlags: 0
@@ -5488,6 +5666,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &262505502
 GameObject:
   m_ObjectHideFlags: 0
@@ -5537,6 +5717,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &265534931
 GameObject:
   m_ObjectHideFlags: 0
@@ -5586,6 +5768,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 2
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &268842196
 GameObject:
   m_ObjectHideFlags: 0
@@ -5636,6 +5820,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &271403963
 GameObject:
   m_ObjectHideFlags: 0
@@ -5686,6 +5872,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &272187329
 GameObject:
   m_ObjectHideFlags: 0
@@ -5735,6 +5923,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &272284555
 GameObject:
   m_ObjectHideFlags: 0
@@ -5784,6 +5974,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &276152312
 GameObject:
   m_ObjectHideFlags: 0
@@ -5834,6 +6026,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &282307709
 GameObject:
   m_ObjectHideFlags: 0
@@ -5884,6 +6078,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &285880202
 GameObject:
   m_ObjectHideFlags: 0
@@ -5933,6 +6129,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &288799441
 GameObject:
   m_ObjectHideFlags: 0
@@ -5984,6 +6182,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 8
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &289489349
 GameObject:
   m_ObjectHideFlags: 0
@@ -6033,6 +6233,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &290797695
 GameObject:
   m_ObjectHideFlags: 0
@@ -6219,6 +6421,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &293816201
 GameObject:
   m_ObjectHideFlags: 0
@@ -6274,6 +6478,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &294382583
 GameObject:
   m_ObjectHideFlags: 0
@@ -6371,6 +6577,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &298988512
 GameObject:
   m_ObjectHideFlags: 0
@@ -6420,6 +6628,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &300166783
 GameObject:
   m_ObjectHideFlags: 0
@@ -6471,6 +6681,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &300408565
 GameObject:
   m_ObjectHideFlags: 0
@@ -6520,6 +6732,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &303970685
 GameObject:
   m_ObjectHideFlags: 0
@@ -6570,6 +6784,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &304874185
 GameObject:
   m_ObjectHideFlags: 0
@@ -6620,6 +6836,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &306507659
 GameObject:
   m_ObjectHideFlags: 0
@@ -6673,6 +6891,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &307896550
 GameObject:
   m_ObjectHideFlags: 0
@@ -6723,6 +6943,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &308448096
 GameObject:
   m_ObjectHideFlags: 0
@@ -6774,7 +6996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6848,6 +7070,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &313696390
 GameObject:
   m_ObjectHideFlags: 0
@@ -6899,6 +7123,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &315375671
 GameObject:
   m_ObjectHideFlags: 0
@@ -6949,6 +7175,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &316235800
 GameObject:
   m_ObjectHideFlags: 0
@@ -7032,6 +7260,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &325229716
 GameObject:
   m_ObjectHideFlags: 0
@@ -7081,6 +7311,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &328494821
 GameObject:
   m_ObjectHideFlags: 0
@@ -7130,6 +7362,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &332165402
 GameObject:
   m_ObjectHideFlags: 0
@@ -7179,6 +7413,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &335719210
 GameObject:
   m_ObjectHideFlags: 0
@@ -7228,6 +7464,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &335736346
 GameObject:
   m_ObjectHideFlags: 0
@@ -7277,6 +7515,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &335868081
 GameObject:
   m_ObjectHideFlags: 0
@@ -7429,6 +7669,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &343902410
 GameObject:
   m_ObjectHideFlags: 0
@@ -7479,6 +7721,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &345478951
 GameObject:
   m_ObjectHideFlags: 0
@@ -7528,6 +7772,122 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 16
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1001 &346171811
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 985366197}
+    m_Modifications:
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5138634720270307257, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd36ab09582aee9428deff96841e7b79, type: 3}
+    - target: {fileID: 8534276609756966706, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_Name
+      value: WALLPAPER
+      objectReference: {fileID: 0}
+    - target: {fileID: 8534276609756966706, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+--- !u!224 &346171812 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 3615864456809927427, guid: e32ce7dfb47fa194b87aeefb42118ebb, type: 3}
+  m_PrefabInstance: {fileID: 346171811}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &348115369
 GameObject:
   m_ObjectHideFlags: 0
@@ -7577,6 +7937,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &350704551
 GameObject:
   m_ObjectHideFlags: 0
@@ -7633,6 +7995,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &355436767
 GameObject:
   m_ObjectHideFlags: 0
@@ -7684,6 +8048,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &361768914
 GameObject:
   m_ObjectHideFlags: 0
@@ -7733,6 +8099,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &361873486
 GameObject:
   m_ObjectHideFlags: 0
@@ -7783,6 +8151,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &372375132
 GameObject:
   m_ObjectHideFlags: 0
@@ -7833,6 +8203,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &372497908
 GameObject:
   m_ObjectHideFlags: 0
@@ -7883,6 +8255,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &373990005
 GameObject:
   m_ObjectHideFlags: 0
@@ -7932,6 +8306,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &384023185
 GameObject:
   m_ObjectHideFlags: 0
@@ -7986,6 +8362,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &387619847
 GameObject:
   m_ObjectHideFlags: 0
@@ -8041,6 +8419,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &389281169
 GameObject:
   m_ObjectHideFlags: 0
@@ -8124,6 +8504,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &397578558
 GameObject:
   m_ObjectHideFlags: 0
@@ -8175,6 +8557,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &398978352
 GameObject:
   m_ObjectHideFlags: 0
@@ -8333,6 +8717,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &408832530
 GameObject:
   m_ObjectHideFlags: 0
@@ -8383,6 +8769,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &413792894
 GameObject:
   m_ObjectHideFlags: 0
@@ -8434,6 +8822,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &413924460
 GameObject:
   m_ObjectHideFlags: 0
@@ -8515,6 +8905,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &418687447
 GameObject:
   m_ObjectHideFlags: 0
@@ -8571,6 +8963,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &419860809
 GameObject:
   m_ObjectHideFlags: 0
@@ -8621,6 +9015,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &421194930
 GameObject:
   m_ObjectHideFlags: 0
@@ -8670,6 +9066,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &422019040
 GameObject:
   m_ObjectHideFlags: 0
@@ -8720,6 +9118,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &424225404
 GameObject:
   m_ObjectHideFlags: 0
@@ -8770,6 +9170,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &425948461
 GameObject:
   m_ObjectHideFlags: 0
@@ -8820,6 +9222,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &427247535
 GameObject:
   m_ObjectHideFlags: 0
@@ -8919,6 +9323,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &431815204
 GameObject:
   m_ObjectHideFlags: 0
@@ -8968,6 +9374,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &431869083
 GameObject:
   m_ObjectHideFlags: 0
@@ -9019,6 +9427,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &432151256
 GameObject:
   m_ObjectHideFlags: 0
@@ -9197,6 +9607,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &434155817
 GameObject:
   m_ObjectHideFlags: 0
@@ -9250,6 +9662,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &434365853
 GameObject:
   m_ObjectHideFlags: 0
@@ -9300,6 +9714,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &435892269
 GameObject:
   m_ObjectHideFlags: 0
@@ -9397,6 +9813,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &443705823
 GameObject:
   m_ObjectHideFlags: 0
@@ -9581,6 +9999,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &463387079
 GameObject:
   m_ObjectHideFlags: 0
@@ -9665,6 +10085,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &469788775
 GameObject:
   m_ObjectHideFlags: 0
@@ -9714,6 +10136,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &470890134
 GameObject:
   m_ObjectHideFlags: 0
@@ -9767,6 +10191,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &476551445
 GameObject:
   m_ObjectHideFlags: 0
@@ -9896,6 +10322,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &478598319
 GameObject:
   m_ObjectHideFlags: 0
@@ -10064,6 +10492,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &490775605
 GameObject:
   m_ObjectHideFlags: 0
@@ -10161,6 +10591,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 2
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &492147953
 GameObject:
   m_ObjectHideFlags: 0
@@ -10216,6 +10648,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &493173710
 GameObject:
   m_ObjectHideFlags: 0
@@ -10265,6 +10699,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &496911324
 GameObject:
   m_ObjectHideFlags: 0
@@ -10363,6 +10799,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &504051874
 GameObject:
   m_ObjectHideFlags: 0
@@ -10413,6 +10851,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &507078662
 GameObject:
   m_ObjectHideFlags: 0
@@ -10463,6 +10903,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &507856690
 GameObject:
   m_ObjectHideFlags: 0
@@ -10512,6 +10954,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &520098562
 GameObject:
   m_ObjectHideFlags: 0
@@ -10561,6 +11005,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &524289856
 GameObject:
   m_ObjectHideFlags: 0
@@ -10610,6 +11056,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &532953114
 GameObject:
   m_ObjectHideFlags: 0
@@ -10728,6 +11176,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &540433202
 GameObject:
   m_ObjectHideFlags: 0
@@ -10777,6 +11227,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &541223270
 GameObject:
   m_ObjectHideFlags: 0
@@ -10826,6 +11278,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 4
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &541373667
 GameObject:
   m_ObjectHideFlags: 0
@@ -10875,6 +11329,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &543003939
 GameObject:
   m_ObjectHideFlags: 0
@@ -10924,6 +11380,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &546342225
 GameObject:
   m_ObjectHideFlags: 0
@@ -10973,6 +11431,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &546542961
 GameObject:
   m_ObjectHideFlags: 0
@@ -11023,6 +11483,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &547089809
 GameObject:
   m_ObjectHideFlags: 0
@@ -11078,6 +11540,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &547832840
 GameObject:
   m_ObjectHideFlags: 0
@@ -11175,6 +11639,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 3
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &552071515
 GameObject:
   m_ObjectHideFlags: 0
@@ -11225,6 +11691,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &552236129
 GameObject:
   m_ObjectHideFlags: 0
@@ -11274,6 +11742,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &552416782
 GameObject:
   m_ObjectHideFlags: 0
@@ -11323,6 +11793,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &553665490
 GameObject:
   m_ObjectHideFlags: 0
@@ -11465,6 +11937,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &557882720
 GameObject:
   m_ObjectHideFlags: 0
@@ -11514,6 +11988,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &558055093
 GameObject:
   m_ObjectHideFlags: 0
@@ -11563,6 +12039,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &566496240
 GameObject:
   m_ObjectHideFlags: 0
@@ -11612,6 +12090,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &571702380
 GameObject:
   m_ObjectHideFlags: 0
@@ -11667,6 +12147,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &574678849
 GameObject:
   m_ObjectHideFlags: 0
@@ -11720,6 +12202,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &577521864
 GameObject:
   m_ObjectHideFlags: 0
@@ -11824,6 +12308,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &588286925
 GameObject:
   m_ObjectHideFlags: 0
@@ -11874,6 +12360,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &609387587
 GameObject:
   m_ObjectHideFlags: 0
@@ -11929,6 +12417,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &610285472
 GameObject:
   m_ObjectHideFlags: 0
@@ -11978,6 +12468,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &616811988
 GameObject:
   m_ObjectHideFlags: 0
@@ -12062,6 +12554,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &618147536
 GameObject:
   m_ObjectHideFlags: 0
@@ -12111,6 +12605,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &622331610
 GameObject:
   m_ObjectHideFlags: 0
@@ -12160,6 +12656,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &624108931
 GameObject:
   m_ObjectHideFlags: 0
@@ -12215,6 +12713,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &624486631
 GameObject:
   m_ObjectHideFlags: 0
@@ -12264,6 +12764,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &630907140
 GameObject:
   m_ObjectHideFlags: 0
@@ -12315,6 +12817,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &633564192
 GameObject:
   m_ObjectHideFlags: 0
@@ -12370,6 +12874,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &640399174
 GameObject:
   m_ObjectHideFlags: 0
@@ -12425,6 +12931,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &649872691
 GameObject:
   m_ObjectHideFlags: 0
@@ -12475,6 +12983,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &651370884
 GameObject:
   m_ObjectHideFlags: 0
@@ -12526,6 +13036,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &653747316
 GameObject:
   m_ObjectHideFlags: 0
@@ -12575,6 +13087,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &662103839
 GameObject:
   m_ObjectHideFlags: 0
@@ -12628,6 +13142,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &662589211
 GameObject:
   m_ObjectHideFlags: 0
@@ -12681,6 +13197,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &669596505
 GameObject:
   m_ObjectHideFlags: 0
@@ -12731,6 +13249,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &672540219
 GameObject:
   m_ObjectHideFlags: 0
@@ -12782,6 +13302,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &676987159
 GameObject:
   m_ObjectHideFlags: 0
@@ -12831,6 +13353,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 1
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &680531155
 GameObject:
   m_ObjectHideFlags: 0
@@ -12881,6 +13405,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &684349421
 GameObject:
   m_ObjectHideFlags: 0
@@ -12978,6 +13504,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 1
   amountOfHoursChanging: 4
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &686067901
 GameObject:
   m_ObjectHideFlags: 0
@@ -13199,6 +13727,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &699989170
 GameObject:
   m_ObjectHideFlags: 0
@@ -13300,6 +13830,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &706305491
 GameObject:
   m_ObjectHideFlags: 0
@@ -13353,6 +13885,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &706572749
 GameObject:
   m_ObjectHideFlags: 0
@@ -13434,6 +13968,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &709649377
 GameObject:
   m_ObjectHideFlags: 0
@@ -13483,6 +14019,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &712475223
 GameObject:
   m_ObjectHideFlags: 0
@@ -13570,6 +14108,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &720429489
 GameObject:
   m_ObjectHideFlags: 0
@@ -13619,6 +14159,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &727684513
 GameObject:
   m_ObjectHideFlags: 0
@@ -13668,6 +14210,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &731094385
 GameObject:
   m_ObjectHideFlags: 0
@@ -13723,6 +14267,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &733456012
 GameObject:
   m_ObjectHideFlags: 0
@@ -13774,6 +14320,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &734798329
 GameObject:
   m_ObjectHideFlags: 0
@@ -13823,6 +14371,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &737138277
 GameObject:
   m_ObjectHideFlags: 0
@@ -13949,6 +14499,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &743111188
 GameObject:
   m_ObjectHideFlags: 0
@@ -13998,6 +14550,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &744317419
 GameObject:
   m_ObjectHideFlags: 0
@@ -14047,6 +14601,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &745056446
 GameObject:
   m_ObjectHideFlags: 0
@@ -14097,6 +14653,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &747304677
 GameObject:
   m_ObjectHideFlags: 0
@@ -14292,6 +14850,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &747776461
 GameObject:
   m_ObjectHideFlags: 0
@@ -14538,6 +15098,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &757043807
 GameObject:
   m_ObjectHideFlags: 0
@@ -14587,6 +15149,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &758370754
 GameObject:
   m_ObjectHideFlags: 0
@@ -14636,6 +15200,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &762527395
 GameObject:
   m_ObjectHideFlags: 0
@@ -14686,6 +15252,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &762765117
 GameObject:
   m_ObjectHideFlags: 0
@@ -14736,6 +15304,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &765736122
 GameObject:
   m_ObjectHideFlags: 0
@@ -14785,6 +15355,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &768076479
 GameObject:
   m_ObjectHideFlags: 0
@@ -14883,6 +15455,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &773373359
 GameObject:
   m_ObjectHideFlags: 0
@@ -15065,6 +15639,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &776217170
 GameObject:
   m_ObjectHideFlags: 0
@@ -15114,6 +15690,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &779002025
 GameObject:
   m_ObjectHideFlags: 0
@@ -15167,6 +15745,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &779094349
 GameObject:
   m_ObjectHideFlags: 0
@@ -15264,6 +15844,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &781528842
 GameObject:
   m_ObjectHideFlags: 0
@@ -15314,6 +15896,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &785524380
 GameObject:
   m_ObjectHideFlags: 0
@@ -15367,6 +15951,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &788726540
 GameObject:
   m_ObjectHideFlags: 0
@@ -15458,6 +16044,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &797871205
 GameObject:
   m_ObjectHideFlags: 0
@@ -15690,6 +16278,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &811190085
 GameObject:
   m_ObjectHideFlags: 0
@@ -15739,6 +16329,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &813460935
 GameObject:
   m_ObjectHideFlags: 0
@@ -15924,6 +16516,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &823440763
 GameObject:
   m_ObjectHideFlags: 0
@@ -15974,6 +16568,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &827121596
 GameObject:
   m_ObjectHideFlags: 0
@@ -16023,6 +16619,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &838868486
 GameObject:
   m_ObjectHideFlags: 0
@@ -16072,6 +16670,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &840106446
 GameObject:
   m_ObjectHideFlags: 0
@@ -16121,6 +16721,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &840146173
 GameObject:
   m_ObjectHideFlags: 0
@@ -16171,6 +16773,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &841899261
 GameObject:
   m_ObjectHideFlags: 0
@@ -16227,6 +16831,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &843617033
 GameObject:
   m_ObjectHideFlags: 0
@@ -16278,6 +16884,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &846030813
 GameObject:
   m_ObjectHideFlags: 0
@@ -16327,6 +16935,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &847724721
 GameObject:
   m_ObjectHideFlags: 0
@@ -16430,6 +17040,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &849874476
 GameObject:
   m_ObjectHideFlags: 0
@@ -16479,6 +17091,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &850072653
 GameObject:
   m_ObjectHideFlags: 0
@@ -16529,6 +17143,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &854729011
 GameObject:
   m_ObjectHideFlags: 0
@@ -16578,6 +17194,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &857063874
 GameObject:
   m_ObjectHideFlags: 0
@@ -16627,6 +17245,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &866764151
 GameObject:
   m_ObjectHideFlags: 0
@@ -16684,6 +17304,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &868044514
 GameObject:
   m_ObjectHideFlags: 0
@@ -16734,6 +17356,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &874777796
 GameObject:
   m_ObjectHideFlags: 0
@@ -16783,6 +17407,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &883161181
 GameObject:
   m_ObjectHideFlags: 0
@@ -16838,6 +17464,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &887238713
 GameObject:
   m_ObjectHideFlags: 0
@@ -16887,6 +17515,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &887900455
 GameObject:
   m_ObjectHideFlags: 0
@@ -16936,6 +17566,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &894438278
 GameObject:
   m_ObjectHideFlags: 0
@@ -17122,6 +17754,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &902822122
 GameObject:
   m_ObjectHideFlags: 0
@@ -17171,6 +17805,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &905553963
 GameObject:
   m_ObjectHideFlags: 0
@@ -17224,6 +17860,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &912853619
 GameObject:
   m_ObjectHideFlags: 0
@@ -17277,6 +17915,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &913739062
 GameObject:
   m_ObjectHideFlags: 0
@@ -17333,6 +17973,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &918706542
 GameObject:
   m_ObjectHideFlags: 0
@@ -17382,6 +18024,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &924496522
 GameObject:
   m_ObjectHideFlags: 0
@@ -17431,6 +18075,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &926544707
 GameObject:
   m_ObjectHideFlags: 0
@@ -17484,6 +18130,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &932864766
 GameObject:
   m_ObjectHideFlags: 0
@@ -17533,6 +18181,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &933154198
 GameObject:
   m_ObjectHideFlags: 0
@@ -17582,6 +18232,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &933252307
 GameObject:
   m_ObjectHideFlags: 0
@@ -17631,6 +18283,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &940036331
 GameObject:
   m_ObjectHideFlags: 0
@@ -17680,6 +18334,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &940820096
 GameObject:
   m_ObjectHideFlags: 0
@@ -17729,6 +18385,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &948962230
 GameObject:
   m_ObjectHideFlags: 0
@@ -17782,6 +18440,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &962765666
 GameObject:
   m_ObjectHideFlags: 0
@@ -17835,6 +18495,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &973780889
 GameObject:
   m_ObjectHideFlags: 0
@@ -17884,6 +18546,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &974483334
 GameObject:
   m_ObjectHideFlags: 0
@@ -17937,6 +18601,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &977705014
 GameObject:
   m_ObjectHideFlags: 0
@@ -18036,6 +18702,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &979524420
 GameObject:
   m_ObjectHideFlags: 0
@@ -18086,6 +18754,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &981478037
 GameObject:
   m_ObjectHideFlags: 0
@@ -18135,6 +18805,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &982081663
 GameObject:
   m_ObjectHideFlags: 0
@@ -18185,6 +18857,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &983866060
 GameObject:
   m_ObjectHideFlags: 0
@@ -18528,6 +19202,7 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 346171812}
   - {fileID: 308448097}
   - {fileID: 1346238681}
   - {fileID: 798744674}
@@ -18643,6 +19318,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &993425583
 GameObject:
   m_ObjectHideFlags: 0
@@ -18693,6 +19370,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 8
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &994745425
 GameObject:
   m_ObjectHideFlags: 0
@@ -18746,6 +19425,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &996004011
 GameObject:
   m_ObjectHideFlags: 0
@@ -18796,6 +19477,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &997037153
 GameObject:
   m_ObjectHideFlags: 0
@@ -18845,6 +19528,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &998551464
 GameObject:
   m_ObjectHideFlags: 0
@@ -18896,6 +19581,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &999340298
 GameObject:
   m_ObjectHideFlags: 0
@@ -18951,6 +19638,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1000531774
 GameObject:
   m_ObjectHideFlags: 0
@@ -19000,6 +19689,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1000881716
 GameObject:
   m_ObjectHideFlags: 0
@@ -19056,6 +19747,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1003172133
 GameObject:
   m_ObjectHideFlags: 0
@@ -19106,6 +19799,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1003472917
 GameObject:
   m_ObjectHideFlags: 0
@@ -19156,6 +19851,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1005041709
 GameObject:
   m_ObjectHideFlags: 0
@@ -19207,6 +19904,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1005537367
 GameObject:
   m_ObjectHideFlags: 0
@@ -19257,6 +19956,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1005631613
 GameObject:
   m_ObjectHideFlags: 0
@@ -19306,6 +20007,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1005693209
 GameObject:
   m_ObjectHideFlags: 0
@@ -19356,6 +20059,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1006884111
 GameObject:
   m_ObjectHideFlags: 0
@@ -19405,6 +20110,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1007303689
 GameObject:
   m_ObjectHideFlags: 0
@@ -19454,6 +20161,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1014865564
 GameObject:
   m_ObjectHideFlags: 0
@@ -19505,6 +20214,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1017767088
 GameObject:
   m_ObjectHideFlags: 0
@@ -19555,6 +20266,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1017931791
 GameObject:
   m_ObjectHideFlags: 0
@@ -19605,6 +20318,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1022841451
 GameObject:
   m_ObjectHideFlags: 0
@@ -19654,6 +20369,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1029199939
 GameObject:
   m_ObjectHideFlags: 0
@@ -19749,6 +20466,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1038144928
 GameObject:
   m_ObjectHideFlags: 0
@@ -19798,6 +20517,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1040929835
 GameObject:
   m_ObjectHideFlags: 0
@@ -19984,6 +20705,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1050206572
 GameObject:
   m_ObjectHideFlags: 0
@@ -20039,6 +20762,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1051929866
 GameObject:
   m_ObjectHideFlags: 0
@@ -20089,6 +20814,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1053610206
 GameObject:
   m_ObjectHideFlags: 0
@@ -20138,6 +20865,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1055555427
 GameObject:
   m_ObjectHideFlags: 0
@@ -20188,6 +20917,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1061382601
 GameObject:
   m_ObjectHideFlags: 0
@@ -20238,6 +20969,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1063423553
 GameObject:
   m_ObjectHideFlags: 0
@@ -20288,6 +21021,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1063486273
 GameObject:
   m_ObjectHideFlags: 0
@@ -20344,6 +21079,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1064601033
 GameObject:
   m_ObjectHideFlags: 0
@@ -20393,6 +21130,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1065086794
 GameObject:
   m_ObjectHideFlags: 0
@@ -20442,6 +21181,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1067534504
 GameObject:
   m_ObjectHideFlags: 0
@@ -20491,6 +21232,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1069204508
 GameObject:
   m_ObjectHideFlags: 0
@@ -20540,6 +21283,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1070620724
 GameObject:
   m_ObjectHideFlags: 0
@@ -20590,6 +21335,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1001 &1080346054
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20765,6 +21512,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1084090319
 GameObject:
   m_ObjectHideFlags: 0
@@ -20818,6 +21567,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1084200125
 GameObject:
   m_ObjectHideFlags: 0
@@ -20868,6 +21619,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1084261088
 GameObject:
   m_ObjectHideFlags: 0
@@ -20921,6 +21674,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1086329018
 GameObject:
   m_ObjectHideFlags: 0
@@ -20970,6 +21725,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1086439629
 GameObject:
   m_ObjectHideFlags: 0
@@ -21019,6 +21776,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1090594798
 GameObject:
   m_ObjectHideFlags: 0
@@ -21069,6 +21828,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1092120606
 GameObject:
   m_ObjectHideFlags: 0
@@ -21118,6 +21879,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1101819195
 GameObject:
   m_ObjectHideFlags: 0
@@ -21174,6 +21937,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1108408338
 GameObject:
   m_ObjectHideFlags: 0
@@ -21227,6 +21992,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1114003194
 GameObject:
   m_ObjectHideFlags: 0
@@ -21278,6 +22045,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1114965355
 GameObject:
   m_ObjectHideFlags: 0
@@ -21327,6 +22096,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1116726574
 GameObject:
   m_ObjectHideFlags: 0
@@ -21428,6 +22199,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1119652525
 GameObject:
   m_ObjectHideFlags: 0
@@ -21479,6 +22252,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1123147577
 GameObject:
   m_ObjectHideFlags: 0
@@ -21529,6 +22304,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1126941097
 GameObject:
   m_ObjectHideFlags: 0
@@ -21579,6 +22356,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1127106813
 GameObject:
   m_ObjectHideFlags: 0
@@ -21629,6 +22408,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1127676254
 GameObject:
   m_ObjectHideFlags: 0
@@ -21679,6 +22460,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1130653941
 GameObject:
   m_ObjectHideFlags: 0
@@ -21728,6 +22511,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1131270442
 GameObject:
   m_ObjectHideFlags: 0
@@ -21781,6 +22566,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1132485301
 GameObject:
   m_ObjectHideFlags: 0
@@ -21831,6 +22618,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1135072918
 GameObject:
   m_ObjectHideFlags: 0
@@ -21882,6 +22671,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1136208114
 GameObject:
   m_ObjectHideFlags: 0
@@ -21935,6 +22726,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1138285442
 GameObject:
   m_ObjectHideFlags: 0
@@ -21984,6 +22777,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1141830079
 GameObject:
   m_ObjectHideFlags: 0
@@ -22033,6 +22828,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1144872370
 GameObject:
   m_ObjectHideFlags: 0
@@ -22082,6 +22879,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1144957391
 GameObject:
   m_ObjectHideFlags: 0
@@ -22135,6 +22934,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1145006072
 GameObject:
   m_ObjectHideFlags: 0
@@ -22184,6 +22985,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1146714529
 GameObject:
   m_ObjectHideFlags: 0
@@ -22234,6 +23037,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1150361711
 GameObject:
   m_ObjectHideFlags: 0
@@ -22284,6 +23089,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1150699399
 GameObject:
   m_ObjectHideFlags: 0
@@ -22337,6 +23144,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1152499347
 GameObject:
   m_ObjectHideFlags: 0
@@ -22390,6 +23199,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1153382584
 GameObject:
   m_ObjectHideFlags: 0
@@ -22439,6 +23250,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1154408697
 GameObject:
   m_ObjectHideFlags: 0
@@ -22492,6 +23305,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1156114409
 GameObject:
   m_ObjectHideFlags: 0
@@ -22542,6 +23357,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1156521921
 GameObject:
   m_ObjectHideFlags: 0
@@ -22591,6 +23408,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1157338282
 GameObject:
   m_ObjectHideFlags: 0
@@ -22642,6 +23461,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 16
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1161333682
 GameObject:
   m_ObjectHideFlags: 0
@@ -22692,6 +23513,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1163687617
 GameObject:
   m_ObjectHideFlags: 0
@@ -22741,6 +23564,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1168812728
 GameObject:
   m_ObjectHideFlags: 0
@@ -22790,6 +23615,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1172175984
 GameObject:
   m_ObjectHideFlags: 0
@@ -22839,6 +23666,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1176611484
 GameObject:
   m_ObjectHideFlags: 0
@@ -22888,6 +23717,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1176902993
 GameObject:
   m_ObjectHideFlags: 0
@@ -22937,6 +23768,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1177817854
 GameObject:
   m_ObjectHideFlags: 0
@@ -22987,6 +23820,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1183782562
 GameObject:
   m_ObjectHideFlags: 0
@@ -23042,6 +23877,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1183845491
 GameObject:
   m_ObjectHideFlags: 0
@@ -23093,6 +23930,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1183891908
 GameObject:
   m_ObjectHideFlags: 0
@@ -23149,6 +23988,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1186073289
 GameObject:
   m_ObjectHideFlags: 0
@@ -23199,6 +24040,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1187045961
 GameObject:
   m_ObjectHideFlags: 0
@@ -23249,6 +24092,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1189357097
 GameObject:
   m_ObjectHideFlags: 0
@@ -23299,6 +24144,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1190970430
 GameObject:
   m_ObjectHideFlags: 0
@@ -23383,6 +24230,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1198756248
 GameObject:
   m_ObjectHideFlags: 0
@@ -23439,6 +24288,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1200575094
 GameObject:
   m_ObjectHideFlags: 0
@@ -23490,6 +24341,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1209620732
 GameObject:
   m_ObjectHideFlags: 0
@@ -23539,6 +24392,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1211166264
 GameObject:
   m_ObjectHideFlags: 0
@@ -23588,6 +24443,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1216434485
 GameObject:
   m_ObjectHideFlags: 0
@@ -23641,6 +24498,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1216634426
 GameObject:
   m_ObjectHideFlags: 0
@@ -23803,6 +24662,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1224048301
 GameObject:
   m_ObjectHideFlags: 0
@@ -23979,6 +24840,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1227303178
 GameObject:
   m_ObjectHideFlags: 0
@@ -24028,6 +24891,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1227530840
 GameObject:
   m_ObjectHideFlags: 0
@@ -24077,6 +24942,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1227574301
 GameObject:
   m_ObjectHideFlags: 0
@@ -24126,6 +24993,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1229586488
 GameObject:
   m_ObjectHideFlags: 0
@@ -24176,6 +25045,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1233615880
 GameObject:
   m_ObjectHideFlags: 0
@@ -24231,6 +25102,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1234196154
 GameObject:
   m_ObjectHideFlags: 0
@@ -24281,6 +25154,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1235795459
 GameObject:
   m_ObjectHideFlags: 0
@@ -24334,6 +25209,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1243486694
 GameObject:
   m_ObjectHideFlags: 0
@@ -24383,6 +25260,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1246133093
 GameObject:
   m_ObjectHideFlags: 0
@@ -24432,6 +25311,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1248263456
 GameObject:
   m_ObjectHideFlags: 0
@@ -24483,6 +25364,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1256322459
 GameObject:
   m_ObjectHideFlags: 0
@@ -24539,6 +25422,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1260768176
 GameObject:
   m_ObjectHideFlags: 0
@@ -24588,6 +25473,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1260799777
 GameObject:
   m_ObjectHideFlags: 0
@@ -24637,6 +25524,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1262915132
 GameObject:
   m_ObjectHideFlags: 0
@@ -24690,6 +25579,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1264265260
 GameObject:
   m_ObjectHideFlags: 0
@@ -24739,6 +25630,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1267341500
 GameObject:
   m_ObjectHideFlags: 0
@@ -24788,6 +25681,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1267378593
 GameObject:
   m_ObjectHideFlags: 0
@@ -24838,6 +25733,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1268327224
 GameObject:
   m_ObjectHideFlags: 0
@@ -24940,6 +25837,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1270425463
 GameObject:
   m_ObjectHideFlags: 0
@@ -25041,6 +25940,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1273471974
 GameObject:
   m_ObjectHideFlags: 0
@@ -25092,6 +25993,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1276589999
 GameObject:
   m_ObjectHideFlags: 0
@@ -25142,6 +26045,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1278498164
 GameObject:
   m_ObjectHideFlags: 0
@@ -25191,6 +26096,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1281154671
 GameObject:
   m_ObjectHideFlags: 0
@@ -25241,6 +26148,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1284159111
 GameObject:
   m_ObjectHideFlags: 0
@@ -25292,6 +26201,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1286972915
 GameObject:
   m_ObjectHideFlags: 0
@@ -25343,6 +26254,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1290127201
 GameObject:
   m_ObjectHideFlags: 0
@@ -25426,6 +26339,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1295881240
 GameObject:
   m_ObjectHideFlags: 0
@@ -25596,6 +26511,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1305722037
 GameObject:
   m_ObjectHideFlags: 0
@@ -25645,6 +26562,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1306085411
 GameObject:
   m_ObjectHideFlags: 0
@@ -25700,6 +26619,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1307733481
 GameObject:
   m_ObjectHideFlags: 0
@@ -25750,6 +26671,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1310084987
 GameObject:
   m_ObjectHideFlags: 0
@@ -25801,6 +26724,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1314380714
 GameObject:
   m_ObjectHideFlags: 0
@@ -25854,6 +26779,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1314715607
 GameObject:
   m_ObjectHideFlags: 0
@@ -25907,6 +26834,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1319300144
 GameObject:
   m_ObjectHideFlags: 0
@@ -25961,6 +26890,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1322574784
 GameObject:
   m_ObjectHideFlags: 0
@@ -26062,6 +26993,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1331604630
 GameObject:
   m_ObjectHideFlags: 0
@@ -26117,6 +27050,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1334391918
 GameObject:
   m_ObjectHideFlags: 0
@@ -26172,6 +27107,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1001 &1335938232
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26371,6 +27308,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1342850026
 GameObject:
   m_ObjectHideFlags: 0
@@ -26421,6 +27360,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1346238680
 GameObject:
   m_ObjectHideFlags: 0
@@ -26548,6 +27489,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1355563836
 GameObject:
   m_ObjectHideFlags: 0
@@ -26645,6 +27588,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1363919907
 GameObject:
   m_ObjectHideFlags: 0
@@ -26695,6 +27640,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1366070824
 GameObject:
   m_ObjectHideFlags: 0
@@ -26746,6 +27693,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1373264452
 GameObject:
   m_ObjectHideFlags: 0
@@ -26795,6 +27744,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1378251793
 GameObject:
   m_ObjectHideFlags: 0
@@ -26844,6 +27795,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1380647579
 GameObject:
   m_ObjectHideFlags: 0
@@ -26928,6 +27881,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1384717651
 GameObject:
   m_ObjectHideFlags: 0
@@ -26978,6 +27933,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1385876678
 GameObject:
   m_ObjectHideFlags: 0
@@ -27027,6 +27984,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!114 &1390115877 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5059746581433902613, guid: 8237ca7b657952a4e98dc34d2bf06627, type: 3}
@@ -27224,6 +28183,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 32
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1397191095
 GameObject:
   m_ObjectHideFlags: 0
@@ -27273,6 +28234,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1398950694
 GameObject:
   m_ObjectHideFlags: 0
@@ -27374,6 +28337,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1402591612
 GameObject:
   m_ObjectHideFlags: 0
@@ -27560,6 +28525,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1407428265
 GameObject:
   m_ObjectHideFlags: 0
@@ -27657,6 +28624,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1413461913
 GameObject:
   m_ObjectHideFlags: 0
@@ -27707,6 +28676,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1417512806
 GameObject:
   m_ObjectHideFlags: 0
@@ -27760,6 +28731,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1420842039
 GameObject:
   m_ObjectHideFlags: 0
@@ -27809,6 +28782,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1421288614
 GameObject:
   m_ObjectHideFlags: 0
@@ -27859,6 +28834,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1425658692
 GameObject:
   m_ObjectHideFlags: 0
@@ -27912,6 +28889,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1433280611
 GameObject:
   m_ObjectHideFlags: 0
@@ -27961,6 +28940,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 16
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1436790204
 GameObject:
   m_ObjectHideFlags: 0
@@ -28016,6 +28997,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1438774721
 GameObject:
   m_ObjectHideFlags: 0
@@ -28065,6 +29048,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1443435413
 GameObject:
   m_ObjectHideFlags: 0
@@ -28162,6 +29147,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1448796996
 GameObject:
   m_ObjectHideFlags: 0
@@ -28212,6 +29199,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1458193667
 GameObject:
   m_ObjectHideFlags: 0
@@ -28262,6 +29251,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 4
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1458746865
 GameObject:
   m_ObjectHideFlags: 0
@@ -28359,6 +29350,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1459443810
 GameObject:
   m_ObjectHideFlags: 0
@@ -28408,6 +29401,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1460847947
 GameObject:
   m_ObjectHideFlags: 0
@@ -28457,6 +29452,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1461765558
 GameObject:
   m_ObjectHideFlags: 0
@@ -28507,6 +29504,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1463304278
 GameObject:
   m_ObjectHideFlags: 0
@@ -28557,6 +29556,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 4
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1463717409
 GameObject:
   m_ObjectHideFlags: 0
@@ -28644,6 +29645,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1473822597
 GameObject:
   m_ObjectHideFlags: 0
@@ -28697,6 +29700,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1477096338
 GameObject:
   m_ObjectHideFlags: 0
@@ -28746,6 +29751,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1480178082
 GameObject:
   m_ObjectHideFlags: 0
@@ -28795,6 +29802,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 1
   amountOfHoursChanging: 8
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1486147614
 GameObject:
   m_ObjectHideFlags: 0
@@ -28845,6 +29854,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1492024301
 GameObject:
   m_ObjectHideFlags: 0
@@ -28895,6 +29906,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1495288281
 GameObject:
   m_ObjectHideFlags: 0
@@ -28948,6 +29961,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1503205687
 GameObject:
   m_ObjectHideFlags: 0
@@ -29001,6 +30016,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1510342959
 GameObject:
   m_ObjectHideFlags: 0
@@ -29056,6 +30073,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1515789481
 GameObject:
   m_ObjectHideFlags: 0
@@ -29154,6 +30173,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1518268387
 GameObject:
   m_ObjectHideFlags: 0
@@ -29204,6 +30225,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1519013769
 GameObject:
   m_ObjectHideFlags: 0
@@ -29254,6 +30277,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1531315917
 GameObject:
   m_ObjectHideFlags: 0
@@ -29307,6 +30332,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1534925089
 GameObject:
   m_ObjectHideFlags: 0
@@ -29362,6 +30389,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1535318745
 GameObject:
   m_ObjectHideFlags: 0
@@ -29411,6 +30440,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 6
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1537816402
 GameObject:
   m_ObjectHideFlags: 0
@@ -29460,6 +30491,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1538393723
 GameObject:
   m_ObjectHideFlags: 0
@@ -29510,6 +30543,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1538624439
 GameObject:
   m_ObjectHideFlags: 0
@@ -29559,6 +30594,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1543517432
 GameObject:
   m_ObjectHideFlags: 0
@@ -29732,6 +30769,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1548514854
 GameObject:
   m_ObjectHideFlags: 0
@@ -29781,6 +30820,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1554048427
 GameObject:
   m_ObjectHideFlags: 0
@@ -29832,6 +30873,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1556211150
 GameObject:
   m_ObjectHideFlags: 0
@@ -29881,6 +30924,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1557121279
 GameObject:
   m_ObjectHideFlags: 0
@@ -29931,6 +30976,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1559134562
 GameObject:
   m_ObjectHideFlags: 0
@@ -30028,6 +31075,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1561006774
 GameObject:
   m_ObjectHideFlags: 0
@@ -30078,6 +31127,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1573138791
 GameObject:
   m_ObjectHideFlags: 0
@@ -30127,6 +31178,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1575083282
 GameObject:
   m_ObjectHideFlags: 0
@@ -30226,6 +31279,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1583358073
 GameObject:
   m_ObjectHideFlags: 0
@@ -30275,6 +31330,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1586389698
 GameObject:
   m_ObjectHideFlags: 0
@@ -30325,6 +31382,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1587735667
 GameObject:
   m_ObjectHideFlags: 0
@@ -30423,6 +31482,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1595058946
 GameObject:
   m_ObjectHideFlags: 0
@@ -30472,6 +31533,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1596961712
 GameObject:
   m_ObjectHideFlags: 0
@@ -30521,6 +31584,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 1
   amountOfHoursChanging: 10
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1601785451
 GameObject:
   m_ObjectHideFlags: 0
@@ -30571,6 +31636,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1610230781
 GameObject:
   m_ObjectHideFlags: 0
@@ -30621,6 +31688,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1610962272
 GameObject:
   m_ObjectHideFlags: 0
@@ -30671,6 +31740,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1617702260
 GameObject:
   m_ObjectHideFlags: 0
@@ -30720,6 +31791,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1625090203
 GameObject:
   m_ObjectHideFlags: 0
@@ -30817,6 +31890,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1628356369
 GameObject:
   m_ObjectHideFlags: 0
@@ -30866,6 +31941,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1630615213
 GameObject:
   m_ObjectHideFlags: 0
@@ -30921,6 +31998,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1631587529
 GameObject:
   m_ObjectHideFlags: 0
@@ -30971,6 +32050,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1636754220
 GameObject:
   m_ObjectHideFlags: 0
@@ -31021,6 +32102,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1637729255
 GameObject:
   m_ObjectHideFlags: 0
@@ -31170,6 +32253,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1639421849
 GameObject:
   m_ObjectHideFlags: 0
@@ -31221,6 +32306,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1640717565
 GameObject:
   m_ObjectHideFlags: 0
@@ -31270,6 +32357,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1642599648
 GameObject:
   m_ObjectHideFlags: 0
@@ -31319,6 +32408,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1644859408
 GameObject:
   m_ObjectHideFlags: 0
@@ -31369,6 +32460,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1654209151
 GameObject:
   m_ObjectHideFlags: 0
@@ -31424,6 +32517,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1657369398
 GameObject:
   m_ObjectHideFlags: 0
@@ -31475,6 +32570,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1658726754
 GameObject:
   m_ObjectHideFlags: 0
@@ -31524,6 +32621,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1660275456
 GameObject:
   m_ObjectHideFlags: 0
@@ -31573,6 +32672,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1661290059
 GameObject:
   m_ObjectHideFlags: 0
@@ -31628,6 +32729,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1663183335
 GameObject:
   m_ObjectHideFlags: 0
@@ -31677,6 +32780,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1671430613
 GameObject:
   m_ObjectHideFlags: 0
@@ -31727,6 +32832,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1673471788
 GameObject:
   m_ObjectHideFlags: 0
@@ -31776,6 +32883,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1673599349
 GameObject:
   m_ObjectHideFlags: 0
@@ -31825,6 +32934,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1675976567
 GameObject:
   m_ObjectHideFlags: 0
@@ -31874,6 +32985,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1681042991
 GameObject:
   m_ObjectHideFlags: 0
@@ -31923,6 +33036,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1682133264
 GameObject:
   m_ObjectHideFlags: 0
@@ -31973,6 +33088,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1682571625
 GameObject:
   m_ObjectHideFlags: 0
@@ -32022,6 +33139,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1688261697
 GameObject:
   m_ObjectHideFlags: 0
@@ -32071,6 +33190,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1693597767
 GameObject:
   m_ObjectHideFlags: 0
@@ -32168,6 +33289,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1699901979
 GameObject:
   m_ObjectHideFlags: 0
@@ -32253,6 +33376,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1702196216
 GameObject:
   m_ObjectHideFlags: 0
@@ -32302,6 +33427,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1703882687
 GameObject:
   m_ObjectHideFlags: 0
@@ -32351,6 +33478,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1705710862
 GameObject:
   m_ObjectHideFlags: 0
@@ -32400,6 +33529,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1707591080
 GameObject:
   m_ObjectHideFlags: 0
@@ -32449,6 +33580,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1712421051
 GameObject:
   m_ObjectHideFlags: 0
@@ -32503,6 +33636,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1717439097
 GameObject:
   m_ObjectHideFlags: 0
@@ -32587,6 +33722,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1723453296
 GameObject:
   m_ObjectHideFlags: 0
@@ -32638,6 +33775,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1724218546
 GameObject:
   m_ObjectHideFlags: 0
@@ -32687,6 +33826,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1725320911
 GameObject:
   m_ObjectHideFlags: 0
@@ -32784,6 +33925,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1731801028
 GameObject:
   m_ObjectHideFlags: 0
@@ -32867,6 +34010,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1741960408
 GameObject:
   m_ObjectHideFlags: 0
@@ -32917,6 +34062,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1759179533
 GameObject:
   m_ObjectHideFlags: 0
@@ -33103,6 +34250,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1768201756
 GameObject:
   m_ObjectHideFlags: 0
@@ -33153,6 +34302,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1768800749
 GameObject:
   m_ObjectHideFlags: 0
@@ -33204,6 +34355,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1773330903
 GameObject:
   m_ObjectHideFlags: 0
@@ -33253,6 +34406,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1782645848
 GameObject:
   m_ObjectHideFlags: 0
@@ -33304,6 +34459,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1785713455
 GameObject:
   m_ObjectHideFlags: 0
@@ -33357,6 +34514,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1786151083
 GameObject:
   m_ObjectHideFlags: 0
@@ -33406,6 +34565,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1787839244
 GameObject:
   m_ObjectHideFlags: 0
@@ -33458,6 +34619,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1793876837
 GameObject:
   m_ObjectHideFlags: 0
@@ -33508,6 +34671,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1795459492
 GameObject:
   m_ObjectHideFlags: 0
@@ -33559,6 +34724,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1797390873
 GameObject:
   m_ObjectHideFlags: 0
@@ -33704,6 +34871,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1802167489
 GameObject:
   m_ObjectHideFlags: 0
@@ -33753,6 +34922,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1804642388
 GameObject:
   m_ObjectHideFlags: 0
@@ -33802,6 +34973,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1807400297
 GameObject:
   m_ObjectHideFlags: 0
@@ -33852,6 +35025,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1809833220
 GameObject:
   m_ObjectHideFlags: 0
@@ -33905,6 +35080,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1809878089
 GameObject:
   m_ObjectHideFlags: 0
@@ -33955,6 +35132,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1810453094
 GameObject:
   m_ObjectHideFlags: 0
@@ -34004,6 +35183,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1812295844
 GameObject:
   m_ObjectHideFlags: 0
@@ -34057,6 +35238,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1814721562
 GameObject:
   m_ObjectHideFlags: 0
@@ -34106,6 +35289,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1815594807
 GameObject:
   m_ObjectHideFlags: 0
@@ -34155,6 +35340,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1818797614
 GameObject:
   m_ObjectHideFlags: 0
@@ -34204,6 +35391,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1820158424
 GameObject:
   m_ObjectHideFlags: 0
@@ -34253,6 +35442,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 4
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1832375900
 GameObject:
   m_ObjectHideFlags: 0
@@ -34344,6 +35535,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1834296017
 GameObject:
   m_ObjectHideFlags: 0
@@ -34447,6 +35640,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1835692774
 GameObject:
   m_ObjectHideFlags: 0
@@ -34497,6 +35692,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1836240119
 GameObject:
   m_ObjectHideFlags: 0
@@ -34546,6 +35743,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1837862774
 GameObject:
   m_ObjectHideFlags: 0
@@ -34595,6 +35794,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1838807824
 GameObject:
   m_ObjectHideFlags: 0
@@ -34645,6 +35846,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1839931009
 GameObject:
   m_ObjectHideFlags: 0
@@ -34695,6 +35898,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1845064164
 GameObject:
   m_ObjectHideFlags: 0
@@ -34748,6 +35953,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1849286878
 GameObject:
   m_ObjectHideFlags: 0
@@ -34845,6 +36052,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1851412240
 GameObject:
   m_ObjectHideFlags: 0
@@ -34901,6 +36110,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1852011499
 GameObject:
   m_ObjectHideFlags: 0
@@ -34951,6 +36162,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1858064590
 GameObject:
   m_ObjectHideFlags: 0
@@ -35006,6 +36219,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1860313998
 GameObject:
   m_ObjectHideFlags: 0
@@ -35055,6 +36270,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1861530034
 GameObject:
   m_ObjectHideFlags: 0
@@ -35104,6 +36321,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1868767955
 GameObject:
   m_ObjectHideFlags: 0
@@ -35158,6 +36377,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1870509565
 GameObject:
   m_ObjectHideFlags: 0
@@ -35209,6 +36430,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1870969612
 GameObject:
   m_ObjectHideFlags: 0
@@ -35258,6 +36481,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1872702217
 GameObject:
   m_ObjectHideFlags: 0
@@ -35313,6 +36538,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1873102288
 GameObject:
   m_ObjectHideFlags: 0
@@ -35362,6 +36589,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1884564510
 GameObject:
   m_ObjectHideFlags: 0
@@ -35445,6 +36674,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1891721234
 GameObject:
   m_ObjectHideFlags: 0
@@ -35500,6 +36731,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1892485457
 GameObject:
   m_ObjectHideFlags: 0
@@ -35549,6 +36782,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1892744625
 GameObject:
   m_ObjectHideFlags: 0
@@ -35598,6 +36833,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1894394042
 GameObject:
   m_ObjectHideFlags: 0
@@ -35777,6 +37014,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1896177830
 GameObject:
   m_ObjectHideFlags: 0
@@ -35828,6 +37067,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 8
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1897353505
 GameObject:
   m_ObjectHideFlags: 0
@@ -35878,6 +37119,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!114 &1904381619 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5059746581433902613, guid: 8237ca7b657952a4e98dc34d2bf06627, type: 3}
@@ -35953,6 +37196,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1914091872
 GameObject:
   m_ObjectHideFlags: 0
@@ -36002,6 +37247,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1918235199
 GameObject:
   m_ObjectHideFlags: 0
@@ -36058,6 +37305,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1919472686
 GameObject:
   m_ObjectHideFlags: 0
@@ -36112,6 +37361,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1920485681
 GameObject:
   m_ObjectHideFlags: 0
@@ -36162,6 +37413,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1923022797
 GameObject:
   m_ObjectHideFlags: 0
@@ -36211,6 +37464,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1923049536
 GameObject:
   m_ObjectHideFlags: 0
@@ -36266,6 +37521,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1924706465
 GameObject:
   m_ObjectHideFlags: 0
@@ -36315,6 +37572,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1927023396
 GameObject:
   m_ObjectHideFlags: 0
@@ -36365,6 +37624,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1927867642
 GameObject:
   m_ObjectHideFlags: 0
@@ -36415,6 +37676,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1928941151
 GameObject:
   m_ObjectHideFlags: 0
@@ -36586,6 +37849,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1934394055
 GameObject:
   m_ObjectHideFlags: 0
@@ -36637,6 +37902,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 24
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1936788658
 GameObject:
   m_ObjectHideFlags: 0
@@ -36688,6 +37955,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1938139178
 GameObject:
   m_ObjectHideFlags: 0
@@ -36739,6 +38008,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1939046386
 GameObject:
   m_ObjectHideFlags: 0
@@ -36795,6 +38066,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1940362201
 GameObject:
   m_ObjectHideFlags: 0
@@ -36898,6 +38171,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1944574286
 GameObject:
   m_ObjectHideFlags: 0
@@ -37033,6 +38308,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1952328913
 GameObject:
   m_ObjectHideFlags: 0
@@ -37084,6 +38361,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1953209026
 GameObject:
   m_ObjectHideFlags: 0
@@ -37133,6 +38412,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1954233634
 GameObject:
   m_ObjectHideFlags: 0
@@ -37182,6 +38463,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1954784987
 GameObject:
   m_ObjectHideFlags: 0
@@ -37231,6 +38514,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1961979806
 GameObject:
   m_ObjectHideFlags: 0
@@ -37280,6 +38565,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1962235825
 GameObject:
   m_ObjectHideFlags: 0
@@ -37379,6 +38666,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1965379751
 GameObject:
   m_ObjectHideFlags: 0
@@ -37429,6 +38718,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1967386960
 GameObject:
   m_ObjectHideFlags: 0
@@ -37479,6 +38770,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 1
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1968057469
 GameObject:
   m_ObjectHideFlags: 0
@@ -37532,6 +38825,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1969117725
 GameObject:
   m_ObjectHideFlags: 0
@@ -37581,6 +38876,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1979146960
 GameObject:
   m_ObjectHideFlags: 0
@@ -37631,6 +38928,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1984788124
 GameObject:
   m_ObjectHideFlags: 0
@@ -37853,6 +39152,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1996932092
 GameObject:
   m_ObjectHideFlags: 0
@@ -37908,6 +39209,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2003219904
 GameObject:
   m_ObjectHideFlags: 0
@@ -37958,6 +39261,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2006062951
 GameObject:
   m_ObjectHideFlags: 0
@@ -38007,6 +39312,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2008661430
 GameObject:
   m_ObjectHideFlags: 0
@@ -38057,6 +39364,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2011166090
 GameObject:
   m_ObjectHideFlags: 0
@@ -38155,6 +39464,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2013028090
 GameObject:
   m_ObjectHideFlags: 0
@@ -38206,6 +39517,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1001 &2013237684
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38405,6 +39718,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2017900488
 GameObject:
   m_ObjectHideFlags: 0
@@ -38502,6 +39817,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2023010707
 GameObject:
   m_ObjectHideFlags: 0
@@ -38601,6 +39918,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 6
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2028062832
 GameObject:
   m_ObjectHideFlags: 0
@@ -38656,6 +39975,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2029836139
 GameObject:
   m_ObjectHideFlags: 0
@@ -38757,6 +40078,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2045188772
 GameObject:
   m_ObjectHideFlags: 0
@@ -38807,6 +40130,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2047986323
 GameObject:
   m_ObjectHideFlags: 0
@@ -38856,6 +40181,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2049434777
 GameObject:
   m_ObjectHideFlags: 0
@@ -38905,6 +40232,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2062150870
 GameObject:
   m_ObjectHideFlags: 0
@@ -38955,6 +40284,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2072341630
 GameObject:
   m_ObjectHideFlags: 0
@@ -39004,6 +40335,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2072609952
 GameObject:
   m_ObjectHideFlags: 0
@@ -39103,6 +40436,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2076412002
 GameObject:
   m_ObjectHideFlags: 0
@@ -39154,6 +40489,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2078803652
 GameObject:
   m_ObjectHideFlags: 0
@@ -39203,6 +40540,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2079438042
 GameObject:
   m_ObjectHideFlags: 0
@@ -39252,6 +40591,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2082608194
 GameObject:
   m_ObjectHideFlags: 0
@@ -39303,6 +40644,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2084093534
 GameObject:
   m_ObjectHideFlags: 0
@@ -39353,6 +40696,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2090466641
 GameObject:
   m_ObjectHideFlags: 0
@@ -39406,6 +40751,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2091804968
 GameObject:
   m_ObjectHideFlags: 0
@@ -39456,6 +40803,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2109430403
 GameObject:
   m_ObjectHideFlags: 0
@@ -39509,6 +40858,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2111630976
 GameObject:
   m_ObjectHideFlags: 0
@@ -39613,6 +40964,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2113810641
 GameObject:
   m_ObjectHideFlags: 0
@@ -39664,6 +41017,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2116611872
 GameObject:
   m_ObjectHideFlags: 0
@@ -39762,6 +41117,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2117633926
 GameObject:
   m_ObjectHideFlags: 0
@@ -39811,6 +41168,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2118315745
 GameObject:
   m_ObjectHideFlags: 0
@@ -39860,6 +41219,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2120914326
 GameObject:
   m_ObjectHideFlags: 0
@@ -39915,6 +41276,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2127642565
 GameObject:
   m_ObjectHideFlags: 0
@@ -39964,6 +41327,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 3
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2130981842
 GameObject:
   m_ObjectHideFlags: 0
@@ -40014,6 +41379,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2140203813
 GameObject:
   m_ObjectHideFlags: 0
@@ -40067,6 +41434,8 @@ MonoBehaviour:
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2146978317
 GameObject:
   m_ObjectHideFlags: 0
@@ -40116,3 +41485,5 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
