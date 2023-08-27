@@ -19,6 +19,7 @@ public class AdjustBarColor : MonoBehaviour
         options.Add("gamedesign",new Color32(255,0,0,255));
         options.Add("graphicdesign",new Color32(18,128,0,255));
         options.Add("sounddesign",new Color32(255,156,0,255));
+        options.Add("special",new Color32(255,255,255,255));
         if (options.ContainsKey(type)){
             targetColor = options[type];
         }
