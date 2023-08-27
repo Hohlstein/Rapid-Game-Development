@@ -16,7 +16,6 @@ public class DialogueTreeRoot : MonoBehaviour
 
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
     }
 
     void Update()

@@ -935,6 +935,59 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &40035182
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 40035183}
+  - component: {fileID: 40035184}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &40035183
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40035182}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1033313905}
+  m_Father: {fileID: 1580062796}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &40035184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 40035182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: It wasn't that bad. I'll be more careful in the future.
+  playerAnswer:
+  - {fileID: 1033313906}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &40569914
 GameObject:
   m_ObjectHideFlags: 0
@@ -1348,6 +1401,58 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &58016649
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 58016650}
+  - component: {fileID: 58016651}
+  m_Layer: 0
+  m_Name: negative
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &58016650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58016649}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 629866130}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &58016651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 58016649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I won't allow you to turn this office into such a toxic environment, this
+    will have consequences !
+  nextNode: {fileID: 0}
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 15
 --- !u!1 &64894443
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,6 +2373,57 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &107963569
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 107963570}
+  - component: {fileID: 107963571}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &107963570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107963569}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 912639525}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &107963571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 107963569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Thank you so much for listening to me!
+  playerAnswer: []
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 10
 --- !u!1 &108103015
 GameObject:
   m_ObjectHideFlags: 0
@@ -3564,6 +3720,59 @@ MonoBehaviour:
   - {fileID: 263511163}
   - {fileID: 898609223}
   rarity: 3
+--- !u!1 &161167690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 161167691}
+  - component: {fileID: 161167692}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &161167691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161167690}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 542859204}
+  m_Father: {fileID: 2065113247}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &161167692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 161167690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Alright, I'll keep that in mind. I don't want to disrupt the team.
+  playerAnswer:
+  - {fileID: 542859205}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &161591629
 GameObject:
   m_ObjectHideFlags: 0
@@ -6136,6 +6345,56 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &280298816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 280298817}
+  - component: {fileID: 280298818}
+  m_Layer: 0
+  m_Name: misogyny
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &280298817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280298816}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1807402396}
+  - {fileID: 1522183689}
+  m_Father: {fileID: 1188393853}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &280298818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 280298816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05e913280e7923418860d16b1a12c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueStart:
+  - {fileID: 1807402397}
+  - {fileID: 1522183690}
+  rarity: 3
 --- !u!1 &282307709
 GameObject:
   m_ObjectHideFlags: 0
@@ -7933,6 +8192,57 @@ MonoBehaviour:
   amountOfHoursChanging: 16
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &347682660
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 347682661}
+  - component: {fileID: 347682662}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &347682661
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347682660}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 469504278}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &347682662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347682660}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Alright, thanks...
+  playerAnswer: []
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &348115369
 GameObject:
   m_ObjectHideFlags: 0
@@ -8198,6 +8508,57 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &362844820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 362844821}
+  - component: {fileID: 362844822}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &362844821
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362844820}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 531950319}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &362844822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 362844820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I'm relieved you're taking this seriously, Boss. Your support means a lot.
+  playerAnswer: []
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 10
 --- !u!1 &372375132
 GameObject:
   m_ObjectHideFlags: 0
@@ -8500,6 +8861,57 @@ Transform:
   m_Father: {fileID: 1290127202}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &391493321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 391493322}
+  - component: {fileID: 391493323}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &391493322
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391493321}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 990436964}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &391493323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391493321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: That sounds fair, Boss. I hope this can lead to some positive changes.
+  playerAnswer: []
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &395606730
 GameObject:
   m_ObjectHideFlags: 0
@@ -9995,6 +10407,57 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 443705823}
   m_CullTransparentMesh: 1
+--- !u!1 &451204078
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 451204079}
+  - component: {fileID: 451204080}
+  m_Layer: 0
+  m_Name: positive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &451204079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451204078}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1622880823}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &451204080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 451204078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I appreciate that very much.
+  nextNode: {fileID: 0}
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 10
 --- !u!1 &458447490
 GameObject:
   m_ObjectHideFlags: 0
@@ -10128,6 +10591,58 @@ MonoBehaviour:
     workload for the week.
   nextNode: {fileID: 0}
   finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &469504277
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 469504278}
+  - component: {fileID: 469504279}
+  m_Layer: 0
+  m_Name: neutral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &469504278
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469504277}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 347682661}
+  m_Father: {fileID: 1807402396}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &469504279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469504277}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I' m going to find a way everybody feels safe in this office.
+  nextNode: {fileID: 347682662}
+  finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
@@ -11103,6 +11618,60 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &531950318
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 531950319}
+  - component: {fileID: 531950320}
+  m_Layer: 0
+  m_Name: positive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &531950319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531950318}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 362844821}
+  m_Father: {fileID: 636347440}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &531950320
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 531950318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Thank you for bringing this to my attention. I appreciate your concern for
+    the team's well-being. I will try to address this issue to ensure a healthy and
+    respectful work environment.
+  nextNode: {fileID: 362844822}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &532953114
 GameObject:
   m_ObjectHideFlags: 0
@@ -11370,6 +11939,57 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Just see that you get it fixed !
+  nextNode: {fileID: 0}
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &542859203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 542859204}
+  - component: {fileID: 542859205}
+  m_Layer: 0
+  m_Name: neutral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &542859204
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542859203}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 161167691}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &542859205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 542859203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Thank you for being reasonable !
   nextNode: {fileID: 0}
   finalNode: 1
   workingHoursUp: 0
@@ -12811,6 +13431,59 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &629866129
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 629866130}
+  - component: {fileID: 629866131}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &629866130
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629866129}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 58016650}
+  m_Father: {fileID: 1843498621}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &629866131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 629866129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Whats your problem? Were just having fun.
+  playerAnswer:
+  - {fileID: 58016651}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &630907140
 GameObject:
   m_ObjectHideFlags: 0
@@ -12916,6 +13589,64 @@ MonoBehaviour:
   - {fileID: 1123147579}
   - {fileID: 1189357099}
   - {fileID: 617486167}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &636347439
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 636347440}
+  - component: {fileID: 636347441}
+  m_Layer: 0
+  m_Name: start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &636347440
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636347439}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 531950319}
+  - {fileID: 990436964}
+  - {fileID: 2000663595}
+  m_Father: {fileID: 1483463992}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &636347441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 636347439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Hello Boss, I noticed that one of our colleagues seem very aggressive lately,
+    arguing over even the slightest inconvencience  and it's starting to scare us
+  playerAnswer:
+  - {fileID: 531950320}
+  - {fileID: 990436965}
+  - {fileID: 2000663596}
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
@@ -15052,7 +15783,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.000061035156, y: -3526.0906}
+  m_AnchoredPosition: {x: 0.000061035156, y: -3526.0913}
   m_SizeDelta: {x: 0, y: 3526.0906}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &748128819
@@ -16512,6 +17243,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813460935}
   m_CullTransparentMesh: 1
+--- !u!1 &817501698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 817501699}
+  - component: {fileID: 817501700}
+  m_Layer: 0
+  m_Name: positive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &817501699
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817501698}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1622880823}
+  m_Father: {fileID: 1919664988}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &817501700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817501698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: John, I've heard about some concerns from your colleagues. Apparently you're
+    not treating everyone with respect
+  nextNode: {fileID: 1622880824}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &819885087
 GameObject:
   m_ObjectHideFlags: 0
@@ -18072,6 +18856,58 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &912639524
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 912639525}
+  - component: {fileID: 912639526}
+  m_Layer: 0
+  m_Name: positive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &912639525
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912639524}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 107963570}
+  m_Father: {fileID: 1807402396}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912639526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912639524}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: That's not right. I'm going to take care of the one who is causing trouble.
+  nextNode: {fileID: 107963571}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &912853619
 GameObject:
   m_ObjectHideFlags: 0
@@ -19430,6 +20266,58 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &990436963
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 990436964}
+  - component: {fileID: 990436965}
+  m_Layer: 0
+  m_Name: neutral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &990436964
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990436963}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 391493322}
+  m_Father: {fileID: 636347440}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &990436965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 990436963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: ' I will adress the problem and any concerns openly.'
+  nextNode: {fileID: 391493323}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &990645849
 GameObject:
   m_ObjectHideFlags: 0
@@ -19478,6 +20366,59 @@ MonoBehaviour:
   dialogueStart:
   - {fileID: 524289858}
   rarity: 0
+--- !u!1 &991166016
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 991166017}
+  - component: {fileID: 991166018}
+  m_Layer: 0
+  m_Name: negative
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &991166017
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991166016}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1905631426}
+  m_Father: {fileID: 1522183689}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &991166018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991166016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Why are you assaulting our female coworkers? There's no way I can tolerate
+    this in my office!
+  nextNode: {fileID: 1905631427}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &992736256
 GameObject:
   m_ObjectHideFlags: 0
@@ -20626,6 +21567,58 @@ Transform:
   m_Father: {fileID: 398978353}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1033313904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1033313905}
+  - component: {fileID: 1033313906}
+  m_Layer: 0
+  m_Name: neutral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1033313905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033313904}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 40035183}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1033313906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1033313904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Okay, i'll keep an eye on you. Everyone here deserves to be treated with
+    respect.
+  nextNode: {fileID: 0}
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 5
 --- !u!1 &1033870096
 GameObject:
   m_ObjectHideFlags: 0
@@ -24332,6 +25325,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 160904558}
+  - {fileID: 280298817}
+  - {fileID: 1483463992}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24989,6 +25984,8 @@ MonoBehaviour:
   - {fileID: 2023010709}
   problemDialogues:
   - {fileID: 160904559}
+  - {fileID: 280298818}
+  - {fileID: 1483463993}
   miniGameDialoguesSound:
   - {fileID: 1725320913}
   - {fileID: 1116726576}
@@ -25289,6 +26286,58 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &1229901980
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1229901981}
+  - component: {fileID: 1229901982}
+  m_Layer: 0
+  m_Name: negative
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1229901981
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229901980}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1905631426}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1229901982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229901980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: That is just not right. This is going to have serious consequences if you're
+    not willing to be more reasonable.
+  nextNode: {fileID: 0}
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 10
 --- !u!1 &1233615880
 GameObject:
   m_ObjectHideFlags: 0
@@ -27020,6 +28069,57 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &1311511899
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1311511900}
+  - component: {fileID: 1311511901}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1311511900
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311511899}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2000663595}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1311511901
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1311511899}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Thats not very helpful...
+  playerAnswer: []
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 10
 --- !u!1 &1314380714
 GameObject:
   m_ObjectHideFlags: 0
@@ -27833,6 +28933,59 @@ MonoBehaviour:
   playerAnswer:
   - {fileID: 289489351}
   finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &1350306000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1350306001}
+  - component: {fileID: 1350306002}
+  m_Layer: 0
+  m_Name: negative
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1350306001
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350306000}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1712287796}
+  m_Father: {fileID: 1807402396}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1350306002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350306000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Sorry, for now it is the best option to work as a team. I don\xB4t need
+    a fight between you all right now."
+  nextNode: {fileID: 1712287797}
+  finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
@@ -30254,6 +31407,56 @@ MonoBehaviour:
   amountOfHoursChanging: 8
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &1483463991
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1483463992}
+  - component: {fileID: 1483463993}
+  m_Layer: 0
+  m_Name: mobbing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1483463992
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483463991}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 636347440}
+  - {fileID: 1919664988}
+  m_Father: {fileID: 1188393853}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1483463993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483463991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f05e913280e7923418860d16b1a12c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueStart:
+  - {fileID: 636347441}
+  - {fileID: 1919664989}
+  rarity: 3
 --- !u!1 &1486147614
 GameObject:
   m_ObjectHideFlags: 0
@@ -30777,6 +31980,63 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Decent doesnt mean perfect !
   nextNode: {fileID: 1948129832}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &1522183688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1522183689}
+  - component: {fileID: 1522183690}
+  m_Layer: 0
+  m_Name: followUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1522183689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522183688}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1793449120}
+  - {fileID: 1580062796}
+  - {fileID: 991166017}
+  m_Father: {fileID: 280298817}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1522183690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1522183688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Good morning Boss, what did you want to discuss with me?
+  playerAnswer:
+  - {fileID: 1793449121}
+  - {fileID: 1580062797}
+  - {fileID: 991166018}
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
@@ -31837,6 +33097,59 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &1580062795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1580062796}
+  - component: {fileID: 1580062797}
+  m_Layer: 0
+  m_Name: neutral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1580062796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580062795}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 40035183}
+  m_Father: {fileID: 1522183689}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1580062797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1580062795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Some of your colleagues have reported to me that you\u2019re disrespecting
+    them. Get your head straight and focus on the project!"
+  nextNode: {fileID: 40035184}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1580198085
 GameObject:
   m_ObjectHideFlags: 0
@@ -32503,6 +33816,60 @@ MonoBehaviour:
   text: Yeah, but don't rest on your laurels !
   nextNode: {fileID: 0}
   finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &1622880822
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1622880823}
+  - component: {fileID: 1622880824}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1622880823
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622880822}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 451204079}
+  m_Father: {fileID: 817501699}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622880824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622880822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I didn't realize my actions were affecting others that way. I appreciate
+    your approach, and will change my behaviour.
+  playerAnswer:
+  - {fileID: 451204080}
+  finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
@@ -34296,6 +35663,57 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &1712287795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1712287796}
+  - component: {fileID: 1712287797}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1712287796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712287795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1350306001}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1712287797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712287795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: How can you ignore something like that? That's unacceptable!
+  playerAnswer: []
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 10
 --- !u!1 &1712421051
 GameObject:
   m_ObjectHideFlags: 0
@@ -35386,6 +36804,59 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &1793449119
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1793449120}
+  - component: {fileID: 1793449121}
+  m_Layer: 0
+  m_Name: positive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1793449120
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793449119}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2139695508}
+  m_Father: {fileID: 1522183689}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1793449121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1793449119}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Hey, I heard you made some controversial remarks. Please act professional
+    around your team!
+  nextNode: {fileID: 2139695509}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1793876837
 GameObject:
   m_ObjectHideFlags: 0
@@ -35787,6 +37258,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Ok, how about one hour per day?
   nextNode: {fileID: 207467546}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &1807402395
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1807402396}
+  - component: {fileID: 1807402397}
+  m_Layer: 0
+  m_Name: start
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1807402396
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807402395}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 912639525}
+  - {fileID: 469504278}
+  - {fileID: 1350306001}
+  m_Father: {fileID: 280298817}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1807402397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1807402395}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Someone in the team is making a lot of female coworkers feel unwell, you
+    have to intervene!
+  playerAnswer:
+  - {fileID: 912639526}
+  - {fileID: 469504279}
+  - {fileID: 1350306002}
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
@@ -36660,6 +38189,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Nice work right there !
   nextNode: {fileID: 233368587}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &1843498620
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1843498621}
+  - component: {fileID: 1843498622}
+  m_Layer: 0
+  m_Name: negative
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1843498621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843498620}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 629866130}
+  m_Father: {fileID: 1919664988}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1843498622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1843498620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Cut out this nonsense immediately ! We're here to work, not play petty games.
+    That was my last warning !
+  nextNode: {fileID: 629866131}
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
@@ -37908,6 +39490,60 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1905631425
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905631426}
+  - component: {fileID: 1905631427}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1905631426
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905631425}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1229901981}
+  m_Father: {fileID: 991166017}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1905631427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905631425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: You know how women are, always complaining and talking about other peoples
+    businesses.
+  playerAnswer:
+  - {fileID: 1229901982}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1908376681
 GameObject:
   m_ObjectHideFlags: 0
@@ -38123,6 +39759,63 @@ MonoBehaviour:
   playerAnswer:
   - {fileID: 148243423}
   - {fileID: 1782645850}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &1919664987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1919664988}
+  - component: {fileID: 1919664989}
+  m_Layer: 0
+  m_Name: followUp
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1919664988
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919664987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 817501699}
+  - {fileID: 2065113247}
+  - {fileID: 1843498621}
+  m_Father: {fileID: 1483463992}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1919664989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1919664987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Good morning Boss, what did you want to discuss with me?
+  playerAnswer:
+  - {fileID: 817501700}
+  - {fileID: 2065113248}
+  - {fileID: 1843498622}
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
@@ -40029,6 +41722,58 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &2000663594
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2000663595}
+  - component: {fileID: 2000663596}
+  m_Layer: 0
+  m_Name: negative
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2000663595
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000663594}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1311511900}
+  m_Father: {fileID: 636347440}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2000663596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000663594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: People have different personalities. They'll figure it out on their own.
+  nextNode: {fileID: 1311511901}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &2003219904
 GameObject:
   m_ObjectHideFlags: 0
@@ -41105,6 +42850,57 @@ MonoBehaviour:
   amountOfHoursChanging: 0
   stressLevelUp: 0
   amountOfStressChanging: 0
+--- !u!1 &2053692464
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2053692465}
+  - component: {fileID: 2053692466}
+  m_Layer: 0
+  m_Name: positive
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2053692465
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053692464}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2139695508}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2053692466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2053692464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Okay, I understand. Just make sure that you're more careful from now on
+  nextNode: {fileID: 0}
+  finalNode: 1
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 5
 --- !u!1 &2062150870
 GameObject:
   m_ObjectHideFlags: 0
@@ -41152,6 +42948,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Yeah, it was alright.
   nextNode: {fileID: 1849828106}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &2065113246
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2065113247}
+  - component: {fileID: 2065113248}
+  m_Layer: 0
+  m_Name: neutral
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2065113247
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065113246}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.9414673, y: -893.4054, z: -30.082823}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 161167691}
+  m_Father: {fileID: 1919664988}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2065113248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065113246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I've been informed about some tension in the team. I need you to stop bullying
+    your coworkers immediately !
+  nextNode: {fileID: 161167692}
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0
@@ -42247,6 +44096,60 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text: Keep up this standards !
   nextNode: {fileID: 1575180514}
+  finalNode: 0
+  workingHoursUp: 0
+  amountOfHoursChanging: 0
+  stressLevelUp: 0
+  amountOfStressChanging: 0
+--- !u!1 &2139695507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2139695508}
+  - component: {fileID: 2139695509}
+  m_Layer: 0
+  m_Name: employeeResponse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2139695508
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139695507}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2053692465}
+  m_Father: {fileID: 1793449120}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2139695509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2139695507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: I didn't mean to, I am very sorry I was just trying to be funny i didnt know
+    that's how they felt about it.
+  playerAnswer:
+  - {fileID: 2053692466}
   finalNode: 0
   workingHoursUp: 0
   amountOfHoursChanging: 0

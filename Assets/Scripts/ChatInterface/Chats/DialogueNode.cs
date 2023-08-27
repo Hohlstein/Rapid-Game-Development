@@ -24,7 +24,6 @@ public class DialogueNode : MonoBehaviour {
 
     void Start()
     {
-        DontDestroyOnLoad(gameObject);
     }
 
     void Update() {

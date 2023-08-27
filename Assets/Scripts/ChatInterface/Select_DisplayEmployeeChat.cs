@@ -75,6 +75,8 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject chooseOptionbarParent;
     public TextMeshProUGUI chooseOptionbar;
 
+    private bool problemDialogueFinishedThisWeek;
+
     public Rng rng;
     
     //Finds HiredEmployeeList and deactivates all fields that shouldnt be seen yet
@@ -104,6 +106,8 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         answeredEmployee_3 = false;
         answeredEmployee_4 = false;
         totalHours.GetComponentInChildren<TextMeshProUGUI>().text = "";
+
+        problemDialogueFinishedThisWeek = false;
         
     }
 
@@ -306,7 +310,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 1 chat panel, also displays the first option in your send bar
     private void recieveMessage_1() {
         answeredAmount_1=0;
-        rng.makeProblemCharacter(Hired_Employee_Objects[0]);
+        if(problemDialogueFinishedThisWeek == false) {
+            rng.makeProblemCharacter(Hired_Employee_Objects[0]);
+        }
         dialogue_1= rng.getRandomDialogueOption(Hired_Employee_Objects[0]); 
         messageRecieved_1 = true;
         GameObject recievedText_1 = Instantiate(recievedPrefab, chatHolder_1.transform);
@@ -323,7 +329,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 2 chat panel, also displays the first option in your send bar
     private void recieveMessage_2() {
         answeredAmount_2=0;
-        rng.makeProblemCharacter(Hired_Employee_Objects[1]);
+        if(problemDialogueFinishedThisWeek == false) {
+            rng.makeProblemCharacter(Hired_Employee_Objects[1]);
+        }
         dialogue_2 = rng.getRandomDialogueOption(Hired_Employee_Objects[1]); 
         messageRecieved_2 = true;
         GameObject recievedText_2 = Instantiate(recievedPrefab, chatHolder_2.transform);
@@ -340,7 +348,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 3 chat panel, also displays the first option in your send bar
     private void recieveMessage_3() {
         answeredAmount_3=0;
-        rng.makeProblemCharacter(Hired_Employee_Objects[2]);
+        if(problemDialogueFinishedThisWeek == false) {
+            rng.makeProblemCharacter(Hired_Employee_Objects[2]);
+        }
         dialogue_3 = rng.getRandomDialogueOption(Hired_Employee_Objects[2]); 
         messageRecieved_3 = true;
         GameObject recievedText_3 = Instantiate(recievedPrefab, chatHolder_3.transform);
@@ -357,7 +367,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 4 chat panel, also displays the first option in your send bar
     private void recieveMessage_4() {
         answeredAmount_4=0;
-        rng.makeProblemCharacter(Hired_Employee_Objects[3]);
+        if(problemDialogueFinishedThisWeek == false) {
+            rng.makeProblemCharacter(Hired_Employee_Objects[3]);
+        }
         dialogue_4 = rng.getRandomDialogueOption(Hired_Employee_Objects[3]); 
         messageRecieved_4 = true;
         GameObject recievedText_4 = Instantiate(recievedPrefab, chatHolder_4.transform);
@@ -896,5 +908,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 }
             }
         }
+    }
+
+    public void setProblemDialogueFinishedThisWeek (bool value) {
+        problemDialogueFinishedThisWeek = value;
     }
 }
