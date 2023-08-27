@@ -137,10 +137,6 @@ public class WeekStartAnimation : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Debug.Log("weeks: " + currentNumberOfWeeks);
         Debug.Log("Deadline: "+deadlineNumberOfWeeks);
-        if (currentNumberOfWeeks >= deadlineNumberOfWeeks) {
-            SceneManagement.changeScene("Endscreen");
-            yield break;
-        }
         SceneManagement.changeScene("Chat");
     }
 
