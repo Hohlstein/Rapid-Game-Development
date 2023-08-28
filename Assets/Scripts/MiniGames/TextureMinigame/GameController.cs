@@ -120,13 +120,18 @@ public class GameController : MonoBehaviour
     }
     
     void CheckIfGameIsFinished() {
+        string result_message = "No message";
         countCorrectGuesses++;
         Debug.Log("This is correct guess number" + countCorrectGuesses);
         if(countCorrectGuesses == gameGuesses) {
             Debug.Log("Game Finished");
             Debug.Log("It took you" + countGuesses + "many guess(es) to finish the game");
             int result_score = Mathf.RoundToInt((timer.DisplaySeconds/timer.Seconds)*100);
-            string result_message = "No message here.";
+            if (result_score > 1.5) {
+                result_message = "Good job! The game is looking better than ever!";
+            } else {
+                result_message = "The visuals of the game could look a little bit better. Better luck next time!";
+            }
             minigame_ender.EndNow(result_score,result_message,"GraphicDesign");
         }
     }
