@@ -146,10 +146,10 @@ public class GameController : MonoBehaviour
 
     private void SetSamplesAndTimer(int level){
         if (level == 1){
-            timer_seconds = 10;
+            timer_seconds = 140;
         }
         if (level == 2) {
-            timer_seconds = 120;
+            timer_seconds = 100;
         }
         if (level == 3){
             timer_seconds = 50;

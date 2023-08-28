@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 12
   image: {fileID: 1358662372}
 --- !u!114 &1358662372
 MonoBehaviour:
@@ -1265,7 +1265,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 12
   image: {fileID: 1443840159}
 --- !u!114 &1443840159
 MonoBehaviour:
@@ -1602,7 +1602,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 12
   image: {fileID: 1741835230}
 --- !u!114 &1741835230
 MonoBehaviour:
@@ -1898,7 +1898,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 0.1}
+  m_AnchoredPosition: {x: -5, y: 0.05}
   m_SizeDelta: {x: 10, y: 0.3}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1963803766
@@ -1915,7 +1915,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Current_val: 0
   Target_val: 0
-  friction: 75
+  friction: 12
   image: {fileID: 1963803767}
 --- !u!114 &1963803767
 MonoBehaviour:
