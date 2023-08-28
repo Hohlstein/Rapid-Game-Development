@@ -98,7 +98,10 @@ public class Rng : MonoBehaviour{
         DialogueTreeRoot selectedDialogue = null;
         string lastPlayedMiniGame = PlayerPrefs.GetString("LastMinigame");
         float miniGameBoost = PlayerPrefs.GetFloat("MiniGameBoost");
-        if(lastPlayedMiniGame == "coding"){
+        if(lastPlayedMiniGame == "special"){
+            return chooseRandomRarityDialogue(getRandomRarity());
+        }else{
+            if(lastPlayedMiniGame == "coding"){
             if(miniGameBoost <= 1.33){
                 if(employee.getCodingSkill() < skillThreshold){
                     selectedDialogue = miniGameDialoguesCoding[2];
@@ -209,7 +212,9 @@ public class Rng : MonoBehaviour{
         }
         miniGameDialogueTracker = true;
         return selectedDialogue;
-    } 
+        } 
+    }
+        
 
     //Chooses between all the possible randomized dialogueOptions 
     public DialogueNode getRandomDialogueOption(Mitarbeiter employee){
@@ -241,10 +246,8 @@ public class Rng : MonoBehaviour{
             }
         }else{
             if(randomNumber >=2 && weekTracker > 1 && miniGameDialogueTracker == false){
-                Debug.Log("LAST RESORT MiniGame DIALOGUE");
                 selectedDialogue = chooseRandomMiniGameDialogue(employee);
             }else{
-                Debug.Log("LAST RESORT RARITY DIALOGUE");
                 selectedDialogue = chooseRandomRarityDialogue(getRandomRarity());
             }
         }
