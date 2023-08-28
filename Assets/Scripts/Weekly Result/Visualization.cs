@@ -49,15 +49,35 @@ public class Visualisation : MonoBehaviour
 
         Debug.Log("FINAL GAME DESIGN VALUE: " + gamedesign);
 
-        CodingSkill.setTargetVal((float)Math.Round(coding));
-        GameDesignSkill.setTargetVal((float)Math.Round(gamedesign));
-        GraphicDesignSkill.setTargetVal((float)Math.Round(graphicdesign));
-        SoundDesignSkill.setTargetVal((float)Math.Round(sounddesign));
+        if(coding >= 100f) {
+        CodingSkill.setTargetVal((float)Math.Round(100f));
+        CodingValue.text = (Math.Round(100f)).ToString() + "%";
+        } else {
+            CodingSkill.setTargetVal((float)Math.Round(coding));
+            CodingValue.text = (Math.Round(coding)).ToString() + "%";
+        }
+        if (gamedesign >= 100f) {
+            GameDesignSkill.setTargetVal((float)Math.Round(100f));
+            GameDesignValue.text = (Math.Round(100f)).ToString() + "%";
+        } else {
+            GameDesignSkill.setTargetVal((float)Math.Round(gamedesign));
+            GameDesignValue.text = (Math.Round(gamedesign)).ToString() + "%";
+        }
+        if (graphicdesign >= 100f) {
+            GraphicDesignSkill.setTargetVal((float)Math.Round(100f));
+            GraphicDesignValue.text = (Math.Round(100f)).ToString() + "%";
 
-        CodingValue.text = (Math.Round(coding)).ToString() + "%";
-        GameDesignValue.text = (Math.Round(gamedesign)).ToString() + "%";
-        GraphicDesignValue.text = (Math.Round(graphicdesign)).ToString() + "%";
-        SoundDesignValue.text = (Math.Round(sounddesign)).ToString() + "%";
+        } else {
+            GraphicDesignSkill.setTargetVal((float)Math.Round(graphicdesign));
+            GraphicDesignValue.text = (Math.Round(graphicdesign)).ToString() + "%";
+        }
+        if (sounddesign >= 100f) {
+            SoundDesignSkill.setTargetVal((float)Math.Round(100f));
+            SoundDesignValue.text = (Math.Round(100f)).ToString() + "%";
+        } else {
+            SoundDesignSkill.setTargetVal((float)Math.Round(sounddesign));
+            SoundDesignValue.text = (Math.Round(sounddesign)).ToString() + "%";
+        }
 
         PlayerPrefs.SetFloat("codingvalue", coding);
         PlayerPrefs.SetFloat("gamedesignvalue", gamedesign);
@@ -194,47 +214,47 @@ public class Visualisation : MonoBehaviour
 
         if (PlayerPrefs.GetString("LastMinigame") == "coding") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMiniGame"));
-        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
-        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
-        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
-        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/1000;
+        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/400;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/400;
+        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/400;
+        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/400;
         
         
         }
 
         if (PlayerPrefs.GetString("LastMinigame") == "gamedesign") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));
-        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/1000;
-        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
-        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
-        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/1000;
+        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/400;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
+        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/400;
+        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/400;
         
         }
 
         if (PlayerPrefs.GetString("LastMinigame") == "graphicdesign") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));    
-        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/1000;
-        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
-        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
-        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/1000;
+        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/400;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/400;
+        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
+        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/400;
         
         }
 
         if (PlayerPrefs.GetString("LastMinigame") == "sounddesign") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));    
-        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/1000;
-        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/1000;
-        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/1000;
-        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/400;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/400;
+        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/400;
+        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
         
         }
 
         if (PlayerPrefs.GetString("LastMinigame") == "special") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));    
-        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
-        gamedesign = gamesaver + FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
-        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
-        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/1000;
+        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/400;
+        gamedesign = gamesaver + FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
+        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
+        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
         
         }
     }
