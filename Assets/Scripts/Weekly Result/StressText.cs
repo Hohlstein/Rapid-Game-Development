@@ -22,6 +22,7 @@ public class StressText : MonoBehaviour
         foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
             saver += mitarbeiter.getStressLevel();
         }
+        Debug.Log("STRESSLEVEL: "+ saver);
         return saver;
     }
 

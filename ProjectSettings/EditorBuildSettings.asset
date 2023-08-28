@@ -65,4 +65,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ScriptWriterMiniGame.unity
     guid: ed4bf357bf9810848bb75125d2403677
+  - enabled: 1
+    path: Assets/Scenes/Coffemachine.unity
+    guid: 596480450fd5f8842b1568782613b8c5
   m_configObjects: {}

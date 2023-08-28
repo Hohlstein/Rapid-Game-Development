@@ -106,9 +106,11 @@ public class GameController : MonoBehaviour
             UISounds.TriggerSound(3);
             CheckIfGameIsFinished();
         } else {
+            timer_seconds -= 5;
+            timer.SetRemainingSeconds(timer_seconds);
             yield return new WaitForSeconds (.5f);
             UISounds.TriggerSound(2);
-            yield return new WaitForSeconds (.5f);
+            yield return new WaitForSeconds (.1f);
             btns[firstGuessIndex].image.sprite = coveredTexture;
             btns[secondGuessIndex].image.sprite = coveredTexture;
         }
