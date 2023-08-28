@@ -78,7 +78,7 @@ public class Wheel_Rotator : MonoBehaviour
     private void SetRotationRandomly(){
         Quaternion currentRotation = transform.rotation;
         System.Random random = new System.Random();
-        int newZRotation = random.Next(1, 360*5);
+        int newZRotation = random.Next(1, 321*5);
         Quaternion newRotation = Quaternion.Euler(currentRotation.eulerAngles.x, currentRotation.eulerAngles.y, newZRotation);
         transform.rotation = newRotation;
     }
@@ -117,7 +117,7 @@ public class Wheel_Rotator : MonoBehaviour
             has_been_turned = true;
             //Das Rad wird angestuppst, mit einer zufälligen Rotationskraft. Hierdurch wird das Ergebnis nochmals zufällig gemacht, nachdem es bereits zu Beginn auf einen
             //zufälligen Ausgangswinkel gedreht wurde.
-            int randomInt = Random.Range(400, 800);
+            int randomInt = Random.Range(372, 1111);
             changeRotationSpeed(randomInt);
             moving = true;
             StartDrumRoll();
@@ -129,7 +129,7 @@ public class Wheel_Rotator : MonoBehaviour
         //Das Rad muss mit der Zeit seine Rotationskraft verlieren. Außerdem wird überprüft, ob das Rad bereits beinahe angehalten hat (rotationSpeed.z < 2.)
         //Falls ja, wird es ganz angehalten, da bei so niedriger Rotationsgeschwindigkeit sowieso kaum noch eine Bewegung wahrgenommen wird.
         rotationSpeed = rotationSpeed*friction;
-        if (rotationSpeed.z < 8){
+        if (rotationSpeed.z < 5){
             rotationSpeed.z = 0;
             moving = false;
         }
@@ -145,7 +145,7 @@ public class Wheel_Rotator : MonoBehaviour
             if (haptic_clicked == false){
                 haptic_clicked = true;
                 audioplayer.Play();
-                changeRotationSpeed(-10);
+                changeRotationSpeed(Random.Range(-3, -5));
                 triangle.flip(rotationSpeed.z);
 
             }

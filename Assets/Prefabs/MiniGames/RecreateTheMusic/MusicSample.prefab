@@ -155,7 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9dea5baf2836f424189de565a460f04a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  friction: 75
+  friction: 16
   freeze: 1
 --- !u!114 &-1045648654567541307
 MonoBehaviour:
