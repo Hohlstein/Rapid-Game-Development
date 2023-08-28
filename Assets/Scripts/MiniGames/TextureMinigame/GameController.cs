@@ -108,6 +108,7 @@ public class GameController : MonoBehaviour
         } else {
             timer_seconds -= 5;
             timer.SetRemainingSeconds(timer_seconds);
+            timer.Unfreeze();
             yield return new WaitForSeconds (.5f);
             UISounds.TriggerSound(2);
             yield return new WaitForSeconds (.1f);
