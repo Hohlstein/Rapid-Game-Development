@@ -224,7 +224,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &19719346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,7 +1188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Hoping for a fix soon.
+  text: Alright. Then see it done.
   nextNode: {fileID: 0}
   finalNode: 1
   workingHoursUp: 0
@@ -1973,8 +1973,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 5
 --- !u!1 &88807386
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,7 +2075,7 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
+  stressLevelUp: 1
   amountOfStressChanging: 5
 --- !u!1 &92928087
 GameObject:
@@ -2423,7 +2423,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &108103015
 GameObject:
   m_ObjectHideFlags: 0
@@ -2674,7 +2674,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &119884736
 GameObject:
   m_ObjectHideFlags: 0
@@ -3364,7 +3364,7 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
+  stressLevelUp: 1
   amountOfStressChanging: 5
 --- !u!1 &144079630
 GameObject:
@@ -3519,7 +3519,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 5
+  amountOfStressChanging: 10
 --- !u!1 &151257846
 GameObject:
   m_ObjectHideFlags: 0
@@ -4614,7 +4614,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 0
+  amountOfStressChanging: 2
 --- !u!1 &199883486
 GameObject:
   m_ObjectHideFlags: 0
@@ -5045,7 +5045,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &210939499
 GameObject:
   m_ObjectHideFlags: 0
@@ -5096,7 +5096,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &212482472
 GameObject:
   m_ObjectHideFlags: 0
@@ -5824,8 +5824,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 5
+  stressLevelUp: 1
+  amountOfStressChanging: 10
 --- !u!1 &260668090
 GameObject:
   m_ObjectHideFlags: 0
@@ -5875,8 +5875,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 10
 --- !u!1 &261823513
 GameObject:
   m_ObjectHideFlags: 0
@@ -5979,8 +5979,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 1
-  amountOfStressChanging: 5
+  stressLevelUp: 0
+  amountOfStressChanging: 2
 --- !u!1 &263511161
 GameObject:
   m_ObjectHideFlags: 0
@@ -6245,7 +6245,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &272284555
 GameObject:
   m_ObjectHideFlags: 0
@@ -6605,7 +6605,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 0
 --- !u!1 &290797695
 GameObject:
   m_ObjectHideFlags: 0
@@ -6792,8 +6792,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 1
-  amountOfStressChanging: 5
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &291943101
 GameObject:
   m_ObjectHideFlags: 0
@@ -6838,7 +6838,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: I am happy to hear that!
+  text: I hope so.
   nextNode: {fileID: 0}
   finalNode: 1
   workingHoursUp: 0
@@ -7000,7 +7000,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 0
 --- !u!1 &298988512
 GameObject:
   m_ObjectHideFlags: 0
@@ -7493,7 +7493,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &313696390
 GameObject:
   m_ObjectHideFlags: 0
@@ -7728,8 +7728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Turn that frown upside down! Of course that story is going nowhere with an
-    attitude like that.
+  text: Turn that frown upside down! You'll be the best of the best!
   nextNode: {fileID: 0}
   finalNode: 1
   workingHoursUp: 0
@@ -7785,8 +7784,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 5
+  stressLevelUp: 1
+  amountOfStressChanging: 15
 --- !u!1 &332165402
 GameObject:
   m_ObjectHideFlags: 0
@@ -8247,8 +8246,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 1
-  amountOfStressChanging: 5
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &348115369
 GameObject:
   m_ObjectHideFlags: 0
@@ -8298,8 +8297,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 5
 --- !u!1 &350704551
 GameObject:
   m_ObjectHideFlags: 0
@@ -8564,7 +8563,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &372375132
 GameObject:
   m_ObjectHideFlags: 0
@@ -8720,7 +8719,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &384023185
 GameObject:
   m_ObjectHideFlags: 0
@@ -8918,7 +8917,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &395606730
 GameObject:
   m_ObjectHideFlags: 0
@@ -9182,7 +9181,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &408832530
 GameObject:
   m_ObjectHideFlags: 0
@@ -9531,8 +9530,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 10
 --- !u!1 &422019040
 GameObject:
   m_ObjectHideFlags: 0
@@ -9834,12 +9833,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Yes, unfortunately it is.
+  text: I can't put you at risk like that.
   nextNode: {fileID: 0}
-  finalNode: 0
+  finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 1
+  stressLevelUp: 0
   amountOfStressChanging: 5
 --- !u!1 &431869083
 GameObject:
@@ -10466,7 +10465,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &458447490
 GameObject:
   m_ObjectHideFlags: 0
@@ -10706,7 +10705,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 0
+  amountOfStressChanging: 3
 --- !u!1 &470890134
 GameObject:
   m_ObjectHideFlags: 0
@@ -11574,8 +11573,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 5
+  stressLevelUp: 1
+  amountOfStressChanging: 10
 --- !u!1 &524289856
 GameObject:
   m_ObjectHideFlags: 0
@@ -12003,7 +12002,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &543003939
 GameObject:
   m_ObjectHideFlags: 0
@@ -12105,7 +12104,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &546542961
 GameObject:
   m_ObjectHideFlags: 0
@@ -13142,7 +13141,7 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
+  stressLevelUp: 1
   amountOfStressChanging: 5
 --- !u!1 &616811988
 GameObject:
@@ -13280,7 +13279,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 3
 --- !u!1 &622331610
 GameObject:
   m_ObjectHideFlags: 0
@@ -13331,7 +13330,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &624108931
 GameObject:
   m_ObjectHideFlags: 0
@@ -13379,7 +13378,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Hey boss! I want to go work a bit longer this week, since I need more money.
+  text: Hey boss! If necessary I can work a bit longer than usual.
   playerAnswer:
   - {fileID: 1631587531}
   - {fileID: 1051929868}
@@ -14755,7 +14754,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 0
+  amountOfStressChanging: 2
 --- !u!1 &709649377
 GameObject:
   m_ObjectHideFlags: 0
@@ -14946,7 +14945,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 0
 --- !u!1 &727684513
 GameObject:
   m_ObjectHideFlags: 0
@@ -15337,7 +15336,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &744317419
 GameObject:
   m_ObjectHideFlags: 0
@@ -15388,7 +15387,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &745056446
 GameObject:
   m_ObjectHideFlags: 0
@@ -16196,7 +16195,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &768076479
 GameObject:
   m_ObjectHideFlags: 0
@@ -16506,8 +16505,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 1
-  amountOfStressChanging: 5
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &776217170
 GameObject:
   m_ObjectHideFlags: 0
@@ -17644,8 +17643,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 5
 --- !u!1 &840106446
 GameObject:
   m_ObjectHideFlags: 0
@@ -18215,7 +18214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Curb that arrogance of yours! The job isn't finished just yet.
+  text: Curb that arrogance of yours a bit. The job isn't finished just yet.
   nextNode: {fileID: 0}
   finalNode: 1
   workingHoursUp: 0
@@ -18545,7 +18544,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 0
 --- !u!1 &887900455
 GameObject:
   m_ObjectHideFlags: 0
@@ -18595,8 +18594,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 5
+  stressLevelUp: 1
+  amountOfStressChanging: 2
 --- !u!1 &894438278
 GameObject:
   m_ObjectHideFlags: 0
@@ -19162,8 +19161,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 2
 --- !u!1 &924496522
 GameObject:
   m_ObjectHideFlags: 0
@@ -19372,7 +19371,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 2
+  amountOfStressChanging: 0
 --- !u!1 &933252307
 GameObject:
   m_ObjectHideFlags: 0
@@ -19686,7 +19685,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &974483334
 GameObject:
   m_ObjectHideFlags: 0
@@ -19888,7 +19887,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Glad to hear everything is going well.
+  text: Glad to hear everything is going alright.
   nextNode: {fileID: 905553965}
   finalNode: 0
   workingHoursUp: 0
@@ -21765,7 +21764,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 1
 --- !u!1 &1038144928
 GameObject:
   m_ObjectHideFlags: 0
@@ -22134,7 +22133,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: That's not possible, as we don't have the budget for your overtime.
+  text: I'm not sure. It would put you under a lot of stress.
   nextNode: {fileID: 1084261090}
   finalNode: 0
   workingHoursUp: 0
@@ -22191,7 +22190,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &1055555427
 GameObject:
   m_ObjectHideFlags: 0
@@ -23102,8 +23101,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 2
 --- !u!1 &1090594798
 GameObject:
   m_ObjectHideFlags: 0
@@ -24104,7 +24103,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &1141830079
 GameObject:
   m_ObjectHideFlags: 0
@@ -24206,7 +24205,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 3
 --- !u!1 &1144957391
 GameObject:
   m_ObjectHideFlags: 0
@@ -24942,7 +24941,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &1172175984
 GameObject:
   m_ObjectHideFlags: 0
@@ -25095,7 +25094,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &1177817854
 GameObject:
   m_ObjectHideFlags: 0
@@ -25753,7 +25752,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 10
+  amountOfStressChanging: 15
 --- !u!1 &1211166264
 GameObject:
   m_ObjectHideFlags: 0
@@ -25804,7 +25803,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 0
 --- !u!1 &1216434485
 GameObject:
   m_ObjectHideFlags: 0
@@ -26306,7 +26305,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 10
+  amountOfStressChanging: 5
 --- !u!1 &1227574301
 GameObject:
   m_ObjectHideFlags: 0
@@ -26461,7 +26460,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 10
+  amountOfStressChanging: 15
 --- !u!1 &1233615880
 GameObject:
   m_ObjectHideFlags: 0
@@ -26890,7 +26889,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 10
+  amountOfStressChanging: 5
 --- !u!1 &1260799777
 GameObject:
   m_ObjectHideFlags: 0
@@ -26940,8 +26939,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 2
 --- !u!1 &1262915132
 GameObject:
   m_ObjectHideFlags: 0
@@ -27048,7 +27047,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &1264265260
 GameObject:
   m_ObjectHideFlags: 0
@@ -28265,7 +28264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Thats not very helpful...
+  text: I did not expect you to say something like that, boss!
   playerAnswer: []
   finalNode: 1
   workingHoursUp: 0
@@ -29134,8 +29133,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Sorry, for now it is the best option to work as a team. I don't need a fight
-    between you all right now.
+  text: I don't need a fight between you all right now, but I guess someone has to
+    solve this hinderance.
   nextNode: {fileID: 1712287797}
   finalNode: 0
   workingHoursUp: 0
@@ -29636,7 +29635,7 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
+  stressLevelUp: 1
   amountOfStressChanging: 5
 --- !u!114 &1390115877 stripped
 MonoBehaviour:
@@ -29934,7 +29933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: With an attitude like that you won't get anything done! Stay positive!
+  text: Stay positive! We got this!
   nextNode: {fileID: 0}
   finalNode: 1
   workingHoursUp: 0
@@ -30231,7 +30230,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &1407428265
 GameObject:
   m_ObjectHideFlags: 0
@@ -30489,7 +30488,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &1421288614
 GameObject:
   m_ObjectHideFlags: 0
@@ -30755,7 +30754,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 2
+  amountOfStressChanging: 1
 --- !u!1 &1443435413
 GameObject:
   m_ObjectHideFlags: 0
@@ -31108,7 +31107,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &1460847947
 GameObject:
   m_ObjectHideFlags: 0
@@ -31348,7 +31347,7 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
+  stressLevelUp: 1
   amountOfStressChanging: 10
 --- !u!1 &1469647186
 GameObject:
@@ -31561,7 +31560,7 @@ MonoBehaviour:
   workingHoursUp: 1
   amountOfHoursChanging: 8
   stressLevelUp: 1
-  amountOfStressChanging: 5
+  amountOfStressChanging: 3
 --- !u!1 &1483463991
 GameObject:
   m_ObjectHideFlags: 0
@@ -32570,7 +32569,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &1538393723
 GameObject:
   m_ObjectHideFlags: 0
@@ -32927,7 +32926,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 5
+  amountOfStressChanging: 15
 --- !u!1 &1554048427
 GameObject:
   m_ObjectHideFlags: 0
@@ -33285,7 +33284,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &1575083282
 GameObject:
   m_ObjectHideFlags: 0
@@ -33591,7 +33590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: Okay, but I think everybody acts differently in a tough situation like this
-    one. You could have solved this problem on your own anyway.
+    one. I'm surprised you need me for this.
   nextNode: {fileID: 1468598750}
   finalNode: 0
   workingHoursUp: 0
@@ -33845,7 +33844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Thanks a lot! You are the best!
+  text: You got it, boss!
   playerAnswer: []
   finalNode: 1
   workingHoursUp: 1
@@ -33954,8 +33953,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 1
-  amountOfStressChanging: 5
+  stressLevelUp: 0
+  amountOfStressChanging: 0
 --- !u!1 &1610230781
 GameObject:
   m_ObjectHideFlags: 0
@@ -34263,7 +34262,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 0
+  amountOfStressChanging: 1
 --- !u!1 &1628356369
 GameObject:
   m_ObjectHideFlags: 0
@@ -34731,7 +34730,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 10
+  amountOfStressChanging: 15
 --- !u!1 &1642599648
 GameObject:
   m_ObjectHideFlags: 0
@@ -35251,7 +35250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Alright. Then see it done.
+  text: Hoping for a fix soon.
   nextNode: {fileID: 0}
   finalNode: 1
   workingHoursUp: 0
@@ -35360,7 +35359,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &1681042991
 GameObject:
   m_ObjectHideFlags: 0
@@ -35564,8 +35563,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 5
 --- !u!1 &1693597767
 GameObject:
   m_ObjectHideFlags: 0
@@ -35955,7 +35954,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 0
+  amountOfStressChanging: 2
 --- !u!1 &1712287795
 GameObject:
   m_ObjectHideFlags: 0
@@ -36000,7 +35999,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: How can you ignore something like that? That's unacceptable!
+  text: How can you say something like that? That's unacceptable!
   playerAnswer: []
   finalNode: 1
   workingHoursUp: 0
@@ -36351,7 +36350,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 0
 --- !u!1 &1731801028
 GameObject:
   m_ObjectHideFlags: 0
@@ -36436,7 +36435,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 3
 --- !u!1 &1741960408
 GameObject:
   m_ObjectHideFlags: 0
@@ -36539,7 +36538,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &1759179533
 GameObject:
   m_ObjectHideFlags: 0
@@ -37402,7 +37401,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 5
+  amountOfStressChanging: 10
 --- !u!1 &1802167489
 GameObject:
   m_ObjectHideFlags: 0
@@ -37453,7 +37452,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 3
 --- !u!1 &1804642388
 GameObject:
   m_ObjectHideFlags: 0
@@ -37503,7 +37502,7 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
+  stressLevelUp: 1
   amountOfStressChanging: 5
 --- !u!1 &1807400297
 GameObject:
@@ -38333,7 +38332,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &1837862774
 GameObject:
   m_ObjectHideFlags: 0
@@ -38378,7 +38377,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Always remember to have some standards.
+  text: Part of the job. You have to reach those standards.
   nextNode: {fileID: 0}
   finalNode: 1
   workingHoursUp: 0
@@ -39234,7 +39233,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 10
+  amountOfStressChanging: 5
 --- !u!1 &1884564510
 GameObject:
   m_ObjectHideFlags: 0
@@ -41250,8 +41249,8 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
-  amountOfStressChanging: 0
+  stressLevelUp: 1
+  amountOfStressChanging: 5
 --- !u!1 &1954233634
 GameObject:
   m_ObjectHideFlags: 0
@@ -41301,7 +41300,7 @@ MonoBehaviour:
   finalNode: 1
   workingHoursUp: 0
   amountOfHoursChanging: 0
-  stressLevelUp: 0
+  stressLevelUp: 1
   amountOfStressChanging: 5
 --- !u!1 &1954784987
 GameObject:
@@ -41404,7 +41403,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 3
 --- !u!1 &1962235825
 GameObject:
   m_ObjectHideFlags: 0
@@ -42121,8 +42120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86798b269ac931c49bb9f9b1618fff15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: People have different personalities. You're adults, so you guys can figure
-    it out on your own.
+  text: People have different personalities. You're adults, yet I have to do this
+    for you all.
   nextNode: {fileID: 1311511901}
   finalNode: 0
   workingHoursUp: 0
@@ -42231,7 +42230,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 1
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &2008661430
 GameObject:
   m_ObjectHideFlags: 0
@@ -42789,7 +42788,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &2023010707
 GameObject:
   m_ObjectHideFlags: 0
@@ -43256,7 +43255,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 5
+  amountOfStressChanging: 2
 --- !u!1 &2062150870
 GameObject:
   m_ObjectHideFlags: 0
@@ -43412,7 +43411,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &2072609952
 GameObject:
   m_ObjectHideFlags: 0
@@ -43667,7 +43666,7 @@ MonoBehaviour:
   workingHoursUp: 0
   amountOfHoursChanging: 0
   stressLevelUp: 0
-  amountOfStressChanging: 10
+  amountOfStressChanging: 2
 --- !u!1 &2082608194
 GameObject:
   m_ObjectHideFlags: 0

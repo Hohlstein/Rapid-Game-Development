@@ -214,47 +214,47 @@ public class Visualisation : MonoBehaviour
 
         if (PlayerPrefs.GetString("LastMinigame") == "coding") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMiniGame"));
-        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/400;
-        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/400;
-        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/400;
-        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/400;
+        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/230;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/230;
+        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/230;
+        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/230;
         
         
         }
 
         if (PlayerPrefs.GetString("LastMinigame") == "gamedesign") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));
-        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/400;
-        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
-        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/400;
-        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/400;
+        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/230;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/230;
+        graphicdesign = graphicsaver +  FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/230;
+        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/230;
         
         }
 
         if (PlayerPrefs.GetString("LastMinigame") == "graphicdesign") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));    
-        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/400;
-        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/400;
-        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
-        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/400;
+        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/230;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/230;
+        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/230;
+        sounddesign = soundsaver + FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), 1f)/230;
         
         }
 
         if (PlayerPrefs.GetString("LastMinigame") == "sounddesign") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));    
-        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/400;
-        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/400;
-        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/400;
-        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
+        coding = codesaver +  FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , 1f)/230;
+        gamedesign = gamesaver +  FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), 1f)/230;
+        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), 1f)/230;
+        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/230;
         
         }
 
         if (PlayerPrefs.GetString("LastMinigame") == "special") {
         Debug.Log("This is bonus " + PlayerPrefs.GetString("LastMinigame"));    
-        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost"))/400;
-        gamedesign = gamesaver + FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
-        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
-        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost"))/400;
+        coding = codesaver + FinalCalculation(CalculateCodingTime(), CalculateCodeWork() , PlayerPrefs.GetFloat("MiniGameBoost")*2)/230;
+        gamedesign = gamesaver + FinalCalculation(CalculateGameDesignTime(), CalculateGameWork(), PlayerPrefs.GetFloat("MiniGameBoost")*2)/230;
+        graphicdesign = graphicsaver + FinalCalculation(CalculateGraphicDesignTime(), CalculateGraphicWork(), PlayerPrefs.GetFloat("MiniGameBoost")*2)/230;
+        sounddesign = soundsaver +  FinalCalculation(CalculateSoundDesignTime(), CalculateSoundWork(), PlayerPrefs.GetFloat("MiniGameBoost")*2)/230;
         
         }
     }

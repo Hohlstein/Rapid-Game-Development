@@ -10,6 +10,7 @@ public class ChooseResult : MonoBehaviour
     public Sprite TwoStar;
     public Sprite ThreeStar;
     public Sprite GameOver;
+    public Sprite SecretEnding;
 
     public bool gameovertime = false;
 
@@ -27,23 +28,28 @@ public class ChooseResult : MonoBehaviour
             return;
         }
 
-        if (finalProgress < 400 && finalStress > 15) {
+        if (finalProgress < 300 && finalStress > 30) {
             GetComponent<Image>().sprite = NoStar;
             return;
         }
 
-        if (finalStress > 15) {
+        if (finalStress > 20) {
             GetComponent<Image>().sprite = OneStar;
             return;
         }
 
-        if (finalStress < 15) {
+        if (finalStress < 20 && finalProgress < 300) {
             GetComponent<Image>().sprite = TwoStar;
             return;
         }
 
-        if (finalProgress >= 400 && finalStress < 15) {
+        if (finalProgress >= 300 && finalStress < 20) {
             GetComponent<Image>().sprite = ThreeStar;
+            return;
+        }
+
+        if (finalProgress >= 400 && finalStress < 20) {
+            GetComponent<Image>().sprite = SecretEnding;
             return;
         }
 

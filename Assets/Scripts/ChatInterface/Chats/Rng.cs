@@ -360,7 +360,7 @@ public class Rng : MonoBehaviour{
         }
         if(weekTracker > 1) {
             if(checkForFollowUpProblemEmployee == false){
-                int randomNumber = UnityEngine.Random.Range(1, 2); 
+                int randomNumber = UnityEngine.Random.Range(1, 30); 
                 if(existingProblemCharacterTracker == 0){
                     if(randomNumber == 1) 
                     employee.setProblemCharacter(1);

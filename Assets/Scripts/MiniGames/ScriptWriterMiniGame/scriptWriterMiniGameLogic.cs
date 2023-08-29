@@ -17,12 +17,13 @@ public class scriptWriterMiniGameLogic : MonoBehaviour
     {
     switch(gameObject.GetComponent<DifficultyManager>().GetLevelInt()){
             case 1:
+            timer_seconds = 300;
             break;
             case 2:
-            timer_seconds = 45;
+            timer_seconds = 120;
             break;
             case 3:
-            timer_seconds = 30;
+            timer_seconds = 60;
             break;
             default:
             break;
@@ -54,7 +55,7 @@ public class scriptWriterMiniGameLogic : MonoBehaviour
 
     public void calculatePoints(){
            if(characterNumber < 10){
-                this.GetComponent<EndMiniGame>().EndNow(0, "Good Job", "gamedesign");
+                this.GetComponent<EndMiniGame>().EndNow(0, "Not the very model of a modern script writer.", "gamedesign");
             }
             else if(characterNumber <50){
                 this.GetComponent<EndMiniGame>().EndNow(25, "Good Job!", "gamedesign");

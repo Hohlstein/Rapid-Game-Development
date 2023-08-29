@@ -64,7 +64,7 @@ public class LuckResultDisplay : MonoBehaviour
         List<(string,string,string)> SoundDesignGames = new List<(string,string,string)>();
         SoundDesignGames.Add(("Recreate the Music","Use the playback button to listen to the music you must recreate.\n\nYou're given samples which must be placed into the box at the bottom, in their correct order. You can listen to samples by clicking on them.\n\nWhen you're done and you think your order is correct, click the confirmation button.","RecreateTheMusicMiniGame"));
         List<(string,string,string)> SpecialGames = new List<(string,string,string)>();
-        SpecialGames.Add(("Fix the coffee machine","The office coffee machine has some wires crossed!\nLook inside the machine and connect the correct wires to boost the productivity of your entire team!","CoffeMachineGame"));
+        SpecialGames.Add(("Fix the coffee machine","The office coffee machine has some wires crossed!\nLook inside the machine and connect the correct wires to boost the productivity of your entire team!","Coffemachine"));
 
         games.Add(Category.Coding,CodingGames);
         games.Add(Category.GameDesign,GameDesignGames);

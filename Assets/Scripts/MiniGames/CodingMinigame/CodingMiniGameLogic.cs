@@ -42,6 +42,12 @@ public class CodingMiniGameLogic : MonoBehaviour
     }
 
     public void test(int id){
+        if(id != neededId) {
+            timer_seconds -= 5;
+            timer.SetRemainingSeconds(timer_seconds);
+            timer.Unfreeze();
+
+        }
         if(id == neededId ){
             if(timer.GetRemainingSeconds() == "30" ||timer.GetRemainingSeconds() =="29"||timer.GetRemainingSeconds() =="28" )
             {
