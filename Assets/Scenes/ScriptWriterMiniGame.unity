@@ -1327,26 +1327,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'I am the very model of a modern major general,
-
-    I''ve information
-    vegetable, animal, and mineral,
-
-    I know the kings of England, and I quote
-    the fights historical
-
-    From Marathon to Waterloo, in order categorical;
-
-    I''m
-    very well acquainted, too, with matters mathematical,
-
-    I understand equations,
-    both the simple and quadratical,
-
-    About binomial theorem I''m teeming with
-    a lot o'' news,
-
-    With many cheerful facts about the square of the hypotenuse.'
+  m_text: I am the very model of a modern major general, I've information vegetable,
+    animal, and mineral, I know the kings of England, and I quote the fights historical.
+    From Marathon to Waterloo, in order categorical; I'm very well acquainted, too,
+    with matters mathematical, I understand equations, both the simple and quadratical.
+    About binomial theorem I'm teeming with a lot o' news. With many cheerful facts
+    about the square of the hypotenuse.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

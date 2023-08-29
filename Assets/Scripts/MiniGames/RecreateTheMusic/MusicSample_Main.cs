@@ -85,10 +85,10 @@ public class MusicSample_Main : MonoBehaviour
             //Falls die Instanz kein Sample Schatten ist, wird überprüft, ob das Sample bereits im Feld abgelegt wurde.
             if (hasBeenPlaced){
                 //Falls ja, muss das blockRaycasts Attribut im Falle dessen, dass sich der Mauscursor links vom Ergebnisfeld befinden, auf false gesetzt werden,
-                //sonst überschneidet sich die Hitbox des linkesten abgelegten Samples mit dem Playback Button.
+                //sonst überschneidet sich die Hitbox des linkesten abgelegten Samples mit dem Playback Button. Genau so ist es mit dem Confirm Button rechts.
                 Vector3 mousePosition = Input.mousePosition;
                 float mouseX = mousePosition.x;
-                if (mouseX < 365){
+                if (mouseX < 365 || mouseX > 1540){
                     canvasGroup.blocksRaycasts = false;
                 }
                 else {

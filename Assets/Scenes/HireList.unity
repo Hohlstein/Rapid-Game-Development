@@ -156,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: codingSkill
-      value: 100
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: workinghours
@@ -164,7 +164,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: gameDesignSkill
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: profile_picture
@@ -172,11 +172,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 3e45a361cb65b4944a494e617581afde, type: 3}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: soundDesignSkill
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: GraphicDesignSkill
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: relationshipStatus
@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: codingSkill
-      value: 30
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: workinghours
@@ -324,7 +324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: gameDesignSkill
-      value: 100
+      value: 40
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: profile_picture
@@ -332,11 +332,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: f177e44bf1da7f743bd9548494b56754, type: 3}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: soundDesignSkill
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: GraphicDesignSkill
-      value: 40
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: relationshipStatus
@@ -702,7 +702,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: codingSkill
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: workinghours
@@ -710,7 +710,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: gameDesignSkill
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: profile_picture
@@ -718,11 +718,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 1e4b18dbac8b0924f871c78218111cc2, type: 3}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: soundDesignSkill
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: GraphicDesignSkill
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: relationshipStatus
@@ -863,7 +863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: codingSkill
-      value: 60
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: workinghours
@@ -871,7 +871,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: gameDesignSkill
-      value: 60
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: profile_picture
@@ -879,7 +879,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: acf97cf4ee01e27428bb46cd91c15722, type: 3}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: soundDesignSkill
-      value: 50
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: GraphicDesignSkill
@@ -980,7 +980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: codingSkill
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: workinghours
@@ -988,7 +988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: gameDesignSkill
-      value: 40
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: profile_picture
@@ -996,11 +996,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 27835f08dfd20a84c8d139553764e855, type: 3}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: soundDesignSkill
-      value: 20
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: GraphicDesignSkill
-      value: 100
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: relationshipStatus
@@ -1937,7 +1937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: codingSkill
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: workinghours
@@ -1953,11 +1953,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 7c371dbb710248a4590d202f4fbf7256, type: 3}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: soundDesignSkill
-      value: 90
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: GraphicDesignSkill
-      value: 40
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: relationshipStatus
@@ -2053,7 +2053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: codingSkill
-      value: 70
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: workinghours
@@ -2061,7 +2061,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: gameDesignSkill
-      value: 20
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: profile_picture
@@ -2073,7 +2073,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: GraphicDesignSkill
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: relationshipStatus
@@ -2552,7 +2552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: codingSkill
-      value: 40
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: workinghours
@@ -2568,11 +2568,11 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: a67797c08e022b941a301de7e00b210c, type: 3}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: soundDesignSkill
-      value: 100
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: GraphicDesignSkill
-      value: 50
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1459272309858556678, guid: 05598813dcc1ff045899bf86af8a8273, type: 3}
       propertyPath: relationshipStatus

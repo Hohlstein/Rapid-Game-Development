@@ -15,6 +15,7 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject tutorialText;
 
     public Image selectedObject; //tracks currently selected sprite
+
     //Holders for the different sprites needed when selecting/deselecting
     public Sprite selectedSprite;
     public Sprite defaultSprite;
@@ -75,6 +76,8 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     public GameObject chooseOptionbarParent;
     public TextMeshProUGUI chooseOptionbar;
 
+    private bool problemDialogueFinishedThisWeek;
+
     public Rng rng;
     
     //Finds HiredEmployeeList and deactivates all fields that shouldnt be seen yet
@@ -104,6 +107,8 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
         answeredEmployee_3 = false;
         answeredEmployee_4 = false;
         totalHours.GetComponentInChildren<TextMeshProUGUI>().text = "";
+
+        problemDialogueFinishedThisWeek = false;
         
     }
 
@@ -172,7 +177,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
             totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[0].getWorkingHours()+"";
-            Debug.Log("HiredEmployeeObject_1 "+ Hired_Employee_Objects[0].getFirstName() + Hired_Employee_Objects[0].getLastName());
         }
         if(clickedObject.name == "Employee_2") {
             findName = clickedObject.transform.Find("employee_2_name");
@@ -180,7 +184,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
             totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[1].getWorkingHours()+"";
-            Debug.Log("HiredEmployeeObject_2"+ Hired_Employee_Objects[1].getFirstName() + Hired_Employee_Objects[1].getLastName() );
         }
         if(clickedObject.name == "Employee_3") {
             findName = clickedObject.transform.Find("employee_3_name");
@@ -188,7 +191,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
             totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[2].getWorkingHours()+"";
-            Debug.Log("HiredEmployeeObject_3 "+ Hired_Employee_Objects[2].getFirstName()+ Hired_Employee_Objects[2].getLastName());
         }
         if(clickedObject.name == "Employee_4") {
             findName = clickedObject.transform.Find("employee_4_name");
@@ -196,11 +198,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
             selectedEmployeeName.text = buttonText;
             chooseOptionbarParent.SetActive(true);
             totalHours.GetComponentInChildren<TextMeshProUGUI>().text ="Total Hours: "+ Hired_Employee_Objects[3].getWorkingHours()+"";
-            Debug.Log("HiredEmployeeObject_4 "+ Hired_Employee_Objects[3].getFirstName()+ Hired_Employee_Objects[3].getLastName());
         }
         
     }
-    //Bug: If answered then deselected and reselected answeredSprite isnt showing normal one is showing instead
     //Changes the sprite of the selected Employee 
     public void Selected(Image clickedObject) {
         chatScrollRect_1.SetActive(false);
@@ -310,6 +310,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 1 chat panel, also displays the first option in your send bar
     private void recieveMessage_1() {
         answeredAmount_1=0;
+        if(problemDialogueFinishedThisWeek == false) {
+            rng.makeProblemCharacter(Hired_Employee_Objects[0]);
+        }
         dialogue_1= rng.getRandomDialogueOption(Hired_Employee_Objects[0]); 
         messageRecieved_1 = true;
         GameObject recievedText_1 = Instantiate(recievedPrefab, chatHolder_1.transform);
@@ -326,6 +329,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 2 chat panel, also displays the first option in your send bar
     private void recieveMessage_2() {
         answeredAmount_2=0;
+        if(problemDialogueFinishedThisWeek == false) {
+            rng.makeProblemCharacter(Hired_Employee_Objects[1]);
+        }
         dialogue_2 = rng.getRandomDialogueOption(Hired_Employee_Objects[1]); 
         messageRecieved_2 = true;
         GameObject recievedText_2 = Instantiate(recievedPrefab, chatHolder_2.transform);
@@ -342,6 +348,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 3 chat panel, also displays the first option in your send bar
     private void recieveMessage_3() {
         answeredAmount_3=0;
+        if(problemDialogueFinishedThisWeek == false) {
+            rng.makeProblemCharacter(Hired_Employee_Objects[2]);
+        }
         dialogue_3 = rng.getRandomDialogueOption(Hired_Employee_Objects[2]); 
         messageRecieved_3 = true;
         GameObject recievedText_3 = Instantiate(recievedPrefab, chatHolder_3.transform);
@@ -358,6 +367,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
     //Sends the according message to employee 4 chat panel, also displays the first option in your send bar
     private void recieveMessage_4() {
         answeredAmount_4=0;
+        if(problemDialogueFinishedThisWeek == false) {
+            rng.makeProblemCharacter(Hired_Employee_Objects[3]);
+        }
         dialogue_4 = rng.getRandomDialogueOption(Hired_Employee_Objects[3]); 
         messageRecieved_4 = true;
         GameObject recievedText_4 = Instantiate(recievedPrefab, chatHolder_4.transform);
@@ -711,7 +723,6 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
 
     //Adds to or substracts from working hours of employees depending on getWorkingHoursUp() bool.
     //WorkingHoursUp bool and and AmountOfHoursChanging is defined when creating dialogue trees in editor
-    //!!!!!! Productivity and Relationship adjustments are NYI !!!!!!!
     private void adjustEmployeeValuesAfterPlayerResponse(){
         if(selectedObject.name == "Employee_1") {
             if(currentAnswers_1[answerIndex_1].getAmountOfHoursChanging() == 0){
@@ -896,5 +907,9 @@ public class Select_DisplayEmployeeChat : MonoBehaviour{
                 }
             }
         }
+    }
+
+    public void setProblemDialogueFinishedThisWeek (bool value) {
+        problemDialogueFinishedThisWeek = value;
     }
 }

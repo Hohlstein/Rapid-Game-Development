@@ -106,9 +106,12 @@ public class GameController : MonoBehaviour
             UISounds.TriggerSound(3);
             CheckIfGameIsFinished();
         } else {
+            timer_seconds -= 5;
+            timer.SetRemainingSeconds(timer_seconds);
+            timer.Unfreeze();
             yield return new WaitForSeconds (.5f);
             UISounds.TriggerSound(2);
-            yield return new WaitForSeconds (.5f);
+            yield return new WaitForSeconds (.1f);
             btns[firstGuessIndex].image.sprite = coveredTexture;
             btns[secondGuessIndex].image.sprite = coveredTexture;
         }
@@ -117,13 +120,18 @@ public class GameController : MonoBehaviour
     }
     
     void CheckIfGameIsFinished() {
+        string result_message = "No message";
         countCorrectGuesses++;
         Debug.Log("This is correct guess number" + countCorrectGuesses);
         if(countCorrectGuesses == gameGuesses) {
             Debug.Log("Game Finished");
             Debug.Log("It took you" + countGuesses + "many guess(es) to finish the game");
             int result_score = Mathf.RoundToInt((timer.DisplaySeconds/timer.Seconds)*100);
-            string result_message = "No message here.";
+            if (result_score > 1.5) {
+                result_message = "Good job! The game is looking better than ever!";
+            } else {
+                result_message = "The visuals of the game could look a little bit better. Better luck next time!";
+            }
             minigame_ender.EndNow(result_score,result_message,"GraphicDesign");
         }
     }
@@ -146,10 +154,10 @@ public class GameController : MonoBehaviour
 
     private void SetSamplesAndTimer(int level){
         if (level == 1){
-            timer_seconds = 10;
+            timer_seconds = 140;
         }
         if (level == 2) {
-            timer_seconds = 120;
+            timer_seconds = 100;
         }
         if (level == 3){
             timer_seconds = 50;

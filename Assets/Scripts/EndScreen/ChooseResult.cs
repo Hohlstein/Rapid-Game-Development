@@ -9,6 +9,10 @@ public class ChooseResult : MonoBehaviour
     public Sprite OneStar;
     public Sprite TwoStar;
     public Sprite ThreeStar;
+    public Sprite GameOver;
+    public Sprite SecretEnding;
+
+    public bool gameovertime = false;
 
     private List<Mitarbeiter> Hired_Employee_Objects;
 
@@ -18,21 +22,35 @@ public class ChooseResult : MonoBehaviour
         float finalStress = CalculateStressLevel();
         float finalProgress = CalculateOverallProgress();
 
-        if (finalProgress < 200 && finalStress > 15) {
-        GetComponent<Image>().sprite = NoStar;
-        return;
+        TestGameOver();
+        if (gameovertime) {
+            GetComponent<Image>().sprite = GameOver;
+            return;
         }
 
-        if (finalStress > 15) {
+        if (finalProgress < 300 && finalStress > 30) {
+            GetComponent<Image>().sprite = NoStar;
+            return;
+        }
+
+        if (finalStress > 20) {
             GetComponent<Image>().sprite = OneStar;
+            return;
         }
 
-        if (finalStress < 15) {
+        if (finalStress < 20 && finalProgress < 300) {
             GetComponent<Image>().sprite = TwoStar;
+            return;
         }
 
-        if (finalProgress > 200 && finalStress < 15) {
+        if (finalProgress >= 300 && finalStress < 20) {
             GetComponent<Image>().sprite = ThreeStar;
+            return;
+        }
+
+        if (finalProgress >= 400 && finalStress < 20) {
+            GetComponent<Image>().sprite = SecretEnding;
+            return;
         }
 
     }
@@ -52,6 +70,18 @@ public class ChooseResult : MonoBehaviour
         float saver = 0;
         saver += PlayerPrefs.GetFloat("codingvalue") + PlayerPrefs.GetFloat("gamedesignvalue") + PlayerPrefs.GetFloat("graphicdesignvalue") + PlayerPrefs.GetFloat("sounddesignvalue");
         return saver;
+    }
+
+    public void TestGameOver() {
+        GameObject obj = GameObject.Find("FinalizedHiredEmployeeList");
+        FinalizeEmployeeList finalizeEmployeeList = obj.GetComponent<FinalizeEmployeeList>();
+        Hired_Employee_Objects = finalizeEmployeeList.GetEmployeeList();
+        foreach(Mitarbeiter mitarbeiter in Hired_Employee_Objects){
+            if (mitarbeiter.getStressLevel() >= 30) {
+                GetComponent<Image>().sprite = GameOver;
+                gameovertime = true;
+            }
+        }
     }
 
     

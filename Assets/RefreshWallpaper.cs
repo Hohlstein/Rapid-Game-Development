@@ -10,7 +10,7 @@ public class RefreshWallpaper : MonoBehaviour
         Image img = GetComponent<Image>();
         if (PlayerPrefs.HasKey("Wallpaper")){
             int Index = PlayerPrefs.GetInt("Wallpaper");
-            if (WallpaperList.shared != null && Index < WallpaperList.shared.Count){
+            if (WallpaperList.shared != null && Index < WallpaperList.shared.Count && Index >= 0){
                 img.sprite = WallpaperList.shared[Index];
             }
         }
