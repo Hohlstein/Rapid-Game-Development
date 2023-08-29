@@ -54,14 +54,14 @@ public class InfoBox_Manager : MonoBehaviour
         }
         if (scene == "Chat"){
             title = "Chat";
-            body = "It's the first week of working on your game! Chat with your employees to get insights into their progress and be notified of any problems.";
+            body = "It's the first week of working on your game! Chat with your employees to get insights into their progress, be notified of any problems and determine their work hours for the week.";
             size = sizes.medium;
             prepared = true;
         }
         if (scene == "Arbeitsteilung"){
             title = "Give out tasks";
-            body = "Now that your employees are ready to begin their work week, you need to assign tasks to each of them. Be mindful of the number of hours they agreed to: You can give them some overtime, but overdoing it might cause burnout.";
-            size = sizes.large;
+            body = "Now that your employees are ready to begin their work week, you need to assign tasks to each of them. You can only give them as many hours of work as they agreed to in the chat!";
+            size = sizes.medium;
             prepared = true;
         }
         if (scene == "MiniGamePreLobby"){
