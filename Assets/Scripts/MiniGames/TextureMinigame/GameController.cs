@@ -98,7 +98,7 @@ public class GameController : MonoBehaviour
     IEnumerator CheckIfTexturesMatch() {
         if(firstGuessTexture == secondGuessTexture) {
             UISounds.TriggerSound(1);
-            yield return new WaitForSeconds (1.5f);
+            yield return new WaitForSeconds (.5f);
             btns[firstGuessIndex].interactable = false;
             btns[secondGuessIndex].interactable = false;
             btns[firstGuessIndex].image.color = new Color(0, 0, 0, 0);
@@ -111,11 +111,9 @@ public class GameController : MonoBehaviour
             timer.Unfreeze();
             yield return new WaitForSeconds (.5f);
             UISounds.TriggerSound(2);
-            yield return new WaitForSeconds (.1f);
             btns[firstGuessIndex].image.sprite = coveredTexture;
             btns[secondGuessIndex].image.sprite = coveredTexture;
         }
-        yield return new WaitForSeconds (.5f);
         firstGuess = secondGuess = false;
     }
     

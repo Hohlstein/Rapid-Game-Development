@@ -27,7 +27,7 @@ public class StressText : MonoBehaviour
     }
 
     void RenameStressText(float stress, TMP_Text StressLevel) {
-        StressLevel.text = "Your team is doing well!";
+        StressLevel.text = "No stressed team in sight!";
         if (stress > 15) {
             StressLevel.text = "Your team is stressed! Try to go easy on them.";
             return;
