@@ -8,7 +8,7 @@ public class scriptWriterMiniGameLogic : MonoBehaviour
 {
     public TMP_InputField textfield;
     public TMP_Text leftText;
-    public Countdown timer;
+    public ScriptWriterMinigameTimer timer;
     private int timer_seconds = 60;
     private int  characterNumber = 0;
     
@@ -17,13 +17,13 @@ public class scriptWriterMiniGameLogic : MonoBehaviour
     {
     switch(gameObject.GetComponent<DifficultyManager>().GetLevelInt()){
             case 1:
-            timer_seconds = 300;
-            break;
-            case 2:
             timer_seconds = 120;
             break;
+            case 2:
+            timer_seconds = 80;
+            break;
             case 3:
-            timer_seconds = 60;
+            timer_seconds = 50;
             break;
             default:
             break;
@@ -62,8 +62,8 @@ public class scriptWriterMiniGameLogic : MonoBehaviour
             }else if(characterNumber <100){
                 this.GetComponent<EndMiniGame>().EndNow(50, "Good Job!", "gamedesign");
             }else if(characterNumber <150){
-                this.GetComponent<EndMiniGame>().EndNow(50, "Good Job!", "gamedesign");
-            }else if(characterNumber >200){
+                this.GetComponent<EndMiniGame>().EndNow(75, "Good Job!", "gamedesign");
+            }else if(characterNumber > 200){
                 this.GetComponent<EndMiniGame>().EndNow(100, "Very Good Job!", "gamedesign");
             }
     }

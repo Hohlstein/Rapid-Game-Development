@@ -269,7 +269,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textfield: {fileID: 74931586}
   leftText: {fileID: 2129468193}
-  timer: {fileID: 462467818}
+  timer: {fileID: 462467822}
 --- !u!114 &74931586
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -443,6 +443,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa7517f0f8787d348975ee691dc1bc48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &218763978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4990631877002945228, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
+  m_PrefabInstance: {fileID: 462467817}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &279193164
 GameObject:
   m_ObjectHideFlags: 0
@@ -549,8 +554,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -776,27 +781,39 @@ PrefabInstance:
       propertyPath: m_Name
       value: MiniGameTimer
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -790854684028008647, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4990631877002945228, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 462467822}
   m_SourcePrefab: {fileID: 100100000, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
---- !u!114 &462467818 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: -790854684028008647, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
-  m_PrefabInstance: {fileID: 462467817}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68de5b68fadaf8a4fb205a35cb474d86, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &462467819 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1950116364251302180, guid: 7405b882b167b9b4b94489906195eb0e, type: 3}
   m_PrefabInstance: {fileID: 462467817}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &462467822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 218763978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0205f9c7d7a4ff34ab09fa328b0e89a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  placement: 2
+  Seconds: 120
+  ColorChangeThreshold: 10
+  freeze: 1
+  minigame_ender: {fileID: 74931589}
+  logic: {fileID: 74931585}
+  DisplaySeconds: 0
 --- !u!1 &476859458
 GameObject:
   m_ObjectHideFlags: 0
@@ -1327,12 +1344,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: I am the very model of a modern major general, I've information vegetable,
-    animal, and mineral, I know the kings of England, and I quote the fights historical.
-    From Marathon to Waterloo, in order categorical; I'm very well acquainted, too,
-    with matters mathematical, I understand equations, both the simple and quadratical.
-    About binomial theorem I'm teeming with a lot o' news. With many cheerful facts
-    about the square of the hypotenuse.
+  m_text: 'I''m very good at integral and differential calculus; I know the scientific
+    names of beings animalculous: In short, in matters vegetable, animal, and mineral,
+    I am the very model of a modern major general.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1359,8 +1373,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1494,8 +1508,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
