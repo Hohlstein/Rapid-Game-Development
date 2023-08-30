@@ -5,8 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class Arbeitsteiling : MonoBehaviour
-{
 
+{
+    public BalancingData BalancingData;
     public TextMeshProUGUI NameText;
     public SmoothMove textParent;
     public Image avatar;
@@ -250,11 +251,11 @@ public class Arbeitsteiling : MonoBehaviour
         FindObjectOfType<AvatarManager>().SetEmployee(current_employee);
 
 
-
-        CodingSkill.setTargetVal(current_employee.getCodingSkill());
-        GraphicDesignSkill.setTargetVal(current_employee.getGraphicDesignSkill());
-        GameDesignSkill.setTargetVal(current_employee.getGameDesignSkill());
-        SoundDesignSkill.setTargetVal(current_employee.getSoundDesignSkill());
+        float SkillScaleFactor = BalancingData.SkillScaleFactor;
+        CodingSkill.setTargetVal(current_employee.getCodingSkill()*SkillScaleFactor);
+        GraphicDesignSkill.setTargetVal(current_employee.getGraphicDesignSkill()*SkillScaleFactor);
+        GameDesignSkill.setTargetVal(current_employee.getGameDesignSkill()*SkillScaleFactor);
+        SoundDesignSkill.setTargetVal(current_employee.getSoundDesignSkill()*SkillScaleFactor);
 
     }
 

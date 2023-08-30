@@ -539,6 +539,7 @@ MonoBehaviour:
   GameDesignSkill: {fileID: 1879495339}
   GraphicDesignSkill: {fileID: 959373560}
   SoundDesignSkill: {fileID: 2014093492}
+  BalancingData: {fileID: 11400000, guid: 5b64311e6a2dd1a4b8d423eb97b4092d, type: 2}
   textAnimationY: 960
 --- !u!1 &367508110
 GameObject:

@@ -30,10 +30,9 @@ public class changeDisplayEmployeeID : MonoBehaviour
     public PercentageBar GraphicDesignSkill;
     public PercentageBar SoundDesignSkill;
 
+    public BalancingData BalancingData;
     private int numberOfPeople;
     public float textAnimationY;
-
-
     private int ID = 0;
 
     public void Start(){
@@ -105,10 +104,11 @@ public class changeDisplayEmployeeID : MonoBehaviour
         BioText.text = infosource.getValueString(ID,"Bio");
         avatar.SetEmployee(infosource.getMitarbeiterObject(ID));
 
-        CodingSkill.setTargetVal(infosource.getValueFloat(ID,"codingskill"));
-        GraphicDesignSkill.setTargetVal(infosource.getValueFloat(ID,"graphicdesignskill"));
-        GameDesignSkill.setTargetVal(infosource.getValueFloat(ID,"gamedesignskill"));
-        SoundDesignSkill.setTargetVal(infosource.getValueFloat(ID,"sounddesignskill"));
+        float SkillScaleFactor = BalancingData.SkillScaleFactor;
+        CodingSkill.setTargetVal(infosource.getValueFloat(ID,"codingskill")*SkillScaleFactor);
+        GraphicDesignSkill.setTargetVal(infosource.getValueFloat(ID,"graphicdesignskill")*SkillScaleFactor);
+        GameDesignSkill.setTargetVal(infosource.getValueFloat(ID,"gamedesignskill")*SkillScaleFactor);
+        SoundDesignSkill.setTargetVal(infosource.getValueFloat(ID,"sounddesignskill")*SkillScaleFactor);
         checkbox.UpdateSprite();
     }
 

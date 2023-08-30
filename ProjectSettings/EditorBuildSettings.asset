@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HireList.unity
     guid: f14281a9847bcfe42a8c9c62db84320f
   - enabled: 1
+    path: Assets/Scenes/MiniGamePreLobby.unity
+    guid: 6e6cdf3764fdaab4383d16f9258c942d
+  - enabled: 1
     path: Assets/Scenes/RecreateTheMusicMiniGame.unity
     guid: d2291a52042cb7e46bcf14a956db83f8
   - enabled: 1
@@ -26,33 +29,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Cutscene.unity
     guid: a12cf3aaf6685a74eabf87ccaee2c33c
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TitleScreen.unity
     guid: d539a1b0f74af8c498c4cc81955d9e1e
-  - enabled: 0
-    path: Assets/Scenes/SampleScene.unity
-    guid: 62557082312f3274f9dcad31493b8ec1
-  - enabled: 0
-    path: "Assets/Scenes/Mainmenu &Difficultymen\xFC.unity"
-    guid: 34f0056dff7450b4e8b5b904dccb5fbb
-  - enabled: 0
-    path: Assets/Scenes/HireListArbeitsteilung.unity
-    guid: 478b0a0afa3dc804486899f5cfcbe7d2
   - enabled: 1
     path: Assets/Scenes/Endscreen.unity
     guid: eb6dbe233e56f4c4f8cb78281cf30591
-  - enabled: 0
-    path: Assets/Scenes/DivisionOfLabor.unity
-    guid: 6633c988891e1bf47a6793e3fc4893f8
   - enabled: 1
     path: Assets/Scenes/Chat.unity
     guid: 6812e70c0500a2344bea6535f914f7c6
   - enabled: 1
     path: Assets/Scenes/Arbeitsteilung.unity
     guid: 73a0a75a0ee58c7418abb8492eea2dd6
-  - enabled: 1
-    path: Assets/Scenes/MiniGamePreLobby.unity
-    guid: 6e6cdf3764fdaab4383d16f9258c942d
   - enabled: 1
     path: Assets/Scenes/CodingMinigame.unity
     guid: d987faceb7fa1e04b8e46f70862c41f5
