@@ -2470,7 +2470,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: I would have to cover your shift then, while already being pretty busy myself.
-    How about just 1 day?
+    I'm not sure about this.
   nextNode: {fileID: 431869085}
   finalNode: 0
   workingHoursUp: 0
@@ -9885,8 +9885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9eed2513afa656419d70ee48a6aa8a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: Wow. I didn't know you were that lazy, boss. Don't even know if one single
-    day would be enough.
+  text: Wow. I didn't know you were that lazy, boss. Isn't your job to cover me?
   playerAnswer:
   - {fileID: 1460847949}
   finalNode: 0

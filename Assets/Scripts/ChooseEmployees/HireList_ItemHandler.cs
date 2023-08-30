@@ -25,6 +25,7 @@ public class HireList_ItemHandler : MonoBehaviour
     private int ID;
     private bool deleteOrderSent = false;
     
+    public BalancingData BalancingData;
     
     public SmoothMove smoothMover;
     public TextMeshProUGUI ListItem_Text;
@@ -51,10 +52,11 @@ public class HireList_ItemHandler : MonoBehaviour
     }
 
     public void SetSkillLevels(float[] array){
-        coding_skill.setTargetVal(array[0]);
-        gamedesign_skill.setTargetVal(array[1]);
-        graphicdesign_skill.setTargetVal(array[2]);
-        sounddesign_skill.setTargetVal(array[3]);
+        float SkillScaleFactor = BalancingData.SkillScaleFactor;
+        coding_skill.setTargetVal(array[0]*SkillScaleFactor);
+        gamedesign_skill.setTargetVal(array[1]*SkillScaleFactor);
+        graphicdesign_skill.setTargetVal(array[2]*SkillScaleFactor);
+        sounddesign_skill.setTargetVal(array[3]*SkillScaleFactor);
     }
     
 

@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67c1295174e7a9498a5bd1a66f1d561, type: 3}
   m_Name: BalancingData
   m_EditorClassIdentifier: 
-  playerSpeed: 5
-  maxHealth: 100
+  SkillScaleFactor: 2.5
+  exampleVal1: 0
+  exampleVal2: 0

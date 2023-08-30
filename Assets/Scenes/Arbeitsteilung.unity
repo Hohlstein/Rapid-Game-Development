@@ -3028,15 +3028,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5059746581433902613, guid: 8237ca7b657952a4e98dc34d2bf06627, type: 3}
       propertyPath: size
-      value: 144
+      value: 146
       objectReference: {fileID: 0}
     - target: {fileID: 5059746581433902613, guid: 8237ca7b657952a4e98dc34d2bf06627, type: 3}
       propertyPath: X_Pos
-      value: -191
+      value: -192
       objectReference: {fileID: 0}
     - target: {fileID: 5059746581433902613, guid: 8237ca7b657952a4e98dc34d2bf06627, type: 3}
       propertyPath: Y_Pos
-      value: -32
+      value: -34
       objectReference: {fileID: 0}
     - target: {fileID: 5698422975091084664, guid: 8237ca7b657952a4e98dc34d2bf06627, type: 3}
       propertyPath: m_Name
@@ -3805,6 +3805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f53b98ecd23a1a40b18e2d2db0ec2a9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  BalancingData: {fileID: 11400000, guid: 5b64311e6a2dd1a4b8d423eb97b4092d, type: 2}
   NameText: {fileID: 1466711612}
   textParent: {fileID: 1466711611}
   avatar: {fileID: 1762010873}

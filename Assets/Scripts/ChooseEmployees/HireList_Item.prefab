@@ -1186,6 +1186,7 @@ MonoBehaviour:
   startY: 0
   topOfListY: 0
   YDistanceBetweenItems: 0
+  BalancingData: {fileID: 11400000, guid: 5b64311e6a2dd1a4b8d423eb97b4092d, type: 2}
   smoothMover: {fileID: 8850529274180919319}
   ListItem_Text: {fileID: 8885748252473781624}
 --- !u!114 &8850529274180919319

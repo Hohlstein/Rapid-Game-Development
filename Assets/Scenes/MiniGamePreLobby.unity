@@ -317,7 +317,7 @@ MonoBehaviour:
   container: {fileID: 27125741}
   ContainerDSP_obj: {fileID: 761878077}
   introText_obj: {fileID: 797069598}
-  friction: 0.998
+  friction: 0.995
   drumRollSound: {fileID: 8300000, guid: 9395b81d66e1883409a9a0647c217d3f, type: 3}
   has_been_turned: 0
   UISounds: {fileID: 29547080}

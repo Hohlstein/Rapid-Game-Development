@@ -129,7 +129,7 @@ public class Wheel_Rotator : MonoBehaviour
         //Das Rad muss mit der Zeit seine Rotationskraft verlieren. Außerdem wird überprüft, ob das Rad bereits beinahe angehalten hat (rotationSpeed.z < 2.)
         //Falls ja, wird es ganz angehalten, da bei so niedriger Rotationsgeschwindigkeit sowieso kaum noch eine Bewegung wahrgenommen wird.
         rotationSpeed = rotationSpeed*friction;
-        if (rotationSpeed.z < 5){
+        if (rotationSpeed.z < 8){
             rotationSpeed.z = 0;
             moving = false;
         }
