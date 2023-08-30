@@ -58,7 +58,7 @@ public class LevelData : MonoBehaviour
 
             
             solution_numbers = new List<int>() {3,4,3,4,5,6,7,5,8};
-            timer_seconds = 10;
+            timer_seconds = 240;
         }
     }
 
